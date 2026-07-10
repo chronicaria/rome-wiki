@@ -14,6 +14,11 @@ This map organizes Korean history through overlapping chronological, institution
 - [[How historians periodize Korean history]] — political, social, regional, imperial, and archival chronologies.
 - [[Using the Goryeosa as political evidence]] — reading a successor dynasty's compilation as layered evidence.
 
+## Origins, early states, and regional orders
+
+- [[Archaeology and the Old Joseon origin problem]] — separating material cultures, early Chinese notices, medieval foundation traditions, and modern national claims.
+- [[Silla unification and the place of Balhae]] — qualifying peninsular unification and restoring the post-Goguryeo north to the map.
+
 ## Goryeo institutions and society
 
 - [[Goryeo as a plural aristocratic and Buddhist polity]] — the dynasty's combined royal, bureaucratic, hereditary, regional, and religious institutions.
@@ -25,12 +30,16 @@ This map organizes Korean history through overlapping chronological, institution
 
 - [[Why Goryeo became Joseon]] — how military, diplomatic, fiscal, and ideological crises became a new dynasty.
 
+## Joseon family, war, and regional order
+
+- [[Patrilineal transformation of the Joseon family]] — ritual succession, inheritance, marriage residence, genealogy, and lineage power.
+- [[The Manchu invasions and Joseon's place in the Qing order]] — the two invasions, coerced hierarchy, retained internal government, and contested memory.
+
 ## Priority gaps
 
-- [[Archaeology and the Old Joseon origin problem]]
-- [[Silla unification and the place of Balhae]]
-- [[The Manchu invasions and Joseon's place in the Qing order]]
-- [[Patrilineal transformation of the Joseon family]]
+- [[The Three Kingdoms as states rather than national ancestors]]
+- [[Hangul as a political and social technology]]
+- [[Joseon land taxation from gwajeon to daedong]]
 - [[Colonial Korea's changing administrative regimes]]
 - [[Why Korea was divided in 1945]]
 

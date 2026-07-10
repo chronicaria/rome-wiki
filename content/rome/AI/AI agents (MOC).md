@@ -38,6 +38,10 @@ This MOC collects notes on LLM agents as teams, swarms, simulators, and collecti
 - [[Time horizon of AI agents]] - how fitted task-completion horizons are constructed, calibrated, and easily misread.
 - [[Computer-use evaluation]] - how environment, observability, action space, scaffold, budget, grading, and safety define a computer-use result.
 - [[AI R&D automation evidence]] - what bounded research-engineering benchmarks establish and what end-to-end automation would still need to prove.
+- [[Cost-adjusted frontier model performance]] - why deployment comparisons need task-specific quality–resource frontiers rather than a universal points-per-dollar ranking.
+- [[Tool-use reliability]] - how relevance, selection, arguments, execution, policy, recovery, and end-state verification compose across an agent trajectory.
+- [[Single-agent versus multi-agent inference]] - when parallel search, diversity, specialization, or verification can beat a compute-matched single-agent policy.
+- [[Verification loops for coding agents]] - how to separate developmental execution feedback from independent evidence that a patch deserves trust.
 
 ## Open questions
 

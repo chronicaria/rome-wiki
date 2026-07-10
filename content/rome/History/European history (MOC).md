@@ -9,6 +9,8 @@ This MOC builds a connected European-history spine from the post-Roman world to 
 
 Up: [[Home]]
 
+Topic research map: [[European history 500-1914]] — causal and comparative European history from post-Roman transformation to July 1914.
+
 ## 500-1000 — Post-Roman worlds
 
 - [[Transformation of the Roman world]]
@@ -54,6 +56,7 @@ Up: [[Home]]
 - [[Industrial Revolution]]
 - [[Nationalism in nineteenth-century Europe]]
 - [[German and Italian unification]]
+- [[Unequal suffrage in modern Europe (MOC)]]
 - [[European imperialism]]
 - [[Road to the First World War]]
 

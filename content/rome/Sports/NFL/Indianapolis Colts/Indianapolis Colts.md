@@ -24,14 +24,14 @@ Up: [[Sports]]
 
 - [[Indianapolis Colts offensive line 2026]] — continuity, protection, and depth
 - [[Indianapolis Colts defensive identity 2026]] — personnel turnover and Lou Anarumo's structure
-- [[Indianapolis Colts offensive identity 2026]] — queued
+- [[Indianapolis Colts offensive identity 2026]] — Taylor-centered conflict structure, formation flexibility, and quarterback-dependent constraints
 - [[Indianapolis Colts situational football 2026]] — queued pending a sufficient game sample
-- [[Indianapolis Colts roster-construction pressure points]] — queued
+- [[Indianapolis Colts roster-construction pressure points]] — asset concentration, succession risk, and functional depth
 
 ## NFL context through Indianapolis
 
 - [[NFL injury reports as forecasting evidence]]
-- [[NFL international games and Colts preparation]]
+- [[NFL international games and Colts preparation]] — travel, circadian, installation, and London-to-Pittsburgh recovery mechanisms
 - [[Pass protection]]
 - [[Pressure rate]]
 - [[Coverage shell]]

@@ -34,6 +34,9 @@ Squad size creates a parallel test. Tottenham have accumulated central defenders
 - [[Tottenham 2026-27 fixture map]] — all 38 provisional league fixtures, domestic-cup dependencies, international windows, and the winter congestion block.
 - [[Tottenham transfer ledger 2026-27]] — official-completion-only arrivals and exits, with effective dates and unresolved conditions kept explicit.
 - [[Tottenham academy pathway]] — how Under-21 football, senior access, loans, age exemptions, and home-grown capacity form one development system.
+- [[Tottenham recruitment fit under Roberto De Zerbi]] — a role-by-role test of how the confirmed arrivals may serve the game model without treating preseason fit as proven.
+- [[Premier League schedule congestion through Tottenham]] — a causal framework for rest, travel, training loss, rotation, and opponent asymmetry using Spurs' no-Europe calendar.
+- [[Tottenham financial and governance decisions]] — how ownership, stadium economics, accounts, debt, regulation, and executive choices reach the sporting project.
 
 ## Working tests
 

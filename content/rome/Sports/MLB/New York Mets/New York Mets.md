@@ -22,11 +22,15 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 - [[How to read Mets Statcast changes without overfitting]] — reproducible samples, baselines, context, and calibrated claims.
 - [[Why Mets reliever performance is volatile]] — small denominators, leverage, inherited runners, role, and process measures.
 - [[Defensive value in public baseball metrics]] — range, throwing, framing, blocking, double plays, and Fielding Run Value.
+- [[Pitch-shape changes versus pitcher outcomes]] — velocity, release, movement, deployment, location, and held-out outcome tests.
+
+## Decision and synthesis
+
+- [[New York Mets run-prevention profile 2026]] — team pitching, traffic, contact, defense, sequencing, and innings allocation without double counting.
+- [[New York Mets 2026 trade-deadline needs]] — frozen pre-deadline seller framework, internal alternatives, acquisition archetypes, and opportunity costs.
 
 ## Next links
 
-- [[New York Mets run-prevention profile 2026]]
 - [[New York Mets run-creation profile 2026]]
-- [[New York Mets 2026 trade-deadline needs]]
 - [[Mets prospect-to-MLB translation]]
 - [[New York Mets roster-construction pressure points]]

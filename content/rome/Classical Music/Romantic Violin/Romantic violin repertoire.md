@@ -24,9 +24,12 @@ Up: [[Classical Music]]
 
 ## Repertoire paths
 
-- [[Paganini]]
+- [[Paganini Caprice No. 24 as a variation laboratory]]
+- [[Beethoven Violin Concerto Op. 61]]
 - [[Mendelssohn Violin Concerto Op. 64]]
 - [[Brahms Violin Concerto]]
+- [[Brahms Violin Sonata No. 1 Op. 78]]
+- [[Clara Schumann Three Romances Op. 22]]
 - [[Tchaikovsky Violin Concerto]]
 - [[Romantic violin sonatas]]
 - [[Franck Violin Sonata in A major]]

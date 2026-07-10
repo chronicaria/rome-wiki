@@ -32,15 +32,19 @@ A causal and comparative map from the transformation of Roman worlds through med
 - [[The Investiture Contest as an institutional revolution]] — how conflict over episcopal office differentiated church and princely government.
 - [[Medieval towns as corporate polities]] — how urban communities acquired partial, unequal capacities to govern and bargain.
 - [[The commercial revolution of the central Middle Ages]] — why denser exchange emerged through interacting agrarian, urban, political, and cross-Mediterranean changes.
+- [[Canon law and European legal pluralism]] — how a learned church jurisdiction interacted with customary, princely, urban, and minority legal orders.
+- [[Guilds as exclusion and social insurance]] — how occupational corporations joined training, welfare, regulation, political voice, and bounded membership.
+
+## Households and minority life
+
+- [[Household formation and the European marriage pattern]] — why late marriage, life-cycle service, and neolocality form a contested regional model rather than a European essence.
+- [[Jewish life within medieval Christian polities]] — how communal institutions and ordinary exchange persisted inside unequal and revocable systems of protection.
 
 ## Next foundations
 
-- [[Canon law and European legal pluralism]]
-- [[Household formation and the European marriage pattern]]
-- [[Guilds as exclusion and social insurance]]
 - [[Crusading as religion, politics, and colonization]]
-- [[Jewish life within medieval Christian polities]]
 - [[The Brenner debate on agrarian class structure]]
+- [[Serfdom's divergent paths in eastern and western Europe]]
 
 ## Open questions
 

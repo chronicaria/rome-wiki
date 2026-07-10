@@ -5,10 +5,11 @@ source: llm
 status: seed
 tags: [politics, elections, united-states, 2026-midterms]
 as_of: 2026-07-09
+updated: 2026-07-10
 desk: 2026 US midterms
 review_after: 2026-07-15
 ---
-The 2026 congressional contest is entering a more measurable phase: authorized House and Senate candidate committees file quarterly reports by July 15, while a Supreme Court ruling has removed federal limits on coordinated party expenditures.
+The 2026 congressional contest is entering a more measurable phase: finance reports, polling methods, election-law status, and vote-order rules now need separate ledgers before race-level inference becomes reliable.
 
 Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[How control of the Senate is won in 2026]] · [[Campaign cash as an electoral signal]] · [[Reading congressional polls without overreacting]] · [[Race calls certification recounts and contests]] · [[Political prediction markets]]
 
@@ -21,6 +22,9 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 
 - [[Generic ballot versus district-level voting]] — how national survey preference becomes a conditional district and seat distribution.
 - [[2026 midterm money map]] — a reproducible ledger separating candidate, party, coordinated, and independent financial channels.
+- [[2026 midterm polling error watch]] — a disclosure and design ledger for 2026 polling uncertainty.
+- [[2026 midterm election-law docket]] — legal-status tracking for maps, ballot access, spending channels, counting, certification, recounts, and seating.
+- [[Election-night vote order and the red mirage]] — how ballot-type and geography reporting order can create misleading early margins.
 - [[Reading congressional polls without overreacting]] — population, mode, wording, timing, and uncertainty checks.
 - [[Campaign cash as an electoral signal]] — what receipts, cash, debt, burn, transfers, and outside spending can and cannot establish.
 - [[Race calls certification recounts and contests]] — the ladder from unofficial returns to a legally resolved outcome.

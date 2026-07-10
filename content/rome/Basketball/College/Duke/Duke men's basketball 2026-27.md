@@ -19,6 +19,9 @@ Up: [[Basketball]]
 - [[Duke 2026-27 backcourt creation]] — how first touch, first advantage, second read, and late-clock ownership can be distributed.
 - [[Duke 2026-27 frontcourt combinations]] — the spacing, rim-protection, and rebounding exchanges across single-big, two-big, and mobile-five groups.
 - [[Duke 2026-27 lineup scalability]] — a six-function test for whether lineup depth survives different elite opponents.
+- [[Duke 2026-27 defensive role map]] — the six defensive jobs each viable lineup must cover and the evidence needed to assign them.
+- [[Duke 2026-27 shooting and spacing]] — how shooting gravity, movement, and lineup tradeoffs determine usable offensive space.
+- [[Duke freshman translation in 2026-27]] — a bounded method for turning pre-college evidence into falsifiable role expectations.
 - [[Duke continuity after the one-and-done centerpiece]] — how returning players change the development and integration problem.
 - [[Duke 2026-27 schedule map]] — named games, ACC opponent structure, travel questions, and résumé tests.
 - [[Duke 2026-27 nonconference stress tests]] — seven predeclared diagnostic questions for the verified marquee games.

@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, identity, stablecoins, wrapped-assets]
-as_of: 2026-07-10T01:56:30Z
+as_of: 2026-07-10T06:13:16Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -56,6 +56,12 @@ Ranks 90–110 contain six clearly dollar-referenced or ruble-referenced claims�
 
 The second observation replaced BinanceLife with JAAA at rank 90 while preserving ranks 91–110. BinanceLife therefore remains in the historical ledger rather than being deleted from the identity graph; JAAA needs a primary issuer, legal-form, chain, and contract packet before its tokenized-fund classification is treated as complete.
 
+## 06:13 UTC identity delta
+
+The latest boundary observation placed JAAA at rank 88 and BinanceLife at rank 89, so both provider identities were simultaneously inside the top 100. Audiera (`audiera`, BEAT) appeared at rank 90 and requires a primary identity packet before classification. VVV was rank 100 and APT rank 101. The numbered table above remains the immutable first-observation map; these later ranks are recorded as a delta rather than silently rewriting history.
+
+No contract or economic-parent claim is inferred for Audiera from its ticker or provider name. Its official project, chain, canonical contract, decimals, supply controls, and venue liquidity remain unverified. The existing Venice Token row already establishes the VVV provider identity, so its cutoff move creates a persistence check rather than a duplicate dossier.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
@@ -66,6 +72,7 @@ The second observation replaced BinanceLife with JAAA at rank 90 while preservin
 - [A7A5 introduction](https://docs.a7a5.io/introduction-to-a7a5) and [terms](https://docs.a7a5.io/legal/terms-of-use), accessed 2026-07-09.
 - [Provenance Blockchain HASH documentation](https://developer.provenance.io/docs/discover/hash/), accessed 2026-07-09.
 - [CoinGecko USX page](https://www.coingecko.com/en/coins/usx) and [dForce USX documentation](https://docs.usx.finance/overview/introduction), accessed 2026-07-09; used to preserve rather than collapse the symbol collision.
+- [CoinGecko 06:13 UTC markets observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T06:13:16Z; used only for provider identity and rank deltas.
 
 ## Open questions
 

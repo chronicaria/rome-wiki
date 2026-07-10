@@ -24,6 +24,9 @@ Up: [[Home]]
 - [[Campaign cash as an electoral signal]]
 - [[NRSC v. FEC and the 2026 midterms]]
 - [[Race calls certification recounts and contests]]
+- [[2026 midterm polling error watch]]
+- [[2026 midterm election-law docket]]
+- [[Election-night vote order and the red mirage]]
 
 ## France
 

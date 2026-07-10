@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [weather, exoplanets, atmospheres, spectroscopy]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: Exometeorology
 review_after: 2026-08-09
 ---
@@ -21,13 +21,17 @@ Up: [[Weather prediction (MOC)]]
 ## Circulation, transport, and chemistry
 
 - [[Atmospheric circulation on tidally locked planets]] explains how stationary day–night forcing excites waves, overturning, and jets while leaving their observable signatures model-dependent.
+- [[Equatorial superrotation]] derives the angular-momentum definition and wave-driven jet mechanism while explaining why an eastward hotspot is not itself a wind measurement.
 - [[Day-night heat redistribution]] separates measured brightness contrasts from bolometric energy transport and develops the cloud, photosphere, opacity, and dynamical degeneracies behind redistribution estimates.
+- [[Cloud formation and transport beyond Earth]] connects saturation, nucleation, growth, settling, advection, and radiative feedback without treating aerosol opacity as a unique condensate identification.
 - [[Disequilibrium chemistry as a tracer of circulation]] shows when chemical quenching can retain a memory of transport—and why composition, kinetics, clouds, photochemistry, and retrieval assumptions prevent a molecule from acting as a direct anemometer.
 
 ## Observation and inference
 
 - [[Transmission spectroscopy]] explains the slant geometry of a planetary limb, its sensitivity to scale height and opacity, and the coupled reference-radius, abundance, cloud, stellar, and instrumental degeneracies.
+- [[Emission spectroscopy and secondary eclipses]] follows missing dayside photons from fitted eclipse depths through radiative transfer, temperature retrievals, and spatial degeneracies.
 - [[Exoplanet phase curves]] separates the measured unresolved orbital light curve from brightness-temperature retrievals, maps, and circulation interpretations.
+- [[High-resolution Doppler spectroscopy of exoplanet winds]] explains what planet-following line profiles measure and why orbital motion, rotation, winds, chemistry, and limb weighting must be separated.
 - [[From light curves to atmospheric maps]] makes the mapping inverse problem explicit: disk integration has a null space, regularization supplies assumptions, and a plotting grid is not the same thing as spatial resolution.
 
 ## Current frontier

@@ -24,6 +24,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Conditional political probabilities]]
 - [[Information aggregation in prediction markets]]
 - [[CFTC 2026 prediction-market proposal]]
+- [[Backtesting political forecasts without leakage]]
+- [[Favorite-longshot bias in event contracts]]
+- [[Forecast combination with polls models and markets]]
 
 ## Current observations
 

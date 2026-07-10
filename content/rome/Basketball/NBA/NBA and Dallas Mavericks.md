@@ -20,6 +20,9 @@ This topic map connects current Dallas state, player and lineup investigations, 
 
 - [[Dallas Mavericks under Dusty May]]
 - [[Cooper Flagg year-two development]]
+- [[Kyrie Irving return from ACL reconstruction]]
+- [[Dereck Lively II health and defensive value]]
+- [[Santi Aldama in Dallas lineups]]
 - [[Dallas guard creation after roster turnover]]
 - [[Dallas frontcourt geometry]]
 
@@ -27,6 +30,7 @@ This topic map connects current Dallas state, player and lineup investigations, 
 
 - [[Availability risk in NBA projections]]
 - [[Lineup fit is not the sum of player value]]
+- [[NBA trade impact template]]
 - [[NBA player forward projection model]]
 - [[RAPM]]
 - [[Six-factor RAPM decomposition]]

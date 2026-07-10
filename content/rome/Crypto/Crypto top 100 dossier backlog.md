@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, research, backlog]
-as_of: 2026-07-10T03:03:20Z
+as_of: 2026-07-10T06:13:16Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -36,11 +36,14 @@ Status vocabulary: **ready** has a bounded question and source lead; **blocked**
 | 14 | [[Pump.fun protocol and PUMP economics]] | Update the existing conviction-subset evidence with token supply, unlocks, fee routing, governance/control, and venue liquidity. | Pump.fun primary docs/contracts; [[092 PUMP briefing]] | existing-owner |
 | 15 | [[Crypto stable-liability boundary cluster]] | Compare GHO, USD0, YLDS, USX, A7A5, and TUSD by reference unit, issuer, reserve, redemption, legal form, chain, and duplicated economic exposure. | completed identity registry plus each issuer's primary evidence | blocked until cards 2–6 and 11 verify |
 | 16 | [[Crypto provider identity rate-limit procedure]] | Define a reproducible retry/cache protocol that preserves timestamps and prevents guessed contracts when CoinGecko metadata returns HTTP 429. | CoinGecko rate-limit and API docs | ready; operational |
+| 17 | [[Audiera identity and token economics]] | Verify the rank-90 `audiera` provider identity, official project, contracts, supply controls, venue depth, utility, and holder concentration before drawing any market conclusion. | CoinGecko ID; official Audiera materials; verified explorers; named venues | new entrant; verify next snapshot |
 
 ## Completed this return
 
 - Confirmed at 2026-07-10T03:03:20Z that YLDS remained rank 100 and APT rank 101 across a later hourly observation.
 - Rejected the short-interval JAAA rank-90 appearance as durable membership after BinanceLife returned to rank 90 in the later snapshot.
+- At 2026-07-10T06:13:16Z recorded VVV at rank 100 and APT at rank 101, with YLDS rank 99; persistence remains unverified for this new cutoff arrangement.
+- Added a baseline identity card for Audiera (`audiera`, BEAT), newly observed in the boundary buffer at rank 90.
 
 - Captured the first immutable rank-90–110 boundary observation.
 - Assigned canonical CoinGecko IDs to all 21 rows.

@@ -20,6 +20,7 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Equity breadth and index concentration]]
 - [[Credit spreads and default compensation]]
 - [[Volatility risk premium]]
+- [[Funding liquidity versus market liquidity]]
 
 ## Rates and dollar transmission
 
@@ -41,7 +42,6 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Treasury yield curve mechanics]]
 - [[Futures continuous contracts and roll bias]]
 - [[WTI versus Brent crude oil]]
-- [[Funding liquidity versus market liquidity]]
 
 ## Open questions
 

@@ -39,6 +39,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[TVL without double counting]] — separate local gross inventory from recursive claims, price effects, liabilities, and unique backing.
 - [[Perpetual funding and crowded leverage]] — read venue funding rules as one positioning signal rather than a directional oracle.
 - [[Crypto liquidation cascades]] — trace maintenance-margin breaches through forced flow, disappearing depth, collateral reflexivity, and cross-venue propagation.
+- [[Spot futures basis in crypto]] — measure maturity-matched carry as a balance-sheet price, with explicit benchmarks, annualization, execution costs, and failure tests.
+- [[Cross-venue fragmentation in crypto]] — treat liquidity as a network of local balance sheets connected by costly, failure-prone settlement and arbitrage links.
+- [[Crypto ETF flows and market impact]] — separate secondary turnover, primary creations, holdings, and AUM before making any price-impact claim.
+- [[Governance capture and admin-key risk]] — map the shortest authority path through votes, keys, timelocks, guardians, multisigs, and legal control.
 - [[Tokenized fixed-income products in crypto rankings]] — classify YLDS debt and JAAA fund shares by their legal claims instead of treating provider capitalization as protocol value.
 
 ## Current conviction subset
