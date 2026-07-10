@@ -17,6 +17,7 @@ This map organizes Korean history through overlapping chronological, institution
 ## Origins, early states, and regional orders
 
 - [[Archaeology and the Old Joseon origin problem]] — separating material cultures, early Chinese notices, medieval foundation traditions, and modern national claims.
+- [[The Three Kingdoms as states rather than national ancestors]] — rival state formation, plural societies, retrospective chronicles, and the limits of national teleology.
 - [[Silla unification and the place of Balhae]] — qualifying peninsular unification and restoring the post-Goguryeo north to the map.
 
 ## Goryeo institutions and society
@@ -30,17 +31,22 @@ This map organizes Korean history through overlapping chronological, institution
 
 - [[Why Goryeo became Joseon]] — how military, diplomatic, fiscal, and ideological crises became a new dynasty.
 
-## Joseon family, war, and regional order
+## Joseon institutions, family, war, and regional order
 
+- [[Hangul as a political and social technology]] — script design, royal statecraft, gendered textual practice, petitions, and later nationalization.
+- [[Joseon land taxation from gwajeon to daedong]] — official revenue assignments, field assessment, tribute commutation, procurement, and social incidence.
 - [[Patrilineal transformation of the Joseon family]] — ritual succession, inheritance, marriage residence, genealogy, and lineage power.
 - [[The Manchu invasions and Joseon's place in the Qing order]] — the two invasions, coerced hierarchy, retained internal government, and contested memory.
 
+## Colonial rule and mobilization
+
+- [[Colonial Korea's changing administrative regimes]] — military-police rule, constrained cultural politics, developmental administration, and total-war mobilization.
+
 ## Priority gaps
 
-- [[The Three Kingdoms as states rather than national ancestors]]
-- [[Hangul as a political and social technology]]
-- [[Joseon land taxation from gwajeon to daedong]]
-- [[Colonial Korea's changing administrative regimes]]
+- [[Markets and monetization in late Joseon]]
+- [[Local magistrates, clerks, and yangban power]]
+- [[The March First Movement as local and global history]]
 - [[Why Korea was divided in 1945]]
 
 ## Open questions

@@ -25,8 +25,11 @@ Up: [[Sports]]
 - [[Indianapolis Colts offensive line 2026]] — continuity, protection, and depth
 - [[Indianapolis Colts defensive identity 2026]] — personnel turnover and Lou Anarumo's structure
 - [[Indianapolis Colts offensive identity 2026]] — Taylor-centered conflict structure, formation flexibility, and quarterback-dependent constraints
+- [[Indianapolis Colts running game 2026]] — Taylor's rushing engine, complementary-back trust, and blocking dependencies
+- [[Indianapolis Colts pass-catcher structure 2026]] — functional redistribution after Pittman's departure
 - [[Indianapolis Colts situational football 2026]] — queued pending a sufficient game sample
 - [[Indianapolis Colts roster-construction pressure points]] — asset concentration, succession risk, and functional depth
+- [[Indianapolis Colts linebacker transition 2026]] — communication, package roles, and the post-Franklin succession plan
 
 ## NFL context through Indianapolis
 

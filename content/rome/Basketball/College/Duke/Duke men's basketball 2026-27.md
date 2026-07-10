@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [basketball, college-basketball, duke, season]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: Duke men's basketball
 review_after: 2026-09-15
 ---
@@ -22,13 +22,17 @@ Up: [[Basketball]]
 - [[Duke 2026-27 defensive role map]] — the six defensive jobs each viable lineup must cover and the evidence needed to assign them.
 - [[Duke 2026-27 shooting and spacing]] — how shooting gravity, movement, and lineup tradeoffs determine usable offensive space.
 - [[Duke freshman translation in 2026-27]] — a bounded method for turning pre-college evidence into falsifiable role expectations.
+- [[Duke transfer integration in 2026-27]] — how Blackwell, Scharnowski, and Theodosiou's reported prior roles can be narrowed or reshaped without copying old box scores.
+- [[Duke 2026-27 transfer guard decision-making]] — a coverage-by-coverage framework for translating John Blackwell's verified scoring pressure into shared creation.
 - [[Duke continuity after the one-and-done centerpiece]] — how returning players change the development and integration problem.
 - [[Duke 2026-27 schedule map]] — named games, ACC opponent structure, travel questions, and résumé tests.
 - [[Duke 2026-27 nonconference stress tests]] — seven predeclared diagnostic questions for the verified marquee games.
 - [[Jon Scheyer's tactical evolution at Duke]] — the four-season statistical arc and a lineup-scalability framework.
+- [[Jon Scheyer's defensive evolution at Duke]] — the four-season defensive outcome record and the shift from size-based floor to layered, personnel-specific optionality.
+- [[Duke late-game offense under Jon Scheyer]] — a bounded possession framework built from two official Houston endgames rather than a fabricated clutch database.
 - [[Duke player development and NBA translation framework]] — a role-first method for evaluating freshmen, transfers, returners, and professional translation.
 
-## What is known as of July 9
+## What is known as of July 10
 
 The useful way to understand Duke's 2026-27 season in July is not to project a record. Too much of the evidence needed for that forecast is still missing. Duke's official roster selector continued to display 2025-26 when this article was checked, the ACC had announced opponents but not dates, and most game times remained unset. What can already be established is the architecture of the season: the competitive tests Duke chose, the league format it must navigate, and the changed NCAA championship waiting in March.
 

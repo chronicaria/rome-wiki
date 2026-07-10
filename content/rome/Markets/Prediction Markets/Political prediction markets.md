@@ -27,6 +27,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Backtesting political forecasts without leakage]]
 - [[Favorite-longshot bias in event contracts]]
 - [[Forecast combination with polls models and markets]]
+- [[Liquidity manipulation and insider incentives in prediction markets]]
+- [[Political event-contract resolution designs]]
+- [[Prediction-market regulatory docket]]
 
 ## Current observations
 

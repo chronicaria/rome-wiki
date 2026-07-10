@@ -37,6 +37,9 @@ Squad size creates a parallel test. Tottenham have accumulated central defenders
 - [[Tottenham recruitment fit under Roberto De Zerbi]] — a role-by-role test of how the confirmed arrivals may serve the game model without treating preseason fit as proven.
 - [[Premier League schedule congestion through Tottenham]] — a causal framework for rest, travel, training loss, rotation, and opponent asymmetry using Spurs' no-Europe calendar.
 - [[Tottenham financial and governance decisions]] — how ownership, stadium economics, accounts, debt, regulation, and executive choices reach the sporting project.
+- [[Tottenham centre-back architecture under Roberto De Zerbi]] — the complementary build-up, forward-defending, recovery, box-control, and pathway jobs inside an unsettled centre-back hierarchy.
+- [[Tottenham midfield architecture under Roberto De Zerbi]] — how first-line access, press escape, creation, and transition protection must be divided without predicting a preseason partnership.
+- [[Tottenham goalkeeper succession and build-up]] — how incumbency, development, experienced cover, registration, and goalkeeper-led build-up interact before the competitive hierarchy is known.
 
 ## Working tests
 

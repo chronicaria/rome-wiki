@@ -17,6 +17,8 @@ Up: [[Basketball]]
 - [[Fantasy basketball category scarcity]] — scarcity is a marginal market relationship, not the raw rarity of a box-score statistic.
 - [[Category covariance in fantasy basketball roster construction]] — model how roles and shared events move category outcomes together instead of treating each column as independent.
 - [[Games played versus per-game value in fantasy basketball]] — scheduled games create value only when they become active-lineup appearances.
+- [[Points-league volume and efficiency]] — translate minutes, role, and box-score events through the league's exact scoring formula.
+- [[Percentage categories and volume]] — model shooting ratios through makes and attempts rather than averaging player percentages.
 
 ## Opportunity and availability
 
@@ -28,6 +30,7 @@ Up: [[Basketball]]
 ## Transactions and weekly planning
 
 - [[Fantasy basketball streaming on low-volume days]] — optimize playable games after lineup congestion and acquisition costs.
+- [[Fantasy basketball streaming break-even thresholds]] — require the stream's marginal lineup value to clear drop, transaction, and option costs.
 - [[FAAB and waiver priority as option value]] — spending a scarce claim resource sacrifices future flexibility.
 - [[Weekly lineup locks and injury risk]] — price irreversible weekly assignments with probability-weighted availability, workload, and playable games.
 - [[IL slots as roster flexibility]] — value contingent roster capacity net of eligibility timing, transaction restrictions, and the activation squeeze.
@@ -39,9 +42,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Points-league volume and efficiency]]
-- [[Percentage categories and volume]]
-- [[Fantasy basketball streaming break-even thresholds]]
+- [[Using projection disagreement in fantasy basketball]]
+- [[Category floors and ceilings in fantasy basketball]]
+- [[Roster-slot liquidity in fantasy basketball]]
 
 ## Open questions
 

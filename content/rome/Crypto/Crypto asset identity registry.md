@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, identity, stablecoins, wrapped-assets]
-as_of: 2026-07-10T06:13:16Z
+as_of: 2026-07-10T07:02:56Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -62,6 +62,12 @@ The latest boundary observation placed JAAA at rank 88 and BinanceLife at rank 8
 
 No contract or economic-parent claim is inferred for Audiera from its ticker or provider name. Its official project, chain, canonical contract, decimals, supply controls, and venue liquidity remain unverified. The existing Venice Token row already establishes the VVV provider identity, so its cutoff move creates a persistence check rather than a duplicate dossier.
 
+## 07:02 UTC Audiera identity checkpoint
+
+Audiera persisted at provider rank 90. CoinGecko's identity endpoint maps provider ID `audiera` to symbol BEAT and BNB Smart Chain contract `0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36`; it links `audiera.fi` and the corresponding BscScan token page. The markets endpoint reports 309,266,666 circulating units against one billion total/max units.
+
+These fields establish the provider-to-contract locator, not the complete economic identity. The provider description is promotional issuer-supplied material and is not accepted as proof of utility, governance, value capture, circulating-supply methodology, or contract control. Official token documentation, verified source/admin inspection, holder distribution, and named-venue depth remain required before a full classification or dossier can be promoted.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
@@ -73,6 +79,8 @@ No contract or economic-parent claim is inferred for Audiera from its ticker or 
 - [Provenance Blockchain HASH documentation](https://developer.provenance.io/docs/discover/hash/), accessed 2026-07-09.
 - [CoinGecko USX page](https://www.coingecko.com/en/coins/usx) and [dForce USX documentation](https://docs.usx.finance/overview/introduction), accessed 2026-07-09; used to preserve rather than collapse the symbol collision.
 - [CoinGecko 06:13 UTC markets observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T06:13:16Z; used only for provider identity and rank deltas.
+- [CoinGecko Audiera identity endpoint](https://api.coingecko.com/api/v3/coins/audiera), retrieved 2026-07-10; provider ID, linked homepage, platform contract, and supply fields only.
+- [CoinGecko 07:02 UTC markets observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T07:02:56Z.
 
 ## Open questions
 

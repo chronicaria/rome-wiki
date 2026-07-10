@@ -15,6 +15,7 @@ This topic map connects current Dallas state, player and lineup investigations, 
 - [[Dallas Mavericks roster and minutes ledger]]
 - [[Dallas Mavericks 2026-27 roster construction dossier]]
 - [[Dallas Mavericks availability scenarios]]
+- [[Dallas Mavericks health ledger]]
 
 ## Dallas coaching, players, and lineups
 
@@ -25,6 +26,7 @@ This topic map connects current Dallas state, player and lineup investigations, 
 - [[Santi Aldama in Dallas lineups]]
 - [[Dallas guard creation after roster turnover]]
 - [[Dallas frontcourt geometry]]
+- [[Dallas center rotation without full Lively availability]]
 
 ## Forecasting and lineup method
 

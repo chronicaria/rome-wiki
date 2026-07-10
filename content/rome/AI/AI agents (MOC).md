@@ -30,6 +30,7 @@ This MOC collects notes on LLM agents as teams, swarms, simulators, and collecti
 
 ## Agent Evaluation
 
+- [[Agent memory architectures]] - how working, episodic, semantic, and procedural memory fit into a write–retrieve–consolidate–forget lifecycle that must be tested by ablation.
 - [[Model versus scaffold in agent evaluations]] - why an agent score belongs to the evaluated model-scaffold-tool-budget system rather than model weights alone.
 - [[Reasoning budget and fair model comparison]] - how tokens, attempts, wall time, tools, verification, and cost change what a model comparison means.
 - [[Long-horizon task reliability]] - why task-completion horizons measure fitted success on human-timed tasks rather than unattended runtime or job replacement.

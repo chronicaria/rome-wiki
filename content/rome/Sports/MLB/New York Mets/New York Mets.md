@@ -28,9 +28,8 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 
 - [[New York Mets run-prevention profile 2026]] — team pitching, traffic, contact, defense, sequencing, and innings allocation without double counting.
 - [[New York Mets 2026 trade-deadline needs]] — frozen pre-deadline seller framework, internal alternatives, acquisition archetypes, and opportunity costs.
+- [[New York Mets run-creation profile 2026]] — on-base, contact-quality, role, platoon, baserunning, and context synthesis through July 10.
+- [[New York Mets roster-construction pressure points]] — active/40-man capacity, injured-list returns, options, waivers, and deadline opportunity costs.
+- [[Mets prospect-to-MLB translation]] — age/level/role evidence, major-league task translation, opportunity paths, and uncertainty.
 
 ## Next links
-
-- [[New York Mets run-creation profile 2026]]
-- [[Mets prospect-to-MLB translation]]
-- [[New York Mets roster-construction pressure points]]

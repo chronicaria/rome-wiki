@@ -31,6 +31,9 @@ The Curry–Myers–Hammer sequence shows how quickly a transaction headline can
 - [[Pitch-shape changes versus pitcher outcomes]] separates a changed tracked process from usage, command, hitter response, contact, and noisy run outcomes.
 - [[New York Mets run-prevention profile 2026]] synthesizes the 94-game staff record without adding dependent pitching and defensive measures as separate credits.
 - [[New York Mets 2026 trade-deadline needs]] freezes a July 10 seller-oriented decision framework so the eventual deadline can be evaluated without hindsight.
+- [[New York Mets run-creation profile 2026]] identifies the offense's on-base deficit, concentrated discipline, contact-quality questions, and baserunning limits through the 94-game cutoff.
+- [[New York Mets roster-construction pressure points]] explains how active-roster fit, 40-man access, options, waivers, and possible injured-list returns constrain the next move.
+- [[Mets prospect-to-MLB translation]] supplies a durable method for separating minor-league performance, role, opportunity, and roster path from rank-based forecasts.
 
 ## Sources
 

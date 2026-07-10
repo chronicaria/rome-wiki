@@ -17,11 +17,15 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 
 - [[2026 Senate control path]] — the 34–31 off-ballot base, all 35 contests, loss-offset arithmetic, and the distinction between mathematical and modeled routes.
 - [[2026 House battleground map]] — a compact pivotal-seat ledger with defense, core, and correlated-expansion rings.
+- [[2026 House district dossier template]] — the minimum official identity, map, candidate, finance, voting, and uncertainty fields before creating district pages.
+- [[2026 Senate race dossier template]] — the minimum official race, ballot, FEC, rating, poll, finance, and control-role fields before creating Senate race pages.
 
 ## Evidence and methods
 
 - [[Generic ballot versus district-level voting]] — how national survey preference becomes a conditional district and seat distribution.
 - [[2026 midterm money map]] — a reproducible ledger separating candidate, party, coordinated, and independent financial channels.
+- [[2026 midterm candidate filing checkpoint]] — the July ballot-access and FEC-report ingest plan for avoiding premature race snapshots.
+- [[2026 midterm turnout coalition watch]] — pre-return turnout and registration indicators, with guardrails against treating them as vote counts.
 - [[2026 midterm polling error watch]] — a disclosure and design ledger for 2026 polling uncertainty.
 - [[2026 midterm election-law docket]] — legal-status tracking for maps, ballot access, spending channels, counting, certification, recounts, and seating.
 - [[Election-night vote order and the red mirage]] — how ballot-type and geography reporting order can create misleading early margins.
@@ -31,7 +35,7 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 
 ## Current state
 
-The FEC's April 9 statistical summary covered the first twelve months of the cycle: congressional candidates reported about $1.5 billion in receipts and $851.9 million in disbursements; party committees reported $834.1 million in receipts and $664 million in disbursements; and PACs reported $4.6 billion in receipts and $3.4 billion in disbursements. These are aggregate flows through December 31, 2025, not current balances or proof that any particular seat moved.
+The FEC's July 9 statistical summary covered the first fifteen months of the cycle: congressional candidates reported about $2.1 billion in receipts and $1.3 billion in disbursements; party committees reported $1.1 billion in receipts and $824.8 million in disbursements; and PACs reported $6.3 billion in receipts and $4.8 billion in disbursements. These are aggregate flows through March 31, 2026, not current balances or proof that any particular seat moved.
 
 The July 15 quarterly deadline covers activity through June 30, beginning April 1 or the day after the previous report closed. Race dossiers should preserve reporting periods and distinguish candidate cash from party and outside spending.
 
@@ -43,7 +47,7 @@ Control analysis should combine official candidate and finance records with dist
 
 ## Sources
 
-- [FEC statistical summary of twelve-month 2025–2026 cycle activity](https://www.fec.gov/updates/statistical-summary-of-12-month-campaign-activity-of-the-2025-2026-election-cycle/) — official aggregate receipts and disbursements through December 31, 2025; published April 9, 2026; accessed July 9, 2026.
+- [FEC statistical summary of 15-month 2025–2026 cycle activity](https://www.fec.gov/updates/statistical-summary-of-15-month-campaign-activity-of-the-2025-2026-election-cycle/) — official aggregate receipts, disbursements, cash, debt, and independent-expenditure benchmarks through March 31, 2026; published July 9, 2026; accessed July 10, 2026.
 - [FEC July reporting reminder](https://www.fec.gov/updates/july-reporting-reminder-2026/) — official July 15 deadline and reporting-period guidance; accessed July 9, 2026.
 - [FEC summary of *NRSC v. FEC*](https://www.fec.gov/updates/supreme-court-finds-limits-on-coordinated-party-expenditures-unconstitutional-in-nrsc-v-fec-609-us-____2026/) — decision June 30 and summary July 1, 2026; accessed July 9, 2026.
 

@@ -14,6 +14,7 @@ This map connects durable explanations of US equities, rates, credit, currencies
 
 - [[US market regime tracker]]
 - [[Reading the Treasury curve as scenarios]]
+- [[From macro surprises to asset prices]]
 
 ## Equities, credit, and volatility
 
@@ -25,23 +26,26 @@ This map connects durable explanations of US equities, rates, credit, currencies
 ## Rates and dollar transmission
 
 - [[Treasury auctions and duration supply]]
+- [[Treasury yield curve mechanics]]
 - [[Interest-rate differentials and dollar exchange rates]]
 
 ## Commodity markets
 
 - [[Commodity curves carry and convenience yield]]
 - [[Oil inventories storage and the futures curve]]
+- [[WTI versus Brent crude oil]]
 - [[Grain balance sheets and stocks-to-use]]
 
 ## Quantitative research craft
 
 - [[Point-in-time data and look-ahead bias]]
+- [[Futures continuous contracts and roll bias]]
 
 ## Next connections
 
-- [[Treasury yield curve mechanics]]
-- [[Futures continuous contracts and roll bias]]
-- [[WTI versus Brent crude oil]]
+- [[Real rates inflation compensation and term premium]]
+- [[Event studies for financial markets]]
+- [[Refinery margins and crack spreads]]
 
 ## Open questions
 

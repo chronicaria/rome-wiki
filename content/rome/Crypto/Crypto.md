@@ -44,6 +44,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Crypto ETF flows and market impact]] — separate secondary turnover, primary creations, holdings, and AUM before making any price-impact claim.
 - [[Governance capture and admin-key risk]] — map the shortest authority path through votes, keys, timelocks, guardians, multisigs, and legal control.
 - [[Tokenized fixed-income products in crypto rankings]] — classify YLDS debt and JAAA fund shares by their legal claims instead of treating provider capitalization as protocol value.
+- [[Unlock overhang and circulating supply]] — trace scheduled vesting through availability, holder incentives, venue access, market depth, and realized dilution without turning calendars into forecasts.
+- [[Oracle bridge and sequencer risk]] — model how data, cross-chain messaging, and ordering/liveness dependencies compose into protocol loss and recovery paths.
+- [[Crypto liquidity regime]] — distinguish marked asset stocks, gross flows, executable depth, funding capacity, leverage, and contingent forced flow.
+- [[Crypto correlations with US financial conditions]] — measure changing co-movement with equities, rates, the dollar, and volatility using aligned clocks and regime-aware tests.
 
 ## Current conviction subset
 

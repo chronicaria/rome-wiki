@@ -24,6 +24,7 @@ A causal and comparative map from the transformation of Roman worlds through med
 - [[Medieval Iberia was a constitutive European world]] — al-Andalus and the Christian polities as connected histories.
 - [[Kievan Rus as a networked medieval polity]] — river routes, dynastic authority, tribute, and competing inheritances.
 - [[The Baltic as a medieval commercial system]] — a polycentric zone of exchange, coercion, settlement, and ecology.
+- [[Ottoman rule in southeastern Europe]] — imperial conquest, fiscal and legal pluralism, provincial variation, and the long unmaking of Rumeli.
 
 ## Lordship, church, towns, and exchange
 
@@ -34,17 +35,23 @@ A causal and comparative map from the transformation of Roman worlds through med
 - [[The commercial revolution of the central Middle Ages]] — why denser exchange emerged through interacting agrarian, urban, political, and cross-Mediterranean changes.
 - [[Canon law and European legal pluralism]] — how a learned church jurisdiction interacted with customary, princely, urban, and minority legal orders.
 - [[Guilds as exclusion and social insurance]] — how occupational corporations joined training, welfare, regulation, political voice, and bounded membership.
+- [[Crusading as religion, politics, and colonization]] — how vows and indulgences organized armed pilgrimage, coercive settlement, and campaigns across distinct frontiers.
 
 ## Households and minority life
 
 - [[Household formation and the European marriage pattern]] — why late marriage, life-cycle service, and neolocality form a contested regional model rather than a European essence.
 - [[Jewish life within medieval Christian polities]] — how communal institutions and ordinary exchange persisted inside unequal and revocable systems of protection.
 
+## Agrarian divergence and historical explanation
+
+- [[Serfdom's divergent paths in eastern and western Europe]] — why labor coercion, tenure, and emancipation followed uneven regional sequences rather than a fixed Elbe divide.
+- [[The Brenner debate on agrarian class structure]] — how property relations mediate demographic and commercial pressures, and why the stronger regional thesis remains contested.
+
 ## Next foundations
 
-- [[Crusading as religion, politics, and colonization]]
-- [[The Brenner debate on agrarian class structure]]
-- [[Serfdom's divergent paths in eastern and western Europe]]
+- [[Fourteenth-century crisis as interacting shocks]]
+- [[Composite monarchy as an early modern political form]]
+- [[The fiscal-military state and its limits]]
 
 ## Open questions
 

@@ -10,6 +10,7 @@ tags: [moc, weather, forecasting]
 Map of content for how weather forecasts are made, how good they are, and how their uncertainty grows with lead time. Up: [[Home]].
 
 ## The machinery
+- [[Data assimilation as an inverse problem]] — inverse-problem foundations for forecast initialization and state estimation.
 - [[Numerical weather prediction]] — solving the atmosphere's fluid equations on a grid; the major global models (ECMWF, GFS, …) and data assimilation.
 - [[Ensemble forecasting]] — running many perturbed forecasts so the *spread* becomes a flow-dependent uncertainty estimate.
 

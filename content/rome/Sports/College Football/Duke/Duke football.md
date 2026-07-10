@@ -13,6 +13,7 @@ Duke football coverage connects current-season state to roster construction, tac
 
 - [[Duke football 2026]] — canonical season hub and evaluation framework.
 - [[Duke football 2026 schedule map]] — dates, sequence, travel, rest, and opponent context.
+- [[Duke football 2026 opponent map]] — current staffs, roster change, and the mechanisms behind all twelve matchup tests.
 - [[Duke football 2026 roster map]] — continuity, newcomers, position groups, and playable depth.
 - [[Duke football 2026 quarterback room]] — candidates, evidence, and uncertainty.
 
@@ -22,6 +23,7 @@ Duke football coverage connects current-season state to roster construction, tac
 - [[Duke defense under Manny Diaz]] — pressure, disguise, coverage, tackling, and explosive-play control.
 - [[Duke line-of-scrimmage development]] — protection, pass rush, run fits, and rotation questions.
 - [[Duke situational football]] — third down, red zone, fourth down, field position, and special teams.
+- [[Duke special teams 2026]] — specialists, operations, coverage, returns, and repeatable field-position value.
 
 ## Program building
 

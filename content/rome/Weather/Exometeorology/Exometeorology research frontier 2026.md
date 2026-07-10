@@ -20,15 +20,19 @@ Up: [[Weather prediction (MOC)]]
 
 ## Circulation, transport, and chemistry
 
+- [[Primitive equations of planetary atmospheres]] derives the hydrostatic, shallow-atmosphere, and traditional approximation bundle and identifies the exoplanet regimes that stress it.
+- [[General circulation models for exoplanets]] explains how dynamical cores, radiation, closures, boundaries, and numerics turn governing equations into conditional atmospheric predictions.
 - [[Atmospheric circulation on tidally locked planets]] explains how stationary day–night forcing excites waves, overturning, and jets while leaving their observable signatures model-dependent.
 - [[Equatorial superrotation]] derives the angular-momentum definition and wave-driven jet mechanism while explaining why an eastward hotspot is not itself a wind measurement.
 - [[Day-night heat redistribution]] separates measured brightness contrasts from bolometric energy transport and develops the cloud, photosphere, opacity, and dynamical degeneracies behind redistribution estimates.
 - [[Cloud formation and transport beyond Earth]] connects saturation, nucleation, growth, settling, advection, and radiative feedback without treating aerosol opacity as a unique condensate identification.
 - [[Disequilibrium chemistry as a tracer of circulation]] shows when chemical quenching can retain a memory of transport—and why composition, kinetics, clouds, photochemistry, and retrieval assumptions prevent a molecule from acting as a direct anemometer.
+- [[Magnetic drag in ultra-hot Jupiter atmospheres]] distinguishes state-dependent Lorentz forces and induction from a universal linear braking time or a magnetic-field measurement.
 
 ## Observation and inference
 
 - [[Transmission spectroscopy]] explains the slant geometry of a planetary limb, its sensitivity to scale height and opacity, and the coupled reference-radius, abundance, cloud, stellar, and instrumental degeneracies.
+- [[Stellar contamination in exoplanet spectra]] shows how the transit chord and disk-average stellar spectrum can differ, producing slopes, bands, and epoch changes that overlap planetary signals.
 - [[Emission spectroscopy and secondary eclipses]] follows missing dayside photons from fitted eclipse depths through radiative transfer, temperature retrievals, and spatial degeneracies.
 - [[Exoplanet phase curves]] separates the measured unresolved orbital light curve from brightness-temperature retrievals, maps, and circulation interpretations.
 - [[High-resolution Doppler spectroscopy of exoplanet winds]] explains what planet-following line profiles measure and why orbital motion, rotation, winds, chemistry, and limb weighting must be separated.
