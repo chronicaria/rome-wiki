@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [ai, agents, evaluation, reliability, frontier-models]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: AI frontier news
 review_after: 2026-08-09
 ---
@@ -58,6 +58,45 @@ Long tasks introduce at least six compounding channels:
 6. **Environmental drift.** Files, services, collaborators, or external data change while the plan still assumes an earlier state.
 
 Additional steps can therefore hurt as well as help. More steps provide opportunities for search and correction, but also enlarge the surface for drift and side effects. “Agent ran longer” is not evidence that it reasoned more effectively.
+
+## Independence is the wrong default
+
+The toy expression $p^n$ is useful precisely because real agent failures violate it. Errors are usually **dependent**. A mistaken repository assumption can corrupt planning, code generation, test interpretation, and the final report together. A transient service failure can make several otherwise sound actions fail at once. A misleading summary can be reread for the rest of a run, turning one compression error into a persistent latent variable. These are common-cause failures: improving each local action in isolation may leave the end-to-end workflow almost unchanged because the same upstream cause still defeats many stages.
+
+A more useful decomposition separates three quantities. Let $q_i$ be the chance that stage $i$ introduces a consequential defect, $d_i$ the chance that the workflow detects that defect before promotion, and $r_i$ the chance that it repairs or safely contains a detected defect. A rough unrecovered-defect probability is then
+
+$$
+u_i=q_i(1-d_i r_i).
+$$
+
+If stages were independent, reliability would be approximately $prod_i(1-u_i)$. In practice this product is only a baseline. Correlated defects, hidden environmental state, and shared validators make the true reliability lower or simply different. The right empirical object is therefore not one estimated per-step accuracy but a **failure dependency map**: which observations, memories, tools, and verifiers can cause several downstream claims to fail together.
+
+This changes engineering priorities. Raising a generator's local accuracy from 98% to 99% may be less valuable than adding an independent check that catches a rare but catastrophic state error. Conversely, adding three critics built from the same prompt, model, context, and mistaken evidence may create the appearance of redundancy without reducing common-mode risk. Diversity is protective only when the checking channel has meaningfully different evidence or failure modes: a compiler rather than another prose judgment, a fresh source lookup rather than a paraphrase of the draft, or an independent evaluator rather than the provider's own scaffold.
+
+## Reliability is a curve, not one pass rate
+
+One pass rate collapses several operationally distinct behaviors. A serious evaluation should estimate at least four curves over task duration or dependency depth:
+
+1. **Completion:** the probability that the final grader accepts the outcome.
+2. **Constraint preservation:** the probability that permissions, scope, safety rules, and user intent remain intact.
+3. **Recoverability:** the probability that an injected or naturally occurring failure is detected and the system returns to a valid state.
+4. **Graceful degradation:** the value retained when full completion fails—such as a verified partial result, a clean escalation, or an unchanged environment.
+
+These curves answer different questions. A research agent can have a respectable completion curve while quietly losing citation provenance. A coding agent can preserve constraints yet fail to make progress. A computer-use system can complete routine tasks but recover poorly after a modal dialog or stale session. For high-impact deployment, a safe refusal or intact rollback may be a successful reliability outcome even though a capability benchmark records zero task reward.
+
+Repeated runs are needed because a stochastic agent is a distribution over workflows. Report not only the mean success rate but between-run variance, tail failures, and the share of runs that enter an unrecoverable state. A system that succeeds 80% of the time and fails cleanly on the rest is not equivalent to one that also succeeds 80% but occasionally corrupts data. The downside distribution determines whether retries are economical or dangerous.
+
+Duration should also be separated from **dependency depth**. Fifty independent lookups can take longer than ten tightly coupled design decisions while being easier to parallelize and verify. Useful task metadata therefore includes the longest dependency chain, number of irreversible actions, frequency of external feedback, state size, and number of points at which an early choice constrains later options. Human completion time is a practical difficulty proxy; it is not a causal explanation of failure.
+
+## Reliability budgets and stopping rules
+
+Deployment begins with a required service level, not with the benchmark's available threshold. Suppose a workflow must succeed without a consequential defect at least 99% of the time. The team can allocate that failure budget across stages, but the allocation must include detection failures and common causes. A stage assigned a 0.1% budget cannot be validated by twenty informal examples. It needs enough representative trials to bound the rate with useful uncertainty, plus stress tests aimed at the specific ways it could defeat downstream checks.
+
+This makes stopping policy part of reliability. An agent should stop or escalate when the posterior risk of continuing exceeds the expected value of another action, when verification evidence is unavailable, when the remaining budget cannot support repair, or when an irreversible action would be taken on unresolved identity or authority. More inference is not always safer. Extra exploration can overwrite good state, consume the verification budget, or produce a persuasive rationalization for a weak path.
+
+A good checkpoint contains more than a transcript. It records the task contract, current artifacts, evidence provenance, environment version, outstanding assumptions, checks already passed, and a bounded next action. Recovery should be tested by fault injection: remove a tool result, corrupt a summary, change an interface, time out a service, or introduce a plausible contradictory source, then observe whether the agent notices, localizes, and contains the problem. This is closer to reliability testing than merely rerunning clean benchmark episodes.
+
+Recent research proposals use terms such as reliability-decay curves, graceful-degradation scores, and meltdown points. These labels are useful hypotheses, not yet universal standards. Their durable contribution is the insistence that long-horizon evaluation expose how consistency, variance, recovery, and catastrophic failure change with duration. Rome should preserve the underlying task-level data and definitions rather than copy a new composite score into a frontier ranking.
 
 ## Four different notions of horizon
 
@@ -171,6 +210,10 @@ For frontier comparisons, Rome should treat time horizon as one coordinate. A mo
 - [OSWorld benchmark repository](https://github.com/xlang-ai/OSWorld) — real-computer evaluation environments and harness; accessed July 9, 2026.
 - [Zhou et al., WebArena](https://arxiv.org/abs/2307.13854) — reproducible web-agent benchmark and limitations.
 - [He et al., YC-Bench](https://arxiv.org/abs/2604.01212) — long-term planning simulation with persistent state and delayed consequences, 2026.
+- [Khanal, Tao, and Zhou, Beyond pass@1](https://arxiv.org/abs/2603.29231) — preprint proposing duration-conditioned reliability, variance, graceful-degradation, and meltdown metrics; treated here as a research proposal rather than an established standard, 2026.
+- [Towards a Science of AI Agent Reliability](https://arxiv.org/abs/2602.16666) — research agenda for stateful, long-horizon reliability and error accumulation; version checked July 10, 2026.
+- [METR, Impact of modelling assumptions on time horizon results](https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results/) — sensitivity of fitted horizons near the suite ceiling, March 20, 2026.
+- [METR, Summary of the predeployment evaluation of GPT-5.6 Sol](https://metr.org/blog/2026-06-26-gpt-5-6-sol/) — concrete example in which treatment of evaluator-defined cheating changes the time-horizon estimate by orders of magnitude; June 26, 2026.
 
 ## Open questions
 

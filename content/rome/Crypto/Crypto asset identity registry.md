@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, identity, stablecoins, wrapped-assets]
-as_of: 2026-07-10T07:02:56Z
+as_of: 2026-07-10T08:06:10Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -68,6 +68,10 @@ Audiera persisted at provider rank 90. CoinGecko's identity endpoint maps provid
 
 These fields establish the provider-to-contract locator, not the complete economic identity. The provider description is promotional issuer-supplied material and is not accepted as proof of utility, governance, value capture, circulating-supply methodology, or contract control. Official token documentation, verified source/admin inspection, holder distribution, and named-venue depth remain required before a full classification or dossier can be promoted.
 
+## 08:06 UTC continuity checkpoint
+
+Audiera remained rank 90, VVV rank 100, and APT rank 101. The repeated ranks add no new identity evidence, so no issuer, controller, contract-privilege, or liquidity claim is promoted. BinanceLife appeared at rank 89 while JAAA was outside the narrow preserved slice; this is recorded as provider churn rather than an identity retirement.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
@@ -81,6 +85,7 @@ These fields establish the provider-to-contract locator, not the complete econom
 - [CoinGecko 06:13 UTC markets observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T06:13:16Z; used only for provider identity and rank deltas.
 - [CoinGecko Audiera identity endpoint](https://api.coingecko.com/api/v3/coins/audiera), retrieved 2026-07-10; provider ID, linked homepage, platform contract, and supply fields only.
 - [CoinGecko 07:02 UTC markets observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T07:02:56Z.
+- [CoinGecko 08:06 UTC markets observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T08:06:10Z.
 
 ## Open questions
 

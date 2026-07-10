@@ -19,6 +19,8 @@ Up: [[Basketball]]
 - [[Games played versus per-game value in fantasy basketball]] — scheduled games create value only when they become active-lineup appearances.
 - [[Points-league volume and efficiency]] — translate minutes, role, and box-score events through the league's exact scoring formula.
 - [[Percentage categories and volume]] — model shooting ratios through makes and attempts rather than averaging player percentages.
+- [[Category floors and ceilings in fantasy basketball]] — define category-specific quantiles and coherent role scenarios instead of vague safe/upside labels.
+- [[Using projection disagreement in fantasy basketball]] — normalize competing forecasts, locate contested assumptions, and combine them without mistaking spread for calibrated uncertainty.
 
 ## Opportunity and availability
 
@@ -34,6 +36,7 @@ Up: [[Basketball]]
 - [[FAAB and waiver priority as option value]] — spending a scarce claim resource sacrifices future flexibility.
 - [[Weekly lineup locks and injury risk]] — price irreversible weekly assignments with probability-weighted availability, workload, and playable games.
 - [[IL slots as roster flexibility]] — value contingent roster capacity net of eligibility timing, transaction restrictions, and the activation squeeze.
+- [[Roster-slot liquidity in fantasy basketball]] — price how quickly and cheaply a roster position can be converted into a better legal lineup path.
 - [[Fantasy basketball playoff schedule value]] — value playable marginal production across conditional rounds, not raw scheduled games.
 
 ## Learning from decisions
@@ -42,9 +45,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Using projection disagreement in fantasy basketball]]
-- [[Category floors and ceilings in fantasy basketball]]
-- [[Roster-slot liquidity in fantasy basketball]]
+- [[Consolidation trades and roster spots]]
+- [[Lineup congestion and playable games]]
+- [[Positional flexibility in fantasy basketball]]
 
 ## Open questions
 

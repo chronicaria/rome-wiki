@@ -47,11 +47,21 @@ A causal and comparative map from the transformation of Roman worlds through med
 - [[Serfdom's divergent paths in eastern and western Europe]] — why labor coercion, tenure, and emancipation followed uneven regional sequences rather than a fixed Elbe divide.
 - [[The Brenner debate on agrarian class structure]] — how property relations mediate demographic and commercial pressures, and why the stronger regional thesis remains contested.
 
+## Late-medieval crisis and recomposition
+
+- [[Fourteenth-century crisis as interacting shocks]] — how famine, animal disease, plague, war, and fiscal strain formed uneven reinforcing crises rather than one continental collapse.
+- [[Black Death mechanisms and distributional effects]] — how pathogen ecology, mobility, and institutions produced unequal mortality and bargaining outcomes.
+
+## Early-modern political forms and war finance
+
+- [[Composite monarchy as an early modern political form]] — how dynastic unions governed legally plural territories through councils, brokers, privilege, and negotiated burdens.
+- [[The fiscal-military state and its limits]] — how taxation, credit, contracting, and political coalitions sustained war without mechanically producing uniform modern states.
+
 ## Next foundations
 
-- [[Fourteenth-century crisis as interacting shocks]]
-- [[Composite monarchy as an early modern political form]]
-- [[The fiscal-military state and its limits]]
+- [[Peasant revolt from Jacquerie to the German Peasants' War]]
+- [[The printing press and uneven information change]]
+- [[Reformations and confessional state-building]]
 
 ## Open questions
 

@@ -30,6 +30,9 @@ Up: [[Sports]]
 - [[Indianapolis Colts situational football 2026]] — queued pending a sufficient game sample
 - [[Indianapolis Colts roster-construction pressure points]] — asset concentration, succession risk, and functional depth
 - [[Indianapolis Colts linebacker transition 2026]] — communication, package roles, and the post-Franklin succession plan
+- [[Indianapolis Colts defensive front 2026]] — pressure creation, run fits, veteran anchors, and developmental rotation
+- [[Indianapolis Colts defensive backfield 2026]] — coverage responsibilities, injury uncertainty, and personnel flexibility
+- [[Indianapolis Colts special teams 2026]] — specialists, return structure, coverage roles, and dynamic-kickoff evidence
 
 ## NFL context through Indianapolis
 

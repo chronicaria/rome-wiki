@@ -15,6 +15,8 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 - [[New York Mets 2026 roster and transaction ledger]] — official roster changes and superseded states.
 - [[New York Mets 2026 health and workload ledger]] — official IL and rehab evidence without inferred prognosis.
 - [[New York Mets 2026 rotation and bullpen map]] — demonstrated pitching roles, recent workload, and a clearly labeled tactical interpretation.
+- [[Mets roster-control and option ledger 2026]] — counted 40-man places, 60-day injured-list exclusions, verified recent options, and explicit unknowns.
+- [[Mets minor-league translation ledger 2026]] — current official age, level, role, sample, and roster-access cards with feed-quality limits.
 
 ## Methods and evergreen bridges
 

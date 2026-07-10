@@ -34,6 +34,8 @@ The Curry–Myers–Hammer sequence shows how quickly a transaction headline can
 - [[New York Mets run-creation profile 2026]] identifies the offense's on-base deficit, concentrated discipline, contact-quality questions, and baserunning limits through the 94-game cutoff.
 - [[New York Mets roster-construction pressure points]] explains how active-roster fit, 40-man access, options, waivers, and possible injured-list returns constrain the next move.
 - [[Mets prospect-to-MLB translation]] supplies a durable method for separating minor-league performance, role, opportunity, and roster path from rank-based forecasts.
+- [[Mets roster-control and option ledger 2026]] reconciles the counted 40-man places, displayed 60-day injured-list group, and the narrow player-level option evidence that official sources actually establish.
+- [[Mets minor-league translation ledger 2026]] applies the prospect framework to current official level, age, role, sample, and roster-access evidence while preserving feed mismatches.
 
 ## Sources
 

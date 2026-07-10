@@ -30,6 +30,9 @@ This MOC collects notes on LLM agents as teams, swarms, simulators, and collecti
 
 ## Agent Evaluation
 
+- [[Scientific discovery agents]] - an evidence ladder from bounded assistance and closed-loop search to independently replicated discovery.
+- [[Open-weight frontier models]] - why weight access, license freedom, reproducibility, capability, serving economics, and deployability are separate axes.
+- [[AI evaluation as measurement science]] - how construct validity, reliability, uncertainty, contamination, and decision use turn scores into scoped evidence.
 - [[Agent memory architectures]] - how working, episodic, semantic, and procedural memory fit into a write–retrieve–consolidate–forget lifecycle that must be tested by ablation.
 - [[Model versus scaffold in agent evaluations]] - why an agent score belongs to the evaluated model-scaffold-tool-budget system rather than model weights alone.
 - [[Reasoning budget and fair model comparison]] - how tokens, attempts, wall time, tools, verification, and cost change what a model comparison means.

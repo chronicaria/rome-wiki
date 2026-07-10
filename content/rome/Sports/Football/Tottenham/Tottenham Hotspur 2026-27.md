@@ -40,12 +40,15 @@ Squad size creates a parallel test. Tottenham have accumulated central defenders
 - [[Tottenham centre-back architecture under Roberto De Zerbi]] — the complementary build-up, forward-defending, recovery, box-control, and pathway jobs inside an unsettled centre-back hierarchy.
 - [[Tottenham midfield architecture under Roberto De Zerbi]] — how first-line access, press escape, creation, and transition protection must be divided without predicting a preseason partnership.
 - [[Tottenham goalkeeper succession and build-up]] — how incumbency, development, experienced cover, registration, and goalkeeper-led build-up interact before the competitive hierarchy is known.
+- [[Tottenham full-back architecture under Roberto De Zerbi]] — how build-up access, width, interior support, and transition protection change with the occupation of Tottenham's confirmed full-back options.
+- [[Tottenham forward architecture under Roberto De Zerbi]] — how press manipulation, connection, depth, width, box occupation, and counterpressure must be distributed across the forward unit.
+- [[Tottenham leadership transition in 2026-27]] — why Romero's confirmed captaincy sits inside a wider system of institutional, coaching, phase-specific, and social authority.
 
 ## Working tests
 
 1. **Build-up:** can Tottenham repeatedly create a free receiver by attracting pressure without turning every deep possession into unnecessary risk?
 2. **Rest defence:** when attacks break down, are the distances and player positions behind the ball sufficient to delay or stop transitions?
-3. **Role hierarchy:** do the many centre-backs, midfielders, and goalkeepers acquire distinct responsibilities, or does nominal depth become redundancy?
+3. **Role hierarchy:** do the many defenders, midfielders, goalkeepers, and forwards acquire distinct responsibilities, or does nominal depth become redundancy?
 4. **Registration:** which players occupy the scarce non-home-grown senior places after the window, and which young players remain exempt?
 5. **Pathway:** in a season without European group matches, which prospects have a credible route to competitive minutes and which need loans?
 6. **Calendar:** does the absence of Europe produce visible tactical development, and how does domestic-cup progress alter that advantage?

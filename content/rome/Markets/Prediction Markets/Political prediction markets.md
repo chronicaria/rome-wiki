@@ -30,6 +30,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Liquidity manipulation and insider incentives in prediction markets]]
 - [[Political event-contract resolution designs]]
 - [[Prediction-market regulatory docket]]
+- [[Fees and executable probability intervals]]
+- [[Participant access and selection in political prediction markets]]
+- [[Political prediction-market contract families]]
 
 ## Current observations
 

@@ -10,7 +10,7 @@ As of July 10, 2026, the Mets’ central roster problem is not simply finding be
 
 This is a dated operating snapshot, not a contract ledger. MLB’s live roster pages change after transactions and sometimes retain 60-day injured-list players on the visual “40-Man” tab even though MLB expressly says those players are not officially part of the 40-man roster. The safest evidence is therefore the combination of the current active-roster page, the current 40-man display, and dated transaction entries. Claims about option status, remaining club control, or medical prognosis are excluded unless an official source establishes them.
 
-Up: [[New York Mets 2026]] · Related: [[New York Mets 2026 trade-deadline needs]] · [[New York Mets run-prevention profile 2026]]
+Up: [[New York Mets 2026]] · Related: [[New York Mets 2026 trade-deadline needs]] · [[New York Mets run-prevention profile 2026]] · [[Mets roster-control and option ledger 2026]]
 
 ## Two rosters, two different bottlenecks
 

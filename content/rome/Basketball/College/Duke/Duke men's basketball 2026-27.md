@@ -16,18 +16,22 @@ Up: [[Basketball]]
 
 - [[Duke 2026-27 roster construction]] — the bounded official roster ledger and unresolved identity questions.
 - [[Duke 2026-27 role inventory]] — confirmed functional strengths, constraints, and July role uncertainty.
+- [[Duke 2026-27 rotation ledger]] — evidence-bounded role ranges, lineup experiments, and the update protocol for competitive games.
 - [[Duke 2026-27 backcourt creation]] — how first touch, first advantage, second read, and late-clock ownership can be distributed.
 - [[Duke 2026-27 frontcourt combinations]] — the spacing, rim-protection, and rebounding exchanges across single-big, two-big, and mobile-five groups.
 - [[Duke 2026-27 lineup scalability]] — a six-function test for whether lineup depth survives different elite opponents.
 - [[Duke 2026-27 defensive role map]] — the six defensive jobs each viable lineup must cover and the evidence needed to assign them.
 - [[Duke 2026-27 shooting and spacing]] — how shooting gravity, movement, and lineup tradeoffs determine usable offensive space.
 - [[Duke freshman translation in 2026-27]] — a bounded method for turning pre-college evidence into falsifiable role expectations.
+- [[Duke 2026-27 freshman frontcourt translation]] — separate translation cases for Cameron Williams, Maxime Meyer, and reported addition Joaquim Boumtje Boumtje.
 - [[Duke transfer integration in 2026-27]] — how Blackwell, Scharnowski, and Theodosiou's reported prior roles can be narrowed or reshaped without copying old box scores.
+- [[Duke 2026-27 transfer big translation]] — Drew Scharnowski's verified finishing, passing, and defensive activity, with shooting and lone-big anchoring left as tests.
 - [[Duke 2026-27 transfer guard decision-making]] — a coverage-by-coverage framework for translating John Blackwell's verified scoring pressure into shared creation.
 - [[Duke continuity after the one-and-done centerpiece]] — how returning players change the development and integration problem.
 - [[Duke 2026-27 schedule map]] — named games, ACC opponent structure, travel questions, and résumé tests.
 - [[Duke 2026-27 nonconference stress tests]] — seven predeclared diagnostic questions for the verified marquee games.
 - [[Jon Scheyer's tactical evolution at Duke]] — the four-season statistical arc and a lineup-scalability framework.
+- [[Jon Scheyer's offensive evolution at Duke]] — how Duke moved from a size-supported floor toward faster coordinated initiation and less-scripted continuation.
 - [[Jon Scheyer's defensive evolution at Duke]] — the four-season defensive outcome record and the shift from size-based floor to layered, personnel-specific optionality.
 - [[Duke late-game offense under Jon Scheyer]] — a bounded possession framework built from two official Houston endgames rather than a fabricated clutch database.
 - [[Duke player development and NBA translation framework]] — a role-first method for evaluating freshmen, transfers, returners, and professional translation.

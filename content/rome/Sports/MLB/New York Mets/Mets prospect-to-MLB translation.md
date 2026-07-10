@@ -10,7 +10,7 @@ A Mets prospect’s minor-league line is evidence about skills in a particular e
 
 As of 2026-07-10. This is a method for reading the Mets’ farm system, not a live ranking. The current list and statistics can change daily, while the questions that make those numbers meaningful are more durable. Read it alongside [[New York Mets 2026]], [[New York Mets 2026 roster and transaction ledger]], and [[New York Mets roster-construction pressure points]].
 
-Up: [[New York Mets 2026]] · Roster path: [[New York Mets roster-construction pressure points]]
+Up: [[New York Mets 2026]] · Roster path: [[New York Mets roster-construction pressure points]] · Current ledger: [[Mets minor-league translation ledger 2026]]
 
 ## The question is not “How highly is he ranked?”
 

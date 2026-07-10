@@ -22,6 +22,9 @@ Up: [[Weather prediction (MOC)]]
 
 - [[Primitive equations of planetary atmospheres]] derives the hydrostatic, shallow-atmosphere, and traditional approximation bundle and identifies the exoplanet regimes that stress it.
 - [[General circulation models for exoplanets]] explains how dynamical cores, radiation, closures, boundaries, and numerics turn governing equations into conditional atmospheric predictions.
+- [[Benchmarking exoplanet general circulation models]] builds a verification ladder from analytic tests and conservation budgets through convergence, intercomparison, and observable-space evaluation.
+- [[Shallow-water models of tidally locked atmospheres]] isolates the forced Kelvin–Rossby response, wave adjustment, and eddy momentum transport while keeping the one-layer model distinct from a literal temperature or wind map.
+- [[Radiative transfer in planetary climate models]] compares Newtonian, grey, picket-fence, correlated-$k$, and line-by-line schemes and shows how opacity, angular closure, and coupling choices shape simulated climate.
 - [[Atmospheric circulation on tidally locked planets]] explains how stationary day–night forcing excites waves, overturning, and jets while leaving their observable signatures model-dependent.
 - [[Equatorial superrotation]] derives the angular-momentum definition and wave-driven jet mechanism while explaining why an eastward hotspot is not itself a wind measurement.
 - [[Day-night heat redistribution]] separates measured brightness contrasts from bolometric energy transport and develops the cloud, photosphere, opacity, and dynamical degeneracies behind redistribution estimates.
@@ -37,6 +40,7 @@ Up: [[Weather prediction (MOC)]]
 - [[Exoplanet phase curves]] separates the measured unresolved orbital light curve from brightness-temperature retrievals, maps, and circulation interpretations.
 - [[High-resolution Doppler spectroscopy of exoplanet winds]] explains what planet-following line profiles measure and why orbital motion, rotation, winds, chemistry, and limb weighting must be separated.
 - [[From light curves to atmospheric maps]] makes the mapping inverse problem explicit: disk integration has a null space, regularization supplies assumptions, and a plotting grid is not the same thing as spatial resolution.
+- [[Time-series mapping of brown-dwarf weather]] applies that inverse-problem discipline to rotational and spectral variability, including wavelength-dependent pressure sensitivity and the evolution–rotation degeneracy.
 
 ## Current frontier
 

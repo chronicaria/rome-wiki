@@ -25,12 +25,16 @@ This topic map connects current Dallas state, player and lineup investigations, 
 - [[Dereck Lively II health and defensive value]]
 - [[Santi Aldama in Dallas lineups]]
 - [[Dallas guard creation after roster turnover]]
+- [[Marcus Sasser as a secondary creator]]
 - [[Dallas frontcourt geometry]]
 - [[Dallas center rotation without full Lively availability]]
+- [[Dallas shooting and spacing allocation]]
 
 ## Forecasting and lineup method
 
 - [[Availability risk in NBA projections]]
+- [[Dallas Mavericks model pressure points]]
+- [[NBA role changes that break preseason models]]
 - [[Lineup fit is not the sum of player value]]
 - [[NBA trade impact template]]
 - [[NBA player forward projection model]]

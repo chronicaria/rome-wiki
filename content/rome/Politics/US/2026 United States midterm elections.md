@@ -23,11 +23,15 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 ## Evidence and methods
 
 - [[Generic ballot versus district-level voting]] — how national survey preference becomes a conditional district and seat distribution.
+- [[2026 congressional primary lessons]] — which nomination signals can generalize to November and which should stay primary-specific.
+- [[2026 midterm redistricting litigation watch]] — operative-map status, stays, referendum paths, and map-change caveats for the House battlefield.
 - [[2026 midterm money map]] — a reproducible ledger separating candidate, party, coordinated, and independent financial channels.
 - [[2026 midterm candidate filing checkpoint]] — the July ballot-access and FEC-report ingest plan for avoiding premature race snapshots.
 - [[2026 midterm turnout coalition watch]] — pre-return turnout and registration indicators, with guardrails against treating them as vote counts.
 - [[2026 midterm polling error watch]] — a disclosure and design ledger for 2026 polling uncertainty.
+- [[2026 midterm prediction-market comparison]] — how to compare market prices with polls, ratings, and control arithmetic without treating prices as outcomes.
 - [[2026 midterm election-law docket]] — legal-status tracking for maps, ballot access, spending channels, counting, certification, recounts, and seating.
+- [[NRSC v. FEC and the 2026 midterms]] — how unlimited party coordinated expenditures change the spending-channel ledger after June 30, 2026.
 - [[Election-night vote order and the red mirage]] — how ballot-type and geography reporting order can create misleading early margins.
 - [[Reading congressional polls without overreacting]] — population, mode, wording, timing, and uncertainty checks.
 - [[Campaign cash as an electoral signal]] — what receipts, cash, debt, burn, transfers, and outside spending can and cannot establish.

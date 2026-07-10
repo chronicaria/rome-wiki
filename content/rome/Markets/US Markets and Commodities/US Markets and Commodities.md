@@ -27,6 +27,7 @@ This map connects durable explanations of US equities, rates, credit, currencies
 
 - [[Treasury auctions and duration supply]]
 - [[Treasury yield curve mechanics]]
+- [[Real rates inflation compensation and term premium]]
 - [[Interest-rate differentials and dollar exchange rates]]
 
 ## Commodity markets
@@ -40,12 +41,13 @@ This map connects durable explanations of US equities, rates, credit, currencies
 
 - [[Point-in-time data and look-ahead bias]]
 - [[Futures continuous contracts and roll bias]]
+- [[Event studies for financial markets]]
 
 ## Next connections
 
-- [[Real rates inflation compensation and term premium]]
-- [[Event studies for financial markets]]
 - [[Refinery margins and crack spreads]]
+- [[Trade-weighted US dollar indexes]]
+- [[Treasury futures conversion factors and cheapest-to-deliver]]
 
 ## Open questions
 

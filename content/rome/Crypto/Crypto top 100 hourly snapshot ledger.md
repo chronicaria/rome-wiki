@@ -4,7 +4,7 @@ created: 2026-07-09
 source: web
 status: seed
 tags: [crypto, markets, top-100, dataset]
-as_of: 2026-07-10T07:02:56Z
+as_of: 2026-07-10T08:06:10Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -85,6 +85,12 @@ Audiera (`audiera`, BEAT) also remained rank 90, with provider-reported capitali
 
 The retrieval used `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `page=1`, `sparkline=false`, and `price_change_percentage=24h,7d`. Representative provider update times were `2026-07-10T07:02:41.007Z` for VVV, `2026-07-10T07:02:54.967Z` for APT, and `2026-07-10T07:02:46.868Z` for Audiera. No independent aggregator was used, so the result remains explicitly a CoinGecko-series observation.
 
+## Hourly continuity check — 2026-07-10T08:06:10Z
+
+The next provider observation left the lower cutoff unchanged: `venice-token` (VVV) remained rank 100 at approximately $531.31 million, `aptos` (APT) remained rank 101 at approximately $523.15 million, and YLDS remained rank 99. Audiera persisted at rank 90 with approximately $670.07 million of provider-reported capitalization. BinanceLife was rank 89; JAAA was outside the preserved rank-89–102 slice and no exit cause is inferred.
+
+The stable VVV/APT ordering strengthens provider-series continuity but does not establish fundamental value, independent supply verification, or executable depth. The retrieval used the same documented parameters and completed at `2026-07-10T08:06:10Z`; representative provider update times were `2026-07-10T08:05:57.967Z` for VVV, `2026-07-10T08:05:50.620Z` for APT, and `2026-07-10T08:06:05.118Z` for Audiera.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
@@ -92,6 +98,7 @@ The retrieval used `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `
 - [CoinGecko markets API hourly persistence observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T03:03:20Z.
 - [CoinGecko markets API 06:13 UTC boundary observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T06:13:16Z.
 - [CoinGecko markets API 07:02 UTC persistence observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T07:02:56Z.
+- [CoinGecko markets API 08:06 UTC continuity observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T08:06:10Z.
 - [CoinGecko API documentation — coins markets](https://docs.coingecko.com/reference/coins-markets), accessed 2026-07-09.
 
 ## Open questions

@@ -22,7 +22,11 @@ Duke football coverage connects current-season state to roster construction, tac
 - [[Duke offensive identity 2026]] — the offense's personnel dependencies and constraint structure.
 - [[Duke defense under Manny Diaz]] — pressure, disguise, coverage, tackling, and explosive-play control.
 - [[Duke line-of-scrimmage development]] — protection, pass rush, run fits, and rotation questions.
+- [[Duke offensive line development 2026]] — continuity, communication, protection, run blocking, and playable depth.
+- [[Duke receiver development 2026]] — rebuilding target roles, spacing, explosives, and quarterback timing.
+- [[Duke defensive front development 2026]] — interior control, edge discipline, four-man pressure, and rotation.
 - [[Duke situational football]] — third down, red zone, fourth down, field position, and special teams.
+- [[Duke football fourth-down decision-making]] — audited 2025 attempts and a context-sensitive 2026 decision framework.
 - [[Duke special teams 2026]] — specialists, operations, coverage, returns, and repeatable field-position value.
 
 ## Program building

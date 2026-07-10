@@ -48,6 +48,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Oracle bridge and sequencer risk]] — model how data, cross-chain messaging, and ordering/liveness dependencies compose into protocol loss and recovery paths.
 - [[Crypto liquidity regime]] — distinguish marked asset stocks, gross flows, executable depth, funding capacity, leverage, and contingent forced flow.
 - [[Crypto correlations with US financial conditions]] — measure changing co-movement with equities, rates, the dollar, and volatility using aligned clocks and regime-aware tests.
+- [[Stablecoin supply as a market signal]] — reconcile issuer liabilities, treasury inventory, chain migration, wrappers, ownership, and use before interpreting supply as liquidity.
+- [[Reading an onchain incident postmortem]] — reconstruct invariants, deployed state, timelines, losses, response, and remediation without accepting a project narrative as the complete record.
+- [[MEV and order-flow auctions]] — trace ordering surplus through builders, proposers, solvers, users, and token-value gates rather than treating gross MEV as protocol revenue.
+- [[Custody rehypothecation and counterparty risk]] — map technical control, legal title, records, reuse, and insolvency claims across intermediary chains.
 
 ## Current conviction subset
 

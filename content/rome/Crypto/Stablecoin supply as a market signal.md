@@ -1,0 +1,169 @@
+---
+title: Stablecoin supply as a market signal
+created: 2026-07-10
+source: llm
+status: seed
+tags: [crypto, markets, stablecoins, liquidity, market-structure, quantitative-research]
+as_of: 2026-07-10
+desk: Crypto markets
+review_after: 2026-08-10
+---
+
+Stablecoin supply is a useful balance-sheet stock, but it becomes a market signal only after issuance is reconciled with treasury inventory, redemptions, cross-chain migration, wrappers, ownership, and the uses to which the tokens are committed.
+
+Up: [[Crypto]]
+
+Related: [[Stablecoin reserve and redemption risk]] · [[Crypto liquidity regime]] · [[Cross-venue fragmentation in crypto]] · [[Wrapped assets and duplicate crypto exposure]] · [[Crypto ETF flows and market impact]]
+
+## Why it matters
+
+Stablecoin supply is often described as “cash on the sidelines” or “dry powder.” The intuition is tempting: if more dollar-linked tokens exist, crypto participants may have more settlement balances available to buy bitcoin, ether, or other assets. But the aggregate does not identify who supplied the dollars, who owns the tokens, where they can move, or why they were created. A mint can represent new fiat entering a stablecoin system; inventory prepared by an issuer but not distributed; a transfer of native supply from one chain to another; conversion from a competing stablecoin; borrowing against crypto collateral; or a wrapper whose backing has already been counted.
+
+The signal therefore cannot be read directly from a market-cap chart. Stablecoin capitalization differs from an ordinary token’s capitalization because a fiat-backed unit near par is an issuer liability created against reserve assets. Yet even a clean increase in liabilities does not equal an order to purchase risk assets. The new balance might fund payments, remittances, exchange margin, decentralized-finance collateral, market making, treasury management, or simply dollar savings. Supply can expand while crypto prices fall, and crypto prices can rise without stablecoin supply expanding.
+
+The right use is conditional. Reconciled stablecoin supply helps answer whether dollar-denominated claims are entering or leaving the crypto settlement system, which issuers and chains are gaining share, and whether primary-market pressure is consistent with a broader liquidity regime. It does not, by itself, reveal a directional trade, beneficial ownership, reserve safety, or causal impact on another asset’s price.
+
+## Start with the issuer’s liability, not token transfers
+
+For a fiat-backed stablecoin, define issuer-wide circulating supply at time $t$ as the tokens the issuer treats as outstanding liabilities across supported chains:
+
+$$
+S_t^{\text{issuer}} = \sum_c S_{c,t}^{\text{native circulation}}.
+$$
+
+The basic change is:
+
+$$
+\Delta S_t^{\text{issuer}} = I_t - R_t,
+$$
+
+where $I_t$ is value issued into circulation and $R_t$ is value redeemed out of circulation during the interval. Near par, this is approximately a dollar liability flow. Circle’s transparency page makes this relationship observable by reporting USDC in circulation together with amounts issued, redeemed, and the resulting change over several windows. The page is more informative than a generic market-cap series because it connects the stock to the issuer’s primary-market flows.
+
+Onchain mint and burn events do not always equal $I_t$ and $R_t$. An issuer can mint tokens into a treasury or authorized-but-not-issued wallet before a customer has purchased them. Tether’s issuance primer explicitly distinguishes **authorized**, **issued**, **redeemed**, and **destroyed** stages. Authorized inventory can be created in anticipation of demand while remaining outside circulation; redeemed tokens can remain in an issuer wallet before destruction. Treating every mint transaction as fresh capital therefore mistakes operational inventory management for customer issuance.
+
+The Federal Reserve’s study of primary and secondary stablecoin markets formalizes a better onchain approximation for fiat-backed tokens with identifiable treasury wallets. It tracks both mint/burn activity and transfers into or out of treasury. A stylized measure of net flow from primary to secondary circulation is:
+
+$$
+F_t^{\text{secondary}} = (M_t-B_t)-\Delta T_t,
+$$
+
+where $M_t-B_t$ is net token creation and $\Delta T_t$ is the change in treasury-held token inventory. If 500 million tokens are minted and all remain in treasury, net secondary circulation has not increased. If previously authorized inventory leaves treasury for a customer without a contemporaneous mint, secondary circulation can increase even though a mint-only feed shows zero.
+
+This reconciliation remains issuer-specific. Treasury addresses can change; internal wallets may not all be labeled; offchain customer orders and banking backlogs are not visible; and a protocol-created stablecoin may have no analogous treasury. For an overcollateralized design, issuance can instead be generated by depositing collateral or borrowing against a position. The supply increase then represents a new stablecoin liability inside a leveraged balance sheet, not necessarily external fiat entering crypto.
+
+## Cross-chain supply can move without aggregate demand changing
+
+Multi-chain accounting is the most common source of false supply signals. Circle’s Cross-Chain Transfer Protocol transfers native USDC by burning it on the source chain and minting the same amount on the destination chain. If 100 million USDC moves from Ethereum to Solana through that mechanism, Ethereum supply falls by 100 million, Solana supply rises by 100 million, and issuer-wide supply is unchanged. A chain-level observer sees a dramatic inflow or outflow; an issuer-level observer sees migration.
+
+For a migration window, reconcile native supply as:
+
+$$
+\Delta S_{c,t}^{\text{native}} = N_{c,t}^{\text{external issuance}} + X_{c,t}^{\text{in}}-X_{c,t}^{\text{out}}-R_{c,t}^{\text{external redemption}},
+$$
+
+where $X$ represents cross-chain burns and mints that conserve issuer-wide supply. The exact labels depend on the issuer’s mechanism, but the accounting principle is stable: separate creation or destruction of the consolidated liability from relocation of that liability between ledgers.
+
+Traditional bridges create a different problem. A canonical token can be locked in a bridge contract while a representation is minted elsewhere. Adding the locked original and the wrapped representation double-counts the same economic claim. The wrapped unit may have a distinct contract, symbol, price, liquidity pool, and security risk, yet it is backed by an already-existing token rather than a new dollar reserve. Supply dashboards should keep two views:
+
+- **issuer liabilities**, counting the native stablecoin once across the issuer’s recognized chains;
+- **local usable balances**, showing native and bridged representations separately on each chain, with backing relationships and bridge risk exposed.
+
+These views answer different questions. Consolidated liabilities measure net stablecoin-system expansion. Local balances measure where settlement capacity appears to be available. Neither should silently absorb the other. A chain may gain stablecoin liquidity because balances migrated there even when no new fiat entered, and it may lose apparent supply because users moved to a native version without reducing their total dollar exposure.
+
+## Aggregate growth can be relabeling rather than new dollar demand
+
+Even perfectly reconciled issuer supplies can mislead when summed across stablecoins. Suppose an institutional holder redeems 1 billion USDC for dollars and uses those dollars to acquire 1 billion newly issued USDT. Aggregate fiat-backed supply is approximately unchanged while issuer shares move sharply. That rotation can still matter: it may reveal different geography, exchange access, perceived safety, compliance constraints, or preferred chains. But it is not one billion dollars of net new stablecoin demand.
+
+The same principle applies when one stablecoin is used as collateral to mint another. If a protocol accepts USDC and issues a dollar token against it, gross token supply can rise even though the system’s external dollar assets do not. The second token is a claim layered on the first. Depending on the analytical question, both liabilities may matter—for example, both can circulate and support transactions—but counting both as independent external “cash” exaggerates the system’s net backing and purchasing capacity.
+
+A useful aggregate ledger therefore separates at least four buckets:
+
+| Supply component | Economic interpretation | Aggregate treatment |
+| --- | --- | --- |
+| Native fiat-backed circulation | Direct issuer liability against reported reserves | Count once by issuer and currency |
+| Crypto-collateralized issuance | Borrowed or protocol-created dollar claim | Count as a distinct liability; identify collateral |
+| Stablecoin-backed issuance | Layered claim on another stablecoin | Show gross circulation and look-through exposure |
+| Bridged or wrapped representation | Local representation of an existing token | Do not add to consolidated external backing |
+
+Currency also matters. A euro stablecoin, tokenized deposit, gold-linked token, and dollar stablecoin are not interchangeable merely because an aggregator places them in one category. If the question is dollar funding, preserve denomination and foreign-exchange exposure. If the question is stable-value transaction infrastructure, a broader gross series may be appropriate, but it should not be called dollar liquidity.
+
+## Supply says little about mobilizable buying power
+
+After liability reconciliation comes the harder question: who can use the balance? A token held by an exchange market maker and a token locked in a long-term lending position contribute equally to circulating supply but not to immediate spot-market demand. A balance can serve as margin, liquidity-pool inventory, payment working capital, a reserve against another token, a savings instrument, or collateral already supporting leverage. Each use implies a different capacity and propensity to purchase risky assets.
+
+Wallet labels help but do not solve beneficial ownership. Exchange addresses pool many customers. Custodians may omnibus unrelated accounts. A decentralized contract address reveals code-level custody but not always the economic decision-maker. Tokens can also be rehypothecated: the same unit may sit in a lending protocol while a receipt token or borrowing position creates additional market exposure. Onchain location is evidence about operational placement, not a complete balance sheet.
+
+Velocity is separate from supply. A small stablecoin stock can settle large gross volume if balances turn over rapidly; a large stock can remain dormant. Raw transfer volume is itself inflated by exchange shuffling, bridge operations, smart-contract routing, self-transfers, and automated activity. It should be adjusted before being used to argue that a supply increase became economic activity. Visa’s Onchain Analytics dashboard explicitly distinguishes raw and adjusted stablecoin transaction volume, illustrating that transaction classification is not a cosmetic choice.
+
+Venue and chain connectivity constrain mobilization. USDT on one chain is not instantly equivalent to USDC on another exchange’s order book. Trading pairs, withdrawal status, bridge capacity, confirmation times, issuer access, banking hours, collateral eligibility, and market-maker credit limits determine whether the balance can reach the desired market. This is why [[Crypto liquidity regime]] treats stablecoins as one funding layer rather than a universal pool of cash.
+
+## A hierarchy of interpretations
+
+Supply evidence becomes more informative as independent observations line up. The weakest statement is descriptive: “issuer-wide circulating supply increased by $X over interval $T$ under this methodology.” A stronger statement identifies mechanism: “the increase reflects net primary issuance rather than treasury inventory or cross-chain migration.” Stronger still is allocation evidence: “the newly distributed balances reached specified venues, chains, or classes of contracts.” Only then should an analyst test whether the flow preceded changes in spreads, basis, depth, volumes, or risky-asset prices.
+
+A disciplined hierarchy is:
+
+1. **Stock:** verified circulating liabilities at two timestamps.
+2. **Primary flow:** issuance less redemption, adjusted for treasury inventory.
+3. **Consolidation:** cross-chain and wrapper reconciliation.
+4. **Substitution:** rotations among issuers, currencies, and layered stablecoins.
+5. **Placement:** balances by chain, venue, contract type, and concentration.
+6. **Activation:** adjusted transfers, exchange deposits, collateral changes, and trading.
+7. **Market response:** synchronized price, depth, spread, basis, and volatility evidence.
+
+Each step adds information but also classification error. A causal claim requires more than ordering. Stablecoin issuance can respond to a premium created by prior demand; both issuance and crypto prices can react to the same news; institutions can mint in anticipation of client activity; and public blockchain timestamps can lag the offchain decision or bank transfer. The Federal Reserve emphasizes that approved institutional customers connect primary issuance with secondary trading through arbitrage. The observed mint may therefore be an accommodation of demand already visible in a secondary-market premium, not an exogenous shock that caused demand.
+
+Research by Lyons and Viswanath-Natraj, published as *What Keeps Stablecoins Stable?*, found no systematic effect of Tether issuance shocks on bitcoin’s price in its studied sample and instead emphasized issuance in response to deviations from parity and stablecoin transaction demand. This does not establish that stablecoin flows never affect crypto markets. It does reject the shortcut from “mint occurred” to “issuer pushed bitcoin upward.” Results are sensitive to sample, identification, issuer mechanics, market regime, and what counts as issuance, so newer studies should be compared on those definitions rather than reduced to opposing slogans.
+
+## A repeatable monitoring protocol
+
+Choose the analytical perimeter before collecting data: one contract, one chain, one issuer, all dollar stablecoins, or all stable-value tokens. Freeze canonical contract addresses, decimals, supported chains, treasury wallets, bridge contracts, and wrapper relationships. Record the as-of timestamp and revisions because provider histories can change when labels improve.
+
+For each issuer and interval:
+
+1. Record issuer-reported circulation, issuance, redemption, and reserve totals where available.
+2. Independently calculate token supply from canonical contracts and reconcile differences.
+3. Separate mints and burns from transfers into and out of issuer-controlled inventory.
+4. Match cross-chain burns and mints; identify pending or failed transfers.
+5. Exclude wrappers from consolidated supply while retaining them in local-liquidity maps.
+6. Identify stablecoin-backed and other circular collateral so gross and look-through series remain distinct.
+7. Classify placement conservatively: exchanges, bridges, lending, pools, treasuries, unknown.
+8. Compare supply changes with peg deviations, redemption access, adjusted transfers, venue flows, order-book liquidity, basis, and major external events.
+
+Report a reconciliation residual rather than forcing equality:
+
+$$
+\varepsilon_t = \Delta S_t^{\text{reported}}-\Delta S_t^{\text{explained}}.
+$$
+
+A large residual is a research result. It may reveal missing addresses, delayed issuer updates, unsupported chains, rebases, contract upgrades, frozen balances, measurement timing, or an incorrect assumption about circulation. It should not be allocated to “inflow” merely to complete a narrative.
+
+Use changes and levels together. A high stablecoin stock can support market infrastructure even when current issuance is flat. A large positive weekly flow can be economically small relative to an enormous existing stock, while a modest flow to a thin venue can matter locally. Normalize only after retaining dollar values: flow as a share of issuer supply, chain supply, exchange balances, or standardized market depth answers different questions.
+
+## What the signal can and cannot support
+
+A well-reconciled rise in fiat-backed circulation supports the statement that approved customers, net of redemptions, increased their holdings of that issuer’s onchain dollar liabilities. If several issuers expand, aggregate wrappers are removed, reserves rise consistently, and balances disperse into active venues, the evidence is consistent with broader demand for stablecoin settlement capacity. If exchange premia, tighter funding conditions, or higher adjusted activity precede issuance, the series may help explain how that demand was accommodated.
+
+It cannot establish that an equal amount of new wealth entered crypto, that the tokens remain unencumbered, that their reserves are safe, or that holders intend to buy risky assets. It cannot treat a chain migration as global growth, a wrapper as new backing, a protocol loan as fiat inflow, or issuer substitution as aggregate expansion. It also cannot turn contemporaneous correlation into price causality.
+
+The most defensible conclusion is usually narrower than the headline. Stablecoin supply is a map of dollar-linked liabilities and settlement capacity under specific accounting boundaries. It becomes a useful market signal when paired with primary-market flows, location, use, price, and liquidity. The work is not finding one magic series; it is preserving the distinctions that the aggregate erases.
+
+## Sources
+
+- [Circle, Transparency and stability](https://www.circle.com/transparency) — issuer-reported USDC circulation, reserve holdings, and issuance/redemption changes (accessed 2026-07-10).
+- [Circle Developers, Cross-Chain Transfer Protocol](https://developers.circle.com/cctp) — primary documentation of native USDC burn-and-mint transfers across supported chains.
+- [Tether, Tether Issuance Primer](https://tether.to/en/tether-issuance-primer/) — primary explanation of authorized, issued, redeemed, and destroyed token states.
+- [Tether, Transparency](https://tether.to/en/transparency/?tab=usdt) — issuer circulation reporting by supported transport protocol (accessed 2026-07-10).
+- [Federal Reserve, “Primary and Secondary Markets for Stablecoins”](https://www.federalreserve.gov/econres/notes/feds-notes/primary-and-secondary-markets-for-stablecoins-20240223.html) — treasury-adjusted net-flow methodology and March 2023 case evidence.
+- [Federal Reserve, “The stable in stablecoins”](https://www.federalreserve.gov/econres/notes/feds-notes/the-stable-in-stablecoins-20221216.html) — stablecoin lifecycle, primary redemption, secondary trading, and arbitrage mechanism.
+- [Lyons and Viswanath-Natraj, “What Keeps Stablecoins Stable?”](https://www.nber.org/papers/w27136) — empirical and theoretical analysis of stablecoin issuance, transaction demand, parity, and crypto prices.
+- [Visa, Onchain Analytics — Transactions](https://www.visaonchainanalytics.com/transactions) — raw-versus-adjusted stablecoin transaction-volume methodology and dashboard.
+
+## Open questions
+
+- Which public issuer feeds preserve historical revisions well enough to build an auditable hourly supply ledger?
+- How much issuer-wide stablecoin growth is explained by payments and dollar savings rather than crypto trading, and what evidence can distinguish the uses without deanonymizing holders?
+- Which bridge and wrapper registries are reliable enough to prevent double-counting across every chain in the [[Crypto top 100 research universe]]?
+- Can treasury-wallet classifications remain accurate through issuer address rotation, contract upgrades, and operational changes?
+- What identification strategy can separate issuance that accommodates a prior secondary-market premium from an external supply shock?
+- How should stablecoin-backed stablecoins appear in gross settlement-capacity measures versus look-through measures of external reserves?

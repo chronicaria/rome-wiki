@@ -21,12 +21,14 @@ Up: [[Classical Music]]
 - [[How to hear violin and piano as partners]]
 - [[Portamento as phrasing rather than defect]]
 - [[Shellac recording and the remaking of violin tone]]
+- [[Gut strings, setup, and Romantic violin sound]]
 
 ## Repertoire paths
 
 - [[Paganini Caprice No. 24 as a variation laboratory]]
 - [[Beethoven Violin Concerto Op. 61]]
 - [[Mendelssohn Violin Concerto Op. 64]]
+- [[Louis Spohr and the early Romantic violin concerto]]
 - [[Brahms Violin Concerto]]
 - [[Brahms Violin Sonata No. 1 Op. 78]]
 - [[Clara Schumann Three Romances Op. 22]]
@@ -37,6 +39,8 @@ Up: [[Classical Music]]
 - [[Franck Violin Sonata in A major]]
 - [[Florence Price Violin Concerto No. 1]]
 - [[The two versions of Sibelius's Violin Concerto]]
+- [[Joachim and Kreisler cadenzas for Beethoven Op. 61]]
+- [[Respighi Violin Sonata in B minor]]
 - [[Romantic violin showpieces]]
 - [[Post-Romantic violin repertoire through 1945]]
 

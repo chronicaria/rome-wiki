@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, research, backlog]
-as_of: 2026-07-10T07:02:56Z
+as_of: 2026-07-10T08:06:10Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -46,6 +46,7 @@ Status vocabulary: **ready** has a bounded question and source lead; **blocked**
 - Added a baseline identity card for Audiera (`audiera`, BEAT), newly observed in the boundary buffer at rank 90.
 - Confirmed at 2026-07-10T07:02:56Z that VVV remained rank 100 and APT rank 101 across a second hourly observation; this cutoff arrangement now passes the provider-series persistence rule.
 - Confirmed Audiera at rank 90 and captured CoinGecko's BNB Smart Chain contract locator; issuer documentation, contract controls, supply methodology, holder concentration, and executable depth remain unverified.
+- Confirmed at 2026-07-10T08:06:10Z that VVV rank 100, APT rank 101, YLDS rank 99, and Audiera rank 90 persisted; no new identity or fundamental claim was promoted from unchanged provider ranks.
 
 - Captured the first immutable rank-90–110 boundary observation.
 - Assigned canonical CoinGecko IDs to all 21 rows.

@@ -35,19 +35,26 @@ This map organizes Korean history through overlapping chronological, institution
 
 - [[Hangul as a political and social technology]] — script design, royal statecraft, gendered textual practice, petitions, and later nationalization.
 - [[Joseon land taxation from gwajeon to daedong]] — official revenue assignments, field assessment, tribute commutation, procurement, and social incidence.
+- [[Local magistrates, clerks, and yangban power]] — formal county authority, administrative information, local elite institutions, and unequal access to law.
+- [[Markets and monetization in late Joseon]] — market circuits, fiscal procurement, copper cash, merchant intermediation, and uneven household risk.
 - [[Patrilineal transformation of the Joseon family]] — ritual succession, inheritance, marriage residence, genealogy, and lineage power.
 - [[The Manchu invasions and Joseon's place in the Qing order]] — the two invasions, coerced hierarchy, retained internal government, and contested memory.
 
 ## Colonial rule and mobilization
 
 - [[Colonial Korea's changing administrative regimes]] — military-police rule, constrained cultural politics, developmental administration, and total-war mobilization.
+- [[The March First Movement as local and global history]] — religious, student, market-town, and diaspora networks, colonial repression, global claims, and casualty-source limits.
+
+## Liberation and division
+
+- [[Why Korea was divided in 1945]] — a temporary surrender boundary hardened through occupation regimes, Korean political conflict, failed joint government, and rival state building.
 
 ## Priority gaps
 
-- [[Markets and monetization in late Joseon]]
-- [[Local magistrates, clerks, and yangban power]]
-- [[The March First Movement as local and global history]]
-- [[Why Korea was divided in 1945]]
+- [[Nineteenth-century tax disorder and peasant protest]]
+- [[Political violence before the Korean War]]
+- [[Gabo Reform causal map]]
+- [[Land survey, tenancy, and the colonial economy]]
 
 ## Open questions
 
