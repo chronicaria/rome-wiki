@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [ai, frontier-models, evaluation, reasoning, inference-time-compute]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: AI frontier news
 review_after: 2026-10-09
 ---
@@ -40,6 +40,18 @@ $$
 
 where $M$ is the exact model version, $P$ the prompt and decoding policy, $D$ the sampling procedure, $A$ the agent or tool scaffold, $V$ the selection or verification method, $E$ the environment, and $B$ the multidimensional budget. Changing any component changes the system being evaluated. This is the same identity problem developed in [[Model versus scaffold in agent evaluations]].
 
+### A provider-neutral resource envelope
+
+Provider controls such as “reasoning effort,” “thinking budget,” or a maximum-output setting are not common units. A provider-neutral envelope should instead describe externally observable constraints and capabilities. For each task, record a vector such as
+
+$$
+B=(C_\$,T_{wall},T_{in},T_{out},N_{calls},N_{samples},N_{tools},P_{parallel},F),
+$$
+
+where $C_\$$ is total dated cost, $T_{wall}$ is critical-path time, token fields use both native and a documented normalization when available, $P_{parallel}$ is maximum concurrency, and $F$ is the allowed feedback channel. Apply the same ceiling and the same accounting boundary to the entire submitted system, including routers, critics, verifiers, embeddings, retrieval, failed calls, and discarded candidates. Hidden reasoning that cannot be observed should be marked unavailable rather than estimated from visible output.
+
+This envelope is neutral in vocabulary, not perfectly equivalent in physical compute. A sparse model and a dense model may spend different FLOPs inside the same priced call; a subsidized API may buy more compute per dollar; tokenizers segment text differently. The solution is to preserve the raw provider meters alongside common operational quantities—dollars, elapsed time, calls, samples, and tool permissions—and avoid turning any one proxy into “true compute.” MLCommons similarly separates scenarios such as server throughput and single-stream latency because one performance number cannot represent every serving objective.
+
 ## Pass@1, pass@k, and what multiple attempts buy
 
 For a task with independent per-sample success probability $p$, the probability that at least one of $k$ attempts succeeds is
@@ -74,6 +86,8 @@ An **adaptive** policy allocates little compute to easy tasks and more to uncert
 
 Early stopping makes comparisons especially delicate. If a correct answer is cheaply verifiable, a system can stop as soon as it succeeds and spend the remainder elsewhere. If correctness is unknown until final grading, the same strategy is unavailable. Evaluations should distinguish **oracle allocation**, which uses hidden correctness, from **deployable allocation**, which uses only information available to the system at inference time.
 
+A deployable allocator can be formalized as choosing action $a_j$ for task $j$ to maximize expected utility subject to $\sum_j c(a_j)\leq C$. Its policy may use only information available before final grading: prompt features, self-reported confidence, verifier scores, or observed tool outcomes. Evaluation should compare it with three baselines: uniform allocation, a cheap fixed-budget policy, and an oracle upper bound that may consult correctness but is clearly labeled non-deployable. Report allocation regret, routing overhead, spend by difficulty bin, and the fraction of the total budget consumed by tasks that never succeed. A policy that raises mean accuracy by starving a subgroup of tasks is not adequately summarized by its mean.
+
 ## Agents turn budget into an experimental treatment
 
 For tool-using agents, a “sample” may itself be a long policy rollout. Two nominally identical model runs can differ because one agent has a repository map, persistent memory, a stronger system prompt, more permissive tools, longer action timeouts, or repeated grader feedback. The scaffold may use a second model for planning or verification. Counting only the primary model's tokens understates the actual procedure.
@@ -88,6 +102,12 @@ Retries require a precommitted rule. A defensible policy might retry transport e
 
 A single budget point cannot show whether one system is better or merely more heavily elicited. Evaluate each system at several predeclared budget levels and plot expected utility or accuracy against cost. System $i$ at budget $b$ yields quality $q_i(b)$ and resource vector $r_i(b)$. A point is **Pareto-dominated** if another system achieves at least as much quality with no more of every relevant resource and strictly improves one dimension.
 
+### Matched budget and matched service answer different questions
+
+**Matched-budget comparison** gives every system the same externally defined envelope: for example, at most $0.25 per task, 60 seconds of critical-path time, one submission, identical tools, and no oracle feedback. It asks which system converts a fixed resource allowance into the most quality. Enforce every binding dimension; “same dollars” with unlimited time for one system is not a fully matched condition.
+
+**Matched-service comparison** instead fixes the user-visible service level: target accuracy, maximum tail latency, safety threshold, required tool access, and perhaps a reliability objective such as 95% of tasks completing within two minutes. It asks what each system costs to deliver that service. Interpolate only within measured frontier points and report when a system never reaches the target. A useful report includes both views plus an unconstrained product point using each provider's recommended settings. The first supports efficiency claims; the second supports procurement; the third describes the best packaged product tested.
+
 In practice, evaluators often need two-dimensional views:
 
 - accuracy versus dollars for a buyer;
@@ -99,6 +119,8 @@ In practice, evaluators often need two-dimensional views:
 No single scalar conversion is neutral. Ten dollars and ten minutes have different values in emergency response, overnight research, and bulk offline coding. Publish the frontier and let users apply their own utility function. If one summary number is necessary, state the exchange rate and conduct sensitivity analysis.
 
 Uncertainty belongs on the frontier. Benchmark accuracy is an estimate over a finite task sample and often over stochastic model runs. Report confidence intervals that account for tasks as the principal sampling unit; for repeated stochastic trials, use a hierarchical or clustered bootstrap rather than treating correlated attempts as independent tasks. Paired evaluation on the same questions improves precision. Task-level results reveal whether a higher mean reflects broad improvement or a few expensive wins.
+
+Sensitivity analysis should vary disputed conversions and policy choices rather than bury them in a single score. At minimum, recompute rankings under alternative input/output/cache price mixes, latency penalties, failure costs, parallelism limits, and utility assigned to abstentions or harmful errors. Show frontier membership under each plausible setting. For an adaptive policy, also perturb the global cap, per-task maximum, router threshold, and verifier calibration. A conclusion is robust when the same system remains preferable across the declared range; if the winner changes, report the break-even value. NIST AI 800-3 further distinguishes accuracy on the fixed benchmark from generalized accuracy over a broader item population; those estimands require different uncertainty claims, so the report must name which one its interval targets.
 
 Cost uncertainty matters too. Quote the pricing date, cache assumptions, failed-call charges, and exchange rate if relevant. For local models, disclose the amortization and utilization assumptions behind dollar estimates. A frontier based on list-price APIs is a deployment frontier, not necessarily a frontier in physical inference efficiency.
 
@@ -125,6 +147,22 @@ The following protocol supports both scientific comparison and practical purchas
 9. **Perform ablations.** Remove tools, verifier, retries, and multi-sample aggregation where feasible. These experiments distinguish gains from the base model, longer reasoning, sampling diversity, selection quality, and environment feedback.
 
 10. **Release inspectable artifacts.** Publish the harness, prompts, task-level scores, model transcripts to the extent safety and terms permit, resource logs, and analysis code. Epoch AI's benchmark pages provide a useful pattern by linking run logs that expose interactions, scoring, and token counts. Redact sensitive reasoning traces when required, but do not replace missing data with false precision.
+
+### A minimum machine-readable reporting schema
+
+The human report should be backed by one row or JSON object per task attempt. A practical minimum is:
+
+```yaml
+evaluation: {benchmark, version, split, scorer, as_of}
+system: {provider, model_snapshot, prompt_hash, scaffold_commit, tools, verifier}
+policy: {temperature, reasoning_control, selection, stopping_rule, retry_rule}
+envelope: {usd_cap, wall_seconds_cap, sample_cap, call_cap, tool_cap, parallelism}
+usage: {native_input_tokens, cached_tokens, output_tokens, reasoning_tokens, model_calls, verifier_calls, tool_calls, wall_seconds, usd, failures}
+outcome: {task_id, attempt_id, submitted_answer_hash, score, abstained, failure_type}
+provenance: {started_at, region, price_sheet_date, harness_commit}
+```
+
+Use explicit `null` plus a reason such as `provider_not_exposed` for unavailable meters; zero falsely claims nothing was consumed. Give every aggregate a reproducible query over these rows, and publish schema version, units, currency, rounding, and whether costs are list, invoiced, or estimated. Keep candidate-level records linked to the final submission so pass@k, consensus, verifier selection, retries, and adaptive stopping can be reconstructed without exposing private chain-of-thought.
 
 The protocol deliberately reports two kinds of fairness. **Resource fairness** asks what happens when systems receive comparable budgets. **Product fairness** asks what each provider's best publicly available system can deliver at its own optimal configuration and price. Both are legitimate; they answer different questions. A report should show both rather than choosing whichever flatters one system.
 
@@ -153,6 +191,9 @@ A mature [[AI evaluation as measurement science]] treats the inference procedure
 - METR, “Details about METR's preliminary evaluation of GPT-4o” (accessed 2026-07-09): https://evaluations.metr.org/gpt-4o-report/
 - Epoch AI, “About Benchmarking” (run-log and methodology transparency, accessed 2026-07-09): https://epoch.ai/benchmarks/about
 - Epoch AI, “FrontierMath Tiers 1–4: About” (tools, holdouts, and benchmark versioning, accessed 2026-07-09): https://epoch.ai/frontiermath/tiers-1-4/about
+- NIST, “Expanding the AI Evaluation Toolbox with Statistical Models,” NIST AI 800-3 (2026): https://doi.org/10.6028/NIST.AI.800-3
+- NIST, “Practices for Automated Benchmark Evaluations of Language Models,” NIST AI 800-2 initial public draft (2026): https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf
+- MLCommons, Inference benchmark documentation and scenarios (accessed 2026-07-10): https://docs.mlcommons.org/inference/index_gh/
 
 ## Open questions
 

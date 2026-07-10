@@ -22,32 +22,41 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Credit spreads and default compensation]]
 - [[Volatility risk premium]]
 - [[Funding liquidity versus market liquidity]]
+- [[US credit and volatility tracker]]
 
 ## Rates and dollar transmission
 
 - [[Treasury auctions and duration supply]]
 - [[Treasury yield curve mechanics]]
+- [[Treasury futures conversion factors and cheapest-to-deliver]]
 - [[Real rates inflation compensation and term premium]]
 - [[Interest-rate differentials and dollar exchange rates]]
+- [[Trade-weighted US dollar indexes]]
+- [[Cross-currency basis]]
 
 ## Commodity markets
 
 - [[Commodity curves carry and convenience yield]]
 - [[Oil inventories storage and the futures curve]]
 - [[WTI versus Brent crude oil]]
+- [[Refinery margins and crack spreads]]
 - [[Grain balance sheets and stocks-to-use]]
+- [[Calendar spreads in commodity futures]]
+- [[US natural gas balances]]
+- [[Gold real yields and the US dollar]]
 
 ## Quantitative research craft
 
 - [[Point-in-time data and look-ahead bias]]
 - [[Futures continuous contracts and roll bias]]
 - [[Event studies for financial markets]]
+- [[Transaction-cost models]]
 
 ## Next connections
 
-- [[Refinery margins and crack spreads]]
-- [[Trade-weighted US dollar indexes]]
-- [[Treasury futures conversion factors and cheapest-to-deliver]]
+- [[Commodity data and contract registry]]
+- [[US macro surprise ledger]]
+- [[Options dealer positioning without mythology]]
 
 ## Open questions
 

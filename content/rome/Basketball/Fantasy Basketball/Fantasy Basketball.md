@@ -21,6 +21,7 @@ Up: [[Basketball]]
 - [[Percentage categories and volume]] — model shooting ratios through makes and attempts rather than averaging player percentages.
 - [[Category floors and ceilings in fantasy basketball]] — define category-specific quantiles and coherent role scenarios instead of vague safe/upside labels.
 - [[Using projection disagreement in fantasy basketball]] — normalize competing forecasts, locate contested assumptions, and combine them without mistaking spread for calibrated uncertainty.
+- [[ADP uncertainty and player uncertainty]] — separate uncertainty about draft acquisition timing from uncertainty about future player outcomes.
 
 ## Opportunity and availability
 
@@ -31,6 +32,10 @@ Up: [[Basketball]]
 
 ## Transactions and weekly planning
 
+- [[Consolidation trades and roster spots]] — compare complete post-trade rosters, including the legal use and risk of capacity created by an uneven deal.
+- [[Two-for-one trade valuation in fantasy basketball]] — audit a specific uneven trade through its replacement path, playable lineups, category fit, and concentrated risk.
+- [[Lineup congestion and playable games]] — model each rostered game as a dated assignment competing for eligible lineup capacity.
+- [[Positional flexibility in fantasy basketball]] — value eligibility by the marginal legal assignments it unlocks rather than by counting position labels.
 - [[Fantasy basketball streaming on low-volume days]] — optimize playable games after lineup congestion and acquisition costs.
 - [[Fantasy basketball streaming break-even thresholds]] — require the stream's marginal lineup value to clear drop, transaction, and option costs.
 - [[FAAB and waiver priority as option value]] — spending a scarce claim resource sacrifices future flexibility.
@@ -38,6 +43,7 @@ Up: [[Basketball]]
 - [[IL slots as roster flexibility]] — value contingent roster capacity net of eligibility timing, transaction restrictions, and the activation squeeze.
 - [[Roster-slot liquidity in fantasy basketball]] — price how quickly and cheaply a roster position can be converted into a better legal lineup path.
 - [[Fantasy basketball playoff schedule value]] — value playable marginal production across conditional rounds, not raw scheduled games.
+- [[Turnovers as an opportunity cost]] — judge turnovers as the format-dependent cost of a complete opportunity bundle rather than rewarding inactivity.
 
 ## Learning from decisions
 
@@ -45,9 +51,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Consolidation trades and roster spots]]
-- [[Lineup congestion and playable games]]
-- [[Positional flexibility in fantasy basketball]]
+- [[Robust punt builds in fantasy basketball]]
+- [[Scarce-category specialists and roster fragility]]
+- [[Bench slots and latent lineup value]]
 
 ## Open questions
 

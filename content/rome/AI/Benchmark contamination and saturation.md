@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [ai, evaluation, benchmarks, data-contamination, memorization]
-as_of: 2026-07-09
+as_of: 2026-07-10
 ---
 
 Benchmark scores become misleading for several different reasons—training-data contamination, memorization, benchmark leakage, saturation, and post-hoc tuning—and each failure requires a different diagnosis and remedy.
@@ -69,6 +69,21 @@ Temporal separation is often the cleanest available design. Evaluate a model on 
 
 Counterfactual variants complement time. Evaluators can generate isomorphic problems, substitute entities and numbers, reorder choices, or test the same skill in a new domain. If performance survives meaningful transformations, the case for transferable competence strengthens. If it collapses only when superficial cues change, the original score becomes less persuasive. But generated variants need human or programmatic validation: a “same skill” rewrite that introduces ambiguity is not a fair control.
 
+## Adaptive overfitting: when a hidden test becomes training signal
+
+A test can remain physically secret and still be overfit through repeated feedback. Suppose a lab submits many model, prompt, scaffold, and checkpoint variants to the same evaluator. Each returned score reveals information about the hidden sample. The next submission is therefore statistically dependent on that sample. Over enough rounds, teams can select idiosyncrasies that improve the leaderboard without improving the target distribution. This is **adaptive overfitting**, and it is distinct from test-item leakage: nobody needs to see an item, memorize its wording, or place it in gradient training.
+
+The diagnostic object is the *entire development history*, not just the final model. Record every query to the holdout, including internal runs, abandoned prompts, checkpoint sweeps, and manual error-analysis rounds. Then ask four questions:
+
+1. **How large was the search?** Count submissions and materially distinct systems, not merely published models. A winner chosen from 500 trials has a larger selection advantage than a prespecified single run.
+2. **How informative was feedback?** Per-item labels, traces, and exact scores leak more information than coarse or thresholded feedback. Public error analyses can make even a private test functionally transparent.
+3. **Does the gain replicate once?** Freeze the winning system and run it on a fresh, exchangeable holdout that was never queried. The old-to-fresh score gap is the most direct operational test of adaptive overfitting.
+4. **Is improvement monotone only on the reused set?** Plot reused-holdout and fresh-shadow performance against submission order. Rising public performance with flat or falling shadow performance is a warning pattern, though changing model families and task distributions complicate causal attribution.
+
+The reusable-holdout literature formalizes why ordinary confidence intervals fail after adaptive reuse: the analyst's choice of what to test depends on earlier answers. Dwork and colleagues showed that privacy-inspired mechanisms can answer adaptive statistical queries while controlling generalization. Blum and Hardt's Ladder limits leaderboard feedback to improvements large enough to clear a threshold, reducing the information available for fitting the holdout. These mechanisms are not turnkey guarantees for modern generative evaluation—their assumptions, bounded losses, and query model may not match agents or open-ended graders—but they supply an important design principle: meter the information released, not merely access to the file.
+
+Practical private-test controls include submission budgets, delayed feedback, coarse score bins, no per-item traces, preregistered protocols, a separate development set, rotating shadow holdouts, and a final one-use confirmation set. The final confirmation must be genuinely final: if a failed confirmation triggers more tuning and another “final” attempt on the same items, it has become another development set.
+
 ## Saturation is a measurement failure
 
 A benchmark can be clean yet obsolete. Near a ceiling, a one-point difference may correspond to only a handful of items. If items are heterogeneous or correlated, the usual binomial intuition overstates precision. Rankings can flip with prompt templates, answer extraction, random seeds, or which models receive extra reasoning tokens. The benchmark may still verify a minimum competence, but it no longer measures frontier progress well.
@@ -82,6 +97,22 @@ Saturation has at least three forms:
 The remedies differ. Harder items can restore score spread, but merely making questions obscure may reduce relevance. More items narrow sampling error but do not fix a ceiling or invalid construct. Adaptive testing can concentrate measurement around each system's ability level. Continuous refresh reduces exposure and permits increasing difficulty. Task-level error analysis may reveal a still-useful unsolved tail hidden by the aggregate.
 
 The most defensible frontier evaluation is a portfolio: dated dynamic tests, protected holdouts, transparent public tasks for reproducibility, perturbation or counterfactual suites, and realistic tasks with explicit cost and tool budgets. A single scalar leaderboard is especially fragile when [[Reasoning budget and fair model comparison|reasoning budgets]], scaffolds, retrieval, and human intervention differ.
+
+### Ceiling effects and the decision to retire a leaderboard
+
+At a ceiling, raw accuracy compresses ability differences. If two systems score 98% and 99% on 100 items, the apparent one-point gain is one item; it may vanish under rescoring, another sample, or a prompt change. Confidence intervals quantify sampling uncertainty but cannot repair missing difficult items. More repetitions help estimate each item's pass probability, yet they still do not reveal capability beyond the test's upper boundary.
+
+Item-level analysis is more informative than a universal “95% means saturated” rule. Examine the proportion of items solved by every relevant model, the information each item contributes around frontier ability, ranking stability under bootstrap resampling, and sensitivity to protocol choices. Item-response models can map heterogeneous item difficulty onto a latent scale, while adaptive testing selects items near a model's estimated boundary. The benefit is measurement efficiency; the risk is construct drift if the bank's hardest items measure obscurity, grader exploitation, or a narrower skill than the original benchmark.
+
+Use a predeclared post-saturation rule:
+
+- **Retain as a floor check** when the benchmark still verifies a minimum capability but no longer ranks frontier systems.
+- **Report the unsolved tail** when a coherent hard subset remains diagnostic, while labeling selection and multiple-testing risks.
+- **Expand or adapt the item bank** when calibrated harder items preserve the same construct and comparable scoring.
+- **Refresh temporally** when exposure, not only difficulty, is the main threat; freeze dated releases so historical results remain interpretable.
+- **Retire from headline comparison** when rankings are unstable, headroom is negligible, or real deployment failures are outside the construct. Never silently replace it and splice old and new scores into one trend.
+
+LiveCodeBench and LiveBench embody temporal refresh and versioning. A dynamic-boundary design goes further by actively selecting questions near a model's pass-probability boundary and extending the bank when a model falls outside its range. Such systems can resist ceiling effects, but adaptivity creates its own comparability duties: publish the calibration population, selection rule, item-bank version, exposure window, and uncertainty on the common ability scale.
 
 ## Post-hoc tuning and the benchmark as a product target
 
@@ -104,7 +135,10 @@ Before using a score in a frontier claim, record:
 5. **Contamination tests:** direct matching when training data are available; otherwise several behavioral, temporal, and counterfactual probes rather than one detector.
 6. **Impact analysis:** scores and uncertainty on flagged versus unflagged items, clean replacements, and matched variants. Report whether rankings change.
 7. **Discrimination:** score distribution, ceiling rate, task-level errors, confidence intervals or bootstrap intervals, and sensitivity to protocol choices.
-8. **Claim scope:** state whether the result supports familiarity, task competence under the tested setup, transfer to new variants, or real-world performance. Do not silently climb that ladder.
+8. **Adaptive-use ledger:** count every holdout query, enumerate the dimensions searched, record feedback granularity, and identify who saw item-level errors. Freeze the selected system before a fresh confirmation set.
+9. **Saturation gate:** measure universal-pass items, remaining headroom, item information near frontier ability, bootstrap ranking stability, and sensitivity to prompts, budgets, seeds, and scorers.
+10. **Decision rule:** before seeing results, define what triggers “retain as floor,” “report hard tail,” “refresh,” “expand,” or “retire.” Preserve benchmark versions and never compare scores across changed item banks without calibration.
+11. **Claim scope:** state whether the result supports familiarity, task competence under the tested setup, transfer to new variants, or real-world performance. Do not silently climb that ladder.
 
 No single checkbox certifies cleanliness. Evidence becomes persuasive when independent indicators agree: documented temporal separation, controlled data provenance, robust performance on novel variants, stable results across protocols, and no anomalous reconstruction of benchmark artifacts.
 
@@ -128,6 +162,9 @@ The durable practice is to preserve old benchmarks as historical yardsticks whil
 - Yihong Dong et al., *Generalization or Memorization: Data Contamination and Trustworthy Evaluation for Large Language Models*, Findings of ACL 2024. https://aclanthology.org/2024.findings-acl.716/ (accessed 2026-07-09).
 - Ruijie Xu et al., *Benchmarking Benchmark Leakage in Large Language Models*, arXiv:2404.18824, 2024. https://arxiv.org/abs/2404.18824 (accessed 2026-07-09).
 - Qihao Zhao et al., *MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark*, ACL 2025. https://aclanthology.org/2025.acl-long.656/ (accessed 2026-07-09).
+- Cynthia Dwork et al., *The Reusable Holdout: Preserving Validity in Adaptive Data Analysis*, *Science* 2015; author manuscript and supporting material. https://arxiv.org/abs/1506.02629 (accessed 2026-07-10).
+- Avrim Blum and Moritz Hardt, *The Ladder: A Reliable Leaderboard for Machine Learning Competitions*, ICML 2015. https://proceedings.mlr.press/v37/blum15.html (accessed 2026-07-10).
+- Haoxiang Wang, Da Yu, and Huishuai Zhang, *Beyond Fixed Benchmarks and Worst-Case Attacks: Dynamic Boundary Evaluation for Language Models*, arXiv:2605.06213, 2026. https://arxiv.org/abs/2605.06213 (accessed 2026-07-10).
 
 ## Open questions
 
@@ -136,3 +173,4 @@ The durable practice is to preserve old benchmarks as historical yardsticks whil
 - What saturation criterion best predicts when a benchmark's rankings will become unstable under small protocol changes?
 - Can benchmark maintainers provide auditable temporal separation without sacrificing enough transparency to make errors and bias impossible to inspect?
 - How should retraining on evaluation transcripts be disclosed when a provider continuously updates a model behind the same product name?
+- Which feedback-release mechanism best balances leaderboard auditability against adaptive-overfitting risk for open-ended, agentic evaluations?

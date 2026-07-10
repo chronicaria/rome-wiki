@@ -29,7 +29,15 @@ Up: [[Weather prediction (MOC)]]
 - [[Equatorial superrotation]] derives the angular-momentum definition and wave-driven jet mechanism while explaining why an eastward hotspot is not itself a wind measurement.
 - [[Day-night heat redistribution]] separates measured brightness contrasts from bolometric energy transport and develops the cloud, photosphere, opacity, and dynamical degeneracies behind redistribution estimates.
 - [[Cloud formation and transport beyond Earth]] connects saturation, nucleation, growth, settling, advection, and radiative feedback without treating aerosol opacity as a unique condensate identification.
+- [[Cloud radiative feedbacks in exoplanet atmospheres]] separates cloud radiative effect from feedback and shows when shortwave reflection, thermal blanketing, and patchy heating can reorganize circulation.
 - [[Disequilibrium chemistry as a tracer of circulation]] shows when chemical quenching can retain a memory of transport—and why composition, kinetics, clouds, photochemistry, and retrieval assumptions prevent a molecule from acting as a direct anemometer.
+- [[Vertical mixing and chemical quenching]] develops the transport–reaction competition, the limits of a scalar $K_{zz}$ and single quench pressure, and the conditional path from retrieved abundances to mixing.
+- [[Coupled chemistry circulation models]] compares post-processing, relaxation chemistry, reduced networks, and radiatively active coupling while keeping every modeled chemical map distinct from observation.
+- [[Deep atmosphere coupling in giant-planet circulation]] connects weather-layer jets to convection, gravity inversions, magnetic braking, and uncertain lower boundaries without transferring Solar-System constraints uncritically to exoplanets.
+- [[Numerical artifacts and false atmospheric variability]] gives a falsification ladder for distinguishing physical unsteadiness from grid, timestep, dissipation, spin-up, operator-splitting, and sampling effects.
+- [[Nonhydrostatic dynamics in exoplanet atmospheres]] identifies the convection, wave, shock, and extended-atmosphere regimes in which vertical acceleration or deep compressible equations may change predictions, then requires a matched observable-space test.
+- [[Tracer transport diagnostics in exoplanet GCMs]] separates passive pathways, reactive chemistry, numerical advection tests, and remotely inferred constituents while building a transport-budget verification protocol.
+- [[Angular momentum budgets of superrotating atmospheres]] closes the path from wave and mean-flow transports through physical torques and numerical residuals instead of treating a fast jet as its own explanation.
 - [[Magnetic drag in ultra-hot Jupiter atmospheres]] distinguishes state-dependent Lorentz forces and induction from a universal linear braking time or a magnetic-field measurement.
 
 ## Observation and inference

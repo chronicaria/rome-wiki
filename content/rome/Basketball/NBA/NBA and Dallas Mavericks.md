@@ -29,12 +29,14 @@ This topic map connects current Dallas state, player and lineup investigations, 
 - [[Dallas frontcourt geometry]]
 - [[Dallas center rotation without full Lively availability]]
 - [[Dallas shooting and spacing allocation]]
+- [[Cooper Flagg and two-big lineup creation burden]]
 
 ## Forecasting and lineup method
 
 - [[Availability risk in NBA projections]]
 - [[Dallas Mavericks model pressure points]]
 - [[NBA role changes that break preseason models]]
+- [[NBA roster churn as projection uncertainty]]
 - [[Lineup fit is not the sum of player value]]
 - [[NBA trade impact template]]
 - [[NBA player forward projection model]]
@@ -46,6 +48,7 @@ This topic map connects current Dallas state, player and lineup investigations, 
 - [[2026-27 NBA cap and apron thresholds]]
 - [[NBA apron mechanics and roster building]]
 - [[Second-apron draft-pick penalties in practice]]
+- [[Second-apron roster decisions in the 2026 offseason]]
 
 ## Open questions
 

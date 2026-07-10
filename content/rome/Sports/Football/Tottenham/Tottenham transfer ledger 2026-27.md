@@ -6,7 +6,7 @@ status: seed
 tags: [sports, football, premier-league, tottenham-hotspur, transfers]
 ---
 
-As of **9 July 2026, 23:01 EDT**, Tottenham's official announcements establish six senior-men's arrivals, two permanent senior exits, and one conditional loan-to-permanent exit; this ledger records announcement language and conditions rather than rumors or reported fees.
+As of **10 July 2026, 05:04 EDT**, Tottenham's official announcements establish six senior-men's arrivals, two permanent transfers out, one senior contract-expiry departure, and one conditional loan-to-permanent exit; this ledger records announcement language and conditions rather than rumors or reported fees.
 
 Up: [[Tottenham Hotspur 2026-27]]
 
@@ -22,7 +22,7 @@ The state labels deliberately separate several things that transfer coverage oft
 - **permanent** describes the registration path, not whether every administrative condition has already cleared;
 - **loan with conditional obligation** remains a loan unless and until the stated trigger is satisfied.
 
-The cutoff is in New York time; it corresponds to **10 July 2026, 04:01 BST**. Later announcements belong to a subsequent ledger revision.
+The cutoff is in New York time; it corresponds to **10 July 2026, 10:04 BST**. No later official transfer-state change was found after the ledger's previous cutoff of 10 July, 04:01 BST. This revision instead corrects an omission in that baseline: Tottenham's 10 June confirmation that Yves Bissouma departed when his contract concluded. Later announcements belong to a subsequent ledger revision.
 
 ## Senior men's arrivals
 
@@ -53,9 +53,12 @@ The cutoff is in New York time; it corresponds to **10 July 2026, 04:01 BST**. L
 
 | Announced | Player | To | Official form | Effective state at cutoff | Explicit condition |
 |---|---|---|---|---|---|
+| 10 Jun 2026 | Yves Bissouma | — | Departure following conclusion of contract | Effective contract-expiry departure | None stated |
 | 26 Jun 2026 | Alejo Véliz | Bahia | Permanent transfer | Effective from 1 Jul | None stated |
 | 7 Jul 2026 | Alfie Devine | Preston North End | Permanent transfer after option exercised | Effective/announced permanent exit | Preston triggered its option to buy |
 | 9 Jul 2026 | Radu Drăgușin | Fiorentina | Loan for 2026/27 | Loan effective as announced; permanent exit **not** complete | Obligation activates only if specified performance criteria are met |
+
+**Bissouma** left after the conclusion of his Tottenham contract. This is a senior-squad departure and therefore belongs in the state ledger, but it is not a permanent transfer to a named receiving club. The official update did not identify his next club or describe a transfer fee, so the row leaves the destination blank and does not infer one.
 
 **Véliz** was the subject of an agreement announced on 26 June, with the club expressly stating that he would join Bahia on 1 July and describing the move as permanent. Because 1 July had passed by the cutoff, the agreement had reached its stated effective date.
 
@@ -77,7 +80,7 @@ The official state already shows a concentrated first-team rebuild rather than a
 
 The state machine also exposes why headline counts can mislead. Tottenham had six officially announced senior arrivals by the cutoff, yet Tonali's work-permit qualifier and Senesi's international-clearance qualifier must remain attached. Conversely, Robertson and Dúbravka were announced in June but did not join until 1 July. Counting by announcement date and counting by effective registration date answer different questions.
 
-On exits, Véliz and Devine are completed permanent departures. Drăgușin is not: his loan reduces immediate centre-back availability, but the longer-term asset state depends on undisclosed performance criteria. Any future revision should change his row only when Tottenham or another authoritative registration source confirms that the obligation has activated and the permanent move has become effective.
+On exits, Véliz and Devine are completed permanent transfers, while Bissouma is a completed contract-expiry departure. Drăgușin is not a permanent exit: his loan reduces immediate centre-back availability, but the longer-term asset state depends on undisclosed performance criteria. Any future revision should change his row only when Tottenham or another authoritative registration source confirms that the obligation has activated and the permanent move has become effective.
 
 ## Why it matters
 
@@ -91,6 +94,7 @@ Primary Tottenham Hotspur announcements, checked through the stated cutoff:
 
 - [Robertson signing secured — 5 June 2026](https://www.tottenhamhotspur.com/news/1071931/robertson-signing-secured)
 - [Senesi switch sealed — 10 June 2026](https://www.tottenhamhotspur.com/news/1072863)
+- [Men's player update — Bissouma departure, 10 June 2026](https://www.tottenhamhotspur.com/news/1072684/mens-player-update)
 - [Van Hecke joins from Brighton — 18 June 2026](https://www.tottenhamhotspur.com/news/1073998/van-hecke-joins-from-brighton)
 - [Dúbravka deal completed — 24 June 2026](https://www.tottenhamhotspur.com/news/1074879/dubravka-deal-completed)
 - [Bahia move for Véliz — 26 June 2026](https://www.tottenhamhotspur.com/news/1075238/bahia-move-for-veliz)

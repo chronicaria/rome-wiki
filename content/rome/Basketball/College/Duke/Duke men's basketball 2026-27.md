@@ -18,9 +18,12 @@ Up: [[Basketball]]
 - [[Duke 2026-27 role inventory]] — confirmed functional strengths, constraints, and July role uncertainty.
 - [[Duke 2026-27 rotation ledger]] — evidence-bounded role ranges, lineup experiments, and the update protocol for competitive games.
 - [[Duke 2026-27 backcourt creation]] — how first touch, first advantage, second read, and late-clock ownership can be distributed.
+- [[Duke 2026-27 offensive role map]] — a six-job July projection for organizing, bending, connecting, spacing, screening, and finishing.
 - [[Duke 2026-27 frontcourt combinations]] — the spacing, rim-protection, and rebounding exchanges across single-big, two-big, and mobile-five groups.
 - [[Duke 2026-27 lineup scalability]] — a six-function test for whether lineup depth survives different elite opponents.
 - [[Duke 2026-27 defensive role map]] — the six defensive jobs each viable lineup must cover and the evidence needed to assign them.
+- [[Duke 2026-27 point-of-attack defense]] — how guard containment, screen navigation, foul chains, and recovery preserve Duke's called coverage.
+- [[Duke 2026-27 defensive rebounding]] — a five-player possession-ending framework across conventional, mobile-five, two-big, and switch-heavy groups.
 - [[Duke 2026-27 shooting and spacing]] — how shooting gravity, movement, and lineup tradeoffs determine usable offensive space.
 - [[Duke freshman translation in 2026-27]] — a bounded method for turning pre-college evidence into falsifiable role expectations.
 - [[Duke 2026-27 freshman frontcourt translation]] — separate translation cases for Cameron Williams, Maxime Meyer, and reported addition Joaquim Boumtje Boumtje.
@@ -34,7 +37,12 @@ Up: [[Basketball]]
 - [[Jon Scheyer's offensive evolution at Duke]] — how Duke moved from a size-supported floor toward faster coordinated initiation and less-scripted continuation.
 - [[Jon Scheyer's defensive evolution at Duke]] — the four-season defensive outcome record and the shift from size-based floor to layered, personnel-specific optionality.
 - [[Duke late-game offense under Jon Scheyer]] — a bounded possession framework built from two official Houston endgames rather than a fabricated clutch database.
+- [[How Duke attacks compact defenses]] — a coverage-specific framework for creating choices through early offense, interior catches, second actions, helper manipulation, and rebounding.
+- [[How opponents pressure Duke's initiators]] — the denial, press, blitz, switch, and gap-help tests for Duke's distributed creation chain.
+- [[Duke 2026-27 half-court shot creation]] — a four-stage chain from entry and first bend through the second read and late-clock rescue.
+- [[Duke 2026-27 transition offense]] — how secure possession, advance passing, lane geometry, and second-wave continuation can create selective early advantage.
 - [[Duke player development and NBA translation framework]] — a role-first method for evaluating freshmen, transfers, returners, and professional translation.
+- [[Duke player-development calibration cases]] — four contrasting cases that separate role, opportunity, task difficulty, transfer compression, and underlying skill change.
 
 ## What is known as of July 10
 

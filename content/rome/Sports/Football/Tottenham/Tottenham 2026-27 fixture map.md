@@ -3,7 +3,7 @@ title: Tottenham 2026-27 fixture map
 created: 2026-07-09
 source: llm
 status: seed
-as_of: 2026-07-09 23:01 EDT
+as_of: 2026-07-10 06:12 EDT
 desk: Tottenham Hotspur
 tags: [sports, football, premier-league, tottenham-hotspur, fixtures]
 ---
@@ -85,6 +85,8 @@ This asymmetry is more important than the apparent 20-day gap between league fix
 
 The November window runs 9–17 November, between Leeds away on 7 November and Ipswich at home on 21 November. The spring window runs 22–30 March, after Everton away and before the league returns on 10 April. The latter break precedes the final eight-match run-in. It may offer recovery for non-internationals, but it can also return important players with fatigue or limited tactical rehearsal before Brentford at home.
 
+One player-level conflict is already official. Tottenham announced on 10 July that Yang Min-hyeok was selected for South Korea's under-23 squad for the Asian Games men's tournament from 15 September to 3 October. If he remains with Tottenham and joins the tournament as selected, that window overlaps Aston Villa at home on 19 September and the opening portion of the extended international break. The selection is an availability fact, not an injury and not proof of the exact travel or release dates; those details should be updated only if the club or association confirms them.
+
 ### December and early January are the core congestion block
 
 The league's five midweek rounds include Fulham at home on 2 December, Brighton at home on 30 December, Fulham away on 6 January, Manchester City at home on 10 February, and Bournemouth away on 3 March. The winter block is the densest because several ordinary weekend rounds surround three of those midweeks.
@@ -143,6 +145,7 @@ Finally, the map shows what is truly known. Dates beyond September are placehold
 - [The FA, “Emirates FA Cup round dates for the 2026–27 season”](https://www.thefa.com/competitions/thefacup/round-dates), accessed 9 July 2026. Official round calendar from third round through the 22 May final.
 - [English Football League, “Carabao Cup Round One draw details confirmed”](https://www.efl.com/news/2026/june/23/carabao-cup-round-one-draw-details-confirmed/), 23 June 2026 (accessed 9 July 2026). Official 2026–27 Carabao Cup round dates.
 - [FIFA, “International Match Calendars”](https://www.fifa.com/tournament-organisation/international-match-calendars), updated 29 April 2026 (accessed 9 July 2026). Official men's international windows, including 21 September–6 October and 9–17 November 2026.
+- [Tottenham Hotspur, “Yang named in South Korea's squad for Asian Games”](https://www.tottenhamhotspur.com/news/1077013/yang-named-in-south-koreas-squad-for-asian-games), 10 July 2026 (accessed 10 July 2026). Official selection and tournament dates of 15 September–3 October.
 
 ## Open questions
 

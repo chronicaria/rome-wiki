@@ -30,6 +30,9 @@ This MOC collects notes on LLM agents as teams, swarms, simulators, and collecti
 
 ## Agent Evaluation
 
+- [[What makes an AI model frontier]] - a six-axis operational definition separating capability, generality, reliability, efficiency, deployability, and strategic significance from provider branding.
+- [[Neural scaling inference-time compute and algorithmic progress]] - how training scale, test-time search, and algorithmic efficiency move capability through distinct, interacting channels.
+- [[From agent task horizons to deployment decisions]] - how to translate external task-horizon curves into use-case-specific gates for reliability, safeguards, authority, and revocation.
 - [[Scientific discovery agents]] - an evidence ladder from bounded assistance and closed-loop search to independently replicated discovery.
 - [[Open-weight frontier models]] - why weight access, license freedom, reproducibility, capability, serving economics, and deployability are separate axes.
 - [[AI evaluation as measurement science]] - how construct validity, reliability, uncertainty, contamination, and decision use turn scores into scoped evidence.

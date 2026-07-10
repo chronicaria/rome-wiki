@@ -51,17 +51,25 @@ A causal and comparative map from the transformation of Roman worlds through med
 
 - [[Fourteenth-century crisis as interacting shocks]] — how famine, animal disease, plague, war, and fiscal strain formed uneven reinforcing crises rather than one continental collapse.
 - [[Black Death mechanisms and distributional effects]] — how pathogen ecology, mobility, and institutions produced unequal mortality and bargaining outcomes.
+- [[Peasant revolt from Jacquerie to the German Peasants' War]] — how extraction, institutions, political languages, coalitions, and elite division turned local grievance into differently organized revolts.
 
 ## Early-modern political forms and war finance
 
 - [[Composite monarchy as an early modern political form]] — how dynastic unions governed legally plural territories through councils, brokers, privilege, and negotiated burdens.
 - [[The fiscal-military state and its limits]] — how taxation, credit, contracting, and political coalitions sustained war without mechanically producing uniform modern states.
 
+## Print, Reformations, and negotiated states
+
+- [[The printing press and uneven information change]] — how reproducibility interacted with urban markets, literacy, language, trust, censorship, and mixed media rather than producing an instant uniform revolution.
+- [[Reformations and confessional state-building]] — how belief, discipline, church institutions, and political consolidation interacted unevenly across Catholic and Protestant Europe.
+- [[The Polish-Lithuanian Commonwealth as negotiated state]] — how parliamentary union, elected monarchy, estate privilege, territorial law, and religious pluralism distributed authority without equalizing its peoples.
+- [[The Thirty Years' War causal map]] — how a Bohemian constitutional-confessional revolt expanded through imperial, dynastic, and international feedback rather than religious inevitability.
+
 ## Next foundations
 
-- [[Peasant revolt from Jacquerie to the German Peasants' War]]
-- [[The printing press and uneven information change]]
-- [[Reformations and confessional state-building]]
+- [[Taxation, public debt, and credible commitment]]
+- [[Everyday confessionalization after the Reformation]]
+- [[The military revolution debate]]
 
 ## Open questions
 

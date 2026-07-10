@@ -36,6 +36,12 @@ The Curry–Myers–Hammer sequence shows how quickly a transaction headline can
 - [[Mets prospect-to-MLB translation]] supplies a durable method for separating minor-league performance, role, opportunity, and roster path from rank-based forecasts.
 - [[Mets roster-control and option ledger 2026]] reconciles the counted 40-man places, displayed 60-day injured-list group, and the narrow player-level option evidence that official sources actually establish.
 - [[Mets minor-league translation ledger 2026]] applies the prospect framework to current official level, age, role, sample, and roster-access evidence while preserving feed mismatches.
+- [[Mets pitch-location strategy and attack regions 2026]] separates pitch family, count, batter side, and attack region before interpreting the staff's 14,095 tracked pitches through July 8.
+- [[How MLB option assignments shape Mets roster decisions]] explains why an option opens an active place without necessarily opening a 40-man place, and why five separate counters govern future flexibility.
+- [[How to translate Mets minor-league pitching workloads]] turns affiliate innings into an event-level exposure record while keeping private throwing, health, and development plans outside the claim.
+- [[What playoff roster design asks of the Mets]] explains how round length, eligibility, role coverage, and opponent shape a conditional 26-player October roster.
+- [[How leverage changes Mets bullpen evaluation]] reframes relief work through entry state, inherited runners, availability, hitter pockets, and remaining outs rather than saves alone.
+- [[How platoons and bench roles shape the Mets lineup]] connects handedness, pitch-type matchups, irreversible substitutions, defense, rest, and scarce reserve places.
 
 ## Sources
 

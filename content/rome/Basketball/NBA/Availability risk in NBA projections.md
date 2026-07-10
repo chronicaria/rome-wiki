@@ -5,11 +5,12 @@ source: llm
 status: seed
 tags: [basketball, nba, analytics, projections, injuries, uncertainty]
 desk: NBA and Dallas Mavericks
+as_of: 2026-07-10
 ---
 
 NBA projections should model availability as a distribution over games, minutes, performance states, and replacement lineups—not as a single games-played discount applied to healthy player value.
 
-Up: [[Basketball]]
+Up: [[NBA and Dallas Mavericks]]
 
 Related: [[Dallas Mavericks availability scenarios]] · [[Lineup fit is not the sum of player value]]
 
@@ -122,6 +123,42 @@ Fifth, allocate replacement minutes through a feasible rotation. Enforce 240 tea
 Sixth, simulate the season. Draw player states, lineups, opponent and schedule context, and game noise. Preserve the joint draws so the output can explain whether a wide win interval comes from rating uncertainty, availability, or ordinary game variance.
 
 Finally, calibrate. Score predicted play probabilities, games distributions, minute intervals, and team wins separately. A season model can have a reasonable win mean while its player availability probabilities are badly miscalibrated because errors cancel.
+
+## A public-safe state-vector contract
+
+The model needs an explicit interface between evidence collection and season simulation. Without one, an analyst can update a player's “injury risk” while silently changing several different assumptions. A compact player-game state can be written as
+
+$$
+Z_{ig}=(A_{ig},M_{ig},E_{ig},R_{ig},C_{ig}),
+$$
+
+where $A$ is participation, $M$ is minutes conditional on participation, $E$ is effectiveness relative to the healthy player projection, $R$ is the basketball role, and $C$ is the reporting-confidence state. The first four affect the basketball forecast. The fifth governs how aggressively the first four should move when new public evidence arrives.
+
+This separation prevents several common errors. An official active designation raises confidence in participation for that game, but it does not by itself establish ordinary minutes or healthy effectiveness. A coach's statement that a player will be “limited” narrows the workload branch without quantifying a medical recovery curve. Film showing that a returning guard is not reaching the rim may inform the effectiveness state, but only after the sample, opponent, and tactical context are stated. A change in role—moving from primary initiator to spacer—can alter observed efficiency even if physical capacity is unchanged.
+
+Every update should therefore record five fields:
+
+1. **Observation time:** when the evidence became public, not when a later article summarized it.
+2. **Evidence class:** official status, team statement, attributable reporting, observed game role, model inference, or unknown.
+3. **State affected:** participation, conditional minutes, effectiveness, role, or dependence with another player.
+4. **Direction and magnitude:** a declared numerical update when model-generated; otherwise a labeled qualitative pressure.
+5. **Expiration or review trigger:** the next report, practice stage, game sample, schedule phase, or roster move that could make the update stale.
+
+The confidence state is not a claim about whether a team or reporter is honest. It measures how directly the evidence identifies the model variable. An official injury designation is authoritative about the designation and its timestamp, but only indirect evidence about exact probability, workload, or long-run performance. A full-game workload is direct evidence that the player handled those minutes once; it is weaker evidence that the workload is sustainable across a dense month.
+
+This contract is also a privacy boundary. A public model should use official releases, attributable reporting, observed play, and declared statistical priors. It should never imply access to imaging, private medical records, or individualized recurrence estimates that the sources do not provide. “Unknown” is a valid state, not a defect to conceal with a point estimate.
+
+## Scenario matrices before win totals
+
+For high-leverage players, the rotation should be solved inside a small set of coherent scenarios before those scenarios are mixed into one win distribution. A useful minimum is unavailable, active with a restriction, active in a modified role, and functionally normal. Those branches should not differ only in the focal player's minutes. Each branch needs a complete 240-minute allocation, a role map, and a list of lineup functions that are preserved or lost.
+
+Consider a primary creator returning under a workload cap. The direct change is additional creator minutes. The indirect changes may include lower emergency usage for a young forward, fewer possessions initiated by a reserve guard, a different closing lineup, and easier shot quality for a rim-running center. If the returning player cannot yet defend the hardest perimeter action, the team may also change matchups or coverages. Assigning the player's old per-minute rating to 22 minutes would miss both the positive role relief and the remaining defensive constraint.
+
+The replacement tree should be exhaustive rather than optimistic. If the first replacement also has an availability distribution, the model needs a second branch. If the only backup preserves scoring but not point-of-attack defense, the lost function must appear somewhere else in the lineup. If no feasible lineup covers every task, the simulation should retain the weakness instead of granting an abstract depth adjustment.
+
+Scenario weights can be learned, judgmental, or a mixture. Learned weights require a clearly dated training set and temporal validation. Judgmental weights should be shown as ranges and stress-tested. In either case, the public forecast should reveal which assumption drives the tails. A statement such as “the team projects for 46 wins” is less informative than showing that the median is similar across models while the lower tail is largely a joint availability-and-replacement outcome.
+
+The scenario matrix should update asymmetrically. A single practice can eliminate the branch in which a player has not begun basketball activity, but it cannot prove the functionally normal branch. One normal game can raise near-term workload expectations while doing little to settle recurrence or dense-schedule tolerance. Evidence accumulates through stages; the model should not jump directly from uncertainty to certainty because one visible milestone is encouraging.
 
 ## Forecast evaluation and accountability
 

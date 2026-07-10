@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [ai, agents, evaluation, frontier-models, benchmarks]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: AI frontier news
 review_after: 2026-08-09
 ---
@@ -82,7 +82,43 @@ Confusion clears when an evaluator states which question is being answered.
 
 A mature evaluation program uses all three. Fixed-scaffold results improve causal attribution; optimized-system results measure achievable utility; scaffold ablations explain the gap between them.
 
-## A practical normalization template
+## Matched comparisons and the factorial core
+
+The smallest design that can separate model and scaffold effects is a crossed matrix. Choose at least two exact model versions and two frozen scaffolds, then run every model with every scaffold on the same task instances under the same tool, grading, and budget policies. For models $m \in \{1,2\}$ and scaffolds $s \in \{1,2\}$, the four required cells are $(M_1,S_1)$, $(M_1,S_2)$, $(M_2,S_1)$, and $(M_2,S_2)$. A leaderboard containing only $(M_1,S_1)$ and $(M_2,S_2)$ is confounded: the model and scaffold changed together, so even a large gap cannot identify either cause.
+
+“Matched” must mean more than using the same benchmark name. Each cell should receive the same task IDs and initial states; the same tool schemas and permissions; the same token, call, attempt, wall-time, and dollar constraint selected for the estimand; the same environment image and grader; and the same rerun policy. Run order should be randomized or blocked by task and time so that API changes, environment drift, or transient outages do not line up with one condition. If a provider requires a syntax adapter, keep the adapter as thin as possible and disclose it. A provider-native optimized scaffold belongs in a separate optimized-system analysis, not silently inside the common-scaffold table.
+
+The basic task-level model is
+
+$$
+g(\mathbb{E}[Y_{i m s r}]) = \alpha + \mu_m + \sigma_s + (\mu\sigma)_{ms} + u_i + v_r,
+$$
+
+where $i$ indexes tasks, $r$ repeated rollouts, $g$ is an appropriate link function, $u_i$ captures task difficulty, and $v_r$ captures run-level variation. For binary success, logistic or hierarchical binomial models are natural; continuous scores may use a linear or robust alternative. The model term $\mu_m$ estimates an average model difference across the tested scaffold panel. The scaffold term $\sigma_s$ estimates an average scaffold difference across the tested models. The interaction $(\mu\sigma)_{ms}$ asks whether a scaffold’s effect depends on the model.
+
+That interaction is not statistical clutter. It is often the central finding. Define a difference-in-differences contrast:
+
+$$
+I = (Y_{M_2,S_2}-Y_{M_2,S_1})-(Y_{M_1,S_2}-Y_{M_1,S_1}).
+$$
+
+If $I$ is near zero with useful precision, the scaffold change had a similar measured effect on both models. If $I$ is large, “Scaffold 2 adds ten points” is not a portable claim: it may add twenty points for one model and nothing for another. A sign reversal is stronger still—one scaffold helps $M_1$ but hurts $M_2$. Then a single fixed-scaffold model ranking is scaffold-conditional, and an average over cells may conceal the decision-relevant result.
+
+The crossed design should be analyzed as paired task data, not as four unrelated leaderboard percentages. Publish the per-task outcomes and compute within-task contrasts; this removes much of the noise caused by different task mixes. Repeat stochastic rollouts rather than treating one trajectory as a stable property. Confidence or credible intervals should reflect both the finite task sample and rollout variation. When tasks are clustered by repository, application, or domain, resampling or random effects should respect those clusters. Multiple seeds on the same task do not substitute for broad task coverage.
+
+A practical first pass is a $3\times3$ matrix: three model families crossed with a minimal tool loop, a structured planner-memory loop, and a verifier-enabled loop. That panel is not universal, but it can reveal whether rankings survive qualitatively different control policies. If cost prevents a complete matrix, prioritize a connected design in which every model shares at least two scaffolds and every scaffold is tested on at least two models. Explicitly mark missing cells; do not impute them into a clean ranking.
+
+## Ablations that explain a scaffold gain
+
+A factorial matrix locates interaction; ablations identify which scaffold component may produce it. Start from a frozen full scaffold and remove or replace one component at a time: planning, retrieval, memory, context compression, reflection, verifier, retry policy, parallel branches, or test execution. Each ablation must preserve the rest of the configuration and re-match the budget. Removing a verifier while leaving its tokens and latency unused answers a system-removal question; reallocating that budget to the generator answers a budget-neutral architecture question. Both are useful, but they are different experiments.
+
+Component ablations should be run across more than one model whenever the article’s claim is model-general. A planner that improves one model may merely translate the task into a format favored by that model’s post-training. A verifier may help only when generator errors are diverse and the verifier is calibrated. Memory may help long tasks but degrade short ones by inserting stale summaries. Report task- or horizon-stratified effects so that a positive aggregate does not hide predictable harm.
+
+Removal is not always a fair test. Replacing retrieval with an equal-token random or lexical baseline distinguishes access to more context from retrieval quality. Replacing a learned selector with random selection distinguishes candidate generation from selection. Comparing one rollout, best-of-$k$, and verifier-selected $k$ separates extra sampling from intelligent adjudication. A “multi-agent” ablation should include a budget-matched single-agent ensemble; otherwise any gain may be caused by spending more calls rather than by interaction, as discussed in [[Single-agent versus multi-agent inference]].
+
+Treat ablation findings as local causal evidence. They support statements such as “under these models, tasks, and budgets, removing the verifier reduced success by $x$.” They do not prove that the component is necessary in all agent systems, because removal can move the remaining system off its tuned operating point. Where feasible, retune only on a declared development set and report both frozen and retuned ablations. The frozen result measures dependence of the shipped configuration; the retuned result asks whether simpler engineering can recover the performance.
+
+## A concrete reporting template
 
 Every consequential agent result should publish a machine-readable configuration and a human summary. The following template is deliberately redundant: omissions are signals that a comparison may not be auditable.
 
@@ -107,6 +143,38 @@ For cross-model work, report at least two views:
 
 Add a scaffold-sensitivity statistic such as the range or variance of each model’s score across a declared scaffold set. If rankings reverse across scaffolds, report the reversal rather than averaging it away. A mixed-effects or hierarchical model can estimate model, scaffold, task, and interaction contributions when the experiment has enough repeated cells, but transparent cell-level results remain essential.
 
+The following compact record can accompany the narrative and machine-readable configuration:
+
+```text
+Claim / estimand:
+  [model effect through common scaffolds | scaffold effect for fixed models | best system]
+As-of date and evaluation window:
+Tasks:
+  benchmark/version; exact split and IDs; exclusions; cluster/domain labels
+Models:
+  exact versions/endpoints; reasoning and sampling settings; provider-side caveats
+Scaffolds:
+  code commit; prompt text/hash; adapters; planner/memory/verifier/retry/stopping policy
+Held constant:
+  tools and permissions; environment image; grader; operator policy; information access
+Budget rule:
+  tokens; calls; tool calls; attempts; parallelism; wall time; dollars; reallocation policy
+Design:
+  full model × scaffold cell matrix; rollouts per task; randomization/blocking; missing cells
+Primary analysis:
+  task-level outcome; model, scaffold, and interaction contrasts with uncertainty
+Ablations:
+  component removed/replaced; frozen or retuned; budget removed or reallocated
+Reliability:
+  infrastructure failures; reruns; human interventions; grader audit/disagreement
+Results:
+  every cell; per-task data or protected traces; cost-performance frontier; reversals
+Interpretation:
+  facts directly measured; inferences; scope limits; unresolved confounds
+```
+
+A suitable headline then reads: “Across 120 matched tasks and three rollouts per cell, $M_2$ exceeded $M_1$ under both common scaffolds; the estimated model-by-scaffold interaction was small but imprecise.” If the evidence instead shows a reversal, say so in the headline. The optimized-system winner can be reported beside this matrix, but it should not replace it.
+
 ## Counterarguments and limits
 
 One counterargument is that users care about products, not causal decomposition. That is often true. A buyer may reasonably choose the agent that completes the most tasks within a dollar and latency budget, regardless of whether the advantage comes from weights or workflow code. The answer is to label the system comparison correctly, not to strip away useful engineering. Product evaluation becomes more informative when it reports cost, permissions, intervention, and failure modes alongside success.
@@ -128,6 +196,7 @@ The durable rule is simple: infer only at the level randomized or controlled by 
 
 - METR, [Task-Completion Time Horizons of Frontier AI Models](https://metr.org/time-horizons/) (methodology page last updated May 8, 2026; accessed July 9, 2026).
 - METR, [Guidelines for capability elicitation](https://evaluations.metr.org/elicitation-protocol/) (accessed July 9, 2026).
+- METR, [Measuring Time Horizon using Claude Code and Codex](https://metr.org/notes/2026-02-13-measuring-time-horizon-using-claude-code-and-codex/) (February 13, 2026; direct comparison of provider-optimized and general scaffolds, with stated caveats).
 - Joel Becker et al., [Measuring AI Ability to Complete Long Software Tasks](https://openreview.net/forum?id=CGNJL6CeV0) (ICLR 2026; methodology and scaffold disclosures).
 - Hjalmar Wijk et al., [RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts](https://arxiv.org/abs/2411.15114) (paper and open artifacts).
 - SWE-bench maintainers, [SWE-bench repository and evaluation harness](https://github.com/SWE-bench/SWE-bench) (accessed July 9, 2026).
@@ -144,3 +213,4 @@ The durable rule is simple: infer only at the level randomized or controlled by 
 - Can provider-side hidden routing or tool orchestration be audited well enough to compare services with open-weight agents?
 - Which intervention taxonomy cleanly separates environment repair, accessibility assistance, grader correction, and strategic human help?
 - Should frontier trackers rank both the best system and a common-scaffold model baseline, or avoid ordinal rankings when the two disagree?
+- How large must a model-by-scaffold interaction be before a model-only ranking should be withheld rather than qualified?

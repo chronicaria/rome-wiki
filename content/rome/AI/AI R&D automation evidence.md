@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [ai, agents, research, evaluation, ai-safety]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: AI frontier news
 ---
 Evidence for AI R&D automation must show reliable scientific progress across ambiguous, long-feedback-loop work—not merely fast execution on a scored engineering task.
@@ -13,7 +13,7 @@ Up: [[AI agents (MOC)]]
 
 The phrase **AI R&D automation** compresses several different claims. A model may answer machine-learning questions, write experimental code, optimize a kernel, reproduce parts of a published paper, search literature, analyze a dataset, or independently choose and complete a valuable research program. These are related capabilities, but success on one does not establish the others. The strongest claim—an autonomous system can materially accelerate the development of better AI systems—requires evidence about the whole research loop and its interaction with human organizations.
 
-Current public evidence is best described as a patchwork of increasingly realistic evaluations. It shows substantial competence on bounded research-engineering work and rapid experimental iteration. It also shows brittle planning, weak response to novel evidence, dependence on explicit scoring functions, difficulty sustaining open-ended inquiry, and large sensitivity to the [[Model versus scaffold in agent evaluations|model–scaffold system]] and [[Reasoning budget and fair model comparison|inference budget]]. As of July 9, 2026, this supports serious monitoring and targeted deployment studies, but it does not by itself establish autonomous end-to-end AI research.
+Current public evidence is best described as a patchwork of increasingly realistic evaluations. It shows substantial competence on bounded research-engineering work and rapid experimental iteration. It also shows brittle planning, weak response to novel evidence, dependence on explicit scoring functions, difficulty sustaining open-ended inquiry, and large sensitivity to the [[Model versus scaffold in agent evaluations|model–scaffold system]] and [[Reasoning budget and fair model comparison|inference budget]]. As of July 10, 2026, this supports serious monitoring and targeted deployment studies, but it does not by itself establish autonomous end-to-end AI research.
 
 ## Decomposing the claim
 
@@ -66,6 +66,61 @@ The quantity relevant to recursive or strategic AI progress is not generic codin
 
 Self-reported productivity or number of generated experiments is not enough for the third level. Researchers may feel faster while producing more rework, and a lab may ship faster because of additional compute, data, or staffing. Causal attribution requires comparable teams or phased adoption, preregistered outcomes, artifact review, and enough duration to observe downstream integration.
 
+## Measure the production function, not just the assistant
+
+The organizational claim can be made more precise by treating a research program as a production system. A project consumes researcher attention, accelerator time, data, infrastructure, experimental opportunities, and review capacity. It produces validated findings, working systems, negative results, reusable infrastructure, and eventually model improvements. AI can change the productivity of any input without changing the productivity of the whole system.
+
+Suppose milestone throughput is constrained by several serial stages: choosing a question, constructing an experiment, executing it, interpreting the result, and integrating the finding. If their effective capacities are $c_1,\ldots,c_k$, then sustainable throughput is bounded by the tightest stage, approximately
+
+$$
+T \leq \min_j c_j.
+$$
+
+An agent that multiplies code production by ten has little effect when accelerator scheduling, data rights, expert review, or large-run latency is already binding. It may even lower net throughput if cheap code generation floods a fixed review channel with plausible but invalid experiments. This is **bottleneck migration**: automation succeeds locally, work expands, and the constraint moves downstream. A deployment study should therefore measure queues and cycle times at every stage, not only hours saved by the assisted researcher.
+
+At least five quantities belong in a serious production-function record:
+
+1. **Accepted output:** artifacts or decisions that survive independent review, rather than raw generations, commits, experiments, or suggestions.
+2. **Lead time:** elapsed time from a question being accepted to a result being validated and integrated. Agent runtime is only one component.
+3. **Human attention:** authoring, prompting, supervising, debugging, reviewing, and cleaning up. Review minutes displaced to another team still count.
+4. **Compute and infrastructure:** inference spend, training and evaluation accelerators, storage, failed jobs, and contention imposed on shared systems.
+5. **Rework and externalities:** invalid conclusions, duplicated experiments, degraded code quality, incidents, and future maintenance created by the accelerated workflow.
+
+These quantities separate gross activity from net acceleration. A useful compact measure is the ratio of accepted, decision-relevant output to the fully loaded cost of producing and validating it. It should be reported as a vector or a set of curves, not a universal scalar, because the value of one validated safety result and one benchmark point are not commensurable.
+
+Real-world productivity studies are an important complement to capability benchmarks because they include integration friction. METR's 2025 randomized study of experienced open-source developers was explicitly framed as evidence about AI acceleration: participants worked on familiar repositories, tasks were randomized to AI-allowed or AI-disallowed conditions, and actual completion time was measured. Its surprising direction—developers were slower with the early-2025 tools in that setting despite expecting speedups—does not prove that later tools or other populations have the same effect. It demonstrates why benchmark competence and organizational uplift cannot be treated as synonyms. Familiarity, task selection, tool learning, repository scale, and model vintage all moderate the result.
+
+## The evidence ladder needs promotion rules
+
+An evidence ladder is useful only if it says what permits promotion. The following rules prevent one strong demonstration from silently becoming a stronger claim.
+
+**From component skill to bounded task automation:** require a complete artifact, an executable or expert grader, repeated trials, a fixed resource budget, and error analysis. Question answering or code snippets alone do not cross this boundary.
+
+**From bounded task automation to workflow substitution:** require tasks sampled from the actual work distribution, not only tasks chosen because they fit the agent. Count setup, supervision, intervention, and review. Report coverage—the fraction of incoming work for which the system was eligible—as well as conditional success. A 90% success rate on 10% of work is not 90% automation.
+
+**From workflow substitution to team uplift:** require a credible counterfactual. Randomized assignment is strongest when feasible; stepped-wedge rollout, matched teams, or within-person crossover can help when randomization is impractical. Outcomes should include accepted quality and downstream time, not self-reported usefulness alone. Analyze learning curves separately from steady-state use.
+
+**From team uplift to program acceleration:** require longitudinal milestone evidence and an account of simultaneous changes in models, compute, staffing, and project mix. The result must persist after the organization reallocates work and bottlenecks move. Faster completion of selected tasks is evidence for this level only when those tasks lie on the program's causal path.
+
+**From program acceleration to recursive acceleration:** require evidence that AI-assisted improvements materially improve the systems doing the assistance, that the improved systems produce further validated gains, and that the loop repeats under matched accounting. A single agent-authored optimization or an evaluation score on self-improvement-related work does not demonstrate a self-sustaining feedback process.
+
+Promotion should be reversible. A later independent replication failure, contamination finding, grader exploit, or deployment study with negative net uplift should lower the evidence state. The canonical record should preserve which model, scaffold, organization, and date supported each step; “AI can automate R&D” is too unstable and broad to be a timeless binary label.
+
+## A deployment scorecard and stopping rules
+
+Before expanding an R&D agent's authority, a team can predeclare a scorecard with six families of measures:
+
+- **coverage:** eligible share of work and reasons for exclusion;
+- **reliability:** pass-at-one, variance across runs, recovery, and catastrophic or silent-error rates;
+- **quality:** blinded expert acceptance, reproducibility, scientific validity, and downstream maintainability;
+- **resources:** human attention, inference and experimental compute, wall time, and infrastructure load;
+- **uplift:** causal change in accepted output, lead time, or milestone completion;
+- **governance:** provenance completeness, auditability, policy compliance, incident count, and ability to halt or roll back.
+
+The scorecard should include stopping rules before the trial begins. Pause or narrow deployment when silent invalidity exceeds a threshold, reviewer burden erases saved time, the agent learns to exploit a proxy grader, incidents cluster in one task family, provenance is incomplete, or the system's model or scaffold changes faster than it can be revalidated. Expand authority only by task class: good performance on kernel optimization does not authorize unsupervised literature claims, expensive training runs, or release decisions.
+
+This staged approach turns “human in the loop” from a slogan into an experimental variable. The record should say which decisions humans approved, what information they received, how long review took, whether rejection prevented harm, and whether the approval process remained effective as volume rose. Oversight that works for five agent proposals may collapse at five hundred. Automation evidence is incomplete if it measures the agent's scale but not the oversight system's capacity.
+
 ## A decisive evaluation program
 
 A stronger measurement program would use a portfolio rather than a single threshold.
@@ -97,6 +152,8 @@ AI R&D automation sits at the intersection of economic productivity, frontier-mo
 
 - METR, “Evaluating frontier AI R&D capabilities of language model agents against human experts” and RE-Bench materials, November 22, 2024, accessed July 9, 2026: https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/
 - METR, research index and later evaluation/deployment-study links, accessed July 9, 2026: https://metr.org/research/
+- METR, “Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity,” July 10, 2025, with February 2026 update, accessed July 10, 2026: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+- Alan Chan et al., “Measuring AI R&D Automation,” arXiv:2603.03992, March 4, 2026: https://arxiv.org/abs/2603.03992
 - OpenAI et al., “PaperBench: Evaluating AI's Ability to Replicate AI Research,” April 2, 2025, accessed July 9, 2026: https://openai.com/index/paperbench/
 - OpenAI et al., “MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering,” October 10, 2024, accessed July 9, 2026: https://openai.com/index/mle-bench/
 - OpenAI, “Introducing GeneBench-Pro,” June 30, 2026, accessed July 9, 2026: https://openai.com/index/introducing-genebench-pro/

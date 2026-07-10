@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [sports, football, premier-league, tottenham-hotspur, squad-construction]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: Tottenham Hotspur
 review_after: 2026-08-15
 ---
@@ -14,7 +14,9 @@ Up: [[Tottenham Hotspur 2026-27]]
 
 Squad registration is often described as a requirement to have eight home-grown players. That shorthand is useful but incomplete. The Premier League does not force a club to name eight home-grown players. It caps the submitted senior squad at 25 and permits no more than 17 players who fail the home-grown test. A club short of eight home-grown players can still compete, but its usable senior list shrinks below 25. Under-21 players sit outside that numerical list and may play in addition to it. The practical question for [[Tottenham Hotspur 2026-27|Tottenham in 2026–27]] is therefore not simply “How many English players are there?” It is: how many players require one of the 17 scarce non-home-grown places, which players qualify for the age exemption, and which apparently home-grown players remain under contract and in the first-team plan when the list is actually submitted?
 
-The answer cannot yet be a final registered list. As of 9 July 2026, the Premier League has not published Tottenham's 2026–27 post-window squad submission. The most recent authoritative registration baseline is the league's updated 2025–26 list, published on 5 February 2026 after the winter window. It recorded 24 senior-list players for Spurs, eight marked home-grown and 16 not marked home-grown, plus a separate Under-21 list. That document proves the classification used by the league at that date; it does not prove that every player remains a Tottenham player, will be retained, or will occupy the same kind of place in 2026–27. Registration, employment, loan status, transfer completion, and selection are distinct states.
+The answer cannot yet be a final registered list. As of 10 July 2026, the Premier League has not published Tottenham's 2026–27 post-window squad submission. The most recent authoritative registration baseline is the league's updated 2025–26 list, published on 5 February 2026 after the winter window. It recorded 24 senior-list players for Spurs, eight marked home-grown and 16 not marked home-grown, plus a separate Under-21 list. That document proves the classification used by the league at that date; it does not prove that every player remains a Tottenham player, will be retained, or will occupy the same kind of place in 2026–27. Registration, employment, loan status, transfer completion, and selection are distinct states.
+
+That evidence boundary still held when this note was rechecked on 10 July 2026. The Premier League's live Tottenham squad page is a useful directory, but it is not the summer registration return. The league has announced that the transfer window closes at 23:00 BST on 1 September; the controlling 2026–27 list must therefore come after the window rather than from a July roster page. Until publication, exact classifications for changed circumstances should be called **projected**, not official.
 
 ## The Premier League mechanism
 
@@ -52,6 +54,32 @@ Second, academy development can create two different kinds of registration value
 Third, transfers must be evaluated as packages. Replacing a non-home-grown senior with another is slot-neutral. Replacing a home-grown senior with a non-home-grown senior can consume both the departing player's contribution toward a 25-player list and an available non-home-grown place. Signing an Under-21 player may have no immediate Premier League list cost but can create a future one. A home-grown backup goalkeeper can be particularly useful because clubs need credible depth at a position where carrying several seniors is normal, though the Premier League squad-list rule itself does not create UEFA's explicit goalkeeper minimum.
 
 Fourth, the list is a constraint on optionality, not a measure of squad quality. Tottenham could comply with 20 senior players and numerous Under-21s, yet still lack depth in crucial roles. A full 25 can likewise be poorly balanced. Registration analysis should be combined with [[Tottenham 2026-27 squad architecture]], availability, contracts and tactical roles; it should not substitute for them.
+
+## A ledger that does not overclaim
+
+The safest working model has three evidence states rather than one supposedly current count.
+
+| State | What can be asserted | What cannot be inferred |
+|---|---|---|
+| **Official baseline** | The player appeared on the Premier League's February 2026 Tottenham senior or Under-21 list; an asterisk is the league's home-grown marker for that submission. | That he remains at Spurs, will be selected in September, or retains Under-21 treatment in the new season. |
+| **Confirmed transaction** | An official club or league announcement establishes an arrival, departure, loan or contract event. | The player's new list classification or final inclusion unless the registration list says so. |
+| **Projection** | Applying the published age rule and known registration history produces a plausible 2026–27 category. | That the league has accepted the category; disputed training histories remain unresolved. |
+
+This separation matters most during the transfer window. A transfer announcement changes the roster inventory immediately, but the scarce-place calculation is still provisional until age, training history and final inclusion are reconciled. Conversely, a player visible on the club website may already be expected to leave or may be omitted from the senior list. Neither a website omission nor a press report is a substitute for an official transaction.
+
+The arithmetic should be kept as four dated columns: senior home-grown, senior non-home-grown, age-exempt, and unresolved. Only the first two determine the submitted senior-list size. “Unresolved” is not a third registration class; it is an analytical quarantine that prevents uncertain players from silently entering a precise-looking total. When the league list arrives, every unresolved row should either move into an official class or be recorded as not submitted.
+
+Scenario tests show why a single headline count can mislead:
+
+| Change from the February baseline | Senior list | Non-home-grown count | Immediate implication |
+|---|---:|---:|---|
+| No changes | 24 | 16 | One overall and one non-home-grown place unused. |
+| Add one non-home-grown senior | 25 | 17 | The list becomes full and reaches the foreign-trained ceiling. |
+| Lose one home-grown player, add one non-home-grown senior | 24 | 17 | No breach, but the club cannot use a 25th place unless it adds a home-grown senior. |
+| One previously exempt player ages into a non-home-grown senior place | 25 | 17 | Capacity is exhausted even without a transfer arrival. |
+| Replace one non-home-grown senior with another | 24 | 16 | Slot-neutral, provided both transaction and registration states are confirmed. |
+
+These are mechanics, not predictions. They deliberately hold every other variable constant. Their value is diagnostic: they reveal whether a proposed move is constrained by the 17-player ceiling, by the ability to reach 25, by an age transition, or not by registration at all.
 
 ## What remains unresolved for 2026–27
 
@@ -105,6 +133,7 @@ The next authoritative event is Tottenham's 2026–27 Premier League squad-list 
 - [UEFA, 2026/27 Champions League Regulations, Article 31: Player lists](https://documents.uefa.com/r/Regulations-of-the-UEFA-Champions-League-2026/27/Article-31-Player-lists-Online) (accessed 9 July 2026). Official List A, locally trained, List B, goalkeeper and deadline provisions.
 - [UEFA, Tottenham Hotspur Europa League 2026/27 page](https://www.uefa.com/uefaeuropaleague/clubs/1652--tottenham/) (accessed 9 July 2026). Official statement that Tottenham are not playing in the competition this season.
 - [Tottenham Hotspur, “Fixtures 2026/27 — list in full”](https://www.tottenhamhotspur.com/news/1074144/fixtures-202627-list-in-full), 19 June 2026 (accessed 9 July 2026). Official club schedule stating that Spurs have no European football this season.
+- [Premier League, “Summer 2026 Transfer Watch”](https://www.premierleague.com/en/news/4658363/summer-2026-transfer-watch) (accessed 10 July 2026). Official confirmation that the summer window closes at 23:00 BST on 1 September 2026.
 
 ## Open questions
 

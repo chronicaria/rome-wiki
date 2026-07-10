@@ -15,15 +15,17 @@ Up: [[Sports]]
 
 - [[Indianapolis Colts 2026]] — season hub and current checkpoints
 - [[Indianapolis Colts 2026 roster map]] — official membership, transactions, and unresolved roles
-- [[Indianapolis Colts 2026 availability ledger]] — reserve and injury-report state
-- [[Indianapolis Colts 2026 schedule map]] — rest, travel, divisional sequencing, and London
+- [[Indianapolis Colts 2026 availability ledger]] — administrative status, rehabilitation evidence, and injury-report boundaries
+- [[Indianapolis Colts 2026 schedule map]] — schedule clusters as bounded roster and scheme stress tests
 - [[Indianapolis Colts quarterback structure 2026]] — starter, rehabilitation, and backup competition
-- [[Indianapolis Colts 2026 draft class]] — class construction and development questions
+- [[Indianapolis Colts 2026 draft class]] — class construction, role conversion, resource efficiency, and the Gardner transaction cycle
+- [[Indianapolis Colts 2026 roster cut mechanics]] — waivers, reserve paths, practice squads, elevations, and game-day roster constraints
 
 ## Units and mechanisms
 
 - [[Indianapolis Colts offensive line 2026]] — continuity, protection, and depth
 - [[Indianapolis Colts defensive identity 2026]] — personnel turnover and Lou Anarumo's structure
+- [[Indianapolis Colts defensive communication 2026]] — green-dot succession and the full front-to-secondary communication chain
 - [[Indianapolis Colts offensive identity 2026]] — Taylor-centered conflict structure, formation flexibility, and quarterback-dependent constraints
 - [[Indianapolis Colts running game 2026]] — Taylor's rushing engine, complementary-back trust, and blocking dependencies
 - [[Indianapolis Colts pass-catcher structure 2026]] — functional redistribution after Pittman's departure

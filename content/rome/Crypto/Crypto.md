@@ -52,6 +52,14 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Reading an onchain incident postmortem]] — reconstruct invariants, deployed state, timelines, losses, response, and remediation without accepting a project narrative as the complete record.
 - [[MEV and order-flow auctions]] — trace ordering surplus through builders, proposers, solvers, users, and token-value gates rather than treating gross MEV as protocol revenue.
 - [[Custody rehypothecation and counterparty risk]] — map technical control, legal title, records, reuse, and insolvency claims across intermediary chains.
+- [[Automated market maker loss versus rebalancing]] — isolate stale-quote adverse selection from impermanent loss, fees, inventory risk, and benchmark choice.
+- [[Bridge finality and settlement assumptions]] — trace source finality, verification, relaying, destination execution, and economic redemption as separate layers.
+- [[Stablecoin depeg transmission]] — map how redemption uncertainty moves through pools, oracles, collateral links, and forced deleveraging.
+- [[Token governance delegation markets]] — treat delegated voting power as an agency market with expertise, concentration, compensation, and capture tradeoffs.
+- [[Token buybacks and holder value]] — audit funding, authorization, execution, disposition, net supply, governance, and enforceability before treating repurchases as holder return.
+- [[Validator economics and staking yield]] — decompose issuance, fees, MEV, costs, penalties, dilution, and concentration behind a quoted staking rate.
+- [[Restaking risk is correlated leverage]] — consolidate shared collateral, operator, contract, liquidity, and slashing dependencies across services.
+- [[Decentralized exchange volume quality]] — reconstruct pool-leg and user-intent volume while testing routing duplication, incentives, self-trading, arbitrage, and price conversion.
 
 ## Current conviction subset
 

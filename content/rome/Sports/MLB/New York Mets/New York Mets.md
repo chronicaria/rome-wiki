@@ -25,6 +25,11 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 - [[Why Mets reliever performance is volatile]] — small denominators, leverage, inherited runners, role, and process measures.
 - [[Defensive value in public baseball metrics]] — range, throwing, framing, blocking, double plays, and Fielding Run Value.
 - [[Pitch-shape changes versus pitcher outcomes]] — velocity, release, movement, deployment, location, and held-out outcome tests.
+- [[Mets pitch-location strategy and attack regions 2026]] — pitch-family, count, handedness, and attack-region method built on a 14,095-pitch Statcast extraction.
+- [[How MLB option assignments shape Mets roster decisions]] — option years, assignment counts, minimum stays, consent, waivers, and the separate 26-/40-man ledgers.
+- [[How to translate Mets minor-league pitching workloads]] — event-level game exposure, role progression, hidden throwing, and responsible workload uncertainty.
+- [[How leverage changes Mets bullpen evaluation]] — leverage, inherited runners, availability, hitter pockets, and role volatility.
+- [[How platoons and bench roles shape the Mets lineup]] — platoon evidence, pinch hitting, defense, rest, and bench scarcity.
 
 ## Decision and synthesis
 
@@ -33,5 +38,6 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 - [[New York Mets run-creation profile 2026]] — on-base, contact-quality, role, platoon, baserunning, and context synthesis through July 10.
 - [[New York Mets roster-construction pressure points]] — active/40-man capacity, injured-list returns, options, waivers, and deadline opportunity costs.
 - [[Mets prospect-to-MLB translation]] — age/level/role evidence, major-league task translation, opportunity paths, and uncertainty.
+- [[What playoff roster design asks of the Mets]] — conditional round-by-round pitching, bench, eligibility, and opponent-fit decisions.
 
 ## Next links

@@ -33,6 +33,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Fees and executable probability intervals]]
 - [[Participant access and selection in political prediction markets]]
 - [[Political prediction-market contract families]]
+- [[Voids cancellations and postponements in event contracts]]
+- [[Dependence across political event contracts]]
+- [[Versioning political event-contract semantics]]
 
 ## Current observations
 

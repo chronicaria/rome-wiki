@@ -4,11 +4,14 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [sports, nfl, indianapolis-colts, roster-construction]
+as_of: 2026-07-10
+desk: Indianapolis Colts
+review_after: 2026-08-10
 ---
 
 Indianapolis used the 2026 draft to replenish the middle of its defense and add developmental speed, depth, and competition around a roster whose missing first-round pick had already been converted into cornerback Sauce Gardner.
 
-As of 2026-07-09
+As of 2026-07-10
 
 Up: [[Indianapolis Colts 2026]]
 
@@ -109,9 +112,25 @@ Training camp can answer whether Allen receives the communication role, where Ha
 
 A one-year review should emphasize roles earned, availability, and direction of development. It should not demand that Day 3 picks become starters. A three-year review can better test whether Allen and Haulcy became durable defensive pieces, whether at least some later picks produced useful snaps, and whether the trade-down generated value through the Allen-Boettcher pair. Any full-cycle assessment must also include Gardner and the forfeited 2027 first-rounder. That wider ledger prevents both easy optimism about eight new names and easy pessimism about the missing first-round selection.
 
+## A scorecard that resists draft-grade hindsight
+
+The cleanest way to revisit this class is to preserve the questions that existed before the results. Otherwise every outcome will acquire an apparently obvious explanation. A player who succeeds will be called an inevitable steal; a player who fails will be described as visibly flawed all along. Neither story captures the uncertainty Indianapolis accepted on draft weekend.
+
+Four separate ledgers are more useful than one grade.
+
+**Role conversion** asks whether the club turned college evidence into an NFL job. Allen's first benchmark is not a Pro Bowl; it is reliable communication and three-down usability. Haulcy's is trustworthy alignment and coverage work. Farmer's is dependable interior-line depth. The five later picks need a repeatable scrimmage or special-teams function before their traits have roster value.
+
+**Availability and retention** ask whether those roles survive. Games active, practice continuity, snaps earned, and a place on the roster after Years 1 and 2 provide more information than preseason highlights. They must still be interpreted carefully: injury is not the same as poor play, and a crowded veteran depth chart is not the same as failed development.
+
+**Resource efficiency** compares results with acquisition cost. Allen should face a higher expectation than Burks because No. 53 carried more opportunity cost than No. 254. The Allen-Boettcher pair should also be reviewed together because the trade down created the Boettcher selection. This does not mean adding their statistics. It means asking whether accepting the risk of moving from No. 47 produced two useful roles instead of one.
+
+**The full transaction cycle** keeps Gardner separate from the rookies while still including him in the final judgment. Gardner's Colts performance can justify or weaken the decision to surrender premium picks, but it cannot retroactively change whether Allen read a route correctly or whether Curry developed an NFL rush plan. Conversely, a late-round hit does not refund the lost first-round optionality. The two decisions belong in the same roster-construction review but require different evidence.
+
+This framework also protects against a common alternative explanation. If several rookies play early, that may reflect quality, but it may also reflect vacancies or injuries. If they play little, that may reflect weak performance, but it may also mean the veterans remained healthy and effective. Snap counts identify opportunity and trust; film, assignment evidence, and role stability are needed to explain why the counts changed.
+
 ## Verification state
 
-The identities, schools, rounds, pick numbers, class size, trade-down sequence, official signing state, listed measurements, cited college totals, and combine times in this article were checked against Colts and NFL pages available on July 9, 2026. The Gardner trade terms were independently checked against contemporaneous Associated Press reporting. Role descriptions attributed to the Colts are organizational intentions, not independent proof. All statements about likely paths, roster implications, or evaluation criteria are analysis and should be updated with official roster status and game evidence.
+The identities, schools, rounds, pick numbers, class size, trade-down sequence, official signing state, listed measurements, cited college totals, and combine times in this article were checked against Colts and NFL pages available on July 9, 2026, then compared on July 10 with the topic's current roster, linebacker, defensive-front, offensive-line, running-game, and defensive-backfield notes for internal consistency. The Gardner trade terms were independently checked against contemporaneous Associated Press reporting. Role descriptions attributed to the Colts are organizational intentions, not independent proof. All statements about likely paths, roster implications, or evaluation criteria are analysis and should be updated with official roster status and game evidence.
 
 ## Sources
 

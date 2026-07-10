@@ -24,9 +24,14 @@ Duke football coverage connects current-season state to roster construction, tac
 - [[Duke line-of-scrimmage development]] — protection, pass rush, run fits, and rotation questions.
 - [[Duke offensive line development 2026]] — continuity, communication, protection, run blocking, and playable depth.
 - [[Duke receiver development 2026]] — rebuilding target roles, spacing, explosives, and quarterback timing.
+- [[Duke running back development 2026]] — workload design, receiving, protection, complementary roles, and development tests.
+- [[Duke tight end development 2026]] — receiving continuity, blocking, protection, formation flexibility, and complementary roles.
 - [[Duke defensive front development 2026]] — interior control, edge discipline, four-man pressure, and rotation.
+- [[Duke linebacker development 2026]] — communication, run fits, pressure, coverage, and rotational development.
+- [[Duke secondary development 2026]] — transfer integration, coverage communication, tackling, and explosive-play prevention.
 - [[Duke situational football]] — third down, red zone, fourth down, field position, and special teams.
 - [[Duke football fourth-down decision-making]] — audited 2025 attempts and a context-sensitive 2026 decision framework.
+- [[Duke football close-game architecture]] — repeatable decision and operational mechanisms separated from outcome variance.
 - [[Duke special teams 2026]] — specialists, operations, coverage, returns, and repeatable field-position value.
 
 ## Program building

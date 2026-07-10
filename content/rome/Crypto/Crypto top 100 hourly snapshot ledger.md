@@ -4,7 +4,7 @@ created: 2026-07-09
 source: web
 status: seed
 tags: [crypto, markets, top-100, dataset]
-as_of: 2026-07-10T08:06:10Z
+as_of: 2026-07-10T09:03:38Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -91,6 +91,22 @@ The next provider observation left the lower cutoff unchanged: `venice-token` (V
 
 The stable VVV/APT ordering strengthens provider-series continuity but does not establish fundamental value, independent supply verification, or executable depth. The retrieval used the same documented parameters and completed at `2026-07-10T08:06:10Z`; representative provider update times were `2026-07-10T08:05:57.967Z` for VVV, `2026-07-10T08:05:50.620Z` for APT, and `2026-07-10T08:06:05.118Z` for Audiera.
 
+## Hourly boundary change — 2026-07-10T09:03:38Z
+
+The provider ordering changed inside the cutoff cluster without introducing a new provider identity. `venice-token` (VVV) moved to rank 99 at approximately $536.33 million, `ylds` moved to rank 100 at approximately $536.58 million, and `aptos` remained rank 101 at approximately $525.95 million. The provider ranks are not perfectly ordered by the market-cap values printed in the same rapidly updating response: YLDS showed a slightly larger reported capitalization than VVV despite the lower rank. This is a provider-timing discontinuity, not evidence that the ordered list should be silently re-sorted locally.
+
+JAAA ranked 88, Audiera ranked 89, and BinanceLife ranked 90. Their order changed relative to the previous narrow slice, but all three stayed inside the top 100. Audiera's provider-reported supply fields remained 309,266,666 circulating against one billion total/max units; unchanged fields do not resolve controller privileges, supply methodology, concentration, or venue depth.
+
+The retrieval used `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `page=1`, `sparkline=false`, and `price_change_percentage=24h,7d`. It completed at approximately `2026-07-10T09:03:38Z`; representative provider update times were `2026-07-10T09:03:38.090Z` for VVV, `2026-07-10T09:03:26.052Z` for YLDS, `2026-07-10T09:03:33.985Z` for APT, and `2026-07-10T09:03:28.210Z` for Audiera.
+
+## Hourly continuity check — 2026-07-10T10:03:33Z
+
+The lower cutoff remained unchanged: `venice-token` (VVV) ranked 99 at approximately $545.14 million, `ylds` ranked 100 at approximately $536.53 million, and `aptos` ranked 101 at approximately $526.58 million. This preserves the current CoinGecko-series cutoff without establishing fundamental value, independent supply quality, or executable liquidity.
+
+The rank-88–90 buffer changed to Jupiter (`jupiter-exchange-solana`) at 88, BinanceLife (`bianrensheng`) at 89, and JAAA (`janus-henderson-anemoy-aaa-clo-fund`) at 90. Audiera was outside the preserved 88–102 slice; no cause, exit, or identity conclusion is inferred from that absence. The response also printed XDC rank 98 before USD0 rank 97, another reminder that row fields update asynchronously and should not be locally re-sorted into a fabricated simultaneous state.
+
+The retrieval used `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `page=1`, `sparkline=false`, and `price_change_percentage=24h,7d`, completing at `2026-07-10T10:03:33Z`. Representative provider update times were `2026-07-10T10:03:14.465Z` for VVV, `2026-07-10T10:03:16.726Z` for YLDS, `2026-07-10T10:03:28.260Z` for APT, and `2026-07-10T09:50:08.088Z` for JAAA.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
@@ -99,6 +115,8 @@ The stable VVV/APT ordering strengthens provider-series continuity but does not 
 - [CoinGecko markets API 06:13 UTC boundary observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T06:13:16Z.
 - [CoinGecko markets API 07:02 UTC persistence observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T07:02:56Z.
 - [CoinGecko markets API 08:06 UTC continuity observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T08:06:10Z.
+- [CoinGecko markets API 09:03 UTC boundary observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T09:03:38Z.
+- [CoinGecko markets API 10:03 UTC continuity observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T10:03:33Z.
 - [CoinGecko API documentation — coins markets](https://docs.coingecko.com/reference/coins-markets), accessed 2026-07-09.
 
 ## Open questions

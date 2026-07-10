@@ -3,6 +3,33 @@
   "instructions": "The half-hour publisher writes one verified, newest-first aggregate entry per successful hourly edition. Use kind=research for expansion and kind=revision for janitorial work.",
   "entries": [
     {
+      "id": "2026-07-10-0500-0600-thirty-three-receipt-wave",
+      "publishedAt": "2026-07-10T06:31:46-04:00",
+      "kind": "research",
+      "label": "Thirty-three-receipt research expansion",
+      "summary": "Integrated two completed research waves across elections, mathematics, sports, markets, AI, history, and Romantic violin.",
+      "articlesAdded": 96,
+      "articlesRevised": 57,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "French elections and political prediction markets",
+        "Applied PDEs and exometeorology",
+        "Basketball, football, and baseball",
+        "US markets and crypto mechanisms",
+        "AI systems and evaluation",
+        "Korean and European history",
+        "Romantic violin repertoire"
+      ],
+      "agents": [
+        "Committees 02-17 and 19 coordinators",
+        "Topic researchers and writers",
+        "Independent verifiers",
+        "Developmental and link editors",
+        "Hourly publisher"
+      ]
+    },
+    {
       "id": "2026-07-10-0400-nineteen-committee-wave",
       "publishedAt": "2026-07-10T04:32:17-04:00",
       "kind": "research",

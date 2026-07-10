@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [sports, football, premier-league, tottenham-hotspur, squad-construction]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: Tottenham Hotspur
 review_after: 2026-07-16
 ---
@@ -14,7 +14,7 @@ Up: [[Tottenham Hotspur 2026-27]]
 
 ## What is actually confirmed?
 
-This is a roster-state analysis, not a transfer forecast. As of 9 July 2026, Tottenham have officially announced Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dúbravka, Mateus Fernandes, and Sandro Tonali as incoming men's first-team players. The earlier June announcements specified 1 July joining dates where applicable; Tonali's announcement remains expressly **subject to a work permit**, while Senesi's was subject to international clearance. The club also confirmed Alejo Véliz's permanent move to Bahia and Yves Bissouma's departure at the end of his contract. Rumoured targets and reported negotiations are excluded.
+This is a roster-state analysis, not a transfer forecast. As of 10 July 2026, Tottenham have officially announced Andy Robertson, Marcos Senesi, Jan Paul van Hecke, Martin Dúbravka, Mateus Fernandes, and Sandro Tonali as incoming men's first-team players. The earlier June announcements specified 1 July joining dates where applicable; Tonali's announcement remains expressly **subject to a work permit**, while Senesi's was subject to international clearance. The club also confirmed Alejo Véliz's permanent move to Bahia, Yves Bissouma's departure at the end of his contract, Alfie Devine's permanent move to Preston, and Radu Drăgușin's 2026–27 loan to Fiorentina with a performance-conditioned obligation to buy. Rumoured targets and reported negotiations are excluded.
 
 The club's public first-team squad page is useful but not yet a complete summer register: at the research date it listed the inherited group but had not incorporated the six announced arrivals. It therefore cannot be read as the final 2026–27 Premier League submission. Nor has the Premier League published Tottenham's final post-window list. The correct picture is a working squad assembled from the club page and dated official transaction announcements, with registration status still provisional.
 
@@ -27,7 +27,7 @@ The inherited club-page group comprises:
 - **Midfielders:** Xavi Simons, Conor Gallagher, James Maddison, Archie Gray, Lucas Bergvall, Pape Matar Sarr, Rodrigo Bentancur, Wilson Odobert, Yang Min-hyeok.
 - **Forwards:** Richarlison, Mathys Tel, Dominic Solanke, Mohammed Kudus, Dejan Kulusevski, Manor Solomon, Dane Scarlett.
 
-The six official additions expand that working group with Dúbravka in goal; Robertson, Senesi, and Van Hecke in defence; and Fernandes and Tonali in midfield, subject to the stated administrative conditions. Positions on the club page are broad labels, not a tactical depth chart. Gray can play in defence or midfield, Kulusevski can operate inside rather than as a touchline forward, Odobert can play wide, and Davies has long covered both left-back and centre-back. Those overlaps are central to the architecture.
+The six official additions expand that working group with Dúbravka in goal; Robertson, Senesi, and Van Hecke in defence; and Fernandes and Tonali in midfield, subject to the stated administrative conditions. Drăgușin's Fiorentina loan removes him from the immediate 2026–27 selection pool, while the permanent asset state remains conditional rather than complete. Positions on the club page are broad labels, not a tactical depth chart. Gray can play in defence or midfield, Kulusevski can operate inside rather than as a touchline forward, Odobert can play wide, and Davies has long covered both left-back and centre-back. Those overlaps are central to the architecture.
 
 ## A squad built around the ball
 
@@ -35,7 +35,7 @@ The recruitment pattern is unusually coherent. De Zerbi's teams ask the goalkeep
 
 Dúbravka described the modern goalkeeper as an extra outfield player who must be comfortable with the ball and hold a high starting position. The club explicitly connected that profile to De Zerbi's use of goalkeepers in build-up. Yet his arrival should not automatically be interpreted as a new first choice. Kinský played every minute of De Zerbi's final seven matches of 2025–26 after Vicario's surgery, and the club rewarded him with a new contract on 30 June. De Zerbi praised both his performances and his development potential. With Vicario still on the squad page, Tottenham have three experienced senior goalkeepers plus homegrown Austin. That is valuable insurance but a crowded allocation of minutes and, potentially, senior-list places.
 
-The central-defender recruitment is even more striking. Van Hecke already knows De Zerbi's methods from Brighton. Senesi called himself a defender who wants to break lines and play forward, and the club highlighted both his passing volume and defensive actions at Bournemouth. Add them to Romero, Van de Ven, Danso, Davies, Takai, Phillips, Vušković, Souza, and the loaned Drăgușin, and Spurs possess more centre-back candidates than a conventional two-centre-back structure can regularly satisfy.
+The central-defender recruitment is even more striking. Van Hecke already knows De Zerbi's methods from Brighton. Senesi called himself a defender who wants to break lines and play forward, and the club highlighted both his passing volume and defensive actions at Bournemouth. Add them to Romero, Van de Ven, Danso, Davies, Takai, Phillips, Vušković, and Souza, and Spurs still possess more centre-back candidates than a conventional two-centre-back structure can regularly satisfy even after Drăgușin's loan removed one senior option for this season.
 
 This surplus has three plausible explanations, none yet proven. First, it can be a deliberate attempt to protect the build-up model against injury: losing one press-resistant passer should not force a different game. Second, it gives De Zerbi specialist choices—left-footed distribution, recovery pace, aerial strength, or prior system knowledge—against different opponents. Third, some inherited defenders may be development loans or later departures. Until official moves occur, the third explanation must remain a roster possibility rather than a claim.
 
@@ -112,6 +112,8 @@ The summer should therefore be evaluated through three linked tests. First, does
 - [Sandro Tonali signing](https://www.tottenhamhotspur.com/news/1076467/welcome-sandro-tonali-makes-the-move-to-n17) — official club announcement, 6 July 2026; subject to work permit.
 - [Men's player update](https://www.tottenhamhotspur.com/news/1072684/mens-player-update) — Bissouma and academy departures, 10 June 2026.
 - [Alejo Véliz to Bahia](https://www.tottenhamhotspur.com/news/1075238/bahia-move-for-veliz) — official permanent-transfer announcement, 26 June 2026.
+- [Alfie Devine to Preston](https://www.tottenhamhotspur.com/news/1076787/preston-switch-for-alfie) — official permanent-transfer announcement, 7 July 2026.
+- [Radu Drăgușin to Fiorentina](https://www.tottenhamhotspur.com/news/1076954/dragusin-joins-fiorentina) — official 2026–27 loan announcement with a performance-conditioned obligation to buy, 9 July 2026.
 - [New contract for Ben Davies](https://www.tottenhamhotspur.com/news/1072669/new-deal-for-ben), [new contract for Pedro Porro](https://www.tottenhamhotspur.com/news/1073566/new-deal-for-pedro), and [new contract for Antonín Kinský](https://www.tottenhamhotspur.com/news/1075699/new-deal-for-kinsky) — official club announcements, June 2026.
 
 ## Open questions
