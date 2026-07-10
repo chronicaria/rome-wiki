@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [sports, football, tottenham-hotspur, roster-construction]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: Tottenham Hotspur
 review_after: 2026-07-10
 ---
@@ -12,7 +12,7 @@ Tottenham enter 2026–27 with Roberto De Zerbi beginning his first full season,
 
 Up: [[Sports]] · Related: [[Premier League tactics]], [[Football squad construction]]
 
-## Current state as of 9 July 2026
+## Current state as of 10 July 2026
 
 Tottenham appointed De Zerbi on 31 March and later confirmed that his agreement runs for five years. His emergency work at the end of 2025–26 supplies context, but the new season is a different test: a full pre-season, a substantially altered squad, and time to establish repeatable structures rather than manage only an immediate survival problem.
 

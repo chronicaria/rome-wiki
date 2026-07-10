@@ -4,6 +4,7 @@ created: 2026-07-10
 source: llm
 status: seed
 tags: [ai, evaluation, measurement, psychometrics, benchmarks]
+as_of: 2026-07-10
 ---
 
 AI evaluation becomes measurement science when a score is treated as evidence for a defined inference and decision—not as a property that a benchmark simply reveals.
@@ -52,6 +53,8 @@ Several kinds of evidence belong in a validity argument.
 
 **Consequences and use.** Following Samuel Messick’s unified account, validation also examines what score-based interpretations and uses do. A benchmark may redirect research toward what is easily scored, reward unsafe elicitation, or exclude languages and contexts important to the deployment. These effects do not mean every unequal outcome invalidates a measure. They mean evaluators must test whether adverse consequences arise from construct underrepresentation, construct-irrelevant variance, or an unjustified decision rule.
 
+Two familiar failure modes organize the inquiry. **Construct underrepresentation** means that important parts of the intended capability are absent: a “software engineering” test that samples only isolated bug fixes cannot support claims about architecture or sustained ownership. **Construct-irrelevant variance** means that scores move for reasons outside the intended capability: formatting compliance, English fluency, token allowance, network speed, or grader preference. These are not properties of an item alone. Whether tool use is irrelevant variance or part of the construct depends on whether the claim concerns base-model knowledge, tool-mediated performance, or the complete deployed system.
+
 The “benchmark lottery” demonstrated by Dehghani and colleagues is a warning about weak construct and sampling arguments: algorithm rankings can change materially with the chosen benchmark tasks. The appropriate conclusion is not that all comparisons are useless. It is that a ranking is conditional on the sampled task universe and that robustness across defensible samples is evidence the headline should report.
 
 ## Reliability is repeatability under stated conditions
@@ -70,6 +73,8 @@ AI evaluations have multiple sources of variation:
 
 Reliability must therefore name the object of generalization. Test–retest stability across model samples answers a different question from stability across tasks, prompts, or graders. For a deterministic multiple-choice run, task-sampling error may dominate. For an agent benchmark, identical tasks can yield different outcomes because trajectories branch and tools fail. For a human-preference evaluation, rater severity and population composition matter.
 
+NIST AI 800-3 makes this point concrete for benchmark analysis. Its generalized linear mixed-model framing separates the target of inference from task and trial variation instead of treating every observed response as an independent, identically distributed draw. The important lesson is not that one mixed model should govern all evaluation. It is that an uncertainty calculation encodes a data-generating story. Evaluators should expose that story—what is random, what is fixed, and what population is being generalized to—so readers can contest it.
+
 Repeated trials should preserve trial-level outcomes and distinguish pass@1 from pass@k, best-of-$k$, and within-trajectory recovery. If $k$ independent attempts each succeed with probability $p$, the chance of at least one success is $1-(1-p)^k$. That is a property of a search-and-selection procedure, not single-run dependability. See [[Reasoning budget and fair model comparison]].
 
 Generalizability theory offers a useful mindset even when a formal model is impractical: decompose observed variance across tasks, runs, prompts, graders, and their interactions. Then design the study around the facet relevant to use. Procurement may care about variation across everyday user tasks and latency. Capability research may care about maximal elicitation under a fixed budget. Safety evaluation may emphasize worst-case elicitation and the false-negative rate. There is no context-free reliability coefficient.
@@ -82,7 +87,34 @@ At minimum, report per-task data or sufficient aggregates, the number of tasks a
 
 Statistical uncertainty is only one layer. **Measurement uncertainty** includes ambiguity about the construct, task universe, and scorer. **Operational uncertainty** includes model and environment drift. **External-validity uncertainty** concerns transfer to users and settings not sampled. A narrow confidence interval around an invalid operationalization is false reassurance.
 
+Intervals should follow the decision quantity. If the decision concerns the chance that one system beats another on a new task, estimate a paired difference over the target task distribution. If it concerns a service-level floor, estimate the lower bound on the relevant success rate or tail latency. If it concerns rare harmful events, zero observed failures does not establish zero risk; report the exposure count and an upper bound compatible with the data. Missing and invalid runs belong inside this argument. Predeclare categories, report the primary rule, and show sensitivity under plausible alternatives. The disagreement among those analyses is itself decision-relevant uncertainty.
+
 HELM’s scenario-based approach is valuable because it reports multiple metrics and makes adaptation methods and scenarios explicit. Its broader lesson is that “performance” is not one natural scalar. Accuracy, calibration, robustness, fairness, efficiency, and risk can conflict. Aggregation requires declared weights and a decision rationale; otherwise the arithmetic silently substitutes the benchmark designer’s values for the user’s.
+
+## Measurement invariance: are comparisons on the same scale?
+
+A score difference is interpretable only if the measurement relationship remains sufficiently stable across the conditions being compared. **Measurement invariance** asks whether the same observed behavior carries the same construct meaning across groups, systems, prompts, languages, time periods, or environments. In human testing, Meredith’s factorial-invariance framework formalized this requirement for group comparisons. In AI, the groups are unusual—different model families can use different strategies—but the comparability problem is the same.
+
+Suppose an item-response model writes the probability that system $s$ succeeds on item $i$ as
+
+$$
+P(Y_{is}=1)=\operatorname{logit}^{-1}\!\left[a_i(\theta_s-b_i)\right],
+$$
+
+where $\theta_s$ is a latent capability, $b_i$ item difficulty, and $a_i$ discrimination. A leaderboard comparison assumes that item parameters have comparable meaning across systems. If a tool-using model can recognize a benchmark template while another must solve the underlying task, the same item may have different effective difficulty or discrimination. That is **differential item functioning** (DIF): systems with the same level of the target construct have different response probabilities because of an item-system interaction.
+
+Invariance is not all-or-nothing. A practical hierarchy asks progressively stronger questions:
+
+1. **Configural comparability:** does the same broad facet structure describe each condition, or does “coding ability” decompose differently with and without repository search?
+2. **Metric comparability:** do tasks relate to the latent construct with similar strength, so differences and associations can be compared?
+3. **Scalar comparability:** do item baselines or thresholds align, so mean latent levels can be compared without systematic offsets?
+4. **Residual comparability:** is unexplained item variance similar, a demanding condition relevant to precision claims?
+
+AI evaluators rarely have enough systems for conventional multi-group factor analysis, and model responses can violate local independence because tasks share templates, repositories, or retrieved artifacts. The hierarchy is therefore a diagnostic language, not a ritual sequence of fit tests. Useful checks include item-by-system interaction models, DIF analysis, stratified calibration plots, rank stability across domains and prompt forms, and held-out replication on isomorphic tasks. Inspect effect sizes and consequences, not only a significance threshold: with many trials, trivial non-invariance is detectable; with few frontier systems, consequential non-invariance may remain imprecise.
+
+When invariance fails, do not automatically delete the offending items until a clean ranking appears. First diagnose why. A translation effect may justify language-specific reporting. A tool-dependent reversal may reveal that the construct is genuinely conditional on affordances. A grader that favors one model’s verbosity is construct-irrelevant variance and should be repaired. Partial invariance can sometimes support limited contrasts anchored by stable items, but the headline must narrow accordingly. If rankings reverse across defensible operationalizations, the result is a profile, not a universal ordering.
+
+Longitudinal invariance matters too. A benchmark version, scoring model, or API endpoint can change while its label stays constant. Trend claims require stable anchor items or an explicit equating design, plus bridge studies that run old and new protocols on overlapping systems. Without that bridge, two dated scores are repeated numbers, not necessarily points on one scale. Dynamic benchmarks gain freshness at the cost of additional equating obligations.
 
 ## Contamination changes what the score means
 
@@ -110,6 +142,24 @@ This prevents a recurring category error. [[Model versus scaffold in agent evalu
 
 Decision validity also requires counterfactual baselines. Compare the AI-assisted workflow with the actual alternative: a person, older system, search tool, or no action. Include review time and correction costs. A model that finishes more tasks but generates rare, expensive failures may have a higher benchmark average and lower operational value. Average accuracy cannot encode every loss function.
 
+## Decision thresholds turn evidence into action
+
+A decision threshold is not a discovered constant hidden inside a benchmark. It represents a loss tradeoff. Let action $A$ create benefit $B_{TP}$ for a true positive, cost $C_{FP}$ for a false positive, and let inaction create cost $C_{FN}$ for a false negative. A threshold should be chosen from those consequences, prevalence, capacity, and reversibility—not selected afterward because it makes the system pass.
+
+This separates three often-confused thresholds:
+
+- a **measurement threshold**, such as the score used to label an individual task successful;
+- an **evidence threshold**, such as the required lower confidence bound for a claim;
+- an **operational threshold**, such as the predicted-risk level at which an agent may act without review.
+
+Each needs independent justification. Moving the task-success rubric can change the measured construct. Raising the evidence threshold reduces false declarations of superiority but does not make a deployment safer by itself. Lowering an operational threshold can increase useful automation and harmful action simultaneously.
+
+For a release gate, define the acceptance region before observing final results. A defensible rule might require a lower uncertainty bound above a minimum utility floor, no material regression on protected failure slices, an upper bound below a harmful-event ceiling, and latency or cost within budget. A **guard band** between pass and fail can route borderline results to additional testing rather than forcing false precision. For sequential monitoring, predeclare stopping rules; repeatedly checking until a favorable interval appears invalidates ordinary error guarantees.
+
+Thresholds must be calibrated on a development sample and evaluated on a fresh confirmation sample drawn from the operational population. Report performance across a plausible range of cost ratios rather than one convenient point. Decision-curve analysis supplies one transferable idea: compare the net benefit of a score-based policy with concrete alternatives across thresholds. In AI deployment those alternatives might be “always require human review,” “never automate,” or “use the incumbent system.” A higher benchmark average can still have lower net benefit if its extra successes are paired with expensive, irreversible failures.
+
+After deployment, monitor calibration and base-rate drift. Threshold review should be triggered by changes in model snapshot, scaffold, tools, task mix, grader, prevalence, or loss assumptions—not merely by a calendar. Any threshold change creates a new decision policy and should receive a dated validation record.
+
 ## Falsifiability turns evaluation into science
 
 An evaluation claim is scientific only if adverse evidence can count against it. “This benchmark captures reasoning because strong models score highly” is circular when the models were already called strong because of related benchmarks. Likewise, revising the capability definition after every surprising failure protects a narrative rather than testing it.
@@ -122,7 +172,7 @@ Potential falsifiers include failure to reproduce across fresh repositories, sha
 
 Development sets and exploratory analysis remain useful. The crucial separation is between generating hypotheses and testing them. Freeze confirmatory tasks, metrics, exclusions, and analysis where stakes justify it; preserve failed hypotheses; and renew evaluation after systems adapt. Dynamic evaluation is not automatically valid—generated items can drift or contain scorer errors—but it makes the adversarial relationship between measurement and optimization explicit.
 
-## A practical validation dossier
+## A practical reporting protocol
 
 A serious benchmark or internal eval should ship with a living dossier:
 
@@ -136,6 +186,20 @@ A serious benchmark or internal eval should ship with a living dossier:
 8. **Validity evidence:** content review, relationships to other measures, perturbations, process evidence, and transfer tests.
 9. **Failure taxonomy:** not only whether the system failed, but where and with what consequences.
 10. **Falsifiers and renewal:** predeclared disconfirming results, contamination controls, drift monitoring, and review date.
+
+Then publish the result in four layers:
+
+**Claim box.** Name the system, construct, target population, evaluation window, operating conditions, estimand, intended decision, and forbidden extrapolations. Readers should know immediately whether this is a base-model comparison, a fixed-scaffold comparison, or an optimized product comparison.
+
+**Measurement table.** Report the task blueprint and weights; sample and cluster counts; item and grader provenance; exact model, prompt, scaffold, tool, permission, budget, retry, and human-assistance settings; missing-data and invalid-run rules; contamination controls; and every protocol deviation. Version hashes are preferable to names that can silently move.
+
+**Result panel.** Show the estimate with an interval matched to the sampling design, paired contrasts, relevant tails and slices, task-level data or sufficient aggregates, cost and latency, grader agreement, and a failure taxonomy. Include invariance diagnostics across the conditions required by the claim. If the comparison depends on a threshold, report sensitivity across plausible thresholds and the consequences of false positives and false negatives.
+
+**Decision and renewal record.** State the predeclared rule, observed decision, accountable owner, guard-band outcome, unresolved evidence, drift triggers, review date, and what new observation would reverse the decision. Separate the empirical result from the policy choice.
+
+A concise headline can follow this pattern:
+
+> Under configuration $C$ and budget $B$, system $A$ exceeded the incumbent by an estimated $d$ on target task population $P$ (interval $I$); it met the predeclared release gate $G$, with unresolved uncertainty on slices $S$ and mandatory review after trigger $T$.
 
 This dossier is deliberately harder to summarize than a leaderboard cell. That friction is productive: it exposes which claims are supported, which are provisional, and which decisions need new evidence.
 
@@ -155,6 +219,10 @@ Measurement science also makes progress more actionable. A disappointing score c
 - Douwe Kiela et al., “Dynabench: Rethinking Benchmarking in NLP,” 2021. https://aclanthology.org/2021.naacl-main.324/ (accessed 2026-07-10).
 - Maria Eriksson et al., “Can We Trust AI Benchmarks? An Interdisciplinary Review of Current Issues in AI Evaluation,” 2025. https://arxiv.org/abs/2502.06559 (accessed 2026-07-10).
 - Rishi Bommasani and Percy Liang, “Reflections on Foundation Model Evaluation,” 2022. https://hai.stanford.edu/news/reflections-foundation-model-evaluation (accessed 2026-07-10).
+- Amanda Keller et al., *Expanding the AI Evaluation Toolbox with Statistical Models*, NIST AI 800-3, 2026. https://doi.org/10.6028/NIST.AI.800-3 (accessed 2026-07-10).
+- William Meredith, “Measurement Invariance, Factor Analysis and Factorial Invariance,” *Psychometrika* 58, 1993. https://doi.org/10.1007/BF02294825 (accessed 2026-07-10).
+- Andrew J. Vickers and Elena B. Elkin, “Decision Curve Analysis: A Novel Method for Evaluating Prediction Models,” *Medical Decision Making* 26, 2006. https://doi.org/10.1177/0272989X06295361 (accessed 2026-07-10).
+- NIST, *Assessing Risks and Impacts of AI (ARIA): Pilot Evaluation Report*, NIST AI 700-2, 2025. https://doi.org/10.6028/NIST.AI.700-2 (accessed 2026-07-10).
 
 ## Open questions
 
@@ -163,3 +231,5 @@ Measurement science also makes progress more actionable. A disappointing score c
 - What evidence best distinguishes genuine transfer from contamination when training corpora are unavailable?
 - How can confidential task pools remain auditable to outsiders without becoming training targets?
 - Which benchmark claims warrant preregistration, and which are better treated as explicitly exploratory surveillance?
+- How much partial invariance is tolerable before an AI leaderboard should switch from a common scale to condition-specific profiles?
+- What guard-band and sequential-testing designs best fit rare but severe agent failures when confirmation runs are expensive?

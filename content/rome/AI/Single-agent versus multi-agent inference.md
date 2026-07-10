@@ -104,6 +104,20 @@ $$
 
 The penalty is not merely tokens. It includes variance, operational failure, observability, security, and the human cost of debugging the system. A multi-agent design that wins one benchmark point while multiplying latency, cost, and unrecoverable failure may be dominated in deployment.
 
+## A reporting protocol that can locate the gain
+
+A credible experiment should make the inference policy reconstructible rather than describe it with a label such as “three-agent debate.” Start with an execution graph: identify every model invocation, the model and decoding settings, the prompt or role template, what prior messages and tool observations it can see, and which node produces the deployable answer. State whether calls run concurrently or serially, whether agents share memory, and whether a stopped or failed worker is retried. Release the orchestration code and exact prompts when possible. A transcript without the scheduler, hidden system prompts, or stopping rules is not a reproducible system specification.
+
+Report resources at both task and run levels. For every policy, give input, cached-input, reasoning, and visible output tokens where the API exposes them; model calls; tool calls and tool results; dated dollar cost; total work; critical-path latency; peak concurrency; and failure or retry counts. Summaries should include distributions and confidence intervals, not only means, because an agent team may raise average quality while producing a costly tail of stalled or runaway runs. Plot quality against at least one total-work budget and one latency budget. If a provider does not expose reasoning tokens or FLOPs, say so rather than treating visible output tokens as compute.
+
+The baseline matrix should cross *generation policy* with *aggregation policy*. At each candidate count $k$, compare one long or adaptive single trajectory, $k$ independent samples with majority vote, $k$ independent samples with the treatment's judge, iterative self-revision, and the interacting system. Apply identical answer parsing and, when meaningful, the same verifier to every candidate pool. Add oracle best-of-$k$ only as a ceiling. This factorial design separates the value of drawing more candidates from the value of communication and the value of selection.
+
+Measure diversity before any messages are exchanged. For discrete-answer tasks, publish the number of unique answers, vote entropy, pairwise disagreement, and pairwise joint-error rates. For open-ended work, pre-register behavioral proxies such as distinct evidence items, independently discovered defects, or non-overlapping test cases. Then measure the communication transition: incorrect-to-correct flips, correct-to-incorrect flips, minority survival, agreement growth, and whether new evidence appeared before a flip. Final consensus alone cannot distinguish successful correction from conformity. The 2026 Free-MAD and diversity-and-confidence studies make this process-level distinction especially salient: both motivate preserving or selecting useful disagreement rather than assuming that extra consensus is progress.
+
+Evaluate the aggregator as its own model. Conditional on at least one correct candidate being present, report its selection accuracy; conditional on a correct majority, report how often it overturns that majority; randomize candidate order and conceal agent identity to test presentation bias. For tasks with executable checks, distinguish selection by production-available tests from selection by hidden benchmark labels. For sourced prose, audit citation entailment and source quality separately from fluency. Otherwise a judge can manufacture an apparent team gain by rewarding the style it helped induce.
+
+Finally, retain operational failures in the denominator. Publish per-task outcomes, seeds, unsuccessful runs, coordinator omissions, duplicate work, malformed handoffs, termination errors, and discarded worker artifacts. Stratify results by task decomposability, dependency density, objective verifiability, and context size. The useful conclusion is not “multi-agent wins” but a conditional statement: under a specified budget and concurrency envelope, for tasks with these structural properties, this interaction or decomposition component moves quality, latency, or reliability beyond the strongest non-interacting alternative.
+
 ## A claim checklist
 
 Before accepting a claim that multiple agents outperform one, ask:
@@ -131,6 +145,8 @@ This checklist narrows the claim without dismissing the architecture. Multi-agen
 - Lars Benedikt Kaesberg et al., [“Voting or Consensus? Decision-Making in Multi-Agent Debate”](https://aclanthology.org/2025.findings-acl.606/), Findings of ACL 2025 — primary controlled comparison of decision protocols.
 - Mert Cemri et al., [“Why Do Multi-Agent LLM Systems Fail?”](https://arxiv.org/abs/2503.13657) (2025) — primary human-annotated taxonomy of multi-agent system failures.
 - Jeremy Hadfield et al., [“How we built our multi-agent research system”](https://www.anthropic.com/engineering/multi-agent-research-system), Anthropic Engineering (2025) — official production account with token-use, task-fit, and coordination caveats; vendor-authored rather than independent evaluation.
+- Yu Cui et al., [“Free-MAD: Consensus-Free Multi-Agent Debate”](https://aclanthology.org/2026.findings-acl.1600/), Findings of ACL 2026 — primary study of a one-round, anti-conformity debate protocol that scores the full trajectory instead of taking only the final majority.
+- Xiaochen Zhu et al., [“Demystifying Multi-Agent Debate: The Role of Confidence and Diversity”](https://aclanthology.org/2026.findings-acl.1694/), Findings of ACL 2026 — primary study isolating diverse initialization and calibrated confidence as mechanisms missing from homogeneous debate.
 
 ## Open questions
 

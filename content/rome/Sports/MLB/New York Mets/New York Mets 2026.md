@@ -45,6 +45,9 @@ The Curry–Myers–Hammer sequence shows how quickly a transaction headline can
 - [[How recent workload shapes Mets bullpen availability]] turns official pitches, appearances, roster movement, and hidden warm-up uncertainty into a graded daily availability framework.
 - [[How lineup sequencing changes Mets run expectancy]] explains why plate-appearance allocation and base-out states matter while keeping lineup optimization in its proper marginal scale.
 - [[How the Mets should evaluate deadline relief pitching]] evaluates relief roles, availability, mechanisms, control, and roster costs within the Mets' seller-oriented 2026 context.
+- [[How bullpen warm-ups complicate Mets availability estimates]] separates recorded game pitches, sourced warm-up episodes, and unobserved activity without inferring medical status.
+- [[How to simulate a Mets batting order responsibly]] defines regressed inputs, rules, park and handedness branches, substitution policies, and uncertainty tests for a reproducible lineup model.
+- [[How contract control changes the price of deadline relief]] explains how control, options, assignment rights, workload, roster fit, and replacement innings shape acquisition cost.
 
 ## Sources
 

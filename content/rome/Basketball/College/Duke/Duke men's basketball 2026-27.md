@@ -23,6 +23,8 @@ Up: [[Basketball]]
 - [[Duke 2026-27 lineup scalability]] — a six-function test for whether lineup depth survives different elite opponents.
 - [[Duke 2026-27 defensive role map]] — the six defensive jobs each viable lineup must cover and the evidence needed to assign them.
 - [[Duke 2026-27 point-of-attack defense]] — how guard containment, screen navigation, foul chains, and recovery preserve Duke's called coverage.
+- [[Duke 2026-27 rim protection]] — a hierarchy of interior deterrence, coverage, foul control, and possession completion rather than a block-count forecast.
+- [[Duke 2026-27 foul economy]] — how offensive pressure, defensive availability, bonus timing, and conversion shape the complete foul exchange.
 - [[Duke 2026-27 defensive rebounding]] — a five-player possession-ending framework across conventional, mobile-five, two-big, and switch-heavy groups.
 - [[Duke 2026-27 shooting and spacing]] — how shooting gravity, movement, and lineup tradeoffs determine usable offensive space.
 - [[Duke freshman translation in 2026-27]] — a bounded method for turning pre-college evidence into falsifiable role expectations.
@@ -40,6 +42,8 @@ Up: [[Basketball]]
 - [[How Duke attacks compact defenses]] — a coverage-specific framework for creating choices through early offense, interior catches, second actions, helper manipulation, and rebounding.
 - [[How opponents pressure Duke's initiators]] — the denial, press, blitz, switch, and gap-help tests for Duke's distributed creation chain.
 - [[Duke 2026-27 half-court shot creation]] — a four-stage chain from entry and first bend through the second read and late-clock rescue.
+- [[Duke 2026-27 wing decision-making]] — how Sarr, Howard, Williams, Wilkins, and alternate lineup structures can preserve an advantage and finish defensive possessions.
+- [[Duke 2026-27 free-throw generation]] — how drives, interior leverage, cuts, rebounds, and transition can create pressure without becoming whistle-dependent.
 - [[Duke 2026-27 transition offense]] — how secure possession, advance passing, lane geometry, and second-wave continuation can create selective early advantage.
 - [[Duke 2026-27 offensive rebounding]] — a lineup- and shot-specific crash-versus-retreat framework that values the complete possession exchange.
 - [[Duke 2026-27 turnover economy]] — how live-ball, dead-ball, creation-risk, and pressure turnovers connect offense to transition defense.

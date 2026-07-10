@@ -34,6 +34,8 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Interest-rate differentials and dollar exchange rates]]
 - [[Trade-weighted US dollar indexes]]
 - [[Cross-currency basis]]
+- [[Dollar and FX transmission tracker]]
+- [[Treasury repo specialness]]
 
 ## Commodity markets
 
@@ -47,6 +49,8 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Gold real yields and the US dollar]]
 - [[Shipping freight and commodity price transmission]]
 - [[Commodity data and contract registry]]
+- [[Physical commodity basis]]
+- [[Energy market balance tracker]]
 
 ## Quantitative research craft
 
@@ -58,9 +62,9 @@ This map connects durable explanations of US equities, rates, credit, currencies
 
 ## Next connections
 
-- [[Dollar and FX transmission tracker]]
-- [[Energy market balance tracker]]
-- [[Treasury repo specialness]]
+- [[Options market data provenance]]
+- [[Treasury fails and settlement frictions]]
+- [[Exchange warehouse inventories and metal spreads]]
 
 ## Open questions
 

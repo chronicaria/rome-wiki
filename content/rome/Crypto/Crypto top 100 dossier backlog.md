@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, research, backlog]
-as_of: 2026-07-10T11:03:15Z
+as_of: 2026-07-10T12:03:16Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -50,6 +50,7 @@ Status vocabulary: **ready** has a bounded question and source lead; **blocked**
 - Recorded the 2026-07-10T09:03:38Z reorder to VVV rank 99, YLDS rank 100, and APT rank 101, plus JAAA/Audiera/BinanceLife at ranks 88/89/90. Preserved the response's rank-versus-market-cap timing mismatch rather than silently re-sorting it; identity blockers remain unchanged.
 - Recorded the 2026-07-10T10:03:33Z continuity observation: VVV/YLDS/APT stayed ranks 99/100/101, while Jupiter/BinanceLife/JAAA occupied ranks 88/89/90. Audiera fell outside the preserved 88–102 slice; this did not resolve or retire its identity card. USX and Audiera blockers remain unchanged.
 - Recorded the 2026-07-10T11:03:15Z continuity observation with the same VVV/YLDS/APT cutoff and Jupiter/BinanceLife/JAAA rank-88–90 buffer. No new identity entered the slice; Audiera and USX verification blockers remain unchanged.
+- Recorded the 2026-07-10T12:03:16Z continuity observation with VVV/YLDS/APT ranks 99/100/101 and BinanceLife/Jupiter/JAAA ranks 88/89/90. No new identity or classification change cleared; Audiera and USX remain blocked.
 
 - Captured the first immutable rank-90–110 boundary observation.
 - Assigned canonical CoinGecko IDs to all 21 rows.

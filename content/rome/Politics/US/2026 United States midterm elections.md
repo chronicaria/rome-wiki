@@ -17,10 +17,14 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 
 - [[2026 Senate control path]] — the 34–31 off-ballot base, all 35 contests, loss-offset arithmetic, and the distinction between mathematical and modeled routes.
 - [[2026 Senate race prioritization]] — the first Senate dossier queue and the rule for separating control leverage from noisy attention.
+- [[2026 Georgia Senate election]] — a Democratic-held defense dossier focused on Ossoff, Collins, runoff evidence, and loss-offset control leverage.
+- [[2026 Michigan Senate election]] — a first Democratic open-seat defense dossier separating official primary ballot status, campaign suspension evidence, finance timing, and control arithmetic.
+- [[2026 Texas Senate election]] — a Republican-held open-seat defense dossier treating Paxton's nomination and Talarico's money as path-expanding evidence, not a core-route substitute.
 - [[2026 House battleground map]] — a compact pivotal-seat ledger with defense, core, and correlated-expansion rings.
 - [[2026 House race dossier prioritization]] — the first House dossier queue and the official-file threshold for promoting tracker rows into full race pages.
 - [[2026 House district dossier template]] — the minimum official identity, map, candidate, finance, voting, and uncertainty fields before creating district pages.
 - [[2026 Senate race dossier template]] — the minimum official race, ballot, FEC, rating, poll, finance, and control-role fields before creating Senate race pages.
+- [[2026 Senate dossier source hierarchy]] — the proof hierarchy for state ballot authority, Senate class facts, FEC records, polls, ratings, reporting, campaign claims, and market claims.
 
 ## Evidence and methods
 
@@ -30,8 +34,10 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 - [[2026 midterm redistricting process watch]] — reusable status labels for enacted maps, stays, remedies, referendum paths, and speculative map talk.
 - [[2026 midterm money map]] — a reproducible ledger separating candidate, party, coordinated, and independent financial channels.
 - [[2026 midterm candidate filing checkpoint]] — the July ballot-access and FEC-report ingest plan for avoiding premature race snapshots.
+- [[2026 midterm filing-calendar risk]] — why primary, runoff, independent, substitution, and finance clocks should not be collapsed into one "field is set" claim.
 - [[2026 midterm turnout coalition watch]] — pre-return turnout and registration indicators, with guardrails against treating them as vote counts.
 - [[2026 midterm polling error watch]] — a disclosure and design ledger for 2026 polling uncertainty.
+- [[2026 Senate race rating vocabulary]] — how to read Toss Up, Lean, Likely, Solid, Safe, and Tilt labels without converting them into unstated probabilities.
 - [[2026 midterm prediction-market comparison]] — how to compare market prices with polls, ratings, and control arithmetic without treating prices as outcomes.
 - [[2026 midterm election-law docket]] — legal-status tracking for maps, ballot access, spending channels, counting, certification, recounts, and seating.
 - [[NRSC v. FEC and the 2026 midterms]] — how unlimited party coordinated expenditures change the spending-channel ledger after June 30, 2026.

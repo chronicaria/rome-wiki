@@ -104,6 +104,44 @@ The same pair can solve several of these problems; no public evidence shows that
 
 De Zerbi's reference structure also includes the goalkeeper and deepest midfielders. A centre-back partnership that looks uncomfortable with one goalkeeper or pivot may look different with another set of support angles. Conversely, selecting two polished passers cannot compensate for midfielders who hide behind pressure or full-backs who occupy the same lane. The unit must be evaluated as a network.
 
+## A role matrix, not a depth chart
+
+The following matrix separates verified evidence from tactical inference. It is deliberately not a ranking. “Verified signal” means the trait is supported by the cited club material or an established Tottenham role; “architectural use” is an inference about how that trait could help a De Zerbi team. Competitive evidence could overturn any inferred use.
+
+| Defender | Verified signal | Plausible architectural use — **inference, not selection forecast** | What remains unproved |
+|---|---|---|---|
+| Jan Paul van Hecke | Prior De Zerbi experience; club and player describe bravery in possession, line-breaking intent, aggression, and front-foot defending | Method reference on either the ball or the training ground; pressure invitation; stepping with coordinated cover | Whether prior familiarity translates into Tottenham's best competitive partnership |
+| Marcos Senesi | Left-footed centre-half; club-reported high passing and long-pass volume; Premier League defensive workload | Left-side width in the first line; diagonal escape over a press; possible back-three flexibility | Timing under De Zerbi's pressure cues, open-space defence, and final administrative status |
+| Cristian Romero | Established Tottenham centre-back with an assertive, front-foot role | Early duel or follow action when the rest defence is connected | Whether his risk profile complements the goalkeeper, pivot, and partner De Zerbi selects |
+| Micky van de Ven | Established left-sided defender with exceptional recovery pace and carrying threat | Depth protection, channel recovery, and carries against opponents who block passing lanes | Whether recovery actions are preventative strength or repeated repair of structural errors |
+| Kevin Danso | Senior option with physical and aerial qualities; home-grown in the last published league baseline | Direct-play and box-defence specialist; first-contact security | His receiving role under close pressure and place in a reduced domestic-only minutes pool |
+| Ben Davies | Experienced left-sided centre-back/left-back and leadership option | Shape-changing cover, late-game organization, and a route between a two and a three | Whether versatility produces meaningful minutes amid increased specialist depth |
+| Takai, Phillips, Vušković, Souza | Club-listed young defenders in the wider group | Developmental options whose attributes may eventually cover one or more jobs | Readiness, registration treatment, loan plans, and any sustained senior hierarchy |
+
+The matrix exposes two common category errors. First, a conspicuous tool is not the whole job: pace does not equal rest defence, left-footedness does not equal press resistance, and pass volume does not equal manipulation of pressure. Second, complementary descriptions do not automatically make a complementary partnership. Two players can appear balanced on paper yet fail because their distances, communication, or preferred moments to step conflict.
+
+It also shows why rotation cannot be reduced to “resting” a starter. Changing one centre-back can change the team's build-up exit, the side from which a full-back advances, who attacks the first aerial ball, and who holds depth. If De Zerbi rotates by opponent, the relevant question is whether Tottenham preserve the relationships around the replacement, not whether the nominal formation stays 4-2-3-1.
+
+## The four failure modes that should govern selection
+
+The architecture is only credible if it prevents predictable failures as well as enabling attractive possessions.
+
+### A false free player
+
+The first line may believe it has drawn the press and exposed a receiver, only for that receiver to be accessible to a cover shadow or immediate tackle. The centre-back's pass can look progressive while transferring the danger to a teammate facing his own goal. Evaluation should therefore follow the possession for at least the next two actions: did the receiver turn, set a protected teammate, win a foul, or lose the ball into an exposed centre?
+
+### Two defenders solving the same problem
+
+If both centre-backs step toward the same dropping forward, or both retreat with the deepest runner, a different opponent becomes free. The visible error may occur several seconds later and be attributed to the nearest defender. The more useful diagnosis asks whether the pair divided responsibility early and whether the pivot filled the space promised by the press.
+
+### Recovery pace becoming the plan
+
+Van de Ven's speed can expand the margin for error, but repeatedly requiring a recovery sprint indicates that pressure, counterpressure, or starting distances may be failing. A sustainable high line reduces the number of emergency races; it does not celebrate them as the primary mechanism. Tottenham should distinguish a defender winning a genuinely unavoidable race from repairing a preventable loss with the rest of the team ahead of the ball.
+
+### Winning first contact and losing the attack
+
+A centre-back can head clear and still leave Tottenham exposed if the midfield is too distant to contest the second ball. The inverse also matters in possession: a successful long pass is incomplete evidence if the forward loses the duel and the defence is not compact enough to regain. Direct play makes the entire unit responsible for the next contact. This is where aerial power, line height, and midfield spacing become one architectural problem rather than three player attributes.
+
 ## The surplus is strategic only if Tottenham convert it
 
 Six established senior options before counting prospects can create resilience. Injuries need not force a complete change of idea, and different opponents can be met with different balances. It can also create blocked minutes, uneven rhythm, and registration pressure. Tottenham's latest official league baseline classified Danso and Davies as home-grown but Romero and Van de Ven as non-home-grown; the 2026–27 submission will be controlling for the new group. Van Hecke and Senesi add senior candidates whose final classifications must be established authoritatively rather than guessed from nationality or years played in England.

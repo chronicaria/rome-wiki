@@ -37,6 +37,10 @@ Duke football coverage connects current-season state to roster construction, tac
 - [[Duke football red-zone architecture]] — finishing, field compression, defensive stops, and outcome variance.
 - [[Duke football turnover architecture]] — ball security, pressure, coverage leverage, and recovery uncertainty.
 - [[Duke football kickoff and punt return architecture]] — return decisions, blocking geometry, field position, and explosive-play variance.
+- [[Duke football third-down architecture]] — distance, early-down setup, protection, coverage, and two-down planning.
+- [[Duke football explosive-play architecture]] — creation and prevention mechanisms, evidence limits, and a reproducible charting standard.
+- [[Duke football field-position architecture]] — possession boundaries, drive-start burden, punting, returns, turnovers, and fourth-down choices.
+- [[Duke football sack and pressure architecture]] — protection failures, rush cost, coverage interaction, and a 2026 pressure ledger.
 
 ## Program building
 

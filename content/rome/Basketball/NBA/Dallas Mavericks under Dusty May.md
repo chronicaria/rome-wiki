@@ -1,23 +1,41 @@
 ---
 title: Dallas Mavericks under Dusty May
 created: 2026-07-09
-source: web
+source: llm
 status: seed
 tags: [basketball, nba, dallas-mavericks, tactics]
 desk: NBA and Dallas Mavericks
-as_of: 2026-07-09
+as_of: 2026-07-10
 ---
 Dusty May gives Dallas a coherent starting vocabulary—pace, read-and-react spacing, multiple ball screens, decisive passing, selective switching, and shared accountability—but none of those ideas has yet been demonstrated against NBA competition.
 
 Up: [[Dallas Mavericks 2026-27 season]] · Roster context: [[Dallas Mavericks 2026-27 roster construction dossier]] · Related: [[Dallas frontcourt geometry]] · [[Dallas guard creation after roster turnover]]
 
-## Current state — as of July 9, 2026
+## Why it matters
+
+May's appointment changes the most important interpretive question around Dallas. The roster is no longer being judged only as a collection of players; it is being judged as material for a first-time NBA head coach translating a successful college program. If reporting collapses May's stated preferences, Michigan's actual methods, and forecasts for Dallas into one bucket called “the system,” it will manufacture certainty before Dallas has supplied evidence. A cleaner framework makes the coming season useful: each possession can confirm, complicate, or reject a specific hypothesis.
+
+## Evidence ladder
+
+This note uses five labels deliberately:
+
+- **Stated intent** means something May or Dallas basketball leadership publicly said about the intended program. It establishes priorities, not execution.
+- **Prior-system evidence** means an official Michigan source describing or documenting what May's college team did. It establishes precedent under different rules and personnel, not a Dallas scheme.
+- **NBA translation inference** is a reasoned connection between that precedent and the Mavericks' roster or league environment. It is analysis, not reported fact.
+- **Forecast** is a falsifiable expectation about what Dallas may do or what outcome may follow. It should be tested against possessions and lineups.
+- **Unknown** means the public record does not yet support an answer. Naming an unknown is preferable to filling it with coaching cliché.
+
+## Current state — as of July 10, 2026
 
 **Official:** Dallas hired May on June 23 after he coached Michigan to the 2026 national championship and a 37–3 season. He has not coached an NBA game, and Dallas has not yet supplied a regular-season possession sample from which to infer its actual scheme. His introductory comments emphasized collaboration, communication, development, and adapting with experienced NBA assistants. President of basketball operations Masai Ujiri publicly associated May's prior teams with size, pace, speed, and toughness.
 
 **Evidence from Michigan:** Michigan's own 2025–26 game notes described a fast transition-oriented, read-and-react offense built on spacing, long-range shooting, several ball-screen actions, and passing from good shots to better shots. The same primary document described an active man-to-man defense that switched the four perimeter positions on and off the ball while usually keeping the center in more traditional coverage. Michigan finished 37–3 and won the national championship, but college results do not measure whether identical rules will work in the NBA.
 
 **Inference:** Dallas hired a coach whose prior principles fit several needs in the current roster: more early offense, more shared creation around [[Cooper Flagg year-two development|Cooper Flagg]], clearer roles for an unusually deep frontcourt, and a defensive language that can use large wings without asking every center to defend identically. The fit is plausible. It is not yet an observed Dallas identity.
+
+**Forecast:** Dallas is more likely to preserve May's decision rules—advance the ball, maintain spacing, create a second action, exchange comparable assignments—than to reproduce Michigan's action menu at the same frequencies. The first preseason possessions can weaken this forecast; regular-season possessions against prepared NBA defenses will be stronger evidence.
+
+**Unknown:** Dallas has not established a public possession-level baseline for May's offense or defense. The final staff responsibilities, lineup rules, center coverages, and hierarchy of creators remain unsettled in the sources used here.
 
 ## The useful question is translation, not imitation
 
@@ -26,6 +44,8 @@ Up: [[Dallas Mavericks 2026-27 season]] · Roster context: [[Dallas Mavericks 20
 That distinction matters because the most portable elements are usually not named sets. They are decision rules: run when an advantage is available; preserve width around a ball screen; move the defense before attacking its final coverage; empower a capable shooter to take an open shot; exchange assignments only when both defenders can execute the handoff; and define roles clearly enough that a deep roster does not become a collection of overlapping claims on the same space.
 
 The less portable elements are the exact frequency of a college action, a college matchup's preferred coverage, and a rotation pattern built for a shorter game and a different calendar. Dallas should therefore be evaluated by whether it implements May's prior logic, not whether a possession resembles Michigan frame for frame.
+
+That method also protects against reverse engineering a philosophy from wins. Michigan's 37–3 championship season is verified achievement, but the record alone does not identify which features caused those wins or which will transfer. Talent, opponent quality, shooting variance, health, and tournament structure all sit between a principle and an outcome. The championship raises the importance of studying May; it does not eliminate the translation problem.
 
 ## Pace should mean earlier advantages, not merely shorter possessions
 
@@ -41,6 +61,8 @@ Third, pace must include the speed of decisions after the initial rush ends. A p
 
 This creates measurable questions for the first months: How often does Dallas attack before the defense is set? Who advances after a defensive rebound? Does early offense produce rim attempts, open threes, and free throws, or merely faster contested shots? What happens when an opponent stops the first action? Pace is successful only when it improves the quality or resilience of the possession.
 
+The evidence boundary is clear. Ujiri's language and Michigan's game notes support **stated intent** and **prior-system evidence** for pace. The claim that Dallas's forwards will push rebounds is an **NBA translation inference** based on their skills. The expectation that early actions will reduce late-clock dependence on Irving is a **forecast**. The actual initiator distribution, turnover cost, and shot-quality effect are **unknowns** until games produce data.
+
 ## Read-and-react requires shared reads and protected spacing
 
 “Read-and-react” can sound like freedom from structure. In practice it demands more common structure, not less. Five players must recognize the same trigger, preserve useful distances, and know which teammate fills the space that another vacates. Otherwise freedom becomes two cuts into one lane, a screen with no angle, or a drive toward a waiting helper.
@@ -50,6 +72,8 @@ Dallas has reasons to pursue this style. Flagg's passing can be used from severa
 The roster also makes spacing discipline difficult. Dallas can plausibly play combinations containing two centers, a power forward, or several players whom a playoff defense may selectively help from. The name of the position does not determine the geometry. The defense cares about shooting credibility, release speed, cutting timing, screening, and whether the ball handler can punish a switch.
 
 May's college history with large lineups is therefore relevant as a problem-solving clue, not proof of an NBA answer. He has experience arranging multiple big players within an offense. Dallas still must decide which big is the screener, which occupies the dunker spot, which can lift or pop, and which defender the opponent will use as its roaming helper. Those answers can change by lineup and opponent. [[Dallas frontcourt geometry]] owns the detailed combinations; the coaching principle here is that role clarity must be possession-specific.
+
+The forecast is conditional: read-and-react organization should help Dallas only if the players share the same reads and the lineups contain enough shooting or compensating movement. If two-big units repeatedly place a defender in the lane without punishment, “freedom” will not explain away the geometry. Whether May treats those possessions with a substitution, a different alignment, or a different role for Flagg is unknown.
 
 ## Multiple ball screens can distribute work without pretending creation is equal
 
@@ -78,6 +102,8 @@ The second is the weak-side rebound. A perimeter switch can leave a smaller play
 The third is coverage diversity. An NBA playoff opponent can hunt the one pairing Dallas does not want to exchange. A rigid switch rule will expose the roster's least compatible matchup. Dallas may need to switch some groups, show and recover with others, play the center at different depths, or scram a small defender out of the post after an initial exchange.
 
 Consequently, the first reliable evidence will not be a coach's promise of defense. It will be the lineup-specific rules visible over repeated possessions: which positions exchange, how the center handles the ball screen, where help comes from, and whether the defense completes the play with a rebound.
+
+Here again, the distinction prevents overclaiming. Four-position switching with a more traditional center is **prior-system evidence** from Michigan, not a promise Dallas made. Applying that structure to Lively or Gafford is an **NBA translation inference**. Expecting Dallas to begin with selective rather than universal switching is a **forecast**. The exact coverage call, exception list, and opponent adjustments are **unknown**.
 
 ## Flagg is the central development test
 
@@ -126,6 +152,12 @@ The right way to cover the new regime is to pre-register questions rather than d
 - Does Dallas preserve multiple ways to win when the preferred style is denied?
 
 These questions keep result and mechanism separate. A team can win a game because it shoots unusually well while executing poorly, or lose while generating a sustainable process. Over time, possession evidence, lineup data, health context, and opponent quality can distinguish noise from identity.
+
+### Evidence checkpoints
+
+Training camp can establish vocabulary and role language, but it cannot validate competitive effectiveness. Preseason can reveal alignments, likely initiators, and default coverages, but experimental lineups and uneven opposition limit outcome claims. The first 15–20 regular-season games can show repeated rules and failure modes; even then, schedule and health require context. Playoff or late-season games against opponents with multiple scouting opportunities provide the strongest test of counter structure.
+
+No single checkpoint should be asked to answer every question. A press conference is suitable evidence for intent. Film is suitable evidence for execution. Lineup and possession data are suitable evidence for frequency and results. Player interviews may clarify roles but remain perceptions rather than proof that the system works.
 
 ## What would count as confirmation or disconfirmation
 

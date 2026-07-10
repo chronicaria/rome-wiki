@@ -39,6 +39,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Political prediction-market calibration ledger]]
 - [[Oracle and dispute mechanisms in political prediction markets]]
 - [[Settlement latency in political prediction markets]]
+- [[Contract-set coherence diagnostics]]
+- [[Missing-data policy for political market backtests]]
+- [[Forecast horizons in political prediction markets]]
 
 ## Current observations
 

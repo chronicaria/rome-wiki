@@ -32,6 +32,8 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 - [[How platoons and bench roles shape the Mets lineup]] — platoon evidence, pinch hitting, defense, rest, and bench scarcity.
 - [[How recent workload shapes Mets bullpen availability]] — recorded game load, hidden warm-ups, roster churn, starter length, and graded daily availability.
 - [[How lineup sequencing changes Mets run expectancy]] — plate-appearance allocation, base-out states, skill complementarity, and transparent simulation limits.
+- [[How bullpen warm-ups complicate Mets availability estimates]] — sourced warm-up episodes, public-data missingness, and guarded availability language.
+- [[How to simulate a Mets batting order responsibly]] — regressed inputs, state transitions, substitution rules, nested uncertainty, and sensitivity branches.
 
 ## Decision and synthesis
 
@@ -42,5 +44,6 @@ The Mets map connects current season state to roster mechanics, workload, pitchi
 - [[Mets prospect-to-MLB translation]] — age/level/role evidence, major-league task translation, opportunity paths, and uncertainty.
 - [[What playoff roster design asks of the Mets]] — conditional round-by-round pitching, bench, eligibility, and opponent-fit decisions.
 - [[How the Mets should evaluate deadline relief pitching]] — role, process, availability, control, roster fit, and replacement-innings tests for deadline decisions.
+- [[How contract control changes the price of deadline relief]] — years of control, options, assignment rights, roster fit, workload, and replacement-innings valuation.
 
 ## Next links

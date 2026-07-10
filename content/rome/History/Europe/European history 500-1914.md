@@ -71,6 +71,16 @@ A causal and comparative map from the transformation of Roman worlds through med
 ## Enlightenments and reform
 
 - [[Enlightenments in plural]] — how criticism, useful knowledge, sociability, and reform took different religious, commercial, provincial, imperial, and east-European forms.
+- [[The public sphere and its exclusions]] — how print, sociability, public opinion, and counterpublics allocated credibility through boundaries of gender, class, confession, race, and geography.
+- [[Science, empire, and classification]] — how collecting and taxonomy depended on imperial circulation, intermediaries, coerced labor, and the selective recoding of knowledge.
+
+## Atlantic slavery and European political economy
+
+- [[Atlantic slavery inside European economic history]] — how forced production entered European ports, commodities, households, credit, and fiscal states without supporting a one-cause story of industrialization.
+
+## Religion and modernity
+
+- [[Secularization as a disputed historical thesis]] — why belief, practice, identity, authority, and institutions changed at different speeds across Europe's regions and confessions.
 
 ## Open questions
 

@@ -22,6 +22,8 @@ Up: [[Weather prediction (MOC)]]
 
 - [[Primitive equations of planetary atmospheres]] derives the hydrostatic, shallow-atmosphere, and traditional approximation bundle and identifies the exoplanet regimes that stress it.
 - [[General circulation models for exoplanets]] explains how dynamical cores, radiation, closures, boundaries, and numerics turn governing equations into conditional atmospheric predictions.
+- [[Exoplanet atmospheric model hierarchies]] organizes budgets, reduced models, columns, primitive-equation GCMs, full dynamics, and coupled models as controlled contrasts rather than a simple complexity ranking.
+- [[Drag parameterizations in exoplanet GCMs]] makes the torque, kinetic-energy sink, spatial geometry, numerical role, and physical interpretation of Rayleigh drag explicit.
 - [[Benchmarking exoplanet general circulation models]] builds a verification ladder from analytic tests and conservation budgets through convergence, intercomparison, and observable-space evaluation.
 - [[Shallow-water models of tidally locked atmospheres]] isolates the forced Kelvin–Rossby response, wave adjustment, and eddy momentum transport while keeping the one-layer model distinct from a literal temperature or wind map.
 - [[Radiative transfer in planetary climate models]] compares Newtonian, grey, picket-fence, correlated-$k$, and line-by-line schemes and shows how opacity, angular closure, and coupling choices shape simulated climate.
@@ -29,6 +31,7 @@ Up: [[Weather prediction (MOC)]]
 - [[Equatorial superrotation]] derives the angular-momentum definition and wave-driven jet mechanism while explaining why an eastward hotspot is not itself a wind measurement.
 - [[Day-night heat redistribution]] separates measured brightness contrasts from bolometric energy transport and develops the cloud, photosphere, opacity, and dynamical degeneracies behind redistribution estimates.
 - [[Cloud formation and transport beyond Earth]] connects saturation, nucleation, growth, settling, advection, and radiative feedback without treating aerosol opacity as a unique condensate identification.
+- [[Condensation curves and cloud-base prediction]] shows that a temperature-profile intersection is thermodynamic permission, not a unique prediction of particle formation, transport, opacity, or observability.
 - [[Cloud radiative feedbacks in exoplanet atmospheres]] separates cloud radiative effect from feedback and shows when shortwave reflection, thermal blanketing, and patchy heating can reorganize circulation.
 - [[Disequilibrium chemistry as a tracer of circulation]] shows when chemical quenching can retain a memory of transport—and why composition, kinetics, clouds, photochemistry, and retrieval assumptions prevent a molecule from acting as a direct anemometer.
 - [[Vertical mixing and chemical quenching]] develops the transport–reaction competition, the limits of a scalar $K_{zz}$ and single quench pressure, and the conditional path from retrieved abundances to mixing.
@@ -40,6 +43,7 @@ Up: [[Weather prediction (MOC)]]
 - [[Angular momentum budgets of superrotating atmospheres]] closes the path from wave and mean-flow transports through physical torques and numerical residuals instead of treating a fast jet as its own explanation.
 - [[Magnetic drag in ultra-hot Jupiter atmospheres]] distinguishes state-dependent Lorentz forces and induction from a universal linear braking time or a magnetic-field measurement.
 - [[Atmospheric tides on exoplanets]] separates phase-coherent thermal and gravitational forcing from arbitrary variability, then connects wave momentum transport, spin torque, and observability.
+- [[Wave adjustment in tidally locked atmospheres]] replaces a guessed advective clock with the gravity-wave, rotation, radiation, drag, and vertical-motion competition that controls thermal contrasts.
 - [[Photochemistry circulation coupling]] follows the two-way loop from photolysis and kinetics through three-dimensional transport to opacity and radiative feedback.
 
 ## Observation and inference

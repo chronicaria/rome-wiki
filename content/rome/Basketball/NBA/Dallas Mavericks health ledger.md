@@ -44,6 +44,68 @@ The basketball implication is developed in [[Kyrie Irving return from ACL recons
 
 The forecast consequence is explained in [[Dereck Lively II health and defensive value]] and [[Dallas center rotation without full Lively availability]]. A center-minute replacement does not by itself replace Lively's combination of rim deterrence, coverage mobility, vertical spacing, screening, and connective passing.
 
+## The ledger is a decision system, not an injury list
+
+An injury list answers who appears on a report. A decision ledger answers what the public evidence permits Dallas analysts to change. That distinction matters in July, when there is no daily injury report and the strongest public signals arrive irregularly through team releases, press conferences, training footage, and attributable reporting. A roster grid may list a player normally even though his competitive workload remains unknown. Silence may mean that rehabilitation is proceeding privately, not that the player is fully available.
+
+Each row should therefore preserve five independent fields. **Event state** records what happened: injury, surgery, return, restriction, recurrence, or removal from a report. **Functional milestone** records the highest public basketball-relevant activity, such as running, individual work, controlled contact, full practice, or game participation. **Source class** distinguishes an official transaction or injury report from attributable reporting and inference. **Decision consequence** states which Dallas minutes or functions must branch. **Expiration condition** says what new evidence would supersede the row.
+
+This structure prevents two opposite errors. The optimistic error treats an expected return, a roster listing, or a workout clip as proof of normal availability. The pessimistic error freezes the worst historical state even after a newer official milestone changes it. A dated ledger should be conservative about interpretation and aggressive about accepting better evidence. It preserves the earlier state for audit while allowing the current classification to move.
+
+The same system also limits medical overreach. Public basketball analysis does not need to diagnose tissue, estimate individualized reinjury probability, or reverse-engineer surgical details. It needs to know which participation and role assumptions are supported. “Not cleared to run on June 26” is a legitimate dated state. “Will miss opening night” is not unless an authoritative source says so. “Expected to be ready” is organizational planning evidence. “Will immediately recover prior defensive mobility” is a forecast that requires later basketball observation.
+
+## Three variables that must stay separate
+
+Health enters a team forecast through at least three variables: participation, workload, and effectiveness. Combining them into one “healthy” flag hides the most important Dallas uncertainty.
+
+**Participation** asks whether the player appears at all. Official active status or game participation resolves this for one date, not for a month or season. A player can be active after missing the previous game, then sit on the second night of a back-to-back. The ledger should record the sequence rather than convert one appearance into a season assumption.
+
+**Workload** asks what Dallas is willing to demand conditional on participation. Minutes, stint length, practice frequency, back-to-back decisions, travel, and high-intensity possessions all belong here. A 24-minute Irving appearance and a 34-minute appearance are not equivalent for team construction. A 16-minute Lively return may still provide meaningful rim protection while leaving Gafford as the stable center base.
+
+**Effectiveness** asks which basketball functions have returned within the available workload. Irving can be active and shoot well while producing less rim pressure or defensive change of direction. Lively can be active and finish lobs while Dallas protects him with conservative screen coverage. Those observations do not establish a medical problem; they establish the basketball version Dallas currently has. Effectiveness should be evaluated across repeated possessions and opponents, with normal small-sample caution.
+
+The three variables are related but not interchangeable. A forecast can assign an appearance branch without assuming old minutes, and assign minutes without restoring old per-minute impact. [[Availability risk in NBA projections]] provides the general method; this ledger supplies the dated Dallas inputs.
+
+## Joint scenarios for Dallas
+
+Irving and Lively affect different parts of the possession, so their states should be crossed rather than modeled as isolated deductions. The purpose is not to attach false probabilities. It is to show which dependencies move together.
+
+### Both functionally available
+
+This is Dallas's widest strategic branch. Irving can organize difficult half-court possessions, while Lively can anchor the basket area and turn stops into early offense. Flagg can develop as a co-creator instead of being forced into every late-clock task. Gafford can remain a high-energy complement rather than the only proven traditional center. May can test larger lineups without asking one group to solve every offensive and defensive problem.
+
+Even this branch is not a guarantee of continuity. Two players returning from long absences may receive controlled workloads, and a new coaching staff must establish roles. “Both active” is therefore weaker than “both sustaining their intended functions through repeated games.”
+
+### Irving limited, Lively functionally available
+
+Dallas retains a credible defensive backbone but faces a creation shortage. Flagg, Nembhard, Sasser, Aldama, and other connectors must generate or extend advantages. Lively's screening, rim running, and short-roll decisions can make those guards' jobs easier, yet he does not replace Irving's handle or late-clock shotmaking. The team may defend well enough to create transition opportunities while remaining vulnerable when opponents force set half-court possessions.
+
+### Irving available, Lively limited
+
+Dallas can organize offense around its best veteran creator, but the center allocation changes. Gafford becomes the dependable base, smaller groups must rebound collectively, and Dallas may need more conservative perimeter pressure to protect the rim. Irving's offense can reduce the number of empty possessions; it does not reproduce Lively's coverage range or defensive communication. Closing lineups become opponent-specific rather than automatic.
+
+### Both limited
+
+This is not merely the sum of two replacement-minute deductions. Flagg faces more creation responsibility while also carrying large defensive assignments. Gafford's workload rises, frontcourt combinations lose flexibility, and May has fewer ways to hide a weak link. Young guards and centers may receive development minutes, but those minutes should not be projected as seamless functional replacement. This branch creates the greatest risk that role expansion changes several players' efficiency at once.
+
+These scenarios explain why [[Dallas Mavericks model pressure points]] should ingest evidence from this ledger without pretending to rerun a private model. The public conclusion is directional: joint limitations widen the distribution of Dallas outcomes and make teammate projections more correlated.
+
+## Evidence hierarchy for future updates
+
+The official NBA injury report should control daily game designations once reporting begins. A Dallas release, direct press conference, or official practice-status statement can establish a milestone outside that system. Full participant comments from the player or coach are useful when quoted directly, although the exact scope of “full” should still be recorded. Attributable beat reporting can add functional detail that the club has not published, but the ledger must label it reported rather than official.
+
+Selected workout videos are discovery evidence. They can suggest a question—running, cutting, contact, or workload—but cannot establish that the activity was unrestricted, representative, medically cleared, or repeatable. Anonymous posts, unsourced screenshots, aggregator rewrites, and fantasy blurbs without attributable reporting do not establish a new state. A secondary page that clearly names the original reporter may preserve a milestone when the original article is inaccessible, but the chain and its limitation belong in the source note.
+
+Absence of evidence also needs discipline. If a player disappears from public discussion, keep the last verified milestone dated and mark the present state unknown. Do not write “still not running” two weeks after a report said he had not yet run unless a newer source confirms that condition. The ledger's wording should make the date carry the claim.
+
+## Translation into minutes and roles
+
+Every accepted update should trigger a small, explicit translation review. For Irving, inspect primary initiation, late-clock creation, pull-up gravity, closing groups, and the development burden placed on Flagg and the smaller guards. For Lively, inspect center minutes, screen coverage, rim deterrence, rebounding assignments, vertical spacing, and short-roll connection. The review asks which branch changed; it does not invent a numeric wins delta.
+
+A return milestone may narrow uncertainty without immediately moving projected minutes. Running is more informative than walking, full practice is more informative than individual work, and repeated games are more informative than one appearance. Conversely, a formal restriction may change workload before it changes the probability of participation. The ledger should route those effects to [[Dallas Mavericks roster and minutes ledger]], [[Dallas Mavericks availability scenarios]], and the relevant player analysis rather than duplicating whole arguments here.
+
+This translation also protects teammate evaluation. If Flagg's usage rises while Irving is limited, the change may reflect roster necessity rather than a clean skill leap. If Dallas's rim defense declines while Lively is out, the effect cannot automatically be assigned to the substitute center because perimeter pressure and lineup context also change. Health state is part of the causal environment in which performance is observed.
+
 ## Update protocol
 
 Add a dated line only when the source changes a meaningful state: surgery or confirmed injury, a stated timetable, running, individual basketball work, contact work, full practice, game availability, a formal restriction, recurrence, or removal from the injury report. Preserve old milestones so later optimism does not erase the evidence available to an earlier forecast.

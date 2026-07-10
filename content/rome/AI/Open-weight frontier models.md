@@ -104,6 +104,54 @@ Production readiness includes version pinning and artifact hashes; supply-chain 
 
 Open weights also redistribute responsibility. A hosted vendor chooses some safety filters, patches infrastructure, absorbs abuse traffic, and documents availability. A self-host assumes those tasks. This control is valuable for sovereign, regulated, offline, or deeply customized deployments, but it requires institutional capacity. The right comparison is between complete operating models, not a free download and an API invoice.
 
+## An evidence ladder for frontier claims
+
+The word *frontier* should describe a claim that has survived progressively harder checks, not a label inherited from a release announcement. A practical evidence ladder separates five states that are often collapsed:
+
+1. **Announced:** the developer names an artifact, describes intended capability, and may publish selected scores. This establishes what the developer claims and when, but not that outsiders can obtain or reproduce the result.
+2. **Accessible:** an identified checkpoint, tokenizer, configuration, license, and loading path are actually available. An access request that remains unapproved, a repository containing only configuration files, or a missing modality component does not pass this rung.
+3. **Runnable:** an independent operator can hash the artifacts, load them in a documented environment, execute a smoke-test corpus, and recover stable output behavior within declared numerical tolerances. This is stronger than downloadability because it tests dependency and custom-code completeness.
+4. **Evaluated:** independent parties can run defined task suites while recording prompt format, precision, engine, inference budget, tools, and failures. Results at this rung belong to the tested checkpoint–runtime–scaffold tuple, not automatically to every conversion or product using the same family name.
+5. **Replicated and deployable:** more than one independent environment obtains materially consistent conclusions, and at least one target workload meets its quality, latency, reliability, security, and operating-cost thresholds. This is the strongest practical evidence, though it still does not reconstruct training.
+
+The ladder is monotonic only for a particular artifact and claim. A new quantization, fine-tune, merged checkpoint, chat template, speculative decoder, or tool scaffold creates a related but distinct object. Evidence can transfer only when the change is immaterial to the inference being made. A license can also change while bytes do not; a mirror can preserve bytes while losing provenance; a benchmark result can remain numerically reproducible after the benchmark has ceased to discriminate frontier systems. Versioned evidence is therefore more honest than a permanent badge.
+
+This ladder also clarifies negative findings. Failure to load a checkpoint may reveal incomplete release packaging rather than weak model capability. Failure to reproduce a vendor benchmark may arise from an undisclosed prompt, evaluator, reasoning budget, or post-training checkpoint. Conversely, successful reproduction of one benchmark does not establish production readiness. Each rung answers a narrower question, and the missing rung should be named instead of filled by inference.
+
+## Reproducibility needs declared tolerances
+
+“Reproduced” is meaningless unless the expected object and tolerance are stated. Bitwise equality is appropriate for artifact hashes and static configuration files. It may be unrealistic for GPU inference across kernels, precision modes, or stochastic decoding. Behavioral reproduction instead needs a declared sampling design: deterministic decoding where possible, repeated stochastic trials where not, task-level outputs, confidence intervals, and a threshold for material disagreement.
+
+Three reproduction targets should be kept separate. **Artifact reproduction** confirms that another operator obtained the same files, revisions, tokenizer, and dependency graph. **Evaluation reproduction** confirms that the published harness and settings recover a result within a predeclared tolerance. **Scientific reproduction** tests whether the substantive conclusion survives reasonable alternative implementations, datasets, and independent teams. A checkpoint can pass artifact reproduction and fail evaluation reproduction; an evaluation can reproduce exactly while supporting a scientifically narrow or contaminated conclusion.
+
+NIST AI 800-2 treats exact model versions, protocols, test items or transcripts, and evaluation details as important reproducibility information, while recognizing that security and proprietary constraints can limit disclosure. That tradeoff should produce an explicit disclosure gap, not a silent assumption. Hugging Face’s model-card guidance likewise asks for intended use, limitations, training parameters, datasets, and evaluation results; its release checklist recommends separate repositories for variants, base-model lineage, performance differences for quantizations, and safer serialization. These are documentation practices, not independent validation, but they make validation possible.
+
+For Rome, an evaluation reproduction record should contain the repository commit and file hashes; architecture and tokenizer revisions; whether remote custom code was executed; package lockfile or container digest; hardware and driver versions; precision and quantization recipe; prompt/chat template; seeds and sampling controls; complete task and exclusion list; harness and grader commits; raw per-item outputs where rights permit; retry and failure accounting; and the acceptance tolerance. If any field is unavailable, the record should say *unknown* rather than imply a default.
+
+## Supply-chain evidence is part of openness
+
+Weights are executable inputs to a complex software stack. Loading a repository may invoke custom Python, compiled extensions, tokenizer code, or unsafe serialization. A model that requires opaque remote code is less operationally inspectable than one supported by a maintained standard runtime, even when both publish parameter files. Hugging Face documents repository malware, pickle, and secret scanning and recommends `safetensors` over pickle-based formats. Those controls reduce known classes of risk; they do not prove that a checkpoint, custom kernel, or dependency is benign.
+
+A deployability audit therefore needs provenance as well as capability:
+
+- immutable commit identifiers and cryptographic hashes for every weight shard and configuration artifact;
+- base-model, fine-tune, adapter, merge, and quantization lineage rather than a free-form family name;
+- separate licenses for weights, code, tokenizer, data, and derivatives;
+- a list of code executed during conversion, loading, inference, and evaluation;
+- dependency and container manifests that can be scanned and rebuilt;
+- a record of who produced community conversions and whether outputs were compared with the source checkpoint;
+- a patch and revocation path if an artifact or dependency is compromised.
+
+This is not an argument that centralized APIs are intrinsically safer. Hosted services substitute vendor and interface trust for local artifact inspection, and they can change behavior without exposing the underlying revision. The point is narrower: open weights enable verification only when the release and operator preserve an auditable chain from named bytes to measured behavior.
+
+## A reproducibility dossier should preserve the whole claim
+
+A compact dossier can prevent later comparisons from silently changing their object. Its identity block names the developer, repository, commit, checkpoint, tokenizer, parameterization, modalities, context claim, and release date. Its rights block records access gates and the exact license chain. Its artifact block records hashes, formats, sizes, missing components, and executed code. Its evaluation block records tasks, contamination controls, scaffold, tools, inference budget, grader, uncertainty, and raw-result availability. Its systems block records hardware, engine, precision, memory, concurrency, latency, throughput, energy assumptions, and observed failure rate. Its deployment block records the target workload, data boundary, monitoring, rollback, and acceptance thresholds.
+
+The dossier should end with a claim table. Each row states one proposition—such as “runnable on four accelerators,” “matches reference score within two points,” or “meets the interactive latency objective”—followed by evidence owner, date, environment, result, uncertainty, and the shortest falsification test. Provider evidence, community reproduction, and independent institutional replication remain visibly distinct. A red or unknown cell is not necessarily a reason to reject the model; it is a reason to narrow the claim.
+
+This structure makes frontier tracking resilient to marketing cycles. When a stronger checkpoint appears, the dossier can be superseded without erasing what was actually demonstrated. When a repository changes, the old commit remains identifiable. When serving software improves, the systems block can change without pretending that model weights changed. The result is an evidence graph rather than a leaderboard snapshot.
+
 ## Why the open-weight frontier matters
 
 Open-weight models create a competitive outside option. They let researchers inspect behavior, companies negotiate against API concentration, governments pursue local or sovereign inference, and developers adapt models without waiting for a provider roadmap. They also diffuse inference-engine improvements: better quantization, kernels, and serving frameworks can increase the usefulness of already released checkpoints.
@@ -138,6 +186,10 @@ All web sources below were accessed 2026-07-10; repository and model-card claims
 - [Qwen, Qwen3-8B model card](https://huggingface.co/Qwen/Qwen3-8B)
 - [Qwen, Qwen3-8B Apache 2.0 license file](https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE)
 - [Open Source Initiative, Open Source AI Definition 1.0](https://opensource.org/ai/open-source-ai-definition)
+- [Hugging Face, model-card documentation](https://huggingface.co/docs/hub/en/model-cards)
+- [Hugging Face, model release checklist](https://huggingface.co/docs/hub/en/model-release-checklist)
+- [Hugging Face, Hub security and repository scanning](https://huggingface.co/docs/hub/security)
+- [NIST AI 800-2, Evaluation of Generative AI Technologies and Systems](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-2.ipd.pdf)
 - [Biderman et al., Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling](https://arxiv.org/abs/2304.01373)
 - [BigScience, BLOOM model card](https://huggingface.co/bigscience/bloom)
 - [Kwon et al., Efficient Memory Management for Large Language Model Serving with PagedAttention](https://arxiv.org/abs/2309.06180)

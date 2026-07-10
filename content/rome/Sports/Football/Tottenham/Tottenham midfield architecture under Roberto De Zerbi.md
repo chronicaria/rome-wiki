@@ -20,6 +20,21 @@ The working central pool is Tonali, Mateus Fernandes, Rodrigo Bentancur, Conor G
 
 The central distinction throughout is between **confirmed state**, **demonstrated prior tendency**, and **Spurs-specific inference**. Confirmed state covers employment, transfers, and the available group. Demonstrated tendency covers recurring mechanisms documented in De Zerbi's earlier teams. Spurs-specific inference proposes how those mechanisms might map onto this squad. Only repeated competitive sequences can promote the third category into evidence.
 
+## Evidence ledger as of 10 July 2026
+
+The safest way to read the squad is to keep three ledgers separate.
+
+| Claim | Status | What the evidence actually establishes |
+|---|---|---|
+| Tonali has joined Tottenham | **Official, conditional detail** | Tottenham announced the transfer on 6 July and said it remained subject to a work permit. The club quoted Lange on technical quality, intelligence, energy, and high-pressure experience, and quoted De Zerbi saying he had followed Tonali for a long time. |
+| Fernandes has joined De Zerbi's Tottenham project | **Official** | Tottenham's interview records Fernandes describing the coach's recruitment conversation and its importance to him. It does not specify whether he will play as the lower or higher member of midfield. |
+| Bissouma is no longer part of the senior pool | **Official** | Tottenham's 10 June player update said he would leave when his contract expired. |
+| De Zerbi has previously used a close, narrow double pivot to invite pressure | **Documented prior tendency** | Premier League and Coaches' Voice analysis identify the pivots' short support, bounce passes, and connection to a high attacking line in earlier De Zerbi teams. |
+| Tottenham will start Tonali beside a particular partner | **Unverified inference** | No cited club source assigns a fixed pair, and no competitive Tottenham sample under this coach yet exists. |
+| One of Maddison, Simons, or Kulusevski will be the permanent number ten | **Unverified inference** | Squad composition creates the option, not a hierarchy. Selection, starting position, and in-possession role can also differ. |
+
+This ledger prevents two common errors. The first is turning recruitment praise into a tactical promise: a sporting director's description of a player's qualities explains valuation, not an exact starting coordinate. The second is treating a mechanism from Brighton, Sassuolo, or Shakhtar as a Tottenham fact. Prior-team evidence is useful because it supplies questions and observable patterns. It cannot substitute for what De Zerbi actually asks this group to do.
+
 ## Why it matters
 
 De Zerbi's build-up is unusually dependent on midfield relationships. The Premier League's analysis of his Brighton describes deep possession designed to entice an opponent forward before passing through or beyond the press. Coaches' Voice identifies a narrow double pivot close to the centre-backs, with the goalkeeper joining the first line and attackers pinning defenders higher up. The pivots are not merely two holding midfielders. They are access points, decoys, bounce-pass partners, cover behind attacks, and potential pressers after the ball is lost.
@@ -83,6 +98,30 @@ Rather than predict names, Tottenham's possibilities can be organized into partn
 **Asymmetric three.** One player anchors, one moves box to box, and one creates higher, with a full-back or centre-back changing the base during possession. This could distribute the four core jobs clearly, but the visible shape may shift between 4-3-3, 4-2-3-1, and a back-three build-up. Formation notation alone would miss the rotations.
 
 Tottenham's depth makes each type feasible in theory. It also creates a management problem in a season without UEFA matches: meaningful minutes will be scarcer than the number of credible combinations. Rotation can preserve physical intensity and accelerate learning, but constant changes can delay the shared timing on which press manipulation depends.
+
+## Three opponent problems, three selection tests
+
+The usefulness of Tottenham's depth should emerge through opponent-specific solutions rather than a single abstract “best midfield.” Three recurring tests can expose whether the architecture is genuinely flexible.
+
+### An opponent that presses player for player
+
+Against an aggressive man-oriented press, the lower midfielders must tolerate contact, recognize when not to turn, and coordinate the third-player route. The key selection question is not simply who passes most accurately. It is which pair can create a free receiver by drawing two opponents toward one short exchange. An advanced midfielder may need to stay high and trust the build-up instead of dropping into the congestion. If Tottenham escape but have nobody running beyond the press, the bait has succeeded technically and failed strategically.
+
+Evidence of a good solution would be repeated forward-facing receptions after a bounce pass, an immediate change of speed, and enough players behind the ball to survive a failed final action. Evidence of a bad one would be both pivots approaching the same centre-back, the high creator retreating into their space, and a clearance toward an isolated forward.
+
+### An opponent that blocks the centre and declines the bait
+
+A compact mid- or low block changes the value of the same players. The first line may have easy possession, so press resistance becomes less scarce than disguise, carrying, switches, and movement around the box. One deeper midfielder may advance or pull wide while a full-back joins the base. A second creator could be justified if the remaining structure still protects central counterattacks.
+
+Here the test is whether Tottenham can alter the defensive picture. Sterile centre-back circulation is not control merely because the possession share is high. Look for a midfielder carrying across an opponent's line, a wide rotation forcing a defender out, a runner attacking the gap that movement creates, and a supporting player positioned for the cutback or second ball. If Maddison, Simons, or Kulusevski share the pitch, their value depends on occupying distinct lanes and heights rather than collecting touches in the same pocket.
+
+### An opponent built to counterattack
+
+Against a side that concedes territory and attacks quickly, the best attacking midfield may be the one that reduces the cost of losing the ball. That could favor a more conservative lower pair, an asymmetric full-back, or a runner whose first movement after a turnover is reliable. It does not automatically mean selecting the most defensive-looking names. A technically secure player who prevents bad losses can protect the team before a duel occurs.
+
+The diagnostic sequence begins before the turnover: how many players are connected beneath the attack, whether the central exit is screened, and whether the far-side midfielder has narrowed early enough. After the loss, note whether the first pressure delays, whether the second defender covers rather than duplicates, and whether a centre-back must defend open grass at equal numbers. These observations can distinguish structural exposure from an isolated missed tackle.
+
+Across all three tests, personnel conclusions should remain conditional. A partnership can be the best answer to one opponent and an inferior answer to another. The more durable finding will be whether Tottenham preserve the four functions—access, acceleration, creation, and protection—even as the names and visible formation change.
 
 ## What would count as evidence
 

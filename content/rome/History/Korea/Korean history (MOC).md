@@ -35,6 +35,7 @@ This map organizes Korean history through overlapping chronological, institution
 
 ## Joseon institutions, family, war, and regional order
 
+- [[Imjin War causal map]] — invasion motive, initial collapse, maritime logistics, local resistance, Ming intervention, stalemate, and withdrawal across 1592–1598.
 - [[Hangul as a political and social technology]] — script design, royal statecraft, gendered textual practice, petitions, and later nationalization.
 - [[Joseon land taxation from gwajeon to daedong]] — official revenue assignments, field assessment, tribute commutation, procurement, and social incidence.
 - [[Local magistrates, clerks, and yangban power]] — formal county authority, administrative information, local elite institutions, and unequal access to law.
@@ -46,8 +47,10 @@ This map organizes Korean history through overlapping chronological, institution
 
 ## Reform, empire, and sovereignty
 
+- [[Catholic persecution and new social networks in Joseon]] — books, households, ritual conflict, clandestine organization, successive persecutions, and positioned judicial and martyr archives.
 - [[Donghak thought before the peasant war]] — revelation, ethical cultivation, vernacular practice, clandestine organization, persecution, and the contingent bridge from religion to 1894 mobilization.
 - [[Foreign incursions before the opening of Korea]] — comparing the 1866 French expedition, the 1871 American expedition, Japanese coercion, and why only the last produced a durable treaty regime.
+- [[The Ganghwa Treaty and unequal sovereignty]] — coercion, nominal independence, treaty-port jurisdiction, coastal surveying, tariff constraints, and Korean responses after 1876.
 - [[Gabo Reform causal map]] — Korean reform coalitions, Donghak pressure, Japanese military coercion, three reform phases, and uneven social implementation.
 
 ## Colonial rule and mobilization
@@ -65,10 +68,10 @@ This map organizes Korean history through overlapping chronological, institution
 
 ## Priority gaps
 
-- [[Imjin War causal map]]
-- [[Catholic persecution and new social networks in Joseon]]
-- [[The Ganghwa Treaty and unequal sovereignty]]
+- [[Righteous armies, state armies, and naval war in 1592]]
 - [[Korean migration across the Japanese empire]]
+- [[Gwangmu Reform fiscal and military capacity]]
+- [[From Eulsa to annexation, 1905-1910]]
 
 ## Open questions
 

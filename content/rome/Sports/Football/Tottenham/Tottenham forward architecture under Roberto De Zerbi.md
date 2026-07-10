@@ -8,17 +8,32 @@ as_of: 2026-07-10
 desk: Tottenham Hotspur
 review_after: 2026-08-22
 ---
-Tottenham's forward group contains several plausible ways to receive, carry, run and finish, but Roberto De Zerbi's attack will work only if those players divide five connected jobs—press manipulation, depth, width, box occupation and counterpressure—rather than competing for the same spaces.
+Tottenham have confirmed a deep, positionally varied attacking pool, but the roster does not yet reveal Roberto De Zerbi's hierarchy: the useful question is whether each selected unit simultaneously supplies a receiver, a depth runner, width, penalty-area occupation and the first defensive reaction.
 
 Up: [[Tottenham Hotspur 2026-27]] · Related: [[Roberto De Zerbi at Tottenham]], [[Tottenham 2026-27 squad architecture]], [[Tottenham recruitment fit under Roberto De Zerbi]], [[Pressing]], [[Rest defence]]
 
 ## Scope and evidence boundary
 
-This note is a functional map, not a predicted lineup. Tottenham's official men's squad page, read on 10 July 2026, lists Richarlison, Mathys Tel, Dominic Solanke, Mohammed Kudus, Dejan Kulusevski, Manor Solomon and Dane Scarlett as forwards. It lists Wilson Odobert and Yang Min-hyeok among the midfielders, although both can be relevant to wide attacking occupation. James Maddison and Xavi Simons can also influence the spaces immediately behind or around a centre-forward. Those club labels establish a working population, not positions in a formation or a selection order.
+This note is a functional map, not a predicted lineup. De Zerbi's appointment is a confirmed event: Tottenham announced him as men's head coach on 31 March 2026. The forward roles below are not confirmed. They are hypotheses derived from the club's current squad page, official joining records and recurring patterns documented in his earlier teams.
+
+Tottenham's official men's squad page, read on 10 July 2026, lists Richarlison, Mathys Tel, Dominic Solanke, Mohammed Kudus, Dejan Kulusevski, Manor Solomon and Dane Scarlett as forwards. It lists Wilson Odobert and Yang Min-hyeok among the midfielders, although both can be relevant to wide attacking occupation. James Maddison and Xavi Simons can also influence the spaces immediately behind or around a centre-forward. Those club labels establish a working population, not positions in a formation or a selection order.
 
 The distinction matters because a forward architecture is a set of relationships. “Left wing,” “number nine” and “number ten” can describe starting coordinates without explaining who holds the touchline, who pins a centre-back, who drops to connect play, who attacks the far post, or who reacts first after a turnover. A balanced attack may ask one player to perform several of those actions in one possession. It may also redistribute them when the opponent changes its press.
 
-The confirmed facts here are deliberately narrow: the players appear on Tottenham's official working squad page, Solanke and Tel have official club joining profiles that describe their prior positional experience, and Kudus's club profile records his addition to Spurs. The tactical account comes from documented patterns in De Zerbi's earlier teams, principally Premier League analysis and Coaches' Voice. It is a prior for what to test, not proof of how he will use Tottenham's players after a full preseason. No hierarchy, transfer rumor or claim about an unannounced role is included.
+The confirmed facts here are deliberately narrow: the players appear on Tottenham's official working squad page; Solanke and Tel have official club joining profiles that describe their prior positional experience; Kudus and Simons have official transfer records; and the club has appointed De Zerbi. The tactical account comes from documented patterns in De Zerbi's earlier teams, principally Premier League analysis and Coaches' Voice. It is a prior for what to test, not proof of how he will use Tottenham's players after a full preseason. No hierarchy, transfer rumor or claim about an unannounced role is included.
+
+### Evidence ledger: what is fact and what is inference
+
+| Proposition | Status on 10 July 2026 | What the evidence permits |
+|---|---|---|
+| De Zerbi is Tottenham's men's head coach | **Verified** by the club's 31 March appointment notice | Analysis may treat his appointment as fact, but not assume that every earlier Brighton mechanism will transfer unchanged. |
+| Richarlison, Tel, Solanke, Kudus, Kulusevski, Solomon and Scarlett are on the first-team page under “Forward” | **Verified** on the live club squad page | They form the official forward-labelled pool at access time; the page is mutable and is not a registration list or depth chart. |
+| Odobert and Yang are listed as midfielders; Maddison and Simons are also in the midfield group | **Verified** on the same page | Club categories can describe administrative position labels. They do not prevent those players occupying advanced or wide zones. |
+| Tel can work centrally or from the left; Simons arrived with official prior context at number 10 and left wing | **Verified historical profile**, not a current assignment | These records justify including them among candidates for more than one attacking lane, not predicting where De Zerbi will select them. |
+| A given player will be the starting nine, touchline winger, connector or pressing leader | **Unverified tactical inference** | It must be demonstrated through De Zerbi's Tottenham selections and repeated match actions. |
+| Any current attacker will leave, be loaned, or be displaced | **Outside scope unless officially announced** | Rumor cannot be used to simplify the architecture or manufacture a hierarchy. |
+
+This ledger is important because the most tempting claims are the least settled ones. A position label is weaker evidence than repeated role behavior. A joining article describes a player's history, not the coach's future instruction. Even De Zerbi's established principles are constraints and priors, not a ready-made Tottenham lineup.
 
 ## Why the forwards begin the build-up
 
@@ -117,9 +132,11 @@ Tottenham's confirmed group offers options, not answers. The central constructio
 ## Sources
 
 - [Tottenham Hotspur — Men's first-team squad](https://www.tottenhamhotspur.com/teams/mens/squad) — official working squad and positional labels, accessed 10 July 2026; labels are not treated as a tactical depth chart.
+- [Tottenham Hotspur — Roberto De Zerbi joins as Men's Head Coach](https://www.tottenhamhotspur.com/news/2026/march/roberto-de-zerbi-joins-as-men-s-head-coach/) — 31 March 2026; primary confirmation of the appointment and its long-term basis.
 - [Tottenham Hotspur — Solanke signs from Bournemouth](https://www.tottenhamhotspur.com/news/2024/august/solanke-signs-from-bournemouth/) — 10 August 2024; official joining record and centre-forward career context.
 - [Tottenham Hotspur — Permanent deal agreed for Mathys Tel](https://www.tottenhamhotspur.com/news/2025/june/permanent-deal-agreed-for-mathys-tel/) — 15 June 2025; official status and evidence of central and left-sided experience.
 - [Tottenham Hotspur — Kudus signs from West Ham](https://www.tottenhamhotspur.com/news/2025/july/kudus-signs-from-west-ham/) — 10 July 2025; official transfer record and prior attacking career context.
+- [Tottenham Hotspur — Xavi Simons joins from RB Leipzig](https://www.tottenhamhotspur.com/news/984194/xavi-simons-joins-from-rb-leipzig) — 29 August 2025; official transfer record and club description of prior number-ten and left-wing experience.
 - [Premier League — How De Zerbi's Brighton invite and beat the press](https://www.premierleague.com/news/3717530) — 27 September 2023; league tactical analysis of press provocation, the free player and acceleration after escape.
 - [Premier League — How De Zerbi must balance risk and reward](https://www.premierleague.com/en/news/3721036) — 6 October 2023; league analysis of attacking overloads, counterpressure and transition exposure.
 - [Premier League — The 4-2-4 formation: football tactics explained](https://www.premierleague.com/en/news/4243825/the-4-2-4-formation-football-tactics-explained) — tactical explanation of narrow build-up support and high attacking occupation across De Zerbi's earlier work.

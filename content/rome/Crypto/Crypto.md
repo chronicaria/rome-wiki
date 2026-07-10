@@ -64,6 +64,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Protocol treasury management and runway]] — separate unrestricted liquid resources, commitments, native-token marks, revenue, and governance authority before estimating survival time.
 - [[Cross-chain token supply accounting]] — consolidate burn-and-mint, lock-and-mint, native issuance, inventory transfers, wrappers, and in-flight claims without double counting.
 - [[Crypto insurance and risk transfer]] — test cover wording, trigger evidence, claims governance, correlated capital, settlement liquidity, and the identity of the ultimate loss bearer.
+- [[Token holder rights are not equity rights]] — inventory possession, use, governance, cash-flow, remedy, and insolvency powers instead of importing a stock analogy.
+- [[Protocol fee switches and tokenholder claims]] — separate the ability to vote on fee routing from an activated, eligible, durable, and enforceable holder benefit.
+- [[Crypto bankruptcy claims and recovery waterfalls]] — distinguish property return from creditor recovery, then trace entity, priority, setoff, avoidance, and distribution rules.
+- [[Blockchain fee revenue and economic security budgets]] — reconcile fees, issuance, burn, MEV, provider costs, and attack economics without calling every flow revenue.
 
 ## Current conviction subset
 

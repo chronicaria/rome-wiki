@@ -36,10 +36,12 @@ Up: [[Basketball]]
 
 - [[Consolidation trades and roster spots]] — compare complete post-trade rosters, including the legal use and risk of capacity created by an uneven deal.
 - [[Two-for-one trade valuation in fantasy basketball]] — audit a specific uneven trade through its replacement path, playable lineups, category fit, and concentrated risk.
+- [[Trade evaluation under role uncertainty]] — compare complete roster paths across correlated role states, reversal thresholds, and the option to wait for evidence.
 - [[Lineup congestion and playable games]] — model each rostered game as a dated assignment competing for eligible lineup capacity.
 - [[Positional flexibility in fantasy basketball]] — value eligibility by the marginal legal assignments it unlocks rather than by counting position labels.
 - [[Fantasy basketball streaming on low-volume days]] — optimize playable games after lineup congestion and acquisition costs.
 - [[Fantasy basketball streaming break-even thresholds]] — require the stream's marginal lineup value to clear drop, transaction, and option costs.
+- [[Multi-move streaming paths]] — treat a sequence of pickups as a contingent policy whose early moves preserve or destroy later legal options.
 - [[FAAB and waiver priority as option value]] — spending a scarce claim resource sacrifices future flexibility.
 - [[Weekly lineup locks and injury risk]] — price irreversible weekly assignments with probability-weighted availability, workload, and playable games.
 - [[IL slots as roster flexibility]] — value contingent roster capacity net of eligibility timing, transaction restrictions, and the activation squeeze.
@@ -47,6 +49,7 @@ Up: [[Basketball]]
 - [[Bench slots and latent lineup value]] — value retained reserves as state-contingent options over future legal lineups rather than as inactive box scores.
 - [[Fantasy basketball playoff schedule value]] — value playable marginal production across conditional rounds, not raw scheduled games.
 - [[Turnovers as an opportunity cost]] — judge turnovers as the format-dependent cost of a complete opportunity bundle rather than rewarding inactivity.
+- [[Keeper value versus redraft value]] — separate current production from rule-created future surplus, keeper-slot opportunity cost, and roster friction.
 
 ## Learning from decisions
 
@@ -54,9 +57,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Trade evaluation under role uncertainty]]
-- [[Multi-move streaming paths]]
-- [[Keeper value versus redraft value]]
+- [[Schedule value under availability uncertainty]]
+- [[Category redundancy in roster construction]]
+- [[Transaction limits and streaming option value]]
 
 ## Open questions
 

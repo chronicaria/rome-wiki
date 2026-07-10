@@ -23,6 +23,9 @@ Up: [[Sports]]
 - [[Indianapolis Colts practice-squad construction 2026]] — developmental portfolio, scarce-position insurance, and weekly readiness
 - [[Indianapolis Colts preseason evaluation framework 2026]] — claim ladder for assignments, combinations, and exhibition evidence
 - [[Indianapolis Colts rookie development framework 2026]] — staged and position-specific tests for converting the draft class into NFL jobs
+- [[Indianapolis Colts training-camp installation 2026]] — staged installation, role evidence, opponent stress, and roster compression
+- [[Indianapolis Colts waiver-wire strategy 2026]] — functional claims, displacement cost, installation, and post-cut contingencies
+- [[Indianapolis Colts AFC South path 2026]] — six division games, ordered tiebreak mechanics, and conditional leverage
 
 ## Units and mechanisms
 

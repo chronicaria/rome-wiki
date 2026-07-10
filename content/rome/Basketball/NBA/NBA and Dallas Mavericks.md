@@ -33,6 +33,7 @@ This topic map connects current Dallas state, player and lineup investigations, 
 
 ## Forecasting and lineup method
 
+- [[NBA multi-agent forecasting company]]
 - [[Availability risk in NBA projections]]
 - [[Dallas Mavericks model pressure points]]
 - [[NBA role changes that break preseason models]]
@@ -45,6 +46,7 @@ This topic map connects current Dallas state, player and lineup investigations, 
 
 ## Cap and roster-building rules
 
+- [[2026 NBA offseason transaction verification ledger]]
 - [[2026-27 NBA cap and apron thresholds]]
 - [[NBA apron mechanics and roster building]]
 - [[Second-apron draft-pick penalties in practice]]
