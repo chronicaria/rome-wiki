@@ -20,6 +20,8 @@ Up: [[Basketball]]
 - [[Points-league volume and efficiency]] — translate minutes, role, and box-score events through the league's exact scoring formula.
 - [[Percentage categories and volume]] — model shooting ratios through makes and attempts rather than averaging player percentages.
 - [[Category floors and ceilings in fantasy basketball]] — define category-specific quantiles and coherent role scenarios instead of vague safe/upside labels.
+- [[Robust punt builds in fantasy basketball]] — stress-test a deliberate category concession against projection error, correlated failure, replacement supply, and changing majority paths.
+- [[Scarce-category specialists and roster fragility]] — separate a specialist's marginal category value from the roster's concentrated dependency and recovery risk.
 - [[Using projection disagreement in fantasy basketball]] — normalize competing forecasts, locate contested assumptions, and combine them without mistaking spread for calibrated uncertainty.
 - [[ADP uncertainty and player uncertainty]] — separate uncertainty about draft acquisition timing from uncertainty about future player outcomes.
 
@@ -42,6 +44,7 @@ Up: [[Basketball]]
 - [[Weekly lineup locks and injury risk]] — price irreversible weekly assignments with probability-weighted availability, workload, and playable games.
 - [[IL slots as roster flexibility]] — value contingent roster capacity net of eligibility timing, transaction restrictions, and the activation squeeze.
 - [[Roster-slot liquidity in fantasy basketball]] — price how quickly and cheaply a roster position can be converted into a better legal lineup path.
+- [[Bench slots and latent lineup value]] — value retained reserves as state-contingent options over future legal lineups rather than as inactive box scores.
 - [[Fantasy basketball playoff schedule value]] — value playable marginal production across conditional rounds, not raw scheduled games.
 - [[Turnovers as an opportunity cost]] — judge turnovers as the format-dependent cost of a complete opportunity bundle rather than rewarding inactivity.
 
@@ -51,9 +54,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Robust punt builds in fantasy basketball]]
-- [[Scarce-category specialists and roster fragility]]
-- [[Bench slots and latent lineup value]]
+- [[Trade evaluation under role uncertainty]]
+- [[Multi-move streaming paths]]
+- [[Keeper value versus redraft value]]
 
 ## Open questions
 

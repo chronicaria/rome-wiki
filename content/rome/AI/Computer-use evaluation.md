@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [ai, agents, evaluation, computer-use, benchmarks]
-as_of: 2026-07-09
+as_of: 2026-07-10
 ---
 Computer-use evaluation should measure a fully specified agent–scaffold–interface system in a controlled, stateful environment, not treat one benchmark success rate as a context-free property of a model.
 
@@ -37,6 +37,21 @@ An evaluation environment determines which parts of real computer use are presen
 **Enterprise and mobile environments** reveal different failure surfaces. WorkArena builds tasks around a ServiceNow instance and BrowserGym, making enterprise knowledge work and cloud-state grading more central. AndroidWorld uses an Android emulator and dynamically instantiated tasks, testing touch-oriented controls, mobile app state, and device-level effects. These suites should be read as complementary coverage, not entries on one universal ladder.
 
 An evaluation report should therefore state its scope narrowly: “this system completed these resettable browser tasks” or “these configured desktop workflows,” not “the model can use computers.”
+
+## Environment drift and benchmark identity
+
+A benchmark name is not a complete experimental condition. Interactive environments age: sites are rebuilt, packages update, certificates expire, accounts accumulate state, search indexes change, and a desktop image acquires different application defaults. Even a fixed image can depend on live network services. OSWorld's repository warns that missing Google-account or proxy configuration can make tasks fail, and its maintainers introduced OSWorld-Verified after fixing reported benchmark issues and updating results. That is direct evidence that “OSWorld score” without a benchmark version is ambiguous, not evidence that any particular older result is invalid.
+
+Drift has at least four layers:
+
+- **Artifact drift:** task files, setup scripts, graders, or reference assets change.
+- **Environment drift:** operating-system images, browsers, applications, fonts, locale, display servers, and dependencies change.
+- **Service drift:** remote APIs, websites, authentication, rate limits, geolocation, or anti-bot behavior change.
+- **Population drift:** the task distribution stops matching the computer work for which the system is being evaluated.
+
+Reproducibility therefore requires a versioned *bundle*, not a paper citation. A run record should include the benchmark commit or release, task-manifest hash, VM or container image digest, grader commit, dependency lockfile, application and browser versions, locale and timezone, resolution and scaling, network policy, account snapshot, model endpoint and dated model identifier, and run timestamp. Setup validation should run before scoring: known controls should confirm that required services load, credentials work, initial state matches its manifest, and the grader accepts a canonical successful artifact. Infrastructure failures should be reported separately from agent failures rather than silently scored as zero.
+
+Longitudinal evaluation needs two tracks. A **frozen track** reruns an immutable bundle to estimate change in the agent under matched conditions. A **maintained track** migrates tasks and graders to supported software, preserving practical relevance but changing the instrument. Linking the two requires overlap runs: evaluate the same agents on both versions, inspect task-level migrations, and publish a compatibility matrix. A leaderboard that replaces its environment without this bridge becomes a new measurement series even if its title stays the same. This conclusion is an inference from ordinary measurement practice and the repositories' visible maintenance history.
 
 ## Tasks and graders
 
@@ -73,6 +88,26 @@ Hybrid agents may use pixels for perception, accessibility identifiers for selec
 
 Action equivalence also affects grading. Clicking through a form and calling the backing API can yield the same database state while exercising very different competencies and security boundaries. A benchmark must decide whether it evaluates outcome achievement, human-interface operation, or both. If both matter, report outcome success alongside interface-policy compliance.
 
+### Action-space validity must be tested, not assumed
+
+An advertised action space can differ from the effective one. A coordinate action may be syntactically valid but land outside the viewport, target a stale screenshot, hit a control covered by a dialog, or execute after focus moved. A semantic element identifier may no longer exist when the action arrives. A generated script may invoke unrestricted filesystem or process capabilities that make a nominal GUI task trivial. Evaluation should validate actions at three boundaries:
+
+1. **Schema validity:** did the output parse into an allowed action with bounded arguments?
+2. **State validity:** was the action applicable to the state the agent observed, within the permitted timing and focus assumptions?
+3. **Policy validity:** did it use only authorized channels and avoid forbidden shortcuts or side effects?
+
+Invalid actions should not all collapse into “planning failure.” Log parser rejection, out-of-bounds targeting, stale-target errors, application refusal, timeout, and policy interception separately. The harness should record both the proposed action and the executed action, including any coordinate transformation, key normalization, retry, or safety filter. Otherwise an adapter can silently repair model output or introduce failures attributed to the model. For comparisons, replaying recorded actions is useful for debugging but not a substitute for closed-loop reruns: the observation after an action depends on timing and state.
+
+The cleanest design declares an action-space contract and tests the harness against it. Include conformance tasks for focus changes, scrolling, drag operations, keyboard layouts, clipboard behavior, modal dialogs, and prohibited API access. These tests establish that a score measures the action interface described in the report.
+
+## Observability of the experiment
+
+The agent's observation channel and the evaluator's observability are different. The former defines what the agent may see; the latter determines whether a researcher can explain the run. A reproducible trace should retain timestamped raw observations, the exact derived representation sent to the model, model requests and responses, parsed and executed actions, environment events, tool errors, grader inputs, final-state evidence, and resource usage. Secret values should be redacted through a documented transformation while preserving evidence that a credential field existed.
+
+Trace completeness matters because the same visible failure can have different causes. A click that appears wrong might reflect visual grounding, a resized viewport, an adapter coordinate transform, delayed rendering, or focus stolen by a notification. A final-state grader failure might reflect an incorrect task, a correct alternate solution the grader cannot recognize, or a service outage. Time-synchronized video alone is insufficient because it omits hidden structured observations and adapter behavior; structured logs alone can omit transient visual state. Both are useful, and a trace schema should link them by step and timestamp.
+
+Benchmark maintainers should publish a small replayable evidence packet for each reported aggregate: configuration manifest, task-level outcomes, failure categories, grader version, and audited sample traces. Where full trajectories cannot be released because of licenses or secrets, independent auditors can receive controlled access and publish agreement statistics. Claims that cannot be reconstructed from task-level evidence should be presented as provisional.
+
 ## Scaffolds, retries, and budgets
 
 Most evaluated systems include substantial orchestration around the base model: system instructions, few-shot demonstrations, state summaries, planners, reflective critics, visual-grounding modules, memory stores, failure detectors, and termination rules. These can dominate results. A benchmark submission should identify each component and, when making a model comparison, keep the scaffold constant or run ablations.
@@ -88,6 +123,14 @@ Three curves are more informative than one endpoint:
 3. harmful or irreversible actions versus autonomy budget.
 
 Repeated trials are necessary because model sampling, website timing, and environment initialization are stochastic. Reports should give trial counts and uncertainty intervals, not rankings based on tiny differences between single-run point estimates.
+
+### Hidden scaffold and human effects
+
+“Model score” often includes decisions made before, during, and after inference. Prompt tuning on development tasks, hand-authored demonstrations, action parsing, automatic correction, state summarization, visual cropping, tool routing, completion detection, and task-specific exception handling are all parts of the evaluated system. Human labor can enter through selecting the best prompt, restarting malformed runs, repairing the environment, choosing which trials count, resolving login challenges, or adjudicating graders. None is inherently illegitimate; undisclosed intervention changes the estimand.
+
+Every run should carry an intervention ledger. Record who or what initiated each reset, whether the agent saw feedback from the failed attempt, whether a human supplied information or merely repaired infrastructure, and whether the trial was excluded. Report at least three quantities separately: autonomous single-attempt success, success with predefined automated recovery, and success with human assistance. Human minutes and intervention counts are costs, not footnotes.
+
+To attribute gains, use factorial or staged ablations: common scaffold across models, common model across scaffolds, then each team's optimized system. Freeze task exclusions and rerun rules before examining results. A hidden human who chooses a trajectory or declares completion functions as a selector; a manually engineered exception functions as task-specific policy. Treating either as base-model capability overstates what will transfer to unattended deployment.
 
 ## OSWorld, WebArena, and VisualWebArena compared
 
@@ -127,14 +170,14 @@ Useful safety metrics include unauthorized-action rate, intervention rate, polic
 
 1. **Define the deployment claim.** Specify users, applications, task families, and allowed consequences.
 2. **Choose complementary environments.** Include the narrow target domain plus at least one transfer environment when generality is claimed.
-3. **Freeze and publish the configuration.** Record environment images, application versions, seeds, accounts, viewport, observations, actions, scaffold, and grader versions.
+3. **Freeze and publish the configuration.** Record image digests, benchmark and grader commits, task hashes, application versions, seeds, accounts, viewport, observations, actions, and scaffold.
 4. **Use held-out, outcome-based tasks.** Include achievable, ambiguous, impossible, recovery, and adversarial cases.
 5. **Predeclare budgets.** Fix steps, tokens, time, cost, retries, and parallel attempts before observing test results.
-6. **Retain full trajectories.** Screens, structured observations, actions, model outputs, tool errors, timing, and grader evidence enable diagnosis and independent verification.
+6. **Retain full trajectories and intervention ledgers.** Screens, structured observations, proposed and executed actions, model outputs, adapter events, human actions, timing, and grader evidence enable diagnosis and independent verification.
 7. **Report decomposed outcomes.** Give end-to-end success, partial subgoals, grounding errors, planning errors, recovery, latency, cost, safety violations, and uncertainty.
 8. **Audit samples manually.** Inspect nominal successes for collateral damage and nominal failures for grader defects.
 9. **Run ablations.** Change one of model, observation channel, action space, scaffold, or budget at a time.
-10. **Re-test under perturbation.** Vary layout, wording, data instances, timing, and application versions to expose memorization and brittleness.
+10. **Bridge benchmark versions and perturbations.** Run overlap agents on frozen and maintained bundles; vary layout, wording, data instances, timing, and application versions to expose memorization and brittleness.
 
 This protocol does not produce a universal intelligence score. It produces something more useful: evidence connecting a precisely described system to a bounded operational claim.
 
@@ -148,11 +191,12 @@ Finally, benchmark design shapes research. Suites that reward only final-state s
 
 ## Sources
 
-- Tianbao Xie et al., [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972), arXiv:2404.07972 (benchmark design, 369 tasks, controllable desktop environment, execution-based evaluation); accessed 2026-07-09.
-- [OSWorld official repository](https://github.com/xlang-ai/OSWorld) (environment setup, agent interface, evaluation and trace artifacts); accessed 2026-07-09.
-- Shuyan Zhou et al., [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854), arXiv:2307.13854 (self-hosted web environment, task construction, functional evaluation); accessed 2026-07-09.
-- [WebArena official repository](https://github.com/web-arena-x/webarena) (canonical implementation and reproducibility details); accessed 2026-07-09.
-- Jing Yu Koh et al., [VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks](https://arxiv.org/abs/2401.13649), arXiv:2401.13649 (visually grounded web tasks and multimodal evaluation); accessed 2026-07-09.
+- Tianbao Xie et al., [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972), arXiv:2404.07972 (benchmark design, 369 tasks, initial-state setup, controllable desktop environment, and execution-based evaluation); accessed 2026-07-10.
+- [OSWorld official repository](https://github.com/xlang-ai/OSWorld) (environment setup, observation and action configuration, saved screenshots/actions/video, account and proxy requirements, and OSWorld-Verified maintenance notice); accessed 2026-07-10.
+- Shuyan Zhou et al., [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854), arXiv:2307.13854 (self-hosted websites, realistic tasks, and programmatic functional evaluation); accessed 2026-07-10.
+- [WebArena official repository](https://github.com/web-arena-x/webarena) (canonical implementation, site deployment, configuration, action interfaces, and evaluation tooling); accessed 2026-07-10.
+- Jing Yu Koh et al., [VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks](https://arxiv.org/abs/2401.13649), arXiv:2401.13649 (visually grounded tasks, multimodal observations, and evaluation design); accessed 2026-07-10.
+- [VisualWebArena official repository](https://github.com/web-arena-x/visualwebarena) (canonical environment and evaluation implementation); accessed 2026-07-10.
 - Xiang Deng et al., [Mind2Web: Towards a Generalist Agent for the Web](https://arxiv.org/abs/2306.06070), arXiv:2306.06070 (offline real-website demonstrations and cross-domain generalization); accessed 2026-07-09.
 - Alexandre Drouin et al., [WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?](https://arxiv.org/abs/2403.07718), arXiv:2403.07718 (enterprise tasks and BrowserGym action/observation environment); accessed 2026-07-09.
 - Christopher Rawles et al., [AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://arxiv.org/abs/2405.14573), arXiv:2405.14573 (Android emulator, dynamic tasks, device-state evaluation); accessed 2026-07-09.
@@ -165,3 +209,5 @@ Finally, benchmark design shapes research. Suites that reward only final-state s
 - How should evaluations price human clarification and supervision when asking is safer than guessing?
 - What perturbation suites predict robustness to ordinary software updates without turning every run into an unreproducible live-web test?
 - Can a shared trace schema make failures comparable across browser, desktop, mobile, and enterprise environments?
+- What minimum overlap study is sufficient to connect a maintained benchmark release to its frozen predecessor?
+- How should leaderboards disclose human environment repair without penalizing teams for infrastructure failures outside the agent's control?

@@ -23,6 +23,7 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Volatility risk premium]]
 - [[Funding liquidity versus market liquidity]]
 - [[US credit and volatility tracker]]
+- [[Options dealer positioning without mythology]]
 
 ## Rates and dollar transmission
 
@@ -44,6 +45,8 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Calendar spreads in commodity futures]]
 - [[US natural gas balances]]
 - [[Gold real yields and the US dollar]]
+- [[Shipping freight and commodity price transmission]]
+- [[Commodity data and contract registry]]
 
 ## Quantitative research craft
 
@@ -51,12 +54,13 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Futures continuous contracts and roll bias]]
 - [[Event studies for financial markets]]
 - [[Transaction-cost models]]
+- [[US macro surprise ledger]]
 
 ## Next connections
 
-- [[Commodity data and contract registry]]
-- [[US macro surprise ledger]]
-- [[Options dealer positioning without mythology]]
+- [[Dollar and FX transmission tracker]]
+- [[Energy market balance tracker]]
+- [[Treasury repo specialness]]
 
 ## Open questions
 

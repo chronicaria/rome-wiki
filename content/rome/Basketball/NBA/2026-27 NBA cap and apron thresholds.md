@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [basketball, nba, salary-cap, cba, roster-building]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: NBA and Dallas Mavericks
 review_after: 2027-06-25
 ---
@@ -101,6 +101,29 @@ Fourth, calculate the post-transaction position and remaining roster needs. A le
 Fifth, separate tax cost from basketball permission. “The owner will pay” answers the tax question, not whether the CBA permits aggregation, a sign-and-trade, or an exception. Conversely, getting below the tax line can save money without being necessary to legalize a move whose controlling ceiling is an apron.
 
 Finally, preserve scenario ranges. Team salary changes with waived guarantees, unlikely incentives, trade bonuses, and order of operations. Near an apron, report the assumed sequence and buffer rather than one falsely exact “space” number.
+
+## Verification matrix for live roster work
+
+The thresholds themselves are now the least uncertain part of a 2026–27 cap analysis. The NBA's June 30 release fixes the five system levels and three MLE amounts, and the league's key-dates page fixes the July 1 start of the cap year and July 6 end of the moratorium. Most remaining uncertainty sits in the transaction ledger. A reported agreement, an official team announcement, a league-approved trade, and a cap-table entry are four different evidentiary states.
+
+For committee work, each input should therefore carry both a status and an effective date:
+
+| Input | Preferred evidence | Safe use |
+| --- | --- | --- |
+| System level | NBA's final annual cap release | Treat as controlling for the named cap year |
+| CBA permission or restriction | Governing CBA, then the NBA's official CBA guide | Identify the transaction mechanism and controlling apron |
+| Completed player movement | Team release or NBA tracker explicitly identifying an official deal | Move the player between canonical roster ledgers |
+| Reported agreement | Attributable report, clearly labeled | Build a conditional scenario; do not treat it as executed |
+| Team salary or apron salary | Reconciled contract ledger with stated assumptions | Estimate room only after checking holds, incentives, waived money, and roster charges |
+| Future roster action | Explicit scenario and order of operations | Test legality and flexibility; never present as a completed move |
+
+This matrix resolves a common contradiction in July coverage. A leaguewide offseason page may still label a move “multiple reports” after the participating team has issued its own completion release, or a team roster grid may lag the completed transaction. The canonical article should use the most direct dated evidence for the specific claim rather than treating every NBA-owned page as equally current. In Dallas's July 2026 case, the official acquisition announcement controls the player movement while [[Dallas Mavericks roster and minutes ledger]] preserves the lagging roster display as a provenance warning.
+
+The matrix also prevents cap language from outrunning evidence. Knowing that the first apron is $209.015 million does not prove Dallas is below it, above it, or hard-capped there. That conclusion requires a reconciled Apron Team Salary and the mechanism used in every relevant transaction. Likewise, a public payroll estimate below the second apron does not establish access to the taxpayer MLE if another action already imposed a lower ceiling. The proper output is a conditional statement: *given this ledger, this transaction mechanism, and this order, this threshold controls.*
+
+### Arithmetic recheck
+
+The published differences in this note were independently recalculated from the NBA's final figures on July 10. The first apron minus the tax level is $8.587 million; the second apron minus the first is $12.671 million; the second apron minus the tax level is $21.258 million; and the first apron minus the salary cap is $44.054 million. The minimum team salary is $16.496 million below the cap. These checks confirm the table's subtraction, but they do not substitute for team-specific accounting.
 
 ## What the 2026–27 ladder means strategically
 

@@ -39,6 +39,8 @@ Up: [[Weather prediction (MOC)]]
 - [[Tracer transport diagnostics in exoplanet GCMs]] separates passive pathways, reactive chemistry, numerical advection tests, and remotely inferred constituents while building a transport-budget verification protocol.
 - [[Angular momentum budgets of superrotating atmospheres]] closes the path from wave and mean-flow transports through physical torques and numerical residuals instead of treating a fast jet as its own explanation.
 - [[Magnetic drag in ultra-hot Jupiter atmospheres]] distinguishes state-dependent Lorentz forces and induction from a universal linear braking time or a magnetic-field measurement.
+- [[Atmospheric tides on exoplanets]] separates phase-coherent thermal and gravitational forcing from arbitrary variability, then connects wave momentum transport, spin torque, and observability.
+- [[Photochemistry circulation coupling]] follows the two-way loop from photolysis and kinetics through three-dimensional transport to opacity and radiative feedback.
 
 ## Observation and inference
 
@@ -49,6 +51,7 @@ Up: [[Weather prediction (MOC)]]
 - [[High-resolution Doppler spectroscopy of exoplanet winds]] explains what planet-following line profiles measure and why orbital motion, rotation, winds, chemistry, and limb weighting must be separated.
 - [[From light curves to atmospheric maps]] makes the mapping inverse problem explicit: disk integration has a null space, regularization supplies assumptions, and a plotting grid is not the same thing as spatial resolution.
 - [[Time-series mapping of brown-dwarf weather]] applies that inverse-problem discipline to rotational and spectral variability, including wavelength-dependent pressure sensitivity and the evolution–rotation degeneracy.
+- [[Contribution functions in exoplanet spectra]] explains why a spectral channel has a broad, state- and geometry-dependent pressure weighting rather than a uniquely observed altitude.
 
 ## Current frontier
 

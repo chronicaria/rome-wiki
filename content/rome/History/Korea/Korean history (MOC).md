@@ -46,6 +46,8 @@ This map organizes Korean history through overlapping chronological, institution
 
 ## Reform, empire, and sovereignty
 
+- [[Donghak thought before the peasant war]] — revelation, ethical cultivation, vernacular practice, clandestine organization, persecution, and the contingent bridge from religion to 1894 mobilization.
+- [[Foreign incursions before the opening of Korea]] — comparing the 1866 French expedition, the 1871 American expedition, Japanese coercion, and why only the last produced a durable treaty regime.
 - [[Gabo Reform causal map]] — Korean reform coalitions, Donghak pressure, Japanese military coercion, three reform phases, and uneven social implementation.
 
 ## Colonial rule and mobilization
@@ -53,6 +55,7 @@ This map organizes Korean history through overlapping chronological, institution
 - [[Colonial Korea's changing administrative regimes]] — military-police rule, constrained cultural politics, developmental administration, and total-war mobilization.
 - [[Land survey, tenancy, and the colonial economy]] — cadastral title, landlordism, debt, rice policy, agrarian protest, growth, and unequal distribution.
 - [[The March First Movement as local and global history]] — religious, student, market-town, and diaspora networks, colonial repression, global claims, and casualty-source limits.
+- [[Forced labor and wartime mobilization]] — staged recruitment, state allocation, formal requisition, corporate discipline, gendered labor, survivor evidence, and contested redress.
 
 ## Liberation and division
 
@@ -62,10 +65,10 @@ This map organizes Korean history through overlapping chronological, institution
 
 ## Priority gaps
 
-- [[Donghak thought before the peasant war]]
-- [[Foreign incursions before the opening of Korea]]
-- [[Forced labor and wartime mobilization]]
 - [[Imjin War causal map]]
+- [[Catholic persecution and new social networks in Joseon]]
+- [[The Ganghwa Treaty and unequal sovereignty]]
+- [[Korean migration across the Japanese empire]]
 
 ## Open questions
 

@@ -60,6 +60,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Validator economics and staking yield]] — decompose issuance, fees, MEV, costs, penalties, dilution, and concentration behind a quoted staking rate.
 - [[Restaking risk is correlated leverage]] — consolidate shared collateral, operator, contract, liquidity, and slashing dependencies across services.
 - [[Decentralized exchange volume quality]] — reconstruct pool-leg and user-intent volume while testing routing duplication, incentives, self-trading, arbitrage, and price conversion.
+- [[Onchain lending liquidation mechanics]] — trace an unsafe loan from oracle eligibility through execution, collateral conversion, and the final bad-debt waterfall.
+- [[Protocol treasury management and runway]] — separate unrestricted liquid resources, commitments, native-token marks, revenue, and governance authority before estimating survival time.
+- [[Cross-chain token supply accounting]] — consolidate burn-and-mint, lock-and-mint, native issuance, inventory transfers, wrappers, and in-flight claims without double counting.
+- [[Crypto insurance and risk transfer]] — test cover wording, trigger evidence, claims governance, correlated capital, settlement liquidity, and the identity of the ultimate loss bearer.
 
 ## Current conviction subset
 

@@ -20,6 +20,9 @@ Up: [[Sports]]
 - [[Indianapolis Colts quarterback structure 2026]] — starter, rehabilitation, and backup competition
 - [[Indianapolis Colts 2026 draft class]] — class construction, role conversion, resource efficiency, and the Gardner transaction cycle
 - [[Indianapolis Colts 2026 roster cut mechanics]] — waivers, reserve paths, practice squads, elevations, and game-day roster constraints
+- [[Indianapolis Colts practice-squad construction 2026]] — developmental portfolio, scarce-position insurance, and weekly readiness
+- [[Indianapolis Colts preseason evaluation framework 2026]] — claim ladder for assignments, combinations, and exhibition evidence
+- [[Indianapolis Colts rookie development framework 2026]] — staged and position-specific tests for converting the draft class into NFL jobs
 
 ## Units and mechanisms
 

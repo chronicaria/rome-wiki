@@ -12,6 +12,12 @@ Kyrie Irving's expected 2026-27 return would restore Dallas's only proven elite 
 
 Up: [[Dallas Mavericks 2026-27 season]] · Team scenarios: [[Dallas Mavericks availability scenarios]] · Creation context: [[Dallas guard creation after roster turnover]] · Forecast method: [[Availability risk in NBA projections]]
 
+## Why it matters
+
+Irving's return is the largest single uncertainty in Dallas's 2026-27 offensive outlook. The Mavericks can replace some of his minutes, but they cannot simply redistribute his combination of first-side advantage creation, pull-up shooting, late-clock shotmaking, and closing-game control. The difference between no Irving, a managed 24-minute version, and a sustained high-level version changes what Dallas can reasonably ask of Cooper Flagg and every other guard. It also changes which lineups May can close with, how opponents defend ball screens, and whether secondary creators work from advantages or must generate them.
+
+That importance makes precision essential. An official expectation that Irving will be ready is meaningful roster-planning evidence, but it is not a clinical update and does not answer how much he can play or how effectively he can perform. This article therefore treats availability, workload, effectiveness, and durability as separate questions and labels basketball projections as inference rather than medical fact.
+
 **Current state — as of July 10, 2026:** Dallas officially ruled Irving out for the remainder of 2025-26 on February 18 while he continued rehabilitation from left-knee ACL reconstruction. An NBA draft profile later said he “should be ready” for the start of 2026-27, and new coach Dusty May has discussed Irving as a foundation of the team. No public source reviewed for this note establishes full medical clearance, unrestricted five-on-five participation, a preseason plan, a minutes limit, or a back-to-back policy.
 
 ## The verified timeline

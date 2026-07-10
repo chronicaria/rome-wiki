@@ -42,6 +42,9 @@ The Curry–Myers–Hammer sequence shows how quickly a transaction headline can
 - [[What playoff roster design asks of the Mets]] explains how round length, eligibility, role coverage, and opponent shape a conditional 26-player October roster.
 - [[How leverage changes Mets bullpen evaluation]] reframes relief work through entry state, inherited runners, availability, hitter pockets, and remaining outs rather than saves alone.
 - [[How platoons and bench roles shape the Mets lineup]] connects handedness, pitch-type matchups, irreversible substitutions, defense, rest, and scarce reserve places.
+- [[How recent workload shapes Mets bullpen availability]] turns official pitches, appearances, roster movement, and hidden warm-up uncertainty into a graded daily availability framework.
+- [[How lineup sequencing changes Mets run expectancy]] explains why plate-appearance allocation and base-out states matter while keeping lineup optimization in its proper marginal scale.
+- [[How the Mets should evaluate deadline relief pitching]] evaluates relief roles, availability, mechanisms, control, and roster costs within the Mets' seller-oriented 2026 context.
 
 ## Sources
 

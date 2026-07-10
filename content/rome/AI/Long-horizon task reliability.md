@@ -16,7 +16,7 @@ Up: [[AI agents (MOC)]]
 
 The intuitive question is whether an AI agent can work for an hour, a day, or a week. The measurable question is harder: **what counts as working, at what success probability, on which distribution of tasks, with which tools and interventions?** A system that sometimes completes an eight-hour software task is not equivalent to one that completes comparable tasks reliably. A system that stays active for eight hours may merely be accumulating plausible-looking actions, hidden errors, or unresolved state.
 
-This distinction matters because agentic work is a chain. The model must interpret the goal, inspect an environment, choose tools, preserve state, detect failures, recover, and verify the final artifact. A fluent transcript can conceal a wrong intermediate assumption. The longer the chain, the more opportunities there are for a small mistake to become a branch point from which later competent actions cannot recover.
+Agentic work is a chain: interpret the goal, inspect the environment, choose tools, preserve state, detect failures, recover, and verify. A fluent transcript can conceal a wrong intermediate assumption that becomes an unrecoverable branch point.
 
 A prominent current public operationalization is METR's **task-completion time horizon**. METR asks human experts to complete a diverse set of mostly software and research-engineering tasks, estimates how long those tasks take humans, runs an AI agent on the same tasks, and fits a curve from task duration to probability of success. A model's 50% time horizon is the human-task duration at which the fitted curve predicts a 50% success probability; its 80% horizon is the corresponding duration at which the fitted curve predicts an 80% success probability.
 
@@ -69,9 +69,31 @@ $$
 u_i=q_i(1-d_i r_i).
 $$
 
-If stages were independent, reliability would be approximately $prod_i(1-u_i)$. In practice this product is only a baseline. Correlated defects, hidden environmental state, and shared validators make the true reliability lower or simply different. The right empirical object is therefore not one estimated per-step accuracy but a **failure dependency map**: which observations, memories, tools, and verifiers can cause several downstream claims to fail together.
+If stages were independent, reliability would be approximately $\prod_i(1-u_i)$. In practice this product is only a baseline. Correlated defects, hidden environmental state, and shared validators make the true reliability lower or simply different. The right empirical object is therefore not one estimated per-step accuracy but a **failure dependency map**: which observations, memories, tools, and verifiers can cause several downstream claims to fail together.
 
 This changes engineering priorities. Raising a generator's local accuracy from 98% to 99% may be less valuable than adding an independent check that catches a rare but catastrophic state error. Conversely, adding three critics built from the same prompt, model, context, and mistaken evidence may create the appearance of redundancy without reducing common-mode risk. Diversity is protective only when the checking channel has meaningfully different evidence or failure modes: a compiler rather than another prose judgment, a fresh source lookup rather than a paraphrase of the draft, or an independent evaluator rather than the provider's own scaffold.
+
+## Hazard survival is a better deployment model
+
+For deployment, it is useful to treat a run as a system surviving exposure to hazards rather than merely accumulating correct answers. Let $S(k)$ be the probability that, after $k$ consequential transitions, the run is still inside a **recoverable safe state**: its goal and permissions are intact, its material claims remain traceable, and its artifacts can still be verified or rolled back. The conditional hazard at transition $k$ is
+
+$$
+\lambda_k=P(\text{leave the recoverable safe set at }k\mid\text{survived through }k-1).
+$$
+
+Then $S(k)=\prod_{j=1}^{k}(1-\lambda_j)$ only if the hazard history is adequately represented in the conditioning state. For agents, that caveat is central. A poisoned memory, incorrect task interpretation, stale credential, or defective verifier can raise several future hazards simultaneously. The observed hazard may also increase with age because unresolved assumptions and unverified changes accumulate. A flat per-step failure rate is therefore an empirical hypothesis, not a safe prior.
+
+Hazards should be classified by what they do to the remaining run:
+
+- **Transient hazards** interrupt an otherwise sound plan, such as a rate limit or tool timeout. A bounded retry may be appropriate.
+- **Latent-state hazards** corrupt memory, evidence, or environment state without immediately causing a visible failure. Retrying from the same state can reproduce or deepen the defect.
+- **Control hazards** change the effective goal, authority, or stopping policy. Prompt injection and mistaken identity belong here because a technically successful action can still be invalid.
+- **Coupling hazards** make several components fail together: generator and critic share the same false summary; multiple agents inherit the same wrong plan; retries overload the same dependency.
+- **Irreversibility hazards** cross a boundary after which restoration is expensive or impossible, such as sending, deleting, publishing, spending, or changing access.
+
+This taxonomy is an engineering synthesis rather than a settled agent-evaluation standard. Its support comes from two bodies of evidence. Agent benchmarks increasingly report state-maintenance and long-sequence degradation, while mature reliability engineering treats overload, retry amplification, common dependencies, and graceful degradation as system-level hazards. Google SRE's account of cascading failure is especially relevant: a retry intended as local recovery can create positive feedback and increase global failure. The transfer to AI agents is an inference, but a strong one when agents share services, contexts, or validators.
+
+The practical test is **conditional survival**, not only final pass rate. Evaluation should ask whether hazard rises after a context compression, failed tool call, human correction, rollback, or contradiction; whether the same defect appears across nominally independent workers; and whether recovery restores a clean state or merely resumes action. Fault injection can estimate these conditional hazards directly.
 
 ## Reliability is a curve, not one pass rate
 
@@ -86,7 +108,7 @@ These curves answer different questions. A research agent can have a respectable
 
 Repeated runs are needed because a stochastic agent is a distribution over workflows. Report not only the mean success rate but between-run variance, tail failures, and the share of runs that enter an unrecoverable state. A system that succeeds 80% of the time and fails cleanly on the rest is not equivalent to one that also succeeds 80% but occasionally corrupts data. The downside distribution determines whether retries are economical or dangerous.
 
-Duration should also be separated from **dependency depth**. Fifty independent lookups can take longer than ten tightly coupled design decisions while being easier to parallelize and verify. Useful task metadata therefore includes the longest dependency chain, number of irreversible actions, frequency of external feedback, state size, and number of points at which an early choice constrains later options. Human completion time is a practical difficulty proxy; it is not a causal explanation of failure.
+Duration should be separated from **dependency depth**. Useful metadata includes the longest dependency chain, irreversible actions, external-feedback frequency, state size, and branch points where early choices constrain later options. Human completion time is a difficulty proxy, not a causal explanation of failure.
 
 ## Reliability budgets and stopping rules
 
@@ -96,7 +118,7 @@ This makes stopping policy part of reliability. An agent should stop or escalate
 
 A good checkpoint contains more than a transcript. It records the task contract, current artifacts, evidence provenance, environment version, outstanding assumptions, checks already passed, and a bounded next action. Recovery should be tested by fault injection: remove a tool result, corrupt a summary, change an interface, time out a service, or introduce a plausible contradictory source, then observe whether the agent notices, localizes, and contains the problem. This is closer to reliability testing than merely rerunning clean benchmark episodes.
 
-Recent research proposals use terms such as reliability-decay curves, graceful-degradation scores, and meltdown points. These labels are useful hypotheses, not yet universal standards. Their durable contribution is the insistence that long-horizon evaluation expose how consistency, variance, recovery, and catastrophic failure change with duration. Rome should preserve the underlying task-level data and definitions rather than copy a new composite score into a frontier ranking.
+Recent proposals introduce reliability-decay, graceful-degradation, and meltdown metrics. These are not universal standards; preserve their task-level data and definitions rather than copying a composite score into a frontier ranking.
 
 ## Four different notions of horizon
 
@@ -137,21 +159,45 @@ Several limitations remain important:
 
 These are reasons to attach a scope and uncertainty statement, not reasons to discard the measure. A well-specified imperfect measure is more useful than a vague claim that agents can now do “day-long work.”
 
-## Benchmarks measure different failure surfaces
+## Intervention and handoff thresholds
 
-No single benchmark establishes general long-horizon reliability. A portfolio should cover distinct surfaces.
+“Human in the loop” is not a reliability specification. It does not say what the human sees, how quickly they can respond, whether they can reconstruct the run, or whether intervention occurs before an irreversible action. NIST's AI RMF makes the durable organizational point: human roles, oversight, performance limits, deployment context, and the costs of errors should be defined and documented, while deployed behavior and emerging risk should be monitored. It does not supply universal numeric thresholds for agents. Those must come from the workflow's loss tolerance and evidence.
 
-**METR task horizons** test whether agents can complete increasingly long, scoreable software and research-engineering tasks. Their strength is a continuous reliability-versus-duration framing. Their weakness is domain concentration and sensitivity to task-time estimation and elicitation.
+A useful policy separates four thresholds:
 
-**SWE-bench** and its descendants ask systems to resolve real repository issues and grade the resulting patches in containerized test environments. They connect evaluation to useful engineering artifacts. Yet a score can depend heavily on repository selection, issue clarity, test completeness, contamination, scaffold design, and the number of attempts. The benchmark is primarily a task-success evaluation, not a direct measure of how long an agent remains coherent.
+1. **Continue autonomously** when the next action is reversible, inside explicit authority, supported by current evidence, and covered by a tested verifier and remaining budget.
+2. **Checkpoint** when state complexity, dependency depth, or elapsed work makes reconstruction costly. The agent may continue only after writing a compact, independently inspectable state record.
+3. **Request review** when uncertainty concerns a consequential assumption, validators disagree, evidence provenance is incomplete, repeated recovery has not reduced uncertainty, or the next action consumes a material part of the remaining risk budget.
+4. **Hard stop** before an irreversible or externally consequential action without explicit authority; when identity, scope, or environment integrity is unresolved; when rollback is unavailable; or when the agent can no longer demonstrate that its verifier is independent of the suspected failure.
 
-**OSWorld** places multimodal agents in real computer environments and scores application-level tasks. It exercises perception, clicking, typing, and state tracking that a terminal-only benchmark omits. Its results are sensitive to environment versions, visual grounding, action latency, and whether failures arise from the model or the interface layer.
+The trigger should combine **impact**, **uncertainty**, and **recoverability**, not confidence alone. A stylized decision rule is to continue only when the expected value of one bounded next action exceeds its expected loss plus the value of preserving the option to hand off. Because model self-confidence is poorly calibrated for novel workflows, the inputs should be observable signals: failed invariants, contradictory sources, repeated tool errors, unexplained diffs, stale state, intervention frequency, proximity to a permission boundary, and time since the last independently verified checkpoint.
 
-**WebArena** and related web-agent suites use reproducible websites with functional tasks. They reveal navigation and tool-use failures but cannot reproduce every ambiguity, adversarial page, authentication constraint, or changing interface of the open web.
+Handoff quality is itself measurable. Give a fresh operator only the task contract, checkpoint, artifacts, and permitted tools; then test whether they can identify the current state, unresolved assumptions, checks already run, and safe next action. If they need the whole transcript or the departing agent's private explanation, the system has not externalized enough state to claim recoverability.
 
-Newer long-sequence simulations can test delayed consequences and memory. Their controlled worlds make hundreds of turns reproducible, but success in a simulated organization or game remains construct validity evidence, not proof of reliable deployment in a company.
+Retries deserve their own threshold. Retry only when the failure is plausibly transient, the attempt is idempotent or rollback-protected, and the retry budget is bounded. A repeated semantic failure, identical critic disagreement, or corrupted checkpoint calls for diagnosis or escalation, not more samples from the same causal setup. This is the agent analogue of preventing retry storms in distributed systems.
 
-The right question is not which benchmark is “the agent benchmark.” It is which failure surface a benchmark makes observable, and what important deployment failure it leaves outside the frame.
+## From evidence to a deployment decision
+
+A benchmark score should license only the least permissive deployment tier supported by comparable evidence:
+
+| Tier | Permitted use | Evidence needed |
+|---|---|---|
+| Assistive | Draft or recommend; human executes | Useful task performance and transparent limitations |
+| Supervised action | Act in a reversible sandbox; human reviews checkpoints | Deployment-like trials, rollback tests, intervention records, constraint monitoring |
+| Bounded autonomy | Complete a narrow workflow with explicit budgets and escalation | High-threshold survival curve, fault injection, tail-loss accounting, independent validation |
+| Consequential autonomy | Take irreversible or high-impact action without prior review | Case-specific assurance far beyond a generic agent benchmark |
+
+This table is a normative synthesis, not a standard promulgated by METR or NIST. Its logic is that the evidence burden should rise with downside and irreversibility. A 50% completion horizon can support capability forecasting and task routing; by itself it cannot support bounded autonomy. Even an 80% horizon is insufficient if the missing 20% includes silent corruption, scope violations, or failures that retries amplify.
+
+The deployment comparison must include the alternative. An agent with lower raw completion but cheap verification and clean failure may dominate a stronger model whose rare failures are opaque. The decision objective is expected net value under the actual control policy:
+
+$$
+V=P_sB-C_{run}-C_{review}-P_hL_h-P_uL_u,
+$$
+
+where $P_sB$ is expected benefit from valid success, run and review costs are explicit, $P_hL_h$ is expected loss from detected and contained failures, and $P_uL_u$ is expected loss from undetected failures. The last term often dominates high-impact work. Measuring only accepted completions implicitly prices silent failure at zero.
+
+Promotion should therefore be reversible and local: start with read-only or sandboxed tasks, collect task-level outcomes and hazard signals, define rollback and hard-stop boundaries, then widen scope only when survival and tail-loss evidence remain acceptable under the new conditions. Model, scaffold, tools, permissions, or environment changes invalidate some of that evidence and require revalidation.
 
 ## A reporting standard for long-horizon claims
 
@@ -169,9 +215,7 @@ A credible result should make reconstruction possible. At minimum, report:
 | Statistics | Number of trials, task-level results, confidence intervals, and failure classification |
 | Economics | Successful-run and all-attempt cost, latency, and any parallel compute |
 
-The report should publish the full success curve where possible, including both 50% and higher-reliability horizons. A 50% horizon is useful for trend tracking; an 80% or 90% threshold is closer to many deployment questions. If the estimate is unstable under reasonable treatment of ambiguous or invalid runs, that instability is a result and should remain visible.
-
-Task-level artifacts matter more as aggregate scores rise. Trajectories, patches, test logs, and intervention records let independent readers distinguish genuine completion from grader exploitation, accidental success, or hidden rescue. Repeated trials are essential because model sampling and tool environments are stochastic.
+Publish the full success curve, including higher-reliability thresholds, and retain task-level trajectories, artifacts, tests, and intervention records. Instability under reasonable treatment of ambiguous runs is itself a result. Repeated trials are essential because sampling and tool environments are stochastic.
 
 ## Designing systems for reliability rather than spectacle
 
@@ -189,7 +233,7 @@ Long-horizon reliability improves when the workflow creates short, checkable con
 
 **Escalate based on uncertainty and impact.** Reliable autonomy includes knowing when not to act. A system that asks for help on a rare high-impact ambiguity may be more useful than one with a higher raw completion score and poor constraint awareness.
 
-These mechanisms spend resources. A reliable system may cost more, take longer, or appear less autonomous than a benchmark-maximizing system. That tradeoff should be plotted as a frontier among success probability, cost, latency, and supervision rather than collapsed into one capability rank.
+These mechanisms spend resources. Plot the tradeoff among success probability, cost, latency, and supervision rather than collapsing it into one capability rank.
 
 ## Why it matters
 
@@ -197,7 +241,7 @@ Task horizon is becoming a central input to forecasts about software automation,
 
 For Andrew's agent workflows, the operational target is not the longest unattended run. It is the longest interval over which the system preserves file ownership, evidence quality, user constraints, and recoverability at an acceptable cost. That target should be measured locally with task-level records and honest failure accounting, while public benchmarks supply external reference points.
 
-For frontier comparisons, Rome should treat time horizon as one coordinate. A model can have a longer measured horizon yet be worse for interactive steering, lower-cost batch work, computer use, or tasks with severe downside. Comparative rankings should identify the exact system and threshold, avoid converting provider demonstrations into independent evidence, and preserve the difference between model improvement and scaffold improvement.
+For frontier comparisons, Rome should treat time horizon as one coordinate. Rankings should identify the exact system and threshold, avoid converting provider demonstrations into independent evidence, and preserve the difference between model and scaffold improvement.
 
 ## Sources
 
@@ -214,6 +258,9 @@ For frontier comparisons, Rome should treat time horizon as one coordinate. A mo
 - [Towards a Science of AI Agent Reliability](https://arxiv.org/abs/2602.16666) — research agenda for stateful, long-horizon reliability and error accumulation; version checked July 10, 2026.
 - [METR, Impact of modelling assumptions on time horizon results](https://metr.org/notes/2026-03-20-impact-of-modelling-assumptions-on-time-horizon-results/) — sensitivity of fitted horizons near the suite ceiling, March 20, 2026.
 - [METR, Summary of the predeployment evaluation of GPT-5.6 Sol](https://metr.org/blog/2026-06-26-gpt-5-6-sol/) — concrete example in which treatment of evaluator-defined cheating changes the time-horizon estimate by orders of magnitude; June 26, 2026.
+- [Xu et al., LongDS-Bench](https://arxiv.org/abs/2605.30434) — primary benchmark paper on evolving analytical state; reports late-turn degradation and that additional steps did not necessarily improve performance, May 2026.
+- [NIST, AI Risk Management Framework Core](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) — authoritative lifecycle guidance on deployment-context testing, documented human oversight, independent assessment, monitoring, and risk treatment; accessed July 10, 2026.
+- [Google, Site Reliability Engineering: Addressing Cascading Failures](https://sre.google/sre-book/addressing-cascading-failures/) — authoritative engineering account of positive-feedback cascades, retry amplification, load shedding, and graceful degradation; used here by analogy rather than as direct evidence about language-model agents.
 
 ## Open questions
 
@@ -222,3 +269,6 @@ For frontier comparisons, Rome should treat time horizon as one coordinate. A mo
 - Which intervention taxonomy best distinguishes routine approvals, substantive rescue, and evaluator clarification?
 - How should benchmark exploitation be scored when it demonstrates capability but violates the intended task contract?
 - Can a local workflow measure constraint preservation and recoverability without exposing private task content?
+- Which observable hazard signals predict silent corruption early enough to make handoff useful?
+- How much does a fresh-model or fresh-context verifier reduce common-mode failure compared with deterministic checks?
+- What evidence threshold should reopen autonomy after a model, scaffold, tool, or permission change?

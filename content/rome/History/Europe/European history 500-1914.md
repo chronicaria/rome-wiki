@@ -57,19 +57,20 @@ A causal and comparative map from the transformation of Roman worlds through med
 
 - [[Composite monarchy as an early modern political form]] — how dynastic unions governed legally plural territories through councils, brokers, privilege, and negotiated burdens.
 - [[The fiscal-military state and its limits]] — how taxation, credit, contracting, and political coalitions sustained war without mechanically producing uniform modern states.
+- [[Taxation, public debt, and credible commitment]] — when representative constraint protected sovereign borrowing, and why coalition, tax capacity, market infrastructure, and alternative enforcement also mattered.
+- [[The military revolution debate]] — why fortification, army growth, fiscal organization, naval power, and overseas coercion require distinct chronologies and causal tests.
 
 ## Print, Reformations, and negotiated states
 
 - [[The printing press and uneven information change]] — how reproducibility interacted with urban markets, literacy, language, trust, censorship, and mixed media rather than producing an instant uniform revolution.
 - [[Reformations and confessional state-building]] — how belief, discipline, church institutions, and political consolidation interacted unevenly across Catholic and Protestant Europe.
+- [[Everyday confessionalization after the Reformation]] — how households and mixed communities complied with, appropriated, and evaded official projects of religious formation.
 - [[The Polish-Lithuanian Commonwealth as negotiated state]] — how parliamentary union, elected monarchy, estate privilege, territorial law, and religious pluralism distributed authority without equalizing its peoples.
 - [[The Thirty Years' War causal map]] — how a Bohemian constitutional-confessional revolt expanded through imperial, dynastic, and international feedback rather than religious inevitability.
 
-## Next foundations
+## Enlightenments and reform
 
-- [[Taxation, public debt, and credible commitment]]
-- [[Everyday confessionalization after the Reformation]]
-- [[The military revolution debate]]
+- [[Enlightenments in plural]] — how criticism, useful knowledge, sociability, and reform took different religious, commercial, provincial, imperial, and east-European forms.
 
 ## Open questions
 

@@ -38,6 +38,16 @@ The institutional design matters because Tottenham publicly chose shared executi
 
 The same logic should apply below the executive level. A resilient side does not become leaderless when one centre-back is injured, substituted, suspended, or rotated. Its responsibilities migrate through rehearsed channels.
 
+## Where executive leadership ends
+
+The paired sporting-director model makes decision rights especially important. Tottenham's announcement gives Lange and Paratici a collective remit spanning pathways, performance development, scouting, and recruitment. It does not publish an internal division of labor between them, and it does not make either man the head coach. The safest reading is therefore functional rather than personal: the football operation supplies a coherent squad and development system; De Zerbi selects and coaches the team; players execute and adapt within the plan.
+
+That boundary is easy to blur when discussing leadership. A coach may ask for a particular profile, but the club owns the contract and the long-term asset decision. A sporting director may explain why a recruit fits, but that statement does not determine the player's position, minutes, or status in the dressing room. A captain may communicate player concerns upward, but he does not become the final arbiter of selection or recruitment. Public disagreement is not required for boundary failure: confusion can appear quietly through mixed messages about a young player's pathway, a veteran's expected minutes, or whether a recruitment decision solves a coaching problem.
+
+The October 2025 announcement also said Tottenham would recruit a director of football operations to support the sporting directors and manage functions across the training centre. Unless and until the club identifies that person and remit in a source suitable for this article, analysis should not fill the vacancy with an invented name or responsibility chart. The absence of public detail is itself a limit on what outsiders can claim, not evidence that the function is absent.
+
+There are three useful institutional tests for 2026–27. First, do recruitment and selection tell the same football story, even when a prominent signing is omitted? Second, do academy and loan decisions create credible routes rather than merely preserving asset value? Third, when performance is poor, do public messages preserve distinct accountability—executives for squad construction, coach for preparation and selection, players for execution—without using that distinction to evade shared responsibility? These are interpretive tests, not reported inside information.
+
 ## What Romero's captaincy does and does not settle
 
 Romero's appointment supplies continuity across coaching regimes. He was a vice-captain from 2023, captained the final four matches of Tottenham's 2025 Europa League run, and then received the permanent role in August 2025. His new long-term contract tied formal leadership to contractual continuity. De Zerbi's April 2026 description further confirms that the new coach recognized Romero as captain during their first weeks together.
@@ -111,6 +121,16 @@ Tottenham do not need to publish an internal organization chart, and outside obs
 **Four, institutional escalation.** Player issues should have an understood path from captain or senior group to coaching staff and, when appropriate, to the sporting directors or chief executive. Tactical selection belongs to the head coach; contract and recruitment authority belongs elsewhere. Clear escalation reduces the risk that every disagreement becomes either dressing-room politics or executive interference.
 
 None of this guarantees good leadership. It creates observable tests. Over the opening months, evidence should be collected across ordinary difficulty, not only after wins. Who communicates after a buildup error? Who prevents a second concession? Who helps a substitute enter the correct structure? Who speaks when Romero is absent? Does the team maintain De Zerbi's principles late in away matches? Do academy players gain responsibility rather than merely receiving protection?
+
+## How to evaluate the transition without inventing a hierarchy
+
+The leadership system should be assessed through repeated public evidence, not isolated television shots or post-match praise. A single player gathering teammates after a concession may be meaningful, but it can also be situational. A durable conclusion needs recurrence across lineups, score states, and venues.
+
+Four evidence streams are particularly useful. **Selection evidence** records who starts, who wears the armband, and who retains responsibility after substitutions; it should always be conditioned on availability. **Phase evidence** identifies who repeatedly directs the press, defensive line, first-phase exit, set-piece assignments, and late-game tempo. **Communication evidence** uses official interviews and sustained match observation, while avoiding lip-reading or claims about private conversations. **Continuity evidence** asks whether the same functions survive rotation: if Romero, Robertson, Davies, or a senior midfielder is absent, does another player perform the job without the structure collapsing?
+
+The counterevidence matters as much as the positive signals. Repeated uncoordinated pressing, contradictory buildup choices, avoidable collective dissent, confusion after substitutions, or a loss of standards in rotated lineups would weaken the distributed-leadership hypothesis. So would a pattern in which all tactical corrections depend on touchline intervention. Conversely, wins alone would not prove the system works; opponents can fail to punish poor organization, and individual quality can conceal it.
+
+This creates a disciplined update rule. Official announcements can establish formal appointments immediately. Match observations can establish a provisional functional role after several clear examples. Claims about dressing-room influence require direct, attributable evidence and should remain narrower than claims about visible play. Succession speculation should begin only if the club changes the captaincy, Romero's status becomes durably incompatible with the role, or De Zerbi consistently delegates formal representation in a way that the club itself recognizes. Until then, the correct object of study is resilience around the captain, not a race to replace him.
 
 ## Why it matters
 

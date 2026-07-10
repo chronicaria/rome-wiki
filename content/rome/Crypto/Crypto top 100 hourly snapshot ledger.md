@@ -4,7 +4,7 @@ created: 2026-07-09
 source: web
 status: seed
 tags: [crypto, markets, top-100, dataset]
-as_of: 2026-07-10T09:03:38Z
+as_of: 2026-07-10T11:03:15Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -107,6 +107,12 @@ The rank-88–90 buffer changed to Jupiter (`jupiter-exchange-solana`) at 88, Bi
 
 The retrieval used `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `page=1`, `sparkline=false`, and `price_change_percentage=24h,7d`, completing at `2026-07-10T10:03:33Z`. Representative provider update times were `2026-07-10T10:03:14.465Z` for VVV, `2026-07-10T10:03:16.726Z` for YLDS, `2026-07-10T10:03:28.260Z` for APT, and `2026-07-10T09:50:08.088Z` for JAAA.
 
+## Hourly continuity check — 2026-07-10T11:03:15Z
+
+The current observation preserved `venice-token` (VVV), `ylds` (YLDS), and `aptos` (APT) at ranks 99, 100, and 101. Provider-reported capitalization was approximately $545.01 million, $536.53 million, and $529.00 million respectively. Jupiter, BinanceLife, and JAAA occupied ranks 88, 89, and 90. Audiera again fell outside the preserved rank-88–102 slice; no retirement or causal inference follows from that absence.
+
+The buffer from ranks 91–102 was FIL, LIT, PUMP, ARB, GHO, FLR, XDC, USD0, VVV, YLDS, APT, and USX. The response used the documented parameters with `per_page=110`; representative provider update times were `2026-07-10T11:03:03.750Z` for VVV, `2026-07-10T11:03:13.378Z` for YLDS, and `2026-07-10T11:03:06.762Z` for APT. This is a provider-series continuity observation, not an independently reconciled supply or liquidity statement.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
@@ -118,6 +124,7 @@ The retrieval used `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `
 - [CoinGecko markets API 09:03 UTC boundary observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T09:03:38Z.
 - [CoinGecko markets API 10:03 UTC continuity observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T10:03:33Z.
 - [CoinGecko API documentation — coins markets](https://docs.coingecko.com/reference/coins-markets), accessed 2026-07-09.
+- [CoinGecko markets API 11:03 UTC continuity observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T11:03:15Z.
 
 ## Open questions
 

@@ -18,11 +18,12 @@ Lively is not merely one more center in a deep frontcourt. At his best, he chang
 
 The correct question is therefore not simply whether Lively will play. It is whether he can progress through running, basketball activity, contact, repeated practices, games, and sustained NBA loading while retaining the movement qualities that create his defensive value. Public evidence as of July 10 does not answer that question. It establishes a serious recent foot history and a dated rehabilitation milestone. It does not establish a return date, minutes limit, back-to-back policy, recurrence probability, or post-return effectiveness.
 
-This article uses three labels to maintain that boundary:
+This article uses four labels to maintain that boundary:
 
 - **Official:** a Mavericks, NBA, or league document establishes the event or status.
 - **Reported:** an attributable journalist report supplies a milestone not stated in an official release.
 - **Inference:** a basketball conclusion follows conditionally from the known role or roster, not from private medical knowledge.
+- **Forecast:** a scenario describes a possible future allocation; it is not a prediction that the scenario will occur.
 
 “Unknown” is not a negative diagnosis. It means the public record does not support a more precise claim.
 
@@ -38,7 +39,7 @@ The recent history is cumulative and should be read chronologically.
 
 **Official team reporting, April 15, 2026:** Mavericks coverage said Lively had spent months on crutches and had recently advanced to a walking boot. The same article described readiness for September training camp as a hope, not a clearance or guaranteed timetable. That distinction is essential: organizational hope is relevant evidence about the intended plan, but it is not proof that the next rehabilitation milestones have occurred.
 
-**Reported, June 26, 2026:** Christian Clark reported that Lively was out of the boot and walking, swimming, and lifting weights, but had not begun running. Lively was quoted as saying he was taking extra time so that he would not have to deal with the foot again. This is the latest specific functional milestone located for this review. It is more informative than a generic “progressing” description, but it remains a snapshot from June 26. It does not imply that he still was not running on July 10, and it does not establish when he will be cleared.
+**Reported, June 26, 2026:** Christian Clark reported that Lively was out of the boot and walking, swimming, and lifting weights, but had not begun running. Lively was quoted as saying he was taking extra time so that he would not have to deal with the foot again. CBS Sports independently relayed the same core milestone and attributed it to Clark. This is the latest specific functional milestone located for this review. It is more informative than a generic “progressing” description, but it remains a snapshot from June 26. It does not imply that he still was not running on July 10, and it does not establish when he will be cleared.
 
 **Unknown as of July 10:** the precise operative diagnosis and procedure details beyond the team's public description; imaging results; healing criteria; current running or on-court status after June 26; contact clearance; expected training-camp participation; regular-season return date; planned minute or schedule restrictions; and individualized recurrence risk.
 
@@ -128,7 +129,9 @@ Early box scores will tempt overreaction. One multi-block game cannot establish 
 
 The comparison baseline should include his own 2023-24 and 2024-25 roles, Gafford lineups, and Dallas's smaller alternatives. Raw defensive rating is heavily affected by opponent shooting, teammate combinations, and schedule. Rim-defense percentages are noisy in small samples and depend on who is credited as the defender. Film and tracking should test the same mechanism rather than compete as isolated verdicts.
 
-## Health-conditioned rotation states
+## Allocation scenarios and forecast boundaries
+
+These are planning branches, not assigned probabilities. The public record is not strong enough to choose among them or to attach a return date. Each branch identifies how Dallas would allocate center functions if a particular basketball state becomes observable.
 
 ### Full functional availability
 
@@ -164,6 +167,7 @@ The uncertainty is equally structural. As of July 10, the latest located functio
 - [Dallas Mavericks: Set for season-ending surgery, Lively hopes to again follow Tyson Chandler's path](https://www.nba.com/mavs/news/set-for-season-ending-surgery-lively-hopes-to-again-follow-tyson-chandlers-path) — team account of symptoms and surgery decision; accessed July 10, 2026.
 - [Dallas Mavericks: Chandler knows what navigating a serious injury is like for Lively](https://www.nba.com/mavs/news/chandler-knows-what-navigating-a-serious-injury-is-like-for-lively) — crutches, walking boot, and training-camp hope as of April 15, 2026; accessed July 10, 2026.
 - [Christian Clark recovery report, relayed by FantasyPros](https://www.fantasypros.com/nba/news/593735/dereck-lively-ii-foot-not-cleared-to-run.php) — attributable June 26 report that Lively was out of the boot, walking, swimming, and lifting but not running; accessed July 10, 2026. This is reported evidence, not an official medical update.
+- [CBS Sports: Lively not ready to resume running](https://www.cbssports.com/fantasy/basketball/news/mavericks-dereck-lively-not-ready-to-resume-running/) — independent secondary relay of Clark's June 26 report and the uncertainty around full training-camp participation; accessed July 10, 2026.
 - [Dallas Mavericks: With good health, Blackman sees Mavericks as a very formidable team next season](https://www.nba.com/mavs/news/with-good-health-blackman-anticipates-mavs-may-make-deep-playoff-run-next-season) — official-team discussion of the Lively–Gafford center rotation and 2025-26 absence; accessed July 10, 2026.
 
 ## Open questions

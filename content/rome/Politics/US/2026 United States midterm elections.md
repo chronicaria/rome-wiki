@@ -16,7 +16,9 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 ## Control maps
 
 - [[2026 Senate control path]] — the 34–31 off-ballot base, all 35 contests, loss-offset arithmetic, and the distinction between mathematical and modeled routes.
+- [[2026 Senate race prioritization]] — the first Senate dossier queue and the rule for separating control leverage from noisy attention.
 - [[2026 House battleground map]] — a compact pivotal-seat ledger with defense, core, and correlated-expansion rings.
+- [[2026 House race dossier prioritization]] — the first House dossier queue and the official-file threshold for promoting tracker rows into full race pages.
 - [[2026 House district dossier template]] — the minimum official identity, map, candidate, finance, voting, and uncertainty fields before creating district pages.
 - [[2026 Senate race dossier template]] — the minimum official race, ballot, FEC, rating, poll, finance, and control-role fields before creating Senate race pages.
 
@@ -25,6 +27,7 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 - [[Generic ballot versus district-level voting]] — how national survey preference becomes a conditional district and seat distribution.
 - [[2026 congressional primary lessons]] — which nomination signals can generalize to November and which should stay primary-specific.
 - [[2026 midterm redistricting litigation watch]] — operative-map status, stays, referendum paths, and map-change caveats for the House battlefield.
+- [[2026 midterm redistricting process watch]] — reusable status labels for enacted maps, stays, remedies, referendum paths, and speculative map talk.
 - [[2026 midterm money map]] — a reproducible ledger separating candidate, party, coordinated, and independent financial channels.
 - [[2026 midterm candidate filing checkpoint]] — the July ballot-access and FEC-report ingest plan for avoiding premature race snapshots.
 - [[2026 midterm turnout coalition watch]] — pre-return turnout and registration indicators, with guardrails against treating them as vote counts.

@@ -36,6 +36,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Voids cancellations and postponements in event contracts]]
 - [[Dependence across political event contracts]]
 - [[Versioning political event-contract semantics]]
+- [[Political prediction-market calibration ledger]]
+- [[Oracle and dispute mechanisms in political prediction markets]]
+- [[Settlement latency in political prediction markets]]
 
 ## Current observations
 

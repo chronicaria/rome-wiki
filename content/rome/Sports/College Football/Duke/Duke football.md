@@ -33,6 +33,10 @@ Duke football coverage connects current-season state to roster construction, tac
 - [[Duke football fourth-down decision-making]] — audited 2025 attempts and a context-sensitive 2026 decision framework.
 - [[Duke football close-game architecture]] — repeatable decision and operational mechanisms separated from outcome variance.
 - [[Duke special teams 2026]] — specialists, operations, coverage, returns, and repeatable field-position value.
+- [[Duke football penalty discipline]] — foul mechanisms, leverage cost, context, and a repeatable 2026 audit.
+- [[Duke football red-zone architecture]] — finishing, field compression, defensive stops, and outcome variance.
+- [[Duke football turnover architecture]] — ball security, pressure, coverage leverage, and recovery uncertainty.
+- [[Duke football kickoff and punt return architecture]] — return decisions, blocking geometry, field position, and explosive-play variance.
 
 ## Program building
 

@@ -6,206 +6,230 @@ status: seed
 tags: [ai, agents, tool-use, reliability, evaluation]
 ---
 
-Tool-use reliability is the probability that an agent selects, executes, and verifies the right external actions while preserving user intent, policy, and environment state across the whole task.
+Tool-use reliability is the measured ability of a particular model-and-scaffold system to reach a verified terminal state under imperfect observations and tool failures, without exceeding its authority or hiding the cost of recovery.
 
-Tool use turns a language model from a generator of proposals into a participant in a stateful system. A calculator call can settle an arithmetic question; a database query can retrieve facts unavailable in model weights; a browser or shell can change the world. That added capability also changes what “correct” means. A fluent final answer is insufficient if the agent called the wrong function, supplied a subtly wrong identifier, performed an irreversible action twice, or claimed success without checking the resulting state.
+A tool call changes the epistemic and operational problem. The agent is no longer judged only on whether its text is plausible. It must choose an action, construct grounded arguments, interpret an observation, update its plan, and establish what happened in an environment it can see only through interfaces. A timeout may conceal a successful write. A “success” response may describe only acceptance into a queue. A second attempt may repair a failed read or duplicate a payment. The final prose may say “done” even though the durable state is wrong.
 
-The central reliability question is therefore not “Can the model emit valid JSON?” It is:
-
-> Given a user goal, available tools, policies, and an evolving environment, how often does the complete interaction end in the intended state without unacceptable side effects?
-
-This is closely related to [[Long-horizon task reliability]], but it deserves its own treatment because tools create distinct interfaces, permissions, failure modes, and evidence. Tool reliability is a property of the **system**—model, prompt, schemas, tool descriptions, orchestration loop, execution environment, and verifier—not a fixed property of a model alone.
-
-## The reliability stack
-
-A tool-using agent must succeed at several layers. They can be tested separately, but production reliability depends on their composition.
-
-### 1. Relevance and abstention
-
-The agent must first decide whether a tool is needed. Calling a tool for a question that can be answered directly adds latency and new failure surface. Failing to call one when fresh or private state is necessary produces stale or invented answers. If none of the offered tools is relevant, the agent should abstain rather than force a plausible match.
-
-This “negative capability” is easy to neglect. Function-calling benchmarks such as the Berkeley Function-Calling Leaderboard include relevance detection and hallucination measurement because a model that always produces a well-formed call can still be unreliable. In a large catalog, abstention also depends on whether the correct tool was retrieved into context at all.
-
-### 2. Tool selection
-
-When action is required, the agent must choose the tool whose semantics match the goal. Names alone are weak evidence. `find_customer`, `search_accounts`, and `lookup_user` may overlap while differing in identifier type, permissions, freshness, or side effects. Tool descriptions are part of the control interface, not decorative documentation.
-
-Selection becomes harder as catalogs grow. Similar tools create interference; a broad “do everything” tool creates an argument-selection problem; many narrow tools create a retrieval problem. A reliable design makes boundaries explicit: what the tool does, what it does not do, required preconditions, return shape, failure modes, and whether it mutates state.
-
-### 3. Argument construction
-
-The agent must translate natural-language intent into the function’s typed arguments. Syntax is the shallow layer. Semantic correctness is harder:
-
-- choosing the right customer among near-duplicate names;
-- preserving units, time zones, currencies, and date boundaries;
-- distinguishing an internal record ID from an email address;
-- representing “next Friday” relative to the correct locale and current date;
-- omitting optional fields rather than inventing defaults;
-- requesting clarification when a required value is missing.
-
-Schema validation catches malformed types and missing required keys, but it cannot establish that `account_id: 1842` is the account the user meant. That requires grounding in prior observations and often explicit confirmation.
-
-### 4. Sequencing and state tracking
-
-Real tasks usually require a trajectory: inspect current state, gather missing information, call one tool, interpret its result, then decide what comes next. Later calls may depend on identifiers or facts returned earlier. ToolSandbox was designed around this gap: it evaluates stateful execution, implicit dependencies, conversational interaction, and milestones along arbitrary trajectories rather than only isolated calls.
-
-Sequence correctness includes respecting preconditions. An agent should not issue a refund before finding the order, edit a file before reading the relevant version, or send a message before the user has approved its recipients and content. It must also update its beliefs after each observation. Persisting with an obsolete plan after a tool reports a conflict is a state-tracking failure.
-
-### 5. Execution semantics
-
-Even a correct call can fail outside the model. APIs time out, permissions expire, results are truncated, services rate-limit requests, interfaces change, and tools return ambiguous partial success. Production reliability therefore requires the orchestrator to distinguish at least:
-
-- success with a complete result;
-- successful no-op, such as “already archived”;
-- rejected input;
-- transient infrastructure failure;
-- permanent permission or policy failure;
-- partial mutation;
-- unknown outcome after a timeout.
-
-The last two are dangerous. Blindly retrying a non-idempotent `send_payment` or `create_ticket` call can duplicate an action. Reliable tools expose idempotency keys, transaction identifiers, or read-after-write checks. The agent loop should retry only when the error class and operation semantics justify it.
-
-### 6. Policy and authority
-
-A task can be completed operationally and still be wrong because the action exceeded the user’s authority or violated domain policy. The τ-bench family evaluates agents in domains such as retail and airlines where success depends on both tool interaction and compliance with policy instructions. This matters because “helpfulness” can push a model toward satisfying a request by taking a prohibited shortcut.
-
-Authority should be enforced in more than prose. The safest architecture limits the tools and credentials available to the current task, separates read from write operations, and inserts confirmation gates before consequential actions. Least privilege reduces the damage radius when reasoning fails. Deterministic checks should enforce crisp constraints—allowed recipients, spending limits, data scopes—rather than asking a second model to rediscover them from policy text.
-
-### 7. Outcome verification
-
-The final layer is proving that the intended state was achieved. A successful HTTP response is not necessarily task success. A calendar API may accept an event with the wrong time zone; a file tool may write a syntactically valid but broken configuration; a search call may return evidence that does not support the summary.
-
-Verification should target the outcome, not merely the action trace. Depending on the task, this can mean reading the record back, running tests, comparing a database snapshot, opening the generated artifact, or checking several explicit milestones. Anthropic’s guidance on agent evaluations emphasizes executing agents in real or sandboxed environments and grading the resulting environment, while retaining full transcripts for diagnosis. This is a critical separation: the trace explains *how* the system behaved; the state determines whether it succeeded.
-
-## Why small error rates compound
-
-Suppose a task needs $n$ consequential steps and each step succeeds independently with probability $p$. A crude end-to-end estimate is
+This note focuses on the reliability questions that ordinary function-call accuracy misses: how to experiment on recovery policies, account for retries, verify terminal state, evaluate under partial observability, and attribute results between the model and its scaffold. The core object of evaluation is not an isolated model. It is a versioned system:
 
 $$
-P(\text{task success}) = p^n.
+S = (M, P, T, O, R, V, B, E),
 $$
 
-At $p=0.98$, five steps yield about $90.4\%$ success, twenty steps about $66.8\%$, and fifty steps about $36.4\%$. The independence assumption is usually false, but the lesson survives: long trajectories amplify weaknesses. In practice, errors are often correlated. One mistaken entity resolution can poison every downstream call; one confusing tool description can repeatedly cause the same selection error.
+where $M$ is the model, $P$ the prompt and context policy, $T$ the tool interfaces and permissions, $O$ the orchestration loop, $R$ the recovery and retry policy, $V$ the verifier, $B$ the resource budget, and $E$ the environment. A reliability claim that omits these components is not reproducible and cannot cleanly support [[Model versus scaffold in agent evaluations]].
 
-This is why single-turn function-call accuracy should not be interpreted as deployment reliability. It isolates a useful capability, but it omits conversation, state, recovery, side effects, and final-state verification. BFCL’s evolution from abstract-syntax-tree comparison toward executable, multi-turn, and broader agentic evaluation reflects this progression. ToolSandbox similarly tests intermediate milestones because a final response alone can conceal where a trajectory failed.
+## Reliability is a terminal-state property
 
-Repeated trials expose another distinction. If an agent succeeds on any one of several attempts, `pass@k` may look strong even when a user receives only one attempt. For production, `pass@1`, worst-case behavior, and consistency across paraphrases often matter more. In high-impact workflows, success must also be conjoined with no policy violation; a completion metric that ignores side effects rewards unsafe behavior.
+The appropriate top-level question is:
 
-## A failure taxonomy
+> Given an initial environment, a user goal, an authority boundary, and a resource budget, what is the probability that the system ends in an acceptable, independently verified state without forbidden side effects?
 
-Reliable improvement starts with labeling failures at the layer where they originate.
+That definition separates four outcomes commonly collapsed into “success”:
 
-**Perception failures** occur when the agent lacks or misreads necessary state: truncated output, stale cache, hidden pagination, incorrect screenshot interpretation, or a missed error message.
+1. **Action success:** a tool accepted or executed a call.
+2. **Milestone success:** an intermediate condition became true.
+3. **Task success:** all required end-state predicates became true.
+4. **Safe task success:** the required predicates became true and no forbidden predicate did.
 
-**Planning failures** include choosing an impossible sequence, skipping a prerequisite, or continuing after the environment invalidates the plan.
+For a calendar task, an API returning `200` establishes action success. It does not establish that the event exists once, on the correct calendar, at the intended local time, with the right attendees, and without an invitation sent before approval. Those are terminal-state predicates. Anthropic’s agent-evaluation guidance explicitly distinguishes transcript-based grading from state checks and describes OSWorld-style graders that inspect files, application configuration, databases, and UI properties after execution. This supports a general rule: traces explain behavior, but authoritative state should decide crisp outcome claims.
 
-**Selection failures** choose the wrong tool or call a tool unnecessarily. **Argument failures** choose the right tool but encode the wrong entity, unit, date, or option.
+A useful task specification is therefore a tuple $(x_0, G, F, A, H)$:
 
-**Interaction failures** arise when the agent should ask the user for missing information or confirmation but guesses instead. Conversely, repeated questions for already supplied facts indicate poor memory or state management.
+- $x_0$: the initial state or a procedure for constructing it;
+- $G$: required terminal predicates;
+- $F$: forbidden terminal predicates and side effects;
+- $A$: the agent’s authority and confirmation requirements;
+- $H$: the horizon—time, tokens, calls, retries, and monetary cost.
 
-**Execution failures** include timeouts, rate limits, schema drift, authentication errors, partial writes, and nondeterministic external behavior. These belong partly to platform engineering rather than model capability.
+The grader should return more than a scalar. At minimum it should record which predicates in $G$ and $F$ were evaluated, which could not be observed, and whether the agent’s final claim matched the grader’s evidence. “Unknown” is a legitimate outcome. Treating unknown as failure is conservative; treating it as success is usually indefensible.
 
-**Recovery failures** turn a manageable exception into task failure: repeating a write after an unknown outcome, abandoning a recoverable task, or improvising after a denied permission.
+## Partial observability is the normal case
 
-**Policy failures** complete an impermissible action, disclose data outside scope, or bypass a required approval. **Verification failures** report completion without evidence, accept a misleading return value, or grade an intermediate action as the outcome.
+An agent generally does not observe environment state $x_t$ directly. It receives an observation $o_t$ produced by a tool, UI, or retrieval layer:
 
-**Communication failures** leave the user with a false model of what happened. A system that says “done” after partial success is less reliable than one that reports the exact completed and blocked portions, even if their underlying tool traces are identical.
+$$
+o_t \sim \mathcal{O}(x_t, a_{t-1}).
+$$
 
-This taxonomy prevents a common mistake: changing the model prompt to solve infrastructure defects, or changing infrastructure to solve ambiguous task definitions. Reliability work needs attribution.
+The observation can be incomplete, stale, truncated, delayed, ambiguous, or false. Pagination can hide the target record. A browser screenshot can omit content below the fold. An API can acknowledge a request before asynchronous processing finishes. Concurrent users can change state after the last read. Tool descriptions may themselves drift from implementation. ToolSandbox treats stateful tool use as a conversational, interactive problem with hidden dependencies and milestone-based grading, illustrating why a single call or final answer does not reveal the full trajectory.
 
-## How to evaluate it
+The model must therefore maintain a *belief* about state rather than assuming its latest observation is the state. Reliability depends on knowing the provenance and freshness of consequential facts:
 
-A credible evaluation program uses nested tests rather than one leaderboard number.
+- **user assertions** express intent but may not identify an internal record;
+- **tool observations** may be authoritative for one field and stale for another;
+- **inferences** can guide exploration but should not silently become write arguments;
+- **defaults** belong to the scaffold and must be disclosed when they affect outcomes;
+- **verification observations** should be gathered after the mutation from an authoritative surface.
 
-### Unit-level call tests
+Partial observability creates a specific experimental obligation: perturb the observation channel, not just the user prompt. Hide a page of results, delay a status transition, return a stale version number, reorder records, truncate a response, inject an inconsistent replica, or let a concurrent actor mutate the target. Each perturbation should preserve at least one valid recovery path if the experiment is intended to measure recovery rather than impossibility.
 
-Start with deterministic cases for relevance, tool choice, and argument construction. Include ordinary requests, paraphrases, missing information, irrelevant tools, confusing near-neighbors, unusual but valid values, and malformed tool outputs. Compare structured calls through execution or semantic matching where possible; string equality is brittle when argument order or equivalent representations differ.
+ToolBench-X formalizes this style of testing with recoverable hazards such as specification drift, invocation error, execution failure, output drift, and cross-source conflict. Its reported finding—that targeted recovery hints can recover failures more effectively than generic test-time scaling—is evidence about that benchmark and its systems, not a universal law. The broader inference is stronger than any one result: reliability testing should vary *failure mechanism* because additional tokens cannot help if the agent misdiagnoses what kind of failure occurred.
 
-These tests are cheap and localize regressions. They are especially useful when tool descriptions or schemas change. They do not establish multi-turn reliability.
+## Recovery is a policy, not a reflex
 
-### Stateful scenario tests
+A recovery policy maps the current history and diagnosed failure class to a next action. “Retry three times” is not a sufficient policy. The safe response depends on operation semantics and on what is known about the previous attempt.
 
-Run the actual agent loop against a controlled environment. Each scenario should specify initial state, user goal, policy, available tools, allowable side effects, and expected terminal state. Grade both required milestones and forbidden states. ToolSandbox’s dynamic milestone approach is instructive because many valid trajectories can reach the same result; prescribing one gold trace can penalize legitimate alternatives.
+The minimum failure classes are:
 
-Scenarios should include tool errors and changing state: a record disappears between read and write, a permission is denied, a result is paginated, or a timeout leaves mutation status uncertain. Recovery behavior is part of capability, not evaluation noise.
+- **invalid request:** schema, argument, or precondition failure; repair before retry;
+- **transient read failure:** bounded retry with backoff may be appropriate;
+- **rate limit or overload:** respect server guidance and budget before retrying;
+- **permission or policy denial:** stop or escalate; repetition does not create authority;
+- **deterministic business rejection:** revise the plan or report the blocker;
+- **partial result:** preserve completed work and identify the missing subset;
+- **unknown write outcome:** reconcile before any repeated mutation;
+- **confirmed failed write:** retry only if the operation is safe to repeat or protected by an idempotency mechanism;
+- **state conflict:** refresh, compare versions, and re-plan rather than overwrite blindly.
 
-### Distribution and consistency tests
+The distinction between **confirmed failure** and **unknown outcome** is essential. If a connection drops after a server commits a write but before the response arrives, the client cannot infer that nothing happened. Amazon’s Builders’ Library article on retry-safe APIs explains the practical role of caller-provided request identifiers: the service can recognize repeated requests and return the result of the original operation rather than creating another resource. Idempotency does not mean every repeated payload should always collapse; the identifier must represent the caller’s intent, and the system must define retention and conflict semantics.
 
-One run is anecdotal for stochastic agents. Repeat scenarios across seeds, harmless prompt paraphrases, tool ordering, schema formatting, and realistic context lengths. Report confidence intervals and per-category results rather than only a mean. A 90% average can hide catastrophic performance on irreversible actions or a minority language.
+Recovery should also be bounded. An agent needs explicit limits for calls, identical-call repetitions, wall-clock time, tokens, and cost. When the bound is reached, reliable behavior is a truthful partial-result report with evidence—not an optimistic completion claim or an endless loop. A loop detector should consider semantic equivalence, because changing whitespace or restating the same query is not meaningful progress.
 
-Test the deployed scaffold exactly: model version, reasoning budget, system prompt, tool catalog, retrieval method, retry policy, credentials, and environment. As [[Model versus scaffold in agent evaluations]] emphasizes, changing the scaffold changes the measured system.
+### A recovery-policy experiment
 
-### Production monitoring
+Recovery policies should be compared in controlled factorial experiments. Start with a clean task suite and deterministic fault injection. Cross at least these factors:
 
-Offline tasks cannot cover the open world. Production monitoring should log tool selection, sanitized arguments, results, latency, retry class, confirmation events, and verification outcomes while minimizing sensitive-data retention. Track task success separately from proxy metrics such as call validity. Sample traces for human review, especially after model, prompt, schema, or API changes.
+- failure class and injection point;
+- operation type: read, reversible write, idempotent write, non-idempotent write;
+- observability: explicit error, ambiguous timeout, stale success, partial result;
+- policy: no recovery, generic retry, typed recovery, typed recovery plus reconciliation;
+- budget: fixed call, token, time, and cost ceilings;
+- model and scaffold version.
 
-Useful operational measures include:
+Use paired trials when possible: the same task instance, seed family, initial state, and injected fault under each policy. Report clean-condition performance alongside faulted performance. Otherwise an aggressive policy can appear robust merely because it spends more resources or harms the clean path less visibly.
 
-- end-state success and policy-compliant success;
-- unnecessary-call and missed-call rates;
-- argument correction and clarification rates;
-- tool-error, retry, duplicate-action, and rollback rates;
-- verified versus merely claimed completions;
-- latency, token use, and tool-call count;
-- performance by tool, task class, language, and consequence level.
+The primary measures should include:
 
-## Engineering for reliability
+$$
+\text{Recovery yield} = \frac{N_{\text{safe terminal successes after injected fault}}}{N_{\text{faulted trials}}},
+$$
 
-The most dependable systems make correct behavior easier at every boundary.
+$$
+\text{Recovery precision} = \frac{N_{\text{recovery actions that improve verified state}}}{N_{\text{recovery actions}}},
+$$
 
-**Design narrow, legible interfaces.** Use distinct verbs, typed fields, constrained enums, explicit units, and returns that expose identifiers and state. Anthropic’s tool-writing guidance recommends descriptions that teach the agent when and how to use a tool, then evaluating those tools on realistic tasks. Names and parameter descriptions should disambiguate similar operations.
+and
 
-**Separate reads from writes.** Inspection can often proceed autonomously; mutation deserves tighter permissions and confirmation. Offer preview or dry-run operations for costly actions. A two-phase pattern—prepare, show the proposed change, then commit—converts an opaque action into a reviewable one.
+$$
+\text{Duplicate mutation rate} = \frac{N_{\text{trials with unintended duplicate effects}}}{N_{\text{write trials}}}.
+$$
 
-**Make writes idempotent or detectable.** Require stable request IDs, return transaction IDs, and support status lookup. Never assume that a timeout means nothing happened.
+Also report time-to-recovery, extra calls, extra tokens, extra cost, policy violations, regression on clean tasks, and the fraction of unknown outcomes left unresolved. ToolMisuseBench is a recent preprint that explicitly evaluates misuse and recovery under step, call, and retry budgets with replayable fault injection. Its existence is evidence of growing attention to budgeted recovery; its baseline results should remain provisional until independently reproduced.
 
-**Validate at multiple layers.** JSON schema catches shape. Business rules catch impossible values. Authorization catches forbidden scope. Read-after-write checks catch divergent outcomes. Each validator answers a different question.
+## Retry accounting must expose the denominator
 
-**Preserve provenance.** Record which observation supplied each consequential argument. The agent should be able to distinguish user-provided data, tool-returned data, inferred values, and defaults. This makes both verification and debugging more tractable.
+Retries can change both reliability and the meaning of a score. Three different quantities are often confused:
 
-**Bound the loop.** Limits on tool calls, elapsed time, repeated identical calls, and cost prevent runaway behavior. A bounded agent should exit with a precise partial-result report rather than silently oscillating.
+- **single-trial success**: probability that one deployed run succeeds;
+- **best-of-$k$ success**: probability that at least one of $k$ independent runs succeeds;
+- **within-trial recovery success**: probability that one agent loop succeeds after making additional actions inside its allowed policy.
 
-**Escalate ambiguity.** Asking a focused clarification is a successful outcome when guessing would risk the wrong state change. The policy should define when uncertainty requires user confirmation, a human reviewer, or safe abstention.
+If independent attempts each succeed with probability $p$, best-of-$k$ success is
 
-**Use independent verification for consequential outcomes.** Independence need not mean another language model. Deterministic tests, database constraints, reconciliations, and human approval are often stronger. An LLM judge can help assess open-ended outputs, but it introduces its own variance and bias and should not be the only guardrail for crisp invariants.
+$$
+1-(1-p)^k.
+$$
 
-## What current benchmarks do and do not show
+But agent attempts are rarely independent, and selection among outputs requires an oracle or verifier. Reporting only the best result hides failed attempts, resource consumption, and the mechanism used to choose the survivor. A user receiving one autonomous run cares about single-trial safe success. A service that actually executes several candidates and deterministically selects a verified one may legitimately report that deployed policy—but must include all attempts in cost and side-effect accounting.
 
-BFCL supplies broad, reproducible coverage of function selection and call construction and has expanded into executable and multi-turn settings. ToolSandbox adds stateful conversations, implicit dependencies, insufficient-information cases, and trajectory milestones. τ-bench emphasizes interaction among user, agent, tools, and domain policies. Together they demonstrate why tool use cannot be reduced to syntax.
+Every evaluation should publish a retry ledger per trial:
 
-They still cannot certify a deployment. Benchmark tools are smaller and cleaner than many production catalogs; simulated users may not reproduce human ambiguity; benchmark policies may omit organizational exceptions; and public tasks can become familiar through training or tuning. Scores are also snapshots of a particular model and harness. A system owner must connect benchmark evidence to domain-specific evaluations and live monitoring.
+- total model invocations;
+- tool calls by operation and error class;
+- exact and semantic retries;
+- model-level restarts versus within-loop retries;
+- verifier calls and selection rule;
+- elapsed time, tokens, and external cost;
+- mutations attempted, committed, deduplicated, rolled back, or unresolved;
+- termination reason.
 
-The right conclusion from a high score is narrow: under this benchmark’s tasks, tools, grader, and scaffold, the system performed at the reported rate. The wrong conclusion is that the model can safely use arbitrary tools. Reliability is empirical, scoped, and continuously re-earned when any component changes.
+The denominator for reliability is the number of user tasks initiated, not the number of final answers emitted or successful tool responses. If a task required three complete restarts, it is one recovered user task consuming three attempts. If two restarts sent duplicate emails, it is not a success with extra latency; it is an unsafe failure.
 
-## A practical release gate
+Retry accounting also prevents an attribution error. A harness that silently retries malformed calls can make a model appear better at argument construction. A platform that retries transient reads can improve system reliability without improving the model at all. OpenAI’s playbook for third-party evaluations states that harness choices such as state preservation and retrying failed actions can materially change observed capability. This is direct evidence for disclosing the harness; the further recommendation to publish counterfactual ablations is an inference from experimental design.
 
-Before deploying a tool-using agent, require a written answer to these questions:
+## Terminal-state verification needs its own design
 
-1. What exact end states count as success, partial success, and unacceptable side effect?
-2. Which operations are reversible, idempotent, or irreversible?
-3. Which arguments must come from the user or an authoritative tool rather than inference?
-4. What permissions and confirmations apply to each write?
-5. How does the system respond to timeout, partial mutation, stale state, and denied access?
-6. What independent evidence supports a completion claim?
-7. What is the measured `pass@1` on representative scenarios, and where are the weakest slices?
-8. What telemetry will reveal regressions without retaining unnecessary sensitive data?
-9. Who owns escalation and rollback when the system is uncertain?
+Verification is not “ask the acting model whether it finished.” The verifier should inspect the most authoritative state available and should be as independent as the task permits.
 
-This gate does not make an agent infallible. It converts “the model seems good at tools” into explicit claims that can be tested, monitored, and revised. That is the core of tool-use reliability: not eliminating uncertainty, but containing it and refusing to confuse a plausible action trace with a verified result.
+A robust terminal protocol has five stages:
+
+1. **Stop mutation.** Once the agent believes the goal is reached, prevent opportunistic extra writes during grading.
+2. **Quiesce or define timing.** Wait for asynchronous work according to a declared rule, or explicitly grade a pending state.
+3. **Observe independently.** Read back through a state API, database, filesystem, test runner, reconciliation endpoint, or human review—not only the write response.
+4. **Evaluate required and forbidden predicates.** Check both completion and side effects.
+5. **Compare the agent’s claim with the evidence.** Score calibrated reporting separately from state success.
+
+The verifier itself can be partially blind. Eventual consistency may make an immediate read look like failure; cached reads may make an old state look current. The task specification must therefore define a verification window, authoritative sources, and what happens when sources conflict. Repeated verification reads are not free retries: they belong in the ledger and can themselves alter state in poorly designed systems.
+
+For open-ended artifacts, use layered grading. Deterministic checks establish crisp invariants: files exist, tests pass, identifiers match, no forbidden recipients were contacted. Rubrics or human review can assess quality that cannot be reduced to predicates. PaperBench uses hierarchical rubrics for research-replication tasks and separately evaluates its LLM judge; this is evidence that complex outcomes can be decomposed and that judge quality must itself be measured. It does not imply that an LLM judge is sufficiently independent for irreversible or security-critical checks.
+
+Verification should produce an evidence bundle: terminal observations, timestamps or version IDs, grader outputs, unresolved ambiguities, and the agent’s final statement. This makes false-completion errors visible. A system that reaches only partial success but reports the exact boundary is more trustworthy than one with the same state that says “done.”
+
+## Attributing model and scaffold effects
+
+Tool-use performance belongs to the configured system, yet useful research still needs component attribution. The scaffold includes tool descriptions, retrieval of tools into context, prompt instructions, memory, planning loops, error parsers, retries, context compaction, permissions, confirmation gates, verifiers, and stop rules. Each can add capability or conceal model weakness.
+
+Attribution requires controlled ablations rather than labels such as “model score.” A practical matrix holds the task set and environment fixed while varying one component at a time:
+
+| Comparison | What it estimates | Main confound to control |
+|---|---|---|
+| model A vs. B under identical scaffold | model contribution in that scaffold | model-specific prompt tuning |
+| generic retry vs. typed recovery | recovery-policy contribution | additional call budget |
+| no verifier vs. verifier | detection and correction contribution | verifier-triggered extra actions |
+| full catalog vs. retrieved tools | tool-retrieval contribution | missing correct tool |
+| direct execution vs. confirmation gate | authority-control contribution | user simulator behavior |
+| fixed context vs. compaction | memory-policy contribution | token and latency budget |
+
+Interactions matter. A model may benefit disproportionately from richer tool descriptions; a verifier may help only when the acting model can interpret its feedback. Therefore report factorial interactions where feasible, not only one-factor deltas. Preserve complete version identifiers and configuration hashes so later work can reproduce the system.
+
+Two reporting views are especially useful:
+
+- **deployed-system view:** the performance, cost, and safety of the exact product policy users receive;
+- **diagnostic view:** component ablations that estimate where failures and gains originate.
+
+Neither replaces the other. A bare-model test may isolate capabilities but understate product performance. A highly engineered scaffold may be the correct deployment object while obscuring whether gains came from the model, retries, privileged tools, or a stronger verifier. MLE-bench’s official report names both the model and the AIDE scaffold in its headline result, and PaperBench likewise reports model-plus-scaffold configurations. That naming convention should be the minimum standard.
+
+## A release protocol for reliable tool use
+
+Before deployment or benchmark publication:
+
+1. Define initial state, required state, forbidden state, authority, and budgets.
+2. Classify every operation by reversibility, idempotency, and unknown-outcome risk.
+3. Specify recovery behavior for each error class; do not use one generic retry rule.
+4. Run clean and fault-injected trials across seeds and harmless paraphrases.
+5. Include stale, truncated, conflicting, delayed, and concurrently changed observations.
+6. Record every retry, restart, verifier call, mutation, deduplication, and termination reason.
+7. Verify terminal state from authoritative surfaces and preserve an evidence bundle.
+8. Score task state, forbidden side effects, and truthfulness of the final report separately.
+9. Publish deployed-system results plus model/scaffold ablations with matched budgets.
+10. Re-run after any model, prompt, tool, permission, recovery, verifier, or environment change.
+
+This protocol does not eliminate uncertainty. It prevents the most consequential category error: interpreting a plausible trace, a successful call, or a retry-inflated best case as evidence that the user’s task was safely completed.
+
+## Evidence and inference boundary
+
+Primary papers and official engineering documents support several narrow claims: stateful benchmarks expose dependencies missed by isolated function calls; recovery can be tested through injected hazards; retries and state preservation in a harness alter measured performance; end-state checks and transcripts answer different evaluation questions; and idempotency identifiers can make ambiguous repeats safer. The sources below directly document those claims.
+
+The proposed factorial recovery experiment, retry ledger, evidence bundle, and release protocol are **syntheses and recommendations** derived from those sources and general reliability engineering. They have not, as a package, been validated as a universal standard. Likewise, the equations are accounting definitions or simplifying models, not empirical laws about agent behavior.
 
 ## Sources
 
-- UC Berkeley, [Berkeley Function-Calling Leaderboard (BFCL V4)](https://gorilla.cs.berkeley.edu/leaderboard) — official leaderboard and evaluation categories, including single-turn, multi-turn, execution, relevance, and hallucination measures.
-- Patil et al., [A Function Calling Perspective on Scalable Large Language Model Agent Evaluation](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2025/31680.html), UC Berkeley technical report, 2025 — primary account of BFCL’s function-calling evaluation methodology.
-- Lu et al., [ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities](https://aclanthology.org/2025.findings-naacl.65/), Findings of NAACL 2025 — primary paper on stateful execution, conversational evaluation, and milestone-based grading.
-- Yao et al., [$\tau$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045), 2024 — primary paper on tool use under user interaction and domain policies.
-- Anthropic, [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents), 2026 — official engineering guidance on environment-based evaluation, transcripts, graders, and agent-evaluation design.
-- Anthropic, [Writing effective tools for AI agents—using AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents), 2025 — official guidance on tool descriptions, boundaries, evaluation, and iterative tool design.
+- Lu et al., [ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities](https://aclanthology.org/2025.findings-naacl.65/), Findings of NAACL 2025 — primary paper on stateful execution, hidden dependencies, insufficient information, and milestone-based trajectory grading.
+- Yao et al., [$\tau$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045), 2024 — primary paper on tool use under domain policies and user interaction.
+- Tian, Shi, and Zhao, [Beyond Function Calling: Benchmarking Tool-Using Agents under Tool-Environment Unreliability](https://arxiv.org/abs/2606.25819), 2026 — primary preprint introducing recoverable tool-environment hazards and comparing recovery behavior.
+- Sigdel and Baral, [ToolMisuseBench: An Offline Deterministic Benchmark for Tool Misuse and Recovery in Agentic Systems](https://arxiv.org/abs/2604.01508), 2026 — primary preprint on replayable fault injection and explicit call, step, and retry budgets.
+- Anthropic, [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents), 2026 — official guidance on trials, transcripts, state checks, grader layers, and repeated evaluation.
+- OpenAI, [A shared playbook for trustworthy third-party evaluations](https://openai.com/index/trustworthy-third-party-evaluations-foundations/), 2026 — official discussion of how harness choices, state preservation, retries, scoring, and budgets change observed capability.
+- Amazon Web Services, [Making retries safe with idempotent APIs](https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/), Amazon Builders’ Library — authoritative engineering account of ambiguous outcomes, caller request identifiers, and retry-safe API design.
+- OpenAI, [PaperBench: Evaluating AI’s Ability to Replicate AI Research](https://openai.com/index/paperbench/), 2025 — official benchmark report on hierarchical end-product rubrics and evaluation of an LLM judge.
+- OpenAI, [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://openai.com/index/mle-bench/), 2024 — official report that identifies evaluated model-and-scaffold combinations and studies resource scaling.
 
 ## Open questions
 
-- Which reliability metrics best predict real user harm rather than benchmark task failure?
-- How should evaluations represent concurrent state changes caused by people or other agents?
-- What is the right confirmation policy when the cost of interruption competes with the cost of a wrong action?
-- How can organizations share tool-use failure data without exposing private prompts, arguments, or business logic?
-- When does an LLM-based verifier add genuine independent evidence, and when does it merely repeat the acting model’s blind spots?
+- How should a benchmark score terminal states that remain unknowable after every authorized reconciliation step?
+- Which fault distributions predict production incidents well enough to justify weighting recovery benchmarks by prevalence rather than reporting an unweighted mean?
+- How can retry budgets be normalized across APIs whose calls differ by latency, cost, and side-effect risk?
+- What evidence is sufficiently independent when the acting agent, verifier, and tool-output interpreter share the same model family?
+- How should evaluators estimate model–scaffold interaction effects without an infeasibly large factorial experiment?
+- When does read-after-write verification reduce risk, and when does eventual consistency create misleading or costly loops?
+- Can organizations share anonymized recovery traces without exposing private arguments, user intent, or exploitable tool semantics?

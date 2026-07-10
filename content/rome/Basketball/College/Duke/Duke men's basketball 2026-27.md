@@ -41,8 +41,12 @@ Up: [[Basketball]]
 - [[How opponents pressure Duke's initiators]] — the denial, press, blitz, switch, and gap-help tests for Duke's distributed creation chain.
 - [[Duke 2026-27 half-court shot creation]] — a four-stage chain from entry and first bend through the second read and late-clock rescue.
 - [[Duke 2026-27 transition offense]] — how secure possession, advance passing, lane geometry, and second-wave continuation can create selective early advantage.
+- [[Duke 2026-27 offensive rebounding]] — a lineup- and shot-specific crash-versus-retreat framework that values the complete possession exchange.
+- [[Duke 2026-27 turnover economy]] — how live-ball, dead-ball, creation-risk, and pressure turnovers connect offense to transition defense.
+- [[Duke 2026-27 ball-screen coverage menu]] — a falsifiable drop, switch, show, blitz, and ice framework rather than an invented staff playbook.
 - [[Duke player development and NBA translation framework]] — a role-first method for evaluating freshmen, transfers, returners, and professional translation.
 - [[Duke player-development calibration cases]] — four contrasting cases that separate role, opportunity, task difficulty, transfer compression, and underlying skill change.
+- [[Duke 2026-27 returner development checkpoints]] — player-specific tests that distinguish real role growth from continuity and summer projection.
 
 ## What is known as of July 10
 
