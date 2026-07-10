@@ -1,0 +1,792 @@
+{
+  "schemaVersion": 1,
+  "instructions": "The half-hour publisher writes one verified, newest-first aggregate entry per successful hourly edition. Use kind=research for expansion and kind=revision for janitorial work.",
+  "entries": [
+    {
+      "id": "2026-07-09-221227-political-prediction-markets-committee-14",
+      "publishedAt": "2026-07-09T22:12:27-04:00",
+      "kind": "research",
+      "label": "Prediction-market measurement foundations",
+      "summary": "Added independently verified guides to executable probability intervals, proper scoring rules, and logical coherence while correcting the calibration framework.",
+      "articlesAdded": 3,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Political prediction markets",
+        "Market microstructure",
+        "Forecast evaluation",
+        "Calibration"
+      ],
+      "agents": [
+        "Committee 14 coordinator",
+        "Contract and regulatory scout",
+        "Liquidity and data researcher",
+        "Forecasting-method writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-220200-nba-dallas-committee-05",
+      "publishedAt": "2026-07-09T22:02:00-04:00",
+      "kind": "research",
+      "label": "NBA and Dallas roster mechanics",
+      "summary": "Added verified Dallas roster and availability dossiers, current NBA cap and frozen-pick explainers, and model-aware treatments of lineup fit and availability risk.",
+      "articlesAdded": 6,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Dallas Mavericks",
+        "NBA roster construction",
+        "NBA salary cap",
+        "NBA projections"
+      ],
+      "agents": [
+        "Committee 05 coordinator",
+        "Dallas state scout",
+        "League CBA researcher",
+        "Model and lineup writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-220055-duke-mens-basketball-committee-06",
+      "publishedAt": "2026-07-09T22:00:55-04:00",
+      "kind": "research",
+      "label": "Duke 2026-27 season architecture",
+      "summary": "Added independently verified studies of Duke's roster construction, role inventory, schedule, continuity, Scheyer-era tactics, and player-development translation.",
+      "articlesAdded": 5,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Duke men's basketball",
+        "College basketball",
+        "Roster construction",
+        "Basketball tactics",
+        "Player development"
+      ],
+      "agents": [
+        "Committee 06 coordinator",
+        "Roster and program scout",
+        "Schedule and season writer",
+        "Tactics and development writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215858-european-history-committee-17",
+      "publishedAt": "2026-07-09T21:58:58-04:00",
+      "kind": "research",
+      "label": "Post-Roman European transformations",
+      "summary": "Added independently verified studies of Merovingian political and episcopal power, seventh-century Byzantine adaptation, Kievan Rus, and the medieval Baltic commercial system.",
+      "articlesAdded": 6,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "European history",
+        "Merovingian Gaul",
+        "Byzantium",
+        "Kievan Rus",
+        "Baltic history"
+      ],
+      "agents": [
+        "Committee 17 coordinator",
+        "Merovingian writer",
+        "Byzantine writer",
+        "Eastern and northern Europe writer",
+        "Independent verifiers",
+        "Source and link editors"
+      ]
+    },
+    {
+      "id": "2026-07-09-215654-us-midterms-committee-01",
+      "publishedAt": "2026-07-09T21:56:54-04:00",
+      "kind": "research",
+      "label": "2026 midterms evidence foundations",
+      "summary": "Added independently verified guides to Senate control arithmetic, congressional polling, campaign-finance signals, and the legal stages from race calls through election contests.",
+      "articlesAdded": 4,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "2026 US midterms",
+        "Senate control",
+        "Congressional polling",
+        "Campaign finance",
+        "Election administration"
+      ],
+      "agents": [
+        "Committee 01 coordinator",
+        "Senate-control writer",
+        "Polling-method writer",
+        "Campaign-finance writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215606-new-york-mets-committee-10",
+      "publishedAt": "2026-07-09T21:56:06-04:00",
+      "kind": "research",
+      "label": "Mets roster and Statcast methods",
+      "summary": "Added independently verified guides to Mets roster mechanics and disciplined Statcast change detection while reconciling the July 8–9 roster chain.",
+      "articlesAdded": 2,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "New York Mets",
+        "MLB roster mechanics",
+        "Statcast",
+        "Player evaluation"
+      ],
+      "agents": [
+        "Committee 10 coordinator",
+        "Roster and transaction scout",
+        "Roster-mechanics writer",
+        "Statcast writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215541-exometeorology-foundations",
+      "publishedAt": "2026-07-09T21:55:41-04:00",
+      "kind": "research",
+      "label": "Exometeorology inference foundations",
+      "summary": "Built a five-article foundation for reading exoplanet spectra and light curves without collapsing measurements, inverse retrievals, maps, simulations, and weather interpretations.",
+      "articlesAdded": 5,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Exometeorology",
+        "Atmospheric Retrieval",
+        "Transmission Spectroscopy",
+        "Phase Curves",
+        "Atmospheric Mapping"
+      ],
+      "agents": [
+        "Codex",
+        "Map and source scout",
+        "Specialist writers",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215523-applied-pde-committee",
+      "publishedAt": "2026-07-09T21:55:23-04:00",
+      "kind": "research",
+      "label": "Applied PDE foundations",
+      "summary": "Added independently verified tutorials on weak solutions and shocks, finite-volume conservation laws, and adjoint gradients for PDE-constrained optimization.",
+      "articlesAdded": 3,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Applied PDEs",
+        "Conservation Laws",
+        "Numerical Analysis",
+        "PDE-Constrained Optimization"
+      ],
+      "agents": [
+        "Coordinator",
+        "Applied-PDE writers",
+        "Independent mathematical verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215448-fantasy-basketball-committee",
+      "publishedAt": "2026-07-09T21:54:48-04:00",
+      "kind": "research",
+      "label": "Fantasy basketball decision methods",
+      "summary": "Built a sourced fantasy-basketball foundation for replacement value, category scarcity, playable games, streaming, waiver option value, injury information, role persistence, and decision calibration.",
+      "articlesAdded": 6,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Fantasy Basketball",
+        "NBA",
+        "Decision Making"
+      ],
+      "agents": [
+        "Committee 11 coordinator",
+        "Schedule and streaming writer",
+        "Category and waiver writer",
+        "Injury and calibration writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215440-french-presidential-election-committee-02",
+      "publishedAt": "2026-07-09T21:54:40-04:00",
+      "kind": "research",
+      "label": "French presidential institutions",
+      "summary": "Added independently verified long-form guides to presidential election mechanics, the 500 presentations, campaign finance, and the route from an Élysée victory to an Assembly majority.",
+      "articlesAdded": 4,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "2027 French presidential election",
+        "Ballot qualification",
+        "Campaign finance",
+        "National Assembly"
+      ],
+      "agents": [
+        "Codex coordinator",
+        "Official-source and presentations writer",
+        "Election-mechanics writer",
+        "Assembly-mandate writer",
+        "Independent verifiers"
+      ]
+    },
+    {
+      "id": "2026-07-09-215435-crypto-markets-committee",
+      "publishedAt": "2026-07-09T21:54:35-04:00",
+      "kind": "research",
+      "label": "Crypto markets committee",
+      "summary": "Added four independently verified explainers on protocol value capture, token emissions, stablecoin redemption, and wrapped exposure, plus a live top-100 boundary identity layer.",
+      "articlesAdded": 7,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Crypto market structure",
+        "Token economics",
+        "Stablecoins",
+        "Wrapped assets",
+        "Top-100 identity"
+      ],
+      "agents": [
+        "Coordinator and managing editor",
+        "Top-100 identity scout",
+        "Protocol economics writer",
+        "Market-structure and risk writer",
+        "Independent verifiers"
+      ]
+    },
+    {
+      "id": "2026-07-09-215427-ai-frontier-news-committee-15",
+      "publishedAt": "2026-07-09T21:54:27-04:00",
+      "kind": "research",
+      "label": "Frontier AI evaluation methods",
+      "summary": "Added independently verified long-form foundations for separating models from scaffolds, normalizing reasoning budgets, measuring long-horizon reliability, and controlling coding-evaluation infrastructure.",
+      "articlesAdded": 4,
+      "articlesRevised": 0,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Frontier AI",
+        "Agent Evaluation",
+        "Reasoning Budgets",
+        "Long-Horizon Reliability",
+        "Coding Agents"
+      ],
+      "agents": [
+        "Committee 15 coordinator",
+        "Evaluation-method writers",
+        "Independent verifiers",
+        "Developmental editor",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215420-romantic-violin-committee-19",
+      "publishedAt": "2026-07-09T21:54:20-04:00",
+      "kind": "research",
+      "label": "Romantic violin evidence and partnership",
+      "summary": "Added six source-critical studies of textual transmission, cadenzas, duo partnership, Franck's sonata, portamento, and shellac-era mediation.",
+      "articlesAdded": 6,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Romantic Violin",
+        "Performance Practice",
+        "Score Sources",
+        "Recording History"
+      ],
+      "agents": [
+        "Coordinator",
+        "Score-source writer",
+        "Partnership writer",
+        "Recording-practice writer",
+        "Independent verifiers"
+      ]
+    },
+    {
+      "id": "2026-07-09-215417-us-markets-commodities-committee-12",
+      "publishedAt": "2026-07-09T21:54:17-04:00",
+      "kind": "research",
+      "label": "US markets and commodities foundations",
+      "summary": "Added long-form, independently checked primers on dollar-rate transmission, credit spreads, volatility risk premium, oil storage curves, and grain balance sheets.",
+      "articlesAdded": 5,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "US Markets",
+        "Foreign Exchange",
+        "Credit",
+        "Volatility",
+        "Energy",
+        "Agriculture"
+      ],
+      "agents": [
+        "Coordinator",
+        "Macro and rates researcher",
+        "Credit and volatility researcher",
+        "Commodity-chain researcher",
+        "Independent verifiers"
+      ]
+    },
+    {
+      "id": "2026-07-09-215409-duke-football-committee-07",
+      "publishedAt": "2026-07-09T21:54:09-04:00",
+      "kind": "research",
+      "label": "Duke football 2026 roster and scheme",
+      "summary": "Added verified long-form dossiers on Duke's 2026 roster, quarterback reset, offensive transition, and defense under Manny Diaz.",
+      "articlesAdded": 4,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Duke Football",
+        "College Football",
+        "Roster Construction",
+        "Tactics"
+      ],
+      "agents": [
+        "Coordinator",
+        "Roster and program scout",
+        "Offense researcher",
+        "Defense and development writer",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215406-political-prediction-markets",
+      "publishedAt": "2026-07-09T21:54:06-04:00",
+      "kind": "research",
+      "label": "Political prediction-market foundations",
+      "summary": "Added long-form foundations for translating event-contract prices, handling resolution risk, and measuring calibration without treating market ticks as facts.",
+      "articlesAdded": 3,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Political Prediction Markets",
+        "Kalshi",
+        "Polymarket",
+        "Forecast Calibration",
+        "Market Microstructure"
+      ],
+      "agents": [
+        "Codex coordinator",
+        "Contract and regulatory scout",
+        "Resolution-risk writer",
+        "Calibration-method writer"
+      ]
+    },
+    {
+      "id": "2026-07-09-215359-indianapolis-colts-committee",
+      "publishedAt": "2026-07-09T21:53:59-04:00",
+      "kind": "research",
+      "label": "Indianapolis Colts pre-camp map",
+      "summary": "Added substantial quarterback and schedule explainers, transformed the official roster map, and isolated unresolved reserve and roster-page states without projecting camp outcomes.",
+      "articlesAdded": 3,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Indianapolis Colts",
+        "NFL roster construction",
+        "Quarterback evaluation",
+        "NFL scheduling"
+      ],
+      "agents": [
+        "Codex coordinator",
+        "Roster and official-status scout",
+        "Quarterback and offense writer",
+        "Schedule and league-mechanism writer"
+      ]
+    },
+    {
+      "id": "2026-07-09-215357-romantic-piano-committee-18",
+      "publishedAt": "2026-07-09T21:53:57-04:00",
+      "kind": "research",
+      "label": "Romantic piano foundations and media",
+      "summary": "Added substantial guides to the changing nineteenth-century piano, Schumann's Kinderszenen, and shellac recordings as evidence while tightening Chopin edition-source citations.",
+      "articlesAdded": 3,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Romantic Piano",
+        "Instrument History",
+        "Schumann",
+        "Recording History",
+        "Chopin Editions"
+      ],
+      "agents": [
+        "Committee 18 coordinator",
+        "Instrument and source cartographer",
+        "Schumann work-guide writer",
+        "Recording-media investigator",
+        "Independent verifiers",
+        "Link editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-215306-tottenham-hotspur-committee-08",
+      "publishedAt": "2026-07-09T21:53:06-04:00",
+      "kind": "research",
+      "label": "Tottenham project and squad constraints",
+      "summary": "Added verified long-form studies of Roberto De Zerbi's Tottenham project, the 2026-27 squad architecture, and Premier League registration constraints.",
+      "articlesAdded": 3,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Tottenham Hotspur",
+        "Premier League",
+        "Football tactics",
+        "Squad registration"
+      ],
+      "agents": [
+        "Codex coordinator",
+        "Squad scout and writer",
+        "Registration researcher",
+        "Tactical project writer",
+        "Independent verifiers"
+      ]
+    },
+    {
+      "id": "2026-07-09-215236-korean-history-committee-16",
+      "publishedAt": "2026-07-09T21:52:36-04:00",
+      "kind": "research",
+      "label": "Korean history institutions and transition",
+      "summary": "Added source-critical long-form studies of the Goryeo–Joseon transition, examination practice, and nobi status and translation.",
+      "articlesAdded": 3,
+      "articlesRevised": 1,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Korean History",
+        "Goryeo",
+        "Joseon",
+        "Social History"
+      ],
+      "agents": [
+        "Coordinator",
+        "Coverage cartographer",
+        "Causal-history writer",
+        "Institutional-history writer",
+        "Independent verifiers"
+      ]
+    },
+    {
+      "id": "2026-07-09-continuous-topic-loop-and-research-imports",
+      "publishedAt": "2026-07-09T21:46:14-04:00",
+      "kind": "research",
+      "label": "Continuous committees and research libraries",
+      "summary": "Replaced two capacity-bound umbrella tasks with a continuously staggered loop of 19 subject committees, introduced Andrew's Beale surface-PDE and RAPM projection research, and refined the galaxy map and update ledger typography.",
+      "articlesAdded": 20,
+      "articlesRevised": 6,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Research Committees",
+        "Surface PDEs",
+        "Exometeorology",
+        "NBA Quantitative Modeling",
+        "Rome"
+      ],
+      "agents": [
+        "Codex",
+        "Beale research cartographer",
+        "RAPM research cartographer",
+        "Interface editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-211634-news-committee",
+      "publishedAt": "2026-07-09T21:16:34-04:00",
+      "kind": "research",
+      "label": "News committee",
+      "summary": "Added substantial official-source explainers for the 2026 House control path, NBA apron roster mechanics, and scenario-based interpretation of the Treasury curve.",
+      "articlesAdded": 3,
+      "articlesRevised": 0,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "US House control",
+        "NBA apron mechanics",
+        "Treasury curve scenarios"
+      ],
+      "agents": [
+        "Cartographer/source scouts",
+        "Writers",
+        "Independent verifiers",
+        "Developmental editors",
+        "Link editors"
+      ]
+    },
+    {
+      "id": "2026-07-09-high-volume-committees-and-galaxies",
+      "publishedAt": "2026-07-09T21:08:00-04:00",
+      "kind": "revision",
+      "label": "Research scale and map pass",
+      "summary": "Rebuilt the hourly committee contract around 24–36-worker swarms, 50–100 substantial multi-thousand-word articles per run, and reorganized the universe into separated, labeled topic galaxies.",
+      "articlesAdded": 0,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Rome",
+        "Research Committees",
+        "Knowledge Map"
+      ],
+      "agents": [
+        "Codex",
+        "News instruction editor",
+        "Discovery instruction editor",
+        "Galaxy-map editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-203712-discovery-committee",
+      "publishedAt": "2026-07-09T20:37:12-04:00",
+      "kind": "research",
+      "label": "Discovery committee",
+      "summary": "Built linked prerequisite clusters for Goryeo institutions, post-Roman regional comparison, Chopin edition transmission, and Romantic violin material and editorial evidence.",
+      "articlesAdded": 9,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Korean History",
+        "European History",
+        "Romantic Piano",
+        "Romantic Violin"
+      ],
+      "agents": [
+        "Codex",
+        "Korean history desk",
+        "European history desk",
+        "Romantic piano desk",
+        "Romantic violin desk"
+      ]
+    },
+    {
+      "id": "2026-07-09-human-wiki-interface-pass",
+      "publishedAt": "2026-07-09T20:36:00-04:00",
+      "kind": "revision",
+      "label": "Interface and publication pass",
+      "summary": "Widened every article into a calmer Wikipedia-inspired reading layout, rebuilt the universe map around link, tag, and collision physics, and strengthened the boundary that keeps agent-facing prompts out of the human wiki.",
+      "articlesAdded": 0,
+      "articlesRevised": 1,
+      "articlesRetired": 1,
+      "articlesRelocated": 0,
+      "topics": [
+        "Rome",
+        "Publishing",
+        "Knowledge Map"
+      ],
+      "agents": [
+        "Codex",
+        "Article layout editor",
+        "Map physics editor",
+        "Publication-boundary auditor"
+      ]
+    },
+    {
+      "id": "2026-07-09-202016-discovery-committee",
+      "publishedAt": "2026-07-09T20:20:16-04:00",
+      "kind": "research",
+      "label": "Discovery committee",
+      "summary": "Established source-critical foundation clusters across Korean and European history and Romantic piano and violin, including two public repertoire maps.",
+      "articlesAdded": 8,
+      "articlesRevised": 2,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Korean History",
+        "European History",
+        "Romantic Piano",
+        "Romantic Violin"
+      ],
+      "agents": [
+        "Codex",
+        "Korean history desk",
+        "European history desk",
+        "Romantic piano desk",
+        "Romantic violin desk"
+      ]
+    },
+    {
+      "id": "2026-07-09-201127-news-committee",
+      "publishedAt": "2026-07-09T20:11:27-04:00",
+      "kind": "research",
+      "label": "News committee",
+      "summary": "Expanded all fifteen news desks with official-source roster, schedule, market, election, AI, PDE, and exometeorology research while preserving Tottenham's higher publication threshold.",
+      "articlesAdded": 11,
+      "articlesRevised": 19,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Sports",
+        "Politics",
+        "Markets",
+        "Crypto",
+        "AI",
+        "Mathematics",
+        "Weather"
+      ],
+      "agents": [
+        "Codex",
+        "Sports desk wave",
+        "Markets and politics desk wave",
+        "Science, AI, and sports desk wave"
+      ]
+    },
+    {
+      "id": "2026-07-09-rome-news-committee-first-cycle",
+      "publishedAt": "2026-07-09T20:05:56-04:00",
+      "kind": "research",
+      "label": "News committee",
+      "summary": "Scanned all fifteen news desks and established sourced canonical hubs for elections, sports, markets, applied PDEs, exometeorology, crypto, prediction markets, and frontier AI.",
+      "articlesAdded": 13,
+      "articlesRevised": 6,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Politics",
+        "Mathematics",
+        "Weather",
+        "Basketball",
+        "Sports",
+        "Markets",
+        "Crypto",
+        "AI"
+      ],
+      "agents": [
+        "Codex",
+        "Premier sports scout",
+        "Markets and politics scout",
+        "Science and secondary sports scout"
+      ]
+    },
+    {
+      "id": "2026-07-09-hourly-cambrian-expansion",
+      "publishedAt": "2026-07-09T19:57:00-04:00",
+      "kind": "revision",
+      "label": "Committee expansion",
+      "summary": "Moved every News and Discovery desk to staggered hourly cycles with no numeric output ceiling, promoted the Mavericks, Duke basketball, Duke football, and leaguewide NBA coverage, and expanded US markets, commodities, top-100 crypto, and Romantic repertoire through 1945.",
+      "articlesAdded": 1,
+      "articlesRevised": 6,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Sports",
+        "Markets",
+        "Crypto",
+        "Classical Music",
+        "History",
+        "Rome"
+      ],
+      "agents": [
+        "Codex",
+        "Sports desk editor",
+        "News expansion editor",
+        "Discovery curriculum editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-autonomous-research-committees",
+      "publishedAt": "2026-07-09T19:45:00-04:00",
+      "kind": "research",
+      "label": "Committee desk",
+      "summary": "Established active News and Discovery schedules with 19 desk-specific research plans, six new subject hubs, persistent coverage state, and strict editorial gates.",
+      "articlesAdded": 7,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Politics",
+        "Mathematics",
+        "Sports",
+        "Markets",
+        "Classical Music",
+        "History",
+        "Rome"
+      ],
+      "agents": [
+        "Codex",
+        "Policy and markets scout",
+        "Sports editor",
+        "Discovery curriculum editor"
+      ]
+    },
+    {
+      "id": "2026-07-09-publication-and-corpus-pass",
+      "publishedAt": "2026-07-09T19:15:00-04:00",
+      "kind": "revision",
+      "label": "Revision committee",
+      "summary": "Reorganized the NBA research corpus, narrowed Crypto to the live candidate slate, established a public/private publication boundary, and rebuilt String Theory as a course.",
+      "articlesAdded": 1,
+      "articlesRevised": 44,
+      "articlesRetired": 56,
+      "articlesRelocated": 33,
+      "topics": [
+        "Basketball",
+        "Crypto",
+        "String Theory",
+        "AI",
+        "Rome"
+      ],
+      "agents": [
+        "Codex",
+        "Graph cartographer",
+        "Course editor",
+        "Corpus auditor"
+      ]
+    },
+    {
+      "id": "2026-07-09-first-edition",
+      "publishedAt": "2026-07-09T18:00:00-04:00",
+      "kind": "research",
+      "label": "First edition",
+      "summary": "Turned Rome's publishable Markdown into linked articles with search, backlinks, reading rooms, and visible research seeds.",
+      "articlesAdded": 387,
+      "articlesRevised": 0,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Rome",
+        "String Theory",
+        "AI",
+        "Basketball",
+        "Crypto"
+      ],
+      "agents": [
+        "Codex",
+        "Rawls",
+        "Ptolemy",
+        "Kuhn"
+      ]
+    }
+  ]
+}
