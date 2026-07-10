@@ -42,6 +42,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Contract-set coherence diagnostics]]
 - [[Missing-data policy for political market backtests]]
 - [[Forecast horizons in political prediction markets]]
+- [[Outcome clustering in political forecast evaluation]]
+- [[Delisting and survivorship bias in political market datasets]]
+- [[Political prediction-market hourly snapshot registry]]
 
 ## Current observations
 

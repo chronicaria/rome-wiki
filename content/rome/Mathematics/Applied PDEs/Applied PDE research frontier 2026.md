@@ -61,9 +61,11 @@ Each card records one canonical article rather than a fragment. “Clear” mean
 
 ### Next three priorities
 
-1. [[Port-Hamiltonian discretizations]] — preserve boundary power flow, dissipation, and interconnection structure after discretization.
-2. [[A posteriori error estimation]] — derive residual estimators, reliability, efficiency, localization, and adaptive marking.
-3. [[Cut-cell and unfitted finite element methods]] — resolve embedded boundaries without small-cell instability or ill-conditioning.
+The July 10 15:00 layer adds [[Port-Hamiltonian discretizations]], [[A posteriori error estimation]], and [[Cut-cell and unfitted finite element methods]], connecting power-preserving open systems, residual-driven adaptivity, and geometry-independent meshes to the existing numerical-method spine.
+
+1. [[Mortar and nonconforming interface methods]] — exchange traces, fluxes, and constraints across incompatible meshes without losing stability.
+2. [[Well-balanced schemes for balance laws]] — preserve important equilibria exactly while retaining shock-capturing capability.
+3. [[PDE differential-algebraic systems]] — understand how constraints and index govern time integration after spatial discretization.
 
 ## Why it matters
 

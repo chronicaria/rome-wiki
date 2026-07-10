@@ -36,6 +36,7 @@ This map organizes Korean history through overlapping chronological, institution
 ## Joseon institutions, family, war, and regional order
 
 - [[Imjin War causal map]] — invasion motive, initial collapse, maritime logistics, local resistance, Ming intervention, stalemate, and withdrawal across 1592–1598.
+- [[Righteous armies, state armies, and naval war in 1592]] — surviving government forces, heterogeneous local mobilization, provincial naval capacity, logistics, and later patriotic memory.
 - [[Hangul as a political and social technology]] — script design, royal statecraft, gendered textual practice, petitions, and later nationalization.
 - [[Joseon land taxation from gwajeon to daedong]] — official revenue assignments, field assessment, tribute commutation, procurement, and social incidence.
 - [[Local magistrates, clerks, and yangban power]] — formal county authority, administrative information, local elite institutions, and unequal access to law.
@@ -52,6 +53,7 @@ This map organizes Korean history through overlapping chronological, institution
 - [[Foreign incursions before the opening of Korea]] — comparing the 1866 French expedition, the 1871 American expedition, Japanese coercion, and why only the last produced a durable treaty regime.
 - [[The Ganghwa Treaty and unequal sovereignty]] — coercion, nominal independence, treaty-port jurisdiction, coastal surveying, tariff constraints, and Korean responses after 1876.
 - [[Gabo Reform causal map]] — Korean reform coalitions, Donghak pressure, Japanese military coercion, three reform phases, and uneven social implementation.
+- [[Gwangmu Reform fiscal and military capacity]] — revenue growth, fiscal fragmentation, cadastral knowledge, money, armed force, and the sovereignty-capacity distinction.
 
 ## Colonial rule and mobilization
 
@@ -59,6 +61,7 @@ This map organizes Korean history through overlapping chronological, institution
 - [[Land survey, tenancy, and the colonial economy]] — cadastral title, landlordism, debt, rice policy, agrarian protest, growth, and unequal distribution.
 - [[The March First Movement as local and global history]] — religious, student, market-town, and diaspora networks, colonial repression, global claims, and casualty-source limits.
 - [[Forced labor and wartime mobilization]] — staged recruitment, state allocation, formal requisition, corporate discipline, gendered labor, survivor evidence, and contested redress.
+- [[Korean migration across the Japanese empire]] — household strategies, labor demand, mobility control, racial hierarchy, wartime compulsion, and post-imperial diaspora across Japan, Manchuria, and Sakhalin.
 
 ## Liberation and division
 
@@ -68,10 +71,9 @@ This map organizes Korean history through overlapping chronological, institution
 
 ## Priority gaps
 
-- [[Righteous armies, state armies, and naval war in 1592]]
-- [[Korean migration across the Japanese empire]]
-- [[Gwangmu Reform fiscal and military capacity]]
 - [[From Eulsa to annexation, 1905-1910]]
+- [[The seventeenth-century Korean musketry revolution]]
+- [[Korea in the international law of protectorates]]
 
 ## Open questions
 

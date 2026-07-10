@@ -36,6 +36,7 @@ This map connects durable explanations of US equities, rates, credit, currencies
 - [[Cross-currency basis]]
 - [[Dollar and FX transmission tracker]]
 - [[Treasury repo specialness]]
+- [[Collateral scarcity across funding markets]] — how security identity, settlement, reuse, margin, and dealer balance sheets give collateral a shadow price.
 
 ## Commodity markets
 

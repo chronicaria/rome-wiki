@@ -49,6 +49,10 @@ This MOC collects notes on LLM agents as teams, swarms, simulators, and collecti
 - [[Tool-use reliability]] - how relevance, selection, arguments, execution, policy, recovery, and end-state verification compose across an agent trajectory.
 - [[Single-agent versus multi-agent inference]] - when parallel search, diversity, specialization, or verification can beat a compute-matched single-agent policy.
 - [[Verification loops for coding agents]] - how to separate developmental execution feedback from independent evidence that a patch deserves trust.
+- [[AI safety evaluation]] - how elicitation, coverage, uncertainty, safeguards, and thresholds should support a scoped deployment decision rather than a ritual score.
+- [[Interpretability evidence standards]] - how predictive, causal, and mechanistic claims require different validation tests.
+- [[Inference-time scaling]] - when longer reasoning, search, verification, and adaptive compute improve a fixed model system after resource normalization.
+- [[Frontier AI release evidence ladder]] - how to separate rumor, announcement, documentation, access, measurement, independent evaluation, and sustained deployment.
 
 ## Open questions
 

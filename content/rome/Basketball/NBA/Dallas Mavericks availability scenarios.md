@@ -4,13 +4,13 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [basketball, nba, dallas-mavericks, injuries, forecasting]
-as_of: 2026-07-09
+as_of: 2026-07-10
 desk: NBA and Dallas Mavericks
 review_after: 2026-07-18
 ---
 Dallas's 2026-27 forecast should be expressed as a set of health-conditioned rotation scenarios because public evidence supports neither a clean-bill-of-health assumption nor a precise games-played prediction for Kyrie Irving and Dereck Lively II.
 
-Up: [[Dallas Mavericks 2026-27 season]] · Roster context: [[Dallas Mavericks 2026-27 roster construction dossier]] · Method: [[NBA player forward projection model]]
+Up: [[Dallas Mavericks 2026-27 season]] · Roster context: [[Dallas Mavericks 2026-27 roster construction dossier]] · Health evidence: [[Dallas Mavericks health ledger]] · Method: [[NBA player forward projection model]]
 
 ## Availability is a basketball variable, not a medical prediction
 
@@ -20,7 +20,7 @@ That evidence boundary should shape the analysis. This note does not diagnose ei
 
 The distinction matters for forecasting. Availability does not merely subtract a player's projected value. It changes the jobs assigned to everyone else, the combinations a coach can use, and the environment in which young players develop. Irving's absence transfers initiation and late-clock creation. Lively's absence transfers rim protection, screening, and vertical spacing. If both are absent, Dallas cannot replace each independently without creating secondary costs.
 
-## What is verified as of July 9
+## What is verified as of July 10
 
 Dallas announced in February 2026 that Irving would not return during the 2025-26 season as he continued ACL recovery. The injury occurred in March 2025, and the long recovery means his absence was a deliberate team decision rather than an ordinary late-season designation. The NBA's Dallas draft profile subsequently described him as expected to be ready for the start of the next season, and Dusty May's introductory material spoke about building with Irving. Those later statements improve the organizational outlook, but they do not demonstrate competitive readiness or an unrestricted workload.
 
@@ -72,9 +72,9 @@ This scenario is also where the distinction between “Irving plays” and “Ir
 
 This is the stress case, not a forecast. It reveals why Dallas's apparent depth should not be mistaken for redundancy. Without Irving, the team lacks proven top-end creation. Without Lively, it lacks its highest-upside defensive anchor. Replacing both forces Flagg to solve more possessions while also taking harder defensive responsibility.
 
-A plausible group might use Jones or Sasser with Christie, Flagg, Washington or Marshall, and Gafford. It can defend at several spots and maintain vertical pressure, but its half-court ceiling depends heavily on Flagg. Another version could use Aldama beside Gafford to add passing and shooting. A smaller offense-first version could put Aldama at center, but then rim deterrence and rebounding become vulnerabilities.
+A plausible group might use Nembhard or Sasser with Christie, Flagg, Washington or Marshall, and Gafford. It can defend at several spots and maintain vertical pressure, but its half-court ceiling depends heavily on Flagg. Another version could use Aldama beside Gafford to add passing and shooting. A smaller offense-first version could put Aldama at center, but then rim deterrence and rebounding become vulnerabilities. These are functional sketches rather than a claim that an unverified depth chart is settled.
 
-The deepest consequence is role cascade. Jones moves from secondary organizer toward a larger creation burden; Sasser moves from reserve scorer toward more primary handling. Flagg moves from developing co-creator toward offensive engine. Gafford moves from a shared-center arrangement toward a heavier workload. Aldama becomes both spacing solution and backup organizer. Christie and Marshall receive more on-ball tasks. Each promotion can reduce the very skill that made the player valuable in the smaller role.
+The deepest consequence is role cascade. Nembhard moves from secondary organizer toward a larger creation burden; Sasser moves from reserve scorer toward more primary handling. Flagg moves from developing co-creator toward offensive engine. Gafford moves from a shared-center arrangement toward a heavier workload. Aldama becomes both spacing solution and backup organizer. Christie and Marshall receive more on-ball tasks. Each promotion can reduce the very skill that made the player valuable in the smaller role. Tyus Jones must not appear in this allocation: Dallas waived him February 28, 2026, and Denver officially signed him March 5.
 
 This is why availability shocks are nonlinear. Suppose Irving is worth a certain number of points above a reserve and Lively another number above a backup. Adding those two individual losses understates the combined effect if the backups cannot coexist cleanly or if Flagg's efficiency drops under extra usage. It can also overstate the effect in specific matchups if Dallas discovers a productive Flagg–Aldama offense. Scenario analysis preserves both possibilities.
 
@@ -104,8 +104,8 @@ A practical approach begins with role-minute ranges rather than exact season tot
 | --- | --- | --- | --- |
 | Both functionally available | Primary creator; starter workload with possible management | Starting defensive center; shared center workload | Flagg develops as co-creator; Gafford stabilizes bench |
 | Irving available, Lively limited | Primary creator | Delayed, restricted, or absent | Gafford center minutes; Aldama small-ball/skill minutes |
-| Lively available, Irving limited | Restricted or absent creator | Starting defensive center | Jones organization; Flagg initiation; Sasser handling; Aldama passing |
-| Both limited | No stable primary creator | No stable defensive anchor | Jones, Flagg, Sasser, Gafford, Aldama and young depth all promoted |
+| Lively available, Irving limited | Restricted or absent creator | Starting defensive center | Nembhard organization; Flagg initiation; Sasser handling; Aldama passing |
+| Both limited | No stable primary creator | No stable defensive anchor | Nembhard, Flagg, Sasser, Gafford, Aldama and young depth all promoted |
 | Both active but sub-prior | Participation without full assumed effectiveness | Participation without full assumed effectiveness | Mixed; role cascade is smaller but performance remains uncertain |
 
 For simulation, each branch should carry correlations. Irving's status affects Flagg's usage and the value of finishers. Lively's status affects Gafford's minutes and perimeter defenders' risk tolerance. Their joint absence should not be sampled as two unrelated additive losses. The model can represent this with branch-specific minute matrices and player-effect distributions, then weight branches only when evidence supports probabilities.

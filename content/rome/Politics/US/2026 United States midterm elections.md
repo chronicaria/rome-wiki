@@ -17,6 +17,9 @@ Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[Ho
 
 - [[2026 Senate control path]] — the 34–31 off-ballot base, all 35 contests, loss-offset arithmetic, and the distinction between mathematical and modeled routes.
 - [[2026 Senate race prioritization]] — the first Senate dossier queue and the rule for separating control leverage from noisy attention.
+- [[2026 North Carolina Senate election]] — the core Republican-held Class II pickup dossier, anchored in the July 9 NCSBE general candidate list and Cook Toss Up rating.
+- [[2026 Maine Senate election]] — an incumbent-centered Republican-held Class II defense with live Democratic replacement uncertainty and ranked-choice voting constraints.
+- [[2026 Ohio Senate special election]] — a Republican-held vacancy race for the unexpired Vance term ending January 3, 2029, separated from regular Class II dossiers.
 - [[2026 Georgia Senate election]] — a Democratic-held defense dossier focused on Ossoff, Collins, runoff evidence, and loss-offset control leverage.
 - [[2026 Michigan Senate election]] — a first Democratic open-seat defense dossier separating official primary ballot status, campaign suspension evidence, finance timing, and control arithmetic.
 - [[2026 Texas Senate election]] — a Republican-held open-seat defense dossier treating Paxton's nomination and Talarico's money as path-expanding evidence, not a core-route substitute.

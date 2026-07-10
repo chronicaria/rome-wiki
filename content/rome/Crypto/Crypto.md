@@ -68,6 +68,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Protocol fee switches and tokenholder claims]] — separate the ability to vote on fee routing from an activated, eligible, durable, and enforceable holder benefit.
 - [[Crypto bankruptcy claims and recovery waterfalls]] — distinguish property return from creditor recovery, then trace entity, priority, setoff, avoidance, and distribution rules.
 - [[Blockchain fee revenue and economic security budgets]] — reconcile fees, issuance, burn, MEV, provider costs, and attack economics without calling every flow revenue.
+- [[Stablecoin bankruptcy remoteness]] — test segregation, estate exclusion, priority, redemption mechanics, and intermediary exposure instead of treating reserve backing as automatic legal protection.
+- [[Protocol bad debt and insolvency]] — distinguish unhealthy accounts, economic shortfalls, recognized deficits, and the contractual waterfall that allocates loss.
+- [[Application revenue and blockchain settlement costs]] — separate payment volume, pass-through fees, retained revenue, settlement expense, contribution profit, and tokenholder capture.
+- [[Stablecoin liquidity fragmentation]] — measure dollar-token liquidity by exact issuer, contract, chain, venue, route capacity, latency, and redemption access rather than aggregate market cap.
 
 ## Current conviction subset
 

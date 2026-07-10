@@ -48,6 +48,9 @@ Up: [[Basketball]]
 - [[Roster-slot liquidity in fantasy basketball]] — price how quickly and cheaply a roster position can be converted into a better legal lineup path.
 - [[Bench slots and latent lineup value]] — value retained reserves as state-contingent options over future legal lineups rather than as inactive box scores.
 - [[Fantasy basketball playoff schedule value]] — value playable marginal production across conditional rounds, not raw scheduled games.
+- [[Schedule value under availability uncertainty]] — propagate correlated participation, workload, and recoverability states through the calendar.
+- [[Conditional playoff schedule value]] — weight later-round production by alternative-specific survival and opponent paths.
+- [[Transaction limits and streaming option value]] — treat every acquisition as both current production and a state-dependent future control.
 - [[Turnovers as an opportunity cost]] — judge turnovers as the format-dependent cost of a complete opportunity bundle rather than rewarding inactivity.
 - [[Keeper value versus redraft value]] — separate current production from rule-created future surplus, keeper-slot opportunity cost, and roster friction.
 
@@ -57,9 +60,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Schedule value under availability uncertainty]]
 - [[Category redundancy in roster construction]]
-- [[Transaction limits and streaming option value]]
+- [[Trade review delay and veto risk]]
+- [[Draft portfolio diversification across leagues]]
 
 ## Open questions
 

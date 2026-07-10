@@ -77,6 +77,13 @@ A causal and comparative map from the transformation of Roman worlds through med
 ## Atlantic slavery and European political economy
 
 - [[Atlantic slavery inside European economic history]] — how forced production entered European ports, commodities, households, credit, and fiscal states without supporting a one-cause story of industrialization.
+- [[The Great Divergence and Europe's comparative history]] — why units, measures, dates, fossil energy, colonies, and regional variation change accounts of Europe's economic lead.
+
+## Agrarian reform, revolution, and industrialization
+
+- [[Nordic agrarian change and state formation]] — how cadasters, consolidation, tenure, and rural bargaining linked state capacity to unequal proprietor politics across Scandinavia.
+- [[French Revolution from fiscal crisis to sovereignty crisis]] — how debt, privilege, authorization failure, constituent claims, and popular action transformed reform into revolution.
+- [[Industrialization as regional clusters rather than one revolution]] — why coalfields, ports, skills, firms, markets, and institutions produced uneven industrial districts rather than one national sequence.
 
 ## Religion and modernity
 

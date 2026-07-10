@@ -56,6 +56,9 @@ Up: [[Weather prediction (MOC)]]
 - [[From light curves to atmospheric maps]] makes the mapping inverse problem explicit: disk integration has a null space, regularization supplies assumptions, and a plotting grid is not the same thing as spatial resolution.
 - [[Time-series mapping of brown-dwarf weather]] applies that inverse-problem discipline to rotational and spectral variability, including wavelength-dependent pressure sensitivity and the evolution–rotation degeneracy.
 - [[Contribution functions in exoplanet spectra]] explains why a spectral channel has a broad, state- and geometry-dependent pressure weighting rather than a uniquely observed altitude.
+- [[Radiative timescale diagnostics]] defines perturbation protocols and prevents phase offsets or brightness contrasts from being mislabeled as directly observed relaxation times.
+- [[Opacity uncertainty and circulation inference]] traces opacity errors through both the climate model and the observation operator used to infer winds and temperatures.
+- [[Eclipse mapping and atmospheric structure]] explains the occultation kernel, null space, and conditional path from ingress–egress photometry to low-order dayside brightness structure.
 
 ## Current frontier
 

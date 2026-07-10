@@ -48,6 +48,9 @@ The Curry–Myers–Hammer sequence shows how quickly a transaction headline can
 - [[How bullpen warm-ups complicate Mets availability estimates]] separates recorded game pitches, sourced warm-up episodes, and unobserved activity without inferring medical status.
 - [[How to simulate a Mets batting order responsibly]] defines regressed inputs, rules, park and handedness branches, substitution policies, and uncertainty tests for a reproducible lineup model.
 - [[How contract control changes the price of deadline relief]] explains how control, options, assignment rights, workload, roster fit, and replacement innings shape acquisition cost.
+- [[How to build a Mets bullpen workload ledger]] defines a reproducible event-and-snapshot record for appearances, pitches, roster movement, leverage, and incomplete warm-up evidence.
+- [[How to validate a Mets lineup simulation]] sets calibration, walk-forward backtesting, baseline, sensitivity, and uncertainty gates before a lineup model can support a claim.
+- [[How service time and assignment consent constrain Mets trades]] separates ten-and-five rights, negotiated trade protection, option consent, outright rights, and deadline legality.
 
 ## Sources
 
