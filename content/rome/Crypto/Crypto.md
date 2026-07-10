@@ -36,6 +36,10 @@ Each asset should eventually have a canonical dossier plus links to its chain, c
 - [[Stablecoin yield is a balance-sheet claim]] — identify the payer, legal claim, redemption path, and risks behind a quoted stablecoin yield.
 - [[Liquid staking tokens are claims on validators]] — trace staking rewards through validator, withdrawal, slashing, custody, and secondary-liquidity layers.
 - [[Wrapped assets and duplicate crypto exposure]] — preserve each representation while consolidating shared underlying exposure.
+- [[TVL without double counting]] — separate local gross inventory from recursive claims, price effects, liabilities, and unique backing.
+- [[Perpetual funding and crowded leverage]] — read venue funding rules as one positioning signal rather than a directional oracle.
+- [[Crypto liquidation cascades]] — trace maintenance-margin breaches through forced flow, disappearing depth, collateral reflexivity, and cross-venue propagation.
+- [[Tokenized fixed-income products in crypto rankings]] — classify YLDS debt and JAAA fund shares by their legal claims instead of treating provider capitalization as protocol value.
 
 ## Current conviction subset
 

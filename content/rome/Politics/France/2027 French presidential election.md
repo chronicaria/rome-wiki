@@ -29,7 +29,7 @@ The archive added four presidential-tagged notices dated July 8: two political-i
 
 ## Coverage map
 
-The next institutional layer is [[Media pluralism and speaking time in French elections]] and [[Cohabitation in the Fifth Republic]]. The living-election layer will require one canonical [[2027 French presidential candidate field]], [[2027 French presidential coalition map]], and [[2027 French presidential polling tracker]] rather than repeated snapshots. Later analytical notes should separate [[2027 French presidential first-to-second-round transfers]], [[2027 French presidential territorial coalitions]], and [[2027 French presidential issue agenda]] so incompatible questions do not collapse into one forecast page.
+The institutional layer includes [[Media pluralism and speaking time in French elections]] and [[Cohabitation in the Fifth Republic]]. The living-election layer uses one canonical [[2027 French presidential coalition map]] and will require one canonical [[2027 French presidential candidate field]] and [[2027 French presidential polling tracker]] rather than repeated snapshots. [[How to read French presidential polls]] supplies the methods needed to compare those scenarios. Later analytical notes should separate [[2027 French presidential first-to-second-round transfers]], [[2027 French presidential territorial coalitions]], and [[2027 French presidential issue agenda]] so incompatible questions do not collapse into one forecast page.
 
 ## Why it matters
 

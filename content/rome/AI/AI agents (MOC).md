@@ -34,6 +34,10 @@ This MOC collects notes on LLM agents as teams, swarms, simulators, and collecti
 - [[Reasoning budget and fair model comparison]] - how tokens, attempts, wall time, tools, verification, and cost change what a model comparison means.
 - [[Long-horizon task reliability]] - why task-completion horizons measure fitted success on human-timed tasks rather than unattended runtime or job replacement.
 - [[Infrastructure noise in agentic coding evaluations]] - how compute ceilings, sandbox enforcement, contention, and service failures can move coding-agent scores.
+- [[Benchmark contamination and saturation]] - how exposure, memorization, leakage, ceiling effects, and post-hoc tuning invalidate different frontier claims.
+- [[Time horizon of AI agents]] - how fitted task-completion horizons are constructed, calibrated, and easily misread.
+- [[Computer-use evaluation]] - how environment, observability, action space, scaffold, budget, grading, and safety define a computer-use result.
+- [[AI R&D automation evidence]] - what bounded research-engineering benchmarks establish and what end-to-end automation would still need to prove.
 
 ## Open questions
 

@@ -10,7 +10,7 @@ review_after: 2026-07-16
 ---
 The Colts' pre-camp picture is documented across canonical roster, availability, schedule, and quarterback notes; training camp beginning July 29 is the next checkpoint for role evidence rather than a license to convert isolated practice reports into depth certainty.
 
-Up: [[Sports]]
+Up: [[Indianapolis Colts]]
 
 ## Current state
 
@@ -19,6 +19,8 @@ The club announced thirteen open practices from July 29 through August 20, inclu
 The canonical [[Indianapolis Colts 2026 roster map]] records the June transaction baseline without treating the official roster page as a depth chart. [[Indianapolis Colts 2026 availability ledger]] separates verified reserve and rehabilitation state from projected availability, while [[Indianapolis Colts 2026 schedule map]] anchors the season's dated checkpoints.
 
 [[Indianapolis Colts quarterback structure 2026]] explains the official quarterback hierarchy and its limits: Daniel Jones is the intended starter while rehabilitating a torn Achilles, Anthony Richardson Sr. and Riley Leonard enter camp in the club's declared backup competition, and Easton Stick is the fourth rostered quarterback rather than an announced co-favorite.
+
+Three deeper pre-camp studies separate distinct football questions from that standing state. [[Indianapolis Colts 2026 draft class]] maps official selections to plausible roster pathways without treating draft capital as a role guarantee. [[Indianapolis Colts offensive line 2026]] tests continuity, protection responsibility, and depth. [[Indianapolis Colts defensive identity 2026]] treats Lou Anarumo's structure and substantial personnel turnover as hypotheses to be tested rather than a finished identity.
 
 ## Why it matters
 

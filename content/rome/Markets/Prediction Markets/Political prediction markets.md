@@ -20,6 +20,9 @@ Up: [[Markets]] · Related: [[2026 United States midterm elections]]
 - [[Prediction-market calibration]]
 - [[Proper scoring rules and market forecasts]]
 - [[Logical coherence across prediction markets]]
+- [[Order-book microstructure of event contracts]]
+- [[Conditional political probabilities]]
+- [[Information aggregation in prediction markets]]
 - [[CFTC 2026 prediction-market proposal]]
 
 ## Current observations

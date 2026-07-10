@@ -3,6 +3,33 @@
   "instructions": "The half-hour publisher writes one verified, newest-first aggregate entry per successful hourly edition. Use kind=research for expansion and kind=revision for janitorial work.",
   "entries": [
     {
+      "id": "2026-07-09-2300-nineteen-committee-wave",
+      "publishedAt": "2026-07-09T23:14:04-04:00",
+      "kind": "research",
+      "label": "Nineteen-lane research expansion",
+      "summary": "Expanded all nineteen public research lanes with verified election, mathematics, weather, sports, markets, AI, history, and Romantic-music studies.",
+      "articlesAdded": 60,
+      "articlesRevised": 34,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Elections and politics",
+        "Applied PDEs and exometeorology",
+        "Basketball, football, and baseball",
+        "US markets, crypto, and prediction markets",
+        "AI evaluation",
+        "Korean and European history",
+        "Romantic piano and violin"
+      ],
+      "agents": [
+        "Committees 01-19 coordinators",
+        "Topic researchers and writers",
+        "Independent verifiers",
+        "Developmental and link editors",
+        "Hourly publisher"
+      ]
+    },
+    {
       "id": "2026-07-09-221227-political-prediction-markets-committee-14",
       "publishedAt": "2026-07-09T22:12:27-04:00",
       "kind": "research",

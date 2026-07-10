@@ -50,7 +50,7 @@ Because Hipa arrived late in the spring, summer and preseason camp carry extra i
 
 ## The younger quarterbacks are developmental depth until evidence changes
 
-Gardner and Mahan are redshirt freshmen on the current roster. Walker III and Yates are freshmen. Walker III enrolled for spring work but appeared on Duke's official list of players out for the spring because of injury. The public record does not support a meaningful ranking among this group. Roster class, height, recruiting reputation, and isolated practice mentions cannot substitute for college game evidence or an official depth signal.
+Gardner and Mahan are redshirt freshmen on the current roster, while Walker III is the lone true freshman quarterback listed. Walker III enrolled for spring work but appeared on Duke's official list of players out for the spring because of injury. The public record does not support a meaningful ranking among this group. Roster class, height, recruiting reputation, and isolated practice mentions cannot substitute for college game evidence or an official depth signal.
 
 That does not make the younger group unimportant. A room built around three post-baccalaureate transfers has a built-in continuity problem: all three veteran candidates are listed in their final broad eligibility stage, while the younger quarterbacks represent the possible bridge to 2027. Practice development can therefore serve two timelines. Duke must identify the player most capable of winning in 2026 while ensuring that younger quarterbacks receive enough instruction and controlled work to become real future options. If every meaningful repetition goes to one-year players, the staff may solve the opener and recreate the same search next winter.
 
@@ -78,6 +78,21 @@ Five camp questions are especially useful:
 
 These questions also guard against preseason overreaction. A single deep completion in an open practice is evidence of one successful play, not proof of downfield consistency. A quarterback running with the first unit may reflect the day's rotation. A coach praising improvement is useful context but not a depth chart. The correct state as of July 9 is that Duke has several plausible veteran candidates, Eget owns the strongest passing-volume résumé, Patu had the fullest spring opportunity among the early veteran additions, and Hipa brings later-arriving starting experience. The starter remains publicly unresolved.
 
+## Evidence ledger: what each résumé establishes
+
+The candidates' career totals are easiest to misuse when treated as one ranking. Eget's 730 career attempts establish repeated exposure to a college passing workload. Patu's four starts and 212 attempts establish meaningful college experience, but not a sustained full-season starting burden. Hipa's ten starts establish more starting experience than Patu, while his 340 attempts remain well below Eget's total. None establishes who has learned Duke's offense fastest.
+
+Using Duke's official career totals, Eget has completed 57.7 percent of his passes, Patu 53.3 percent, and Hipa 55.6 percent. Those are descriptive rates across different teams, seasons, schemes, and opponents, not controlled comparisons. Duke's biographies do not provide a common measure of throw difficulty, pressure, drops, or turnover-worthy decisions. A precise-looking rate can still support an imprecise conclusion.
+
+Independent coverage identifies the public narrative without resolving the competition. A May Duke-focused *Sports Illustrated* article explicitly argued that Eget should start. The *Duke Chronicle*'s January commitment brief framed him as the immediate response to Mensah's departure. Those are records of observer perception, not primary evidence that Diaz or Brewer selected him.
+
+- **Verified fact:** Duke lists six quarterbacks, including three graduate transfers; Eget leads that trio with 18 career starts, ahead of Hipa's ten and Patu's four.
+- **Verified dated fact:** Duke listed Eget and Walker III as unavailable when spring practice opened; Duke later added Hipa on April 7.
+- **Reasonable inference:** Eget's starting volume makes him the easiest candidate around whom to imagine a conventional transfer-led plan.
+- **Unresolved:** August availability, first-team repetition share, protection command, performance under representative pressure, and the preferred balance between passing volume and quarterback mobility.
+
+This hierarchy guards against circular reporting. Until a Duke depth chart, attributable coach statement, or stable practice pattern supplies new evidence, “favorite” should be attributed to the evaluator and never presented as roster fact.
+
 ## Consequences for Duke's 2026 ceiling
 
 Quarterback uncertainty does not mean Duke is doomed to decline. The portal allowed the program to assemble far more collegiate experience than a typical room replacing an every-snap starter. Eget, Patu, and Hipa together bring 32 career starts across 70 games according to their official biographies. That is genuine insurance against the possibility that the first plan fails. It also lets coordinator Jonathan Brewer compare candidates with different strengths rather than force an inexperienced player into immediate duty.
@@ -96,6 +111,8 @@ The room should therefore be judged by its floor and its path to a ceiling. The 
 - [Ari Patu joins Duke](https://goduke.com/news/2026/1/8/patu-joins-duke-football-program) and [Patu roster biography](https://goduke.com/sports/football/roster/ari-patu/24471) — official career record.
 - [Blaine Hipa roster biography](https://goduke.com/sports/football/roster/blaine-hipa/24631) — official career record, accessed July 9, 2026.
 - [Defense prevails in the Blue & White Game](https://goduke.com/news/2026/4/18/football-defense-prevails-tops-offense-26-17-in-blue-white-game) — official spring-game record, April 18, 2026.
+- [The Duke Chronicle commitment brief on Walker Eget](https://dukechronicle.com/article/duke-football-commitment-brief-walker-eget-manny-diaz-mensah-barkate-spartans-san-jose-state-20260126) — January 26, 2026; independent contemporary framing, accessed July 9, 2026.
+- [Sports Illustrated Duke quarterback analysis](https://www.si.com/college/duke/blue-devils-why-walker-eget-should-be-starting-2026) — May 13, 2026; opinion analysis used as narrative context, not as a depth-chart source, accessed July 9, 2026.
 
 ## Open questions
 

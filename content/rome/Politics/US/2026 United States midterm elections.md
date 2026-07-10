@@ -12,6 +12,19 @@ The 2026 congressional contest is entering a more measurable phase: authorized H
 
 Up: [[Politics]] · Related: [[How control of the House is won in 2026]] · [[How control of the Senate is won in 2026]] · [[Campaign cash as an electoral signal]] · [[Reading congressional polls without overreacting]] · [[Race calls certification recounts and contests]] · [[Political prediction markets]]
 
+## Control maps
+
+- [[2026 Senate control path]] — the 34–31 off-ballot base, all 35 contests, loss-offset arithmetic, and the distinction between mathematical and modeled routes.
+- [[2026 House battleground map]] — a compact pivotal-seat ledger with defense, core, and correlated-expansion rings.
+
+## Evidence and methods
+
+- [[Generic ballot versus district-level voting]] — how national survey preference becomes a conditional district and seat distribution.
+- [[2026 midterm money map]] — a reproducible ledger separating candidate, party, coordinated, and independent financial channels.
+- [[Reading congressional polls without overreacting]] — population, mode, wording, timing, and uncertainty checks.
+- [[Campaign cash as an electoral signal]] — what receipts, cash, debt, burn, transfers, and outside spending can and cannot establish.
+- [[Race calls certification recounts and contests]] — the ladder from unofficial returns to a legally resolved outcome.
+
 ## Current state
 
 The FEC's April 9 statistical summary covered the first twelve months of the cycle: congressional candidates reported about $1.5 billion in receipts and $851.9 million in disbursements; party committees reported $834.1 million in receipts and $664 million in disbursements; and PACs reported $4.6 billion in receipts and $3.4 billion in disbursements. These are aggregate flows through December 31, 2025, not current balances or proof that any particular seat moved.

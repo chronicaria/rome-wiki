@@ -21,11 +21,14 @@ Up: [[Basketball]]
 
 - [[Fantasy basketball role-change checklist]] — test whether opportunity, responsibility, and sustainability moved together.
 - [[How NBA injury reports should change fantasy decisions]] — treat each status as timestamped evidence rather than a prognosis or transaction command.
+- [[Late-season shutdown and rest risk in fantasy basketball]] — price correlated late-season availability branches without turning incentives into medical claims.
+- [[Rookie roles that matter for fantasy basketball]] — project the interaction of opportunity, skill translation, and actual responsibility rather than draft pedigree alone.
 
 ## Transactions and weekly planning
 
 - [[Fantasy basketball streaming on low-volume days]] — optimize playable games after lineup congestion and acquisition costs.
 - [[FAAB and waiver priority as option value]] — spending a scarce claim resource sacrifices future flexibility.
+- [[Fantasy basketball playoff schedule value]] — value playable marginal production across conditional rounds, not raw scheduled games.
 
 ## Learning from decisions
 
@@ -33,12 +36,9 @@ Up: [[Basketball]]
 
 ## Next research frontier
 
-- [[Fantasy basketball playoff schedule value]]
-- [[Late-season shutdown and rest risk in fantasy basketball]]
 - [[Fantasy basketball roster construction under category tradeoffs]]
 - [[Projection error and shrinkage in fantasy basketball]]
 - [[Fantasy impact of NBA trade deadline moves]]
-- [[Rookie roles that matter for fantasy basketball]]
 
 ## Open questions
 

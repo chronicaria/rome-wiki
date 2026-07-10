@@ -14,9 +14,13 @@ Up: [[Classical Music]]
 ## Foundations
 
 - [[The nineteenth-century piano as a changing instrument]]
+- [[Romantic phrase rhythm]]
+- [[Urtext does not mean interpretation-free]]
 - [[Reading Chopin early editions]]
 - [[Piano source layers from autograph to performer edition]]
 - [[Chopin Preludes Op. 28 across first editions]]
+- [[Chopin Prelude in E minor Op. 28 No. 4]]
+- [[John Field and the nocturne before Chopin]]
 - [[Romantic piano miniatures]]
 - [[Romantic piano sonatas]]
 - [[Romantic piano concertos]]

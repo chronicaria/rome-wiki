@@ -4,7 +4,7 @@ created: 2026-07-09
 source: llm
 status: seed
 tags: [crypto, top-100, research, backlog]
-as_of: 2026-07-10T01:47:59Z
+as_of: 2026-07-10T03:03:20Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -20,7 +20,7 @@ Status vocabulary: **ready** has a bounded question and source lead; **blocked**
 
 | Priority | Canonical destination / card | Question and acceptance test | Source lead | State |
 | ---: | --- | --- | --- | --- |
-| 1 | [[Crypto top 100 cutoff persistence]] | Which ranks 90–110 remain across two consecutive CoinGecko observations, and were changes price- or supply-driven? Preserve exact timestamps and provider IDs. | next `coins/markets` snapshot; independent aggregator for anomalies | verify-next-snapshot |
+| 1 | [[Crypto top 100 cutoff persistence]] | Which ranks 90–110 remain across two consecutive CoinGecko observations, and were changes price- or supply-driven? Preserve exact timestamps and provider IDs. | next `coins/markets` snapshot; independent aggregator for anomalies | completed for YLDS/APT cutoff; continue anomaly checks |
 | 2 | [[USX identity and reserve structure]] | Prove the observed asset is Solstice USX, record its Solana mint, reserve controller, redemption path, and distinguish dForce USX. | Solstice docs/contracts; CoinGecko ID; explorer | blocked on contract identity |
 | 3 | [[YLDS as an onchain fixed-income security]] | Explain issuer, registration, face amount, yield source, transfer/redemption constraints, chains, and why it is not an ordinary stablecoin. | Figure disclosures; SEC filings; chain explorers | ready |
 | 4 | [[A7A5 ruble stablecoin structure and sanctions risk]] | Verify issuer, backing bank, mint/burn controls, contracts, attestations, legal jurisdiction, sanctions facts, and liquidity quality. | A7A5 docs; official sanctions lists; explorers | blocked pending enhanced legal/contract verification |
@@ -38,6 +38,9 @@ Status vocabulary: **ready** has a bounded question and source lead; **blocked**
 | 16 | [[Crypto provider identity rate-limit procedure]] | Define a reproducible retry/cache protocol that preserves timestamps and prevents guessed contracts when CoinGecko metadata returns HTTP 429. | CoinGecko rate-limit and API docs | ready; operational |
 
 ## Completed this return
+
+- Confirmed at 2026-07-10T03:03:20Z that YLDS remained rank 100 and APT rank 101 across a later hourly observation.
+- Rejected the short-interval JAAA rank-90 appearance as durable membership after BinanceLife returned to rank 90 in the later snapshot.
 
 - Captured the first immutable rank-90–110 boundary observation.
 - Assigned canonical CoinGecko IDs to all 21 rows.

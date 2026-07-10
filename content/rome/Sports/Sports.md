@@ -37,7 +37,7 @@ Up: [[Home]]
 ## Association football
 
 - [[Tottenham Hotspur]] — active hourly monitoring with a higher standalone-publication threshold than the three premier team beats.
-- [[Tottenham Hotspur 2026-27]]
+- [[Tottenham Hotspur 2026-27]] — season hub for the De Zerbi project, squad state, fixture map, transfer ledger, and academy pathway.
 - [[Roberto De Zerbi at Tottenham]]
 - [[Tottenham 2026-27 squad architecture]]
 - [[Tottenham squad-registration constraints]]
@@ -46,22 +46,18 @@ Up: [[Home]]
 
 ## American football
 
-- [[Duke football 2026]] — canonical hub for the premier Duke football beat.
+- [[Duke football]] — topic map for the premier Duke football beat.
+  - [[Duke football 2026]]
   - [[Duke football 2026 roster map]]
   - [[Duke football 2026 quarterback room]]
   - [[Duke offensive identity 2026]]
   - [[Duke defense under Manny Diaz]]
-- [[Indianapolis Colts]]
-- [[Indianapolis Colts 2026]]
-- [[Indianapolis Colts 2026 roster map]]
-- [[Indianapolis Colts 2026 availability ledger]]
-- [[Indianapolis Colts 2026 schedule map]]
-- [[Indianapolis Colts quarterback structure 2026]]
+- [[Indianapolis Colts]] — current season, roster, quarterback, trenches, defense, draft, availability, and schedule map.
 - [[NFL roster construction]]
 
 ## Baseball
 
-- [[New York Mets]]
+- [[New York Mets]] — season state, roster mechanics, player workload, pitching roles, and public performance methods.
 - [[New York Mets 2026]]
 - [[New York Mets 2026 roster and transaction ledger]]
 - [[Injured-list moves and Mets roster mechanics]]

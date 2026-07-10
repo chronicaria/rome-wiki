@@ -4,7 +4,7 @@ created: 2026-07-09
 source: web
 status: seed
 tags: [crypto, markets, top-100, dataset]
-as_of: 2026-07-10T01:56:30Z
+as_of: 2026-07-10T03:03:20Z
 desk: Crypto markets
 review_after: 2026-07-10
 ---
@@ -61,10 +61,19 @@ Ranks 91–110 kept the same provider IDs and order. Rank 90 changed from `bianr
 
 The exact second-observation boundary was: JAAA, FIL, LIT, PUMP, GHO, FLR, ARB, USD0, VVV, XDC, YLDS, APT, NIGHT, USX, AERO, A7A5, TUSD, INJ, HASH, CAKE, and DASH for ranks 90–110 respectively. Provider IDs, rather than symbols, define continuity.
 
+## Hourly persistence check — 2026-07-10T03:03:20Z
+
+A fresh retrieval at the next hourly boundary again placed `ylds` at rank 100 and `aptos` at rank 101. Provider-reported capitalization was approximately $536.53 million for YLDS and $529.59 million for APT, a gap of about $6.94 million. YLDS has therefore persisted at the top-100 cutoff across the first observation, the short-interval check, and this later hourly observation. This establishes provider-ranking persistence under the desk rule; it does not establish liquidity, reserve quality, or fundamental value.
+
+Rank 90 reverted from `janus-henderson-anemoy-aaa-clo-fund` (JAAA) in the short-interval check to `bianrensheng` (BinanceLife), with provider-reported capitalization of approximately $683.06 million. The reversal shows that the JAAA observation was not persistent. JAAA remains an identity and classification research lead, but this ledger does not treat it as a durable rank-90 constituent or infer why the provider rank changed.
+
+The retrieval used the documented endpoint with `vs_currency=usd`, `order=market_cap_desc`, `per_page=110`, `page=1`, `sparkline=false`, and `price_change_percentage=24h,7d`. The response was not cached locally before retrieval. Representative provider update times were 2026-07-10T03:03:16.609Z for YLDS, 2026-07-10T03:03:04.857Z for APT, and 2026-07-10T03:03:19.956Z for BinanceLife.
+
 ## Sources
 
 - [CoinGecko markets API observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:47:59Z.
 - [CoinGecko markets API persistence observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false), retrieved 2026-07-10T01:56:30Z.
+- [CoinGecko markets API hourly persistence observation](https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=110&page=1&sparkline=false&price_change_percentage=24h%2C7d), retrieved 2026-07-10T03:03:20Z.
 - [CoinGecko API documentation — coins markets](https://docs.coingecko.com/reference/coins-markets), accessed 2026-07-09.
 
 ## Open questions

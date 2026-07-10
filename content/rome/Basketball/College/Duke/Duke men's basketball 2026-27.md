@@ -16,8 +16,12 @@ Up: [[Basketball]]
 
 - [[Duke 2026-27 roster construction]] — the bounded official roster ledger and unresolved identity questions.
 - [[Duke 2026-27 role inventory]] — confirmed functional strengths, constraints, and July role uncertainty.
+- [[Duke 2026-27 backcourt creation]] — how first touch, first advantage, second read, and late-clock ownership can be distributed.
+- [[Duke 2026-27 frontcourt combinations]] — the spacing, rim-protection, and rebounding exchanges across single-big, two-big, and mobile-five groups.
+- [[Duke 2026-27 lineup scalability]] — a six-function test for whether lineup depth survives different elite opponents.
 - [[Duke continuity after the one-and-done centerpiece]] — how returning players change the development and integration problem.
 - [[Duke 2026-27 schedule map]] — named games, ACC opponent structure, travel questions, and résumé tests.
+- [[Duke 2026-27 nonconference stress tests]] — seven predeclared diagnostic questions for the verified marquee games.
 - [[Jon Scheyer's tactical evolution at Duke]] — the four-season statistical arc and a lineup-scalability framework.
 - [[Duke player development and NBA translation framework]] — a role-first method for evaluating freshmen, transfers, returners, and professional translation.
 

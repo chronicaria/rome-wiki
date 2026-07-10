@@ -97,12 +97,12 @@ The test is ultimately simple to state and difficult to pass: can Duke make the 
 
 ## Sources
 
-- [Duke 2026 football roster](https://goduke.com/sports/football/roster) — official current roster and staff assignments; treated as a dated roster state, not a depth chart.
-- [Duke 2025 cumulative statistics](https://goduke.com/sports/football/stats/2025) — official team totals, opponent passing and rushing production, sacks, takeaways, third down, and red zone.
-- [Duke 2024 cumulative statistics](https://goduke.com/sports/football/stats/2024) — official baseline for Diaz's first Duke season.
-- [Manny Diaz staff biography](https://goduke.com/staff-directory/manny-diaz/1145) — appointment date, coaching history, and Penn State statistical context.
-- [Line Drive: Veteran Defensive Front Motivated to Keep the Pressure On](https://goduke.com/news/2025/8/26/football-line-drive-veteran-defensive-front-motivated-to-keep-the-pressure-on) — Duke's account of 2025 front experience, rotation, and Diaz's emphasis on depth.
-- [Duke Makes a Statement in Winning 2025 ACC Crown](https://goduke.com/news/2025/12/30/football-duke-makes-a-statement-in-winning-2025-acc-crown) — official retrospective used for Mergott's role development and late-game defensive examples.
+- [Duke 2026 football roster](https://goduke.com/sports/football/roster/2026) — official current roster and staff assignments; treated as a dated roster state, not a depth chart; accessed July 9, 2026.
+- [Duke 2025 cumulative statistics](https://goduke.com/sports/football/stats/2025) — official team totals, opponent passing and rushing production, sacks, takeaways, third down, and red zone; accessed July 9, 2026.
+- [Duke 2024 cumulative statistics](https://goduke.com/sports/football/stats/2024) — official baseline for Diaz's first Duke season; accessed July 9, 2026.
+- [Manny Diaz coaching biography](https://goduke.com/sports/football/roster/coaches/manny-diaz/4827) — appointment date, coaching history, Duke results, and Penn State statistical context; accessed July 9, 2026.
+- [Line Drive: Veteran Defensive Front Motivated to Keep the Pressure On](https://goduke.com/news/2025/8/26/football-line-drive-veteran-defensive-front-motivated-to-keep-the-pressure-on) — Duke's account of 2025 front experience, rotation, and Diaz's emphasis on depth; August 26, 2025; accessed July 9, 2026.
+- [Duke Makes a Statement in Winning 2025 ACC Crown](https://goduke.com/news/2025/12/30/football-duke-makes-a-statement-in-winning-2025-acc-crown) — official retrospective used for Mergott's role development and late-game defensive examples; December 30, 2025; accessed July 9, 2026.
 
 ## Open questions
 

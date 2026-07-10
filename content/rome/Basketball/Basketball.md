@@ -15,6 +15,7 @@ Ongoing pickup basketball improvement: build a speed-guard game that survives co
 - [[Duke men's basketball 2026-27]] - canonical Duke season hub for roster construction, roles, schedule, tactics, and player development.
 
 ## NBA analytics projects
+- [[Basketball/NBA/NBA and Dallas Mavericks|NBA and Dallas Mavericks]] - current NBA and Dallas research map.
 - [[RAPM]] - Andrew's daily, multi-league six-factor player measurement and forward-projection system, with a linked map of the estimator, translation, validation, implementation, and public site.
 - [[Dallas Mavericks 2026-27 season]] - canonical current-season Dallas hub.
 - [[Fantasy Basketball]] - valuation, opportunity, schedule, waiver, injury, and calibration methods for season-long fantasy decisions.

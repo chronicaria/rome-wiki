@@ -102,6 +102,16 @@ That hypothesis suggests several evaluation standards. Duke does not need its ne
 
 The greatest danger is mistaking returning stars for a returning offense. Sheppard and Hasley give Duke answers, but opposing defenses can organize around known answers. The greatest opportunity is that Brewer does not have to start from zero. He can build around two verified producers while choosing among quarterbacks with different experience profiles and receivers with varied backgrounds.
 
+## Evidence ledger: what is known and what is inferred
+
+**Verified:** Brewer remains Duke's offensive coordinator and quarterbacks coach. Sheppard and Hasley return after producing 1,132 rushing yards and 454 receiving yards, respectively. The official roster does not include Mensah or Barkate. Eget has the largest documented starting résumé among the listed quarterbacks. Duke named only two returning offensive-line starters in its spring preview, and several players missed spring participation.
+
+**Independent check:** ESPN's 2025 player-stat page matches Duke's headline production leaders—Mensah at 3,973 passing yards, Sheppard at 1,132 rushing yards, and Barkate at 1,106 receiving yards. An independent June preview from *Sports Illustrated* likewise frames Sheppard and Hasley as the returning mainstays and the transfer tackles as possible, rather than guaranteed, solutions. That agreement increases confidence in the transition problem; it does not validate every tactical forecast in this note.
+
+**Inference to test:** Sheppard and Hasley are likely to be the stabilizing answers for a new quarterback, while receiver roles are distributed rather than inherited by a single Barkate replacement. Brewer may preserve a pass-capable structure, but protection quality and quarterback traits will determine its volume. These claims are analytical hypotheses, not reported staff commitments.
+
+**Unsupported until games begin:** a named starter, a precise run-pass ratio, a dominant personnel grouping, a specific route tree, or a claim that the offense will improve or decline. Spring absences do not establish fall availability. Prior-school statistics do not establish ACC translation.
+
 ## Why it matters
 
 Duke's 2025 ACC championship proved that the program can pair Manny Diaz's defense-oriented leadership with a high-scoring offense. Sustaining that balance would make [[Manny Diaz's Duke program]] less dependent on one transfer quarterback or one exceptional season. A sharp offensive transition would also validate Duke's ability to use the [[Transfer portal]] to replace specialized production without losing the value of internal development.
@@ -121,6 +131,8 @@ The 2026 offense is therefore a test of program trajectory as much as play calli
 - [Jeremiah Hasley biography](https://goduke.com/sports/football/roster/jeremiah-hasley/24417) — official 2025 production and career summary; accessed July 9, 2026.
 - [Javen Nicholas biography](https://goduke.com/sports/football/roster/javen-nicholas/24476) — official prior college production; accessed July 9, 2026.
 - [Braden Miller biography](https://goduke.com/sports/football/roster/braden-miller/24479) and [Micah Sahakian biography](https://goduke.com/sports/football/roster/micah-sahakian/24441) — official line experience; accessed July 9, 2026.
+- [ESPN Duke 2025 player statistics](https://www.espn.com/college-football/team/stats/_/id/150/season/2025) — independent check of Duke's passing, rushing, and receiving leaders; accessed July 9, 2026.
+- [Best (and worst) case scenario for Duke's 2026 offense](https://www.si.com/college/duke/blue-devils-best-worst-case-scenario-2026-offense) — independent June 2026 context on returning skill players and transfer-line uncertainty; accessed July 9, 2026.
 
 ## Open questions
 

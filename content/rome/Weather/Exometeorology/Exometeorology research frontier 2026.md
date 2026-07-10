@@ -16,6 +16,13 @@ Up: [[Weather prediction (MOC)]]
 
 - [[Atmospheric retrieval degeneracies]] follows the full chain from calibrated photons through a forward model, likelihood, priors, and a conditional posterior rather than a unique literal atmosphere.
 - [[Radiative and advective timescales in exoplanet atmospheres]] compares radiation, transport, waves, rotation, drag, and chemistry without treating order-of-magnitude clocks as solved circulation.
+- [[What counts as weather on an exoplanet]] defines an evidence threshold for atmospheric evolution and separates changing weather from rotation, static spatial structure, stellar variability, and instrumental drift.
+
+## Circulation, transport, and chemistry
+
+- [[Atmospheric circulation on tidally locked planets]] explains how stationary day–night forcing excites waves, overturning, and jets while leaving their observable signatures model-dependent.
+- [[Day-night heat redistribution]] separates measured brightness contrasts from bolometric energy transport and develops the cloud, photosphere, opacity, and dynamical degeneracies behind redistribution estimates.
+- [[Disequilibrium chemistry as a tracer of circulation]] shows when chemical quenching can retain a memory of transport—and why composition, kinetics, clouds, photochemistry, and retrieval assumptions prevent a molecule from acting as a direct anemometer.
 
 ## Observation and inference
 

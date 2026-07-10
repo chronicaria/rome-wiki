@@ -20,6 +20,10 @@ That distinction matters after an unusual 2025. Duke went 9–5, won the ACC cha
 
 The same caution applies on defense. Duke allowed 424.2 yards per game and a 45.4 percent third-down conversion rate in 2025 even while producing 14 interceptions and finishing the season with two trophies. Returning defenders can improve with age and repetition, but “returning” does not automatically mean that last season's strengths and weaknesses will recur. This map identifies the places where those questions should be tested once fall camp and game evidence arrive.
 
+Continuity is uneven, so position counts require context. **Returning production** means a verified Duke statistical or starting record directly bears on 2026; Sheppard's 1,132 rushing yards and Hasley's 40 receptions qualify. **Returning development** means a player was already in Duke's program without comparable public game volume. **Imported experience** means a transfer has verified college games elsewhere. **Projection** means the case rests mostly on recruiting biography, physical profile, spring snippets, or expected opportunity. Projection is unavoidable in July; it becomes misleading only when presented as fact.
+
+Class year is a weak shortcut. “Graduate” can describe a newcomer learning a new system, while “redshirt freshman” can describe someone with a full year in Duke's meetings. Internal familiarity still does not create game-speed evidence. Each room should be judged on proven college performance, Duke-system continuity, and plausible role fit because no roster field captures all three.
+
 ## Quarterback: experience was imported, not inherited
 
 The roster lists six quarterbacks: post-baccalaureate transfers Walker Eget, Ari Patu, and Blaine Hipa; freshman Terry Walker III; and redshirt freshmen Dan Mahan and Lawrence Gardner. That is a large room by head count, but head count disguises how concentrated the proven passing experience is.
@@ -99,6 +103,14 @@ The roster itself reflects a three-part construction model: retain a small numbe
 Duke enters 2026 with the credibility of an ACC championship but without the luxury of running back the same offense. The quarterback who produced virtually all of the passing yards is gone, the receiving hierarchy is being rebuilt, and the line includes multiple newcomers. Sheppard and Hasley give the new quarterback proven skill-position support, but they cannot by themselves recreate a 34.6-point offense.
 
 On defense, Mergott and several young returners provide a spine, while transfers offer possible answers in the secondary. The correct preseason thesis is therefore conditional: Duke has enough verified continuity to avoid calling this a total reset, and enough turnover at leverage positions to reject the idea of simple continuation. Fall camp should be used to narrow roles. The opening nonconference block described in [[Duke football 2026 schedule map]] should then test whether the assembled roster has become functional depth.
+
+## A fall verification plan
+
+The next update should change labels only when the evidence changes. A preseason depth chart identifies Duke's intended ordering for a date, not guaranteed snap distribution. Camp availability answers whether players are practicing, not whether they are fully effective. Stronger evidence will be stable first-team repetitions, a declared depth chart near the opener, and game participation.
+
+For the offense, verify quarterback availability and first-unit share; exact line positions and combinations; receiver target hierarchy; and the workload behind Sheppard. For the defense, verify four-man pressure capacity; the linebacker pairing around Mergott; and the corner, nickel, and safety assignments. Specialists need separate confirmation of placekicking, kickoff, punting, and return duties because one roster label can hide four competitions.
+
+Two quantitative additions would improve this map once Duke publishes game notes: returning 2025 snaps by group and returning starts by exact position. They would not prove future quality, but they would distinguish operational experience from a room returning mostly names. Until those data exist, narrow claims are more honest than precision manufactured from class years and head count.
 
 ## Sources
 

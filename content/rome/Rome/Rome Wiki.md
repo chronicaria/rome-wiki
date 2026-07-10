@@ -7,6 +7,8 @@ tags: [rome, publishing, wiki, github-pages]
 ---
 The Rome Wiki turns Andrew Park's external brain into a static, searchable encyclopedia while keeping Markdown and wikilinks as the source of truth.
 
+Public edition: [chronicaria.github.io/rome-wiki](https://chronicaria.github.io/rome-wiki/) · Source: [github.com/chronicaria/rome-wiki](https://github.com/chronicaria/rome-wiki)
+
 Up: [[Build My Brain (Rome)]] · [[Home]]
 
 Related: [[Wiki editorial and corpus pass 2026-07-09]] · [[Autonomous research committees]]

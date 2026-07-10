@@ -1,0 +1,44 @@
+---
+title: Indianapolis Colts
+created: 2026-07-09
+source: llm
+status: seed
+tags: [sports, nfl, indianapolis-colts, moc]
+---
+# Indianapolis Colts
+
+This topic map connects the Colts' current season state to roster construction, quarterback play, line play, defensive structure, availability, and schedule context.
+
+Up: [[Sports]]
+
+## 2026 season
+
+- [[Indianapolis Colts 2026]] — season hub and current checkpoints
+- [[Indianapolis Colts 2026 roster map]] — official membership, transactions, and unresolved roles
+- [[Indianapolis Colts 2026 availability ledger]] — reserve and injury-report state
+- [[Indianapolis Colts 2026 schedule map]] — rest, travel, divisional sequencing, and London
+- [[Indianapolis Colts quarterback structure 2026]] — starter, rehabilitation, and backup competition
+- [[Indianapolis Colts 2026 draft class]] — class construction and development questions
+
+## Units and mechanisms
+
+- [[Indianapolis Colts offensive line 2026]] — continuity, protection, and depth
+- [[Indianapolis Colts defensive identity 2026]] — personnel turnover and Lou Anarumo's structure
+- [[Indianapolis Colts offensive identity 2026]] — queued
+- [[Indianapolis Colts situational football 2026]] — queued pending a sufficient game sample
+- [[Indianapolis Colts roster-construction pressure points]] — queued
+
+## NFL context through Indianapolis
+
+- [[NFL injury reports as forecasting evidence]]
+- [[NFL international games and Colts preparation]]
+- [[Pass protection]]
+- [[Pressure rate]]
+- [[Coverage shell]]
+- [[Roster churn]]
+
+## Open questions
+
+- Which camp observations will survive contact with preseason and regular-season evidence?
+- Where does the final roster retain redundancy, and where does it accept replacement risk?
+- How will the defense distribute responsibilities after major personnel turnover?

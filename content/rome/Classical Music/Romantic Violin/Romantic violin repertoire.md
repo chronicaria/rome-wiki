@@ -25,7 +25,7 @@ Up: [[Classical Music]]
 ## Repertoire paths
 
 - [[Paganini]]
-- [[Mendelssohn Violin Concerto]]
+- [[Mendelssohn Violin Concerto Op. 64]]
 - [[Brahms Violin Concerto]]
 - [[Tchaikovsky Violin Concerto]]
 - [[Romantic violin sonatas]]

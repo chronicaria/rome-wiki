@@ -13,6 +13,7 @@ Up: [[Home]]
 
 ## United States financial markets
 
+- [[US Markets and Commodities]]
 - [[US market regime tracker]]
 - [[US market regime]]
 - [[US equity market structure]]
