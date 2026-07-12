@@ -26,6 +26,7 @@ Up: [[Sports]]
 - [[Indianapolis Colts training-camp installation 2026]] — staged installation, role evidence, opponent stress, and roster compression
 - [[Indianapolis Colts waiver-wire strategy 2026]] — functional claims, displacement cost, installation, and post-cut contingencies
 - [[Indianapolis Colts AFC South path 2026]] — six division games, ordered tiebreak mechanics, and conditional leverage
+- [[Indianapolis Colts contract flexibility 2026]] — official cap mechanisms, present operating room, and future optionality without invented totals
 
 ## Units and mechanisms
 
@@ -35,10 +36,12 @@ Up: [[Sports]]
 - [[Indianapolis Colts offensive identity 2026]] — Taylor-centered conflict structure, formation flexibility, and quarterback-dependent constraints
 - [[Indianapolis Colts running game 2026]] — Taylor's rushing engine, complementary-back trust, and blocking dependencies
 - [[Indianapolis Colts pass-catcher structure 2026]] — functional redistribution after Pittman's departure
+- [[Indianapolis Colts tight end structure 2026]] — Warren's formation flexibility and the complementary jobs around him
 - [[Indianapolis Colts situational football 2026]] — queued pending a sufficient game sample
 - [[Indianapolis Colts roster-construction pressure points]] — asset concentration, succession risk, and functional depth
 - [[Indianapolis Colts linebacker transition 2026]] — communication, package roles, and the post-Franklin succession plan
 - [[Indianapolis Colts defensive front 2026]] — pressure creation, run fits, veteran anchors, and developmental rotation
+- [[Indianapolis Colts edge-rush development 2026]] — role-specific evaluation of Latu, veterans, second-year players, and rookies
 - [[Indianapolis Colts defensive backfield 2026]] — coverage responsibilities, injury uncertainty, and personnel flexibility
 - [[Indianapolis Colts special teams 2026]] — specialists, return structure, coverage roles, and dynamic-kickoff evidence
 

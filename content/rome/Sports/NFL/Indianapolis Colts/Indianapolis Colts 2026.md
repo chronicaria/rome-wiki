@@ -8,7 +8,7 @@ as_of: 2026-07-10
 desk: Indianapolis Colts
 review_after: 2026-07-16
 ---
-The Colts' pre-camp picture now connects canonical state to long-form studies of installation, waiver strategy, divisional leverage, offensive mechanisms, roster pressure, and the London-to-Pittsburgh preparation sequence; training camp beginning July 29 remains the next checkpoint for role evidence rather than a license to convert isolated practice reports into depth certainty.
+The Colts' pre-camp picture now connects canonical state to long-form studies of installation, waiver strategy, divisional leverage, contract flexibility, tight-end function, edge-rush development, offensive mechanisms, roster pressure, and the London-to-Pittsburgh preparation sequence; training camp beginning July 29 remains the next checkpoint for role evidence rather than a license to convert isolated practice reports into depth certainty.
 
 Up: [[Indianapolis Colts]]
 
@@ -27,6 +27,8 @@ Three further dossiers connect those unit questions to the team's larger operati
 Five mechanism notes now define the next operational checkpoints. [[Indianapolis Colts defensive communication 2026]] separates the green-dot decision from the full chain connecting front, linebackers, safeties, and corners. [[Indianapolis Colts 2026 roster cut mechanics]] explains the August 30 reduction's administrative paths, while [[Indianapolis Colts practice-squad construction 2026]] treats the post-cut developmental group as a diversified portfolio rather than leftover names. [[Indianapolis Colts preseason evaluation framework 2026]] supplies a claim ladder for interpreting assignments, combinations, and live execution without turning exhibition scores into forecasts. [[Indianapolis Colts rookie development framework 2026]] applies staged, position-specific evidence gates to the eight-player draft class.
 
 Three additional studies connect that framework to the calendar's next decisions. [[Indianapolis Colts training-camp installation 2026]] divides camp into participation/language, padded and opponent stress, and final compression while preserving the limits of practice evidence. [[Indianapolis Colts waiver-wire strategy 2026]] treats every possible claim as a complete before-and-after roster state rather than a recognizable-name acquisition. [[Indianapolis Colts AFC South path 2026]] maps the six division games and the ordered tiebreak ladders without pretending their actual leverage is knowable before results create a race.
+
+Three position-and-resource studies deepen the same pre-camp map without manufacturing a depth chart. [[Indianapolis Colts tight end structure 2026]] treats Tyler Warren as the formation-changing center of a six-player room while testing the complementary blocking, protection, receiving, and special-teams jobs around him. [[Indianapolis Colts edge-rush development 2026]] separates Laiatu Latu's established lead role from the still-unresolved distribution among veterans, second-year players, rookies, and marginal-roster candidates. [[Indianapolis Colts contract flexibility 2026]] explains the official cap and contract mechanisms that shape operating room and future optionality while refusing to substitute reconstructed public totals for the club's authoritative accounting.
 
 ## Why it matters
 

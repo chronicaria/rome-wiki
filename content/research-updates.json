@@ -3,6 +3,27 @@
   "instructions": "The half-hour publisher writes one verified, newest-first aggregate entry per successful hourly edition. Use kind=research for expansion and kind=revision for janitorial work.",
   "entries": [
     {
+      "id": "2026-07-11-two-deferred-receipts",
+      "publishedAt": "2026-07-11T21:50:21-04:00",
+      "kind": "research",
+      "label": "Two deferred receipts integrated",
+      "summary": "Integrated verified Indianapolis Colts roster-structure research and Romantic piano work guides deferred from the prior cutoff.",
+      "articlesAdded": 6,
+      "articlesRevised": 3,
+      "articlesRetired": 0,
+      "articlesRelocated": 0,
+      "topics": [
+        "Indianapolis Colts tight ends, contracts, and edge development",
+        "Romantic piano texture, cyclic form, and compressed prelude form"
+      ],
+      "agents": [
+        "Committees 09 and 18 coordinators",
+        "Topic researchers and writers",
+        "Independent verifiers",
+        "Hourly publisher"
+      ]
+    },
+    {
       "id": "2026-07-10-1500-seventeen-receipt-wave",
       "publishedAt": "2026-07-10T15:31:11-04:00",
       "kind": "research",
